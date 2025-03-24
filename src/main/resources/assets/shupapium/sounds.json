@@ -1,0 +1,23 @@
+{
+  "entity.daarick_citizen.ambient": {
+    "sounds": [
+      "shupapium:entity/daarick_citizen/ambient1",
+      "shupapium:entity/daarick_citizen/ambient2",
+      "shupapium:entity/daarick_citizen/ambient3"
+    ],
+    "subtitle": "subtitle.shupapium.daarick_citizen.ambient"
+  },
+  "entity.daarick_citizen.hurt": {
+    "sounds": [
+      "shupapium:entity/daarick_citizen/hurt1",
+      "shupapium:entity/daarick_citizen/hurt2",
+      "shupapium:entity/daarick_citizen/hurt3",
+      "shupapium:entity/daarick_citizen/hurt4"
+    ],
+    "subtitle": "subtitle.shupapium.daarick_citizen.hurt"
+  },
+  "entity.daarick_citizen.death": {
+    "sounds": ["shupapium:entity/daarick_citizen/death"],
+    "subtitle": "subtitle.shupapium.daarick_citizen.death"
+  }
+}

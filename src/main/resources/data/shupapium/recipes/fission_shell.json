@@ -1,0 +1,30 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    " P ",
+    "PDP",
+    "HNH",
+    " S "
+  ],
+  "key": {
+    "D": {
+      "item": "crusty_chunks:beryllium_ingot"
+    },
+    "P": {
+      "item": "crusty_chunks:advanced_component"
+    },
+    "N": {
+      "item": "crusty_chunks:fission_bomb"
+    },
+    "S": {
+      "item": "minecraft:repeater"
+    },
+    "H": {
+      "item": "crusty_chunks:steel_ingot"
+    }
+  },
+  "result": {
+    "item": "shupapium:fission_shell"
+  },
+  "acceptMirrored": true
+}

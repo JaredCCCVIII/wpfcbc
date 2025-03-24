@@ -1,0 +1,13 @@
+{
+  "values": [
+    "shupapium:fission_shell",
+    "shupapium:ordinance_shell",
+    "shupapium:redordinance_shell",
+    "shupapium:heavyordinance_shell",
+    "shupapium:superheavyordinance_shell",
+    "shupapium:cluster_shell",
+    "shupapium:kinetic_shell",
+    "shupapium:toxicgas_shell",
+    "shupapium:fusion_shell"
+  ]
+}

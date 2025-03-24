@@ -1,0 +1,63 @@
+{
+  "block.shupapium.fission_shell": "Fission Shell",
+  "block.createmissilelangtest.fission_shell.tooltip.behaviour1": "Unleashes a powerful nuclear blast and creates a small mushroom of radioactive gas.",
+  "block.createmissilelangtest.fission_shell.tooltip.condition1": "On Detonation",
+  "block.createmissilelangtest.fission_shell.tooltip.summary": "\"Not so strong as the fusion one.\"",
+  "entity.shupapium.fission_shell_projectile": "Fission Shell",
+
+  "block.shupapium.ordinance_shell": "Ordinance Shell",
+  "block.createmissilelangtest.ordinance_shell.tooltip.behaviour1": "The first level of ordinance destroys a medium area and drops debris.",
+  "block.createmissilelangtest.ordinance_shell.tooltip.condition1": "On Detonation",
+  "block.createmissilelangtest.ordinance_shell.tooltip.summary": "\"Try to upgrade it!\"",
+  "entity.shupapium.ordinance_shell_projectile": "Ordinance Shell",
+
+  "block.shupapium.heavyordinance_shell": "Heavy Ordinance Shell",
+  "block.createmissilelangtest.heavyordinance_shell.tooltip.behaviour1": "The second level of ordinance destroys a big area and drops debris.",
+  "block.createmissilelangtest.heavyordinance_shell.tooltip.condition1": "On Detonation",
+  "block.createmissilelangtest.heavyordinance_shell.tooltip.summary": "\"Try to upgrade it again.\"",
+  "entity.shupapium.heavyordinance_shell_projectile": "Heavy Ordinance Shell",
+
+  "block.shupapium.superheavyordinance_shell": "Super Heavy Ordinance Shell",
+  "block.createmissilelangtest.superheavyordinance_shell.tooltip.behaviour1": "The last level of ordinance destroys a grand area and drops debris.",
+  "block.createmissilelangtest.superheavyordinance_shell.tooltip.condition1": "On Detonation",
+  "block.createmissilelangtest.superheavyordinance_shell.tooltip.summary": "\"Not so strong as the fission one.\"",
+  "entity.shupapium.superheavyordinance_shell_projectile": "Super Heavy Ordinance Shell",
+
+  "block.shupapium.redordinance_shell": "Fire Ordinance Shell",
+  "block.createmissilelangtest.redordinance_shell.tooltip.behaviour1": "The red ordinance destroys a medium area and drops fire around.",
+  "block.createmissilelangtest.redordinance_shell.tooltip.condition1": "On Detonation",
+  "block.createmissilelangtest.redordinance_shell.tooltip.summary": "\"Burn in the Nether!\"",
+  "entity.shupapium.redordinance_shell_projectile": "Fire Ordinance Shell",
+
+  "block.shupapium.cluster_shell": "Cluster Shell",
+  "block.createmissilelangtest.cluster_shell.tooltip.behaviour1": "The cluster ordinance drops small pieces to deal various damage near the impact zone.",
+  "block.createmissilelangtest.cluster_shell.tooltip.condition1": "On Detonation",
+  "block.createmissilelangtest.cluster_shell.tooltip.summary": "\"Oh man, they're coming!\"",
+  "entity.shupapium.cluster_shell_projectile": "Cluster Shell",
+
+  "block.shupapium.kinetic_shell": "Kinetic Shell",
+  "block.createmissilelangtest.kinetic_shell.tooltip.behaviour1": "The kinetic ordinance make a small hole when impact and after a few while explodes, dropping debris around the impact zone.",
+  "block.createmissilelangtest.kinetic_shell.tooltip.condition1": "On Detonation",
+  "block.createmissilelangtest.kinetic_shell.tooltip.summary": "\"Excellent for mining.\"",
+  "entity.shupapium.kinetic_shell_projectile": "Kinetic Shell",
+
+  "block.shupapium.toxicgas_shell": "Gas Shell",
+  "block.createmissilelangtest.toxicgas_shell.tooltip.behaviour1": "The gas shell dissipates a toxic smoke upon impact, stunning the near living entities.",
+  "block.createmissilelangtest.toxicgas_shell.tooltip.condition1": "On Detonation",
+  "block.createmissilelangtest.toxicgas_shell.tooltip.summary": "\"Smells like eggs.\"",
+  "entity.shupapium.toxicgas_shell_projectile": "Gas Shell",
+
+  "block.shupapium.fusion_shell": "Fusion Shell",
+  "block.createmissilelangtest.fusion_shell.tooltip.behaviour1": "Unleashes a powerful nuclear blast and evaporates everything.",
+  "block.createmissilelangtest.fusion_shell.tooltip.condition1": "On Detonation",
+  "block.createmissilelangtest.fusion_shell.tooltip.summary": "\"I'm become death, the destroyers of worlds.\"",
+  "entity.shupapium.fusion_shell_projectile": "Fusion Shell",
+
+  "entity.shupapium.daarick_citizen": "Daarick Citizen",
+  "item.shupapium.daarick_citizen_spawn_egg": "Daarick Citizen Spawn Egg",
+  "subtitle.shupapium.daarick_citizen.ambient": "Daarick Citizen murmurs",
+  "subtitle.shupapium.daarick_citizen.hurt": "Daarick Citizen in pain",
+  "subtitle.shupapium.daarick_citizen.death": "Daarick Citizen dying",
+
+  "itemGroup.shupapium": "CBC: Warium Projectiles"
+}

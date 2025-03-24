@@ -1,0 +1,30 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    " P ",
+    "PDP",
+    "HNH",
+    " S "
+  ],
+  "key": {
+    "D": {
+      "item": "crusty_chunks:large_volatile_pile"
+    },
+    "P": {
+      "item": "crusty_chunks:bent_component"
+    },
+    "N": {
+      "item": "crusty_chunks:large_volatile_pile"
+    },
+    "S": {
+      "item": "crusty_chunks:steel_ingot"
+    },
+    "H": {
+      "item": "crusty_chunks:bent_component"
+    }
+  },
+  "result": {
+    "item": "shupapium:ordinance_shell"
+  },
+  "acceptMirrored": true
+}

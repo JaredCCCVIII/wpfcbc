@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "shupapium:block/fusion_shell",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "shupapium:block/fusion_shell",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "shupapium:block/fusion_shell",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "shupapium:block/fusion_shell",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "shupapium:block/fusion_shell"
+    },
+    "facing=west": {
+      "model": "shupapium:block/fusion_shell",
+      "x": 90,
+      "y": 270
+    }
+  }
+}
