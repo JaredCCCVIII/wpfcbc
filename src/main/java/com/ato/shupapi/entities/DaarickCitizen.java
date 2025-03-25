@@ -31,9 +31,6 @@ public class DaarickCitizen extends Zombie {
     @Override
     protected void registerGoals() {
         super.registerGoals();
-
-        // Make Illagers (Pillagers, Evokers, etc.) attack the Daarick Citizen
-        this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, AbstractIllager.class, true));
     }
 
     @Override
