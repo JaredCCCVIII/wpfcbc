@@ -88,6 +88,13 @@ ordering="NONE"
 side="BOTH"
 
 [[dependencies.${mod_id}]]
+modId="geckolib"
+mandatory=true
+versionRange="[4.7.0,4.8.0)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
 modId="crusty_chunks"
 mandatory=true
 versionRange="[0.2.0,0.3.0)"
