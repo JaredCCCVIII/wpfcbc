@@ -1,0 +1,63 @@
+{
+  "block.shupapium.fission_shell": "Proyectil de fisión",
+  "block.createmissilelangtest.fission_shell.tooltip.behaviour1": "Desata una poderosa explosión nuclear y crea un pequeño hongo de gas radiactivo.",
+  "block.createmissilelangtest.fission_shell.tooltip.condition1": "Cuando detona",
+  "block.createmissilelangtest.fission_shell.tooltip.summary": "\"No tan poderoso como la de fusión\"",
+  "entity.shupapium.fission_shell_projectile": "Proyectil de fisión",
+
+  "block.shupapium.ordinance_shell": "Proyectil de ordenanza",
+  "block.createmissilelangtest.ordinance_shell.tooltip.behaviour1": "El primer nivel de ordenanza destruye un área mediana y arroja escombros.",
+  "block.createmissilelangtest.ordinance_shell.tooltip.condition1": "Cuando detona",
+  "block.createmissilelangtest.ordinance_shell.tooltip.summary": "\"Intenta mejorarlo!\"",
+  "entity.shupapium.ordinance_shell_projectile": "Proyectil de ordenanza",
+
+  "block.shupapium.heavyordinance_shell": "Proyectil de ordenanza pesado",
+  "block.createmissilelangtest.heavyordinance_shell.tooltip.behaviour1": "El segundo nivel de ordenanza destruye un área grande y arroja escombros.",
+  "block.createmissilelangtest.heavyordinance_shell.tooltip.condition1": "Cuando detona",
+  "block.createmissilelangtest.heavyordinance_shell.tooltip.summary": "\"Intenta mejorarlo otra vez.\"",
+  "entity.shupapium.heavyordinance_shell_projectile": "Proyectil de ordenanza pesado",
+
+  "block.shupapium.superheavyordinance_shell": "Proyectil de ordenanza super pesado",
+  "block.createmissilelangtest.superheavyordinance_shell.tooltip.behaviour1": "El último nivel de ordenanza destruye una gran área y arroja escombros.",
+  "block.createmissilelangtest.superheavyordinance_shell.tooltip.condition1": "Cuando detona",
+  "block.createmissilelangtest.superheavyordinance_shell.tooltip.summary": "\"No tan fuerte como el de fisión.\"",
+  "entity.shupapium.superheavyordinance_shell_projectile": "Proyectil de ordenanza super pesado",
+
+  "block.shupapium.redordinance_shell": "Proyectil de ordenanza incendiaria",
+  "block.createmissilelangtest.redordinance_shell.tooltip.behaviour1": "La ordenanza roja destruye un área mediana y arroja fuego alrededor.",
+  "block.createmissilelangtest.redordinance_shell.tooltip.condition1": "Cuando detona",
+  "block.createmissilelangtest.redordinance_shell.tooltip.summary": "\"Quemate en el Nether!\"",
+  "entity.shupapium.redordinance_shell_projectile": "Proyectil de ordenanza incendiaria",
+
+  "block.shupapium.cluster_shell": "Proyectil de racimo",
+  "block.createmissilelangtest.cluster_shell.tooltip.behaviour1": "La ordenanza de racimo deja caer pequeños trozos que provocan diversos daños cerca de la zona de impacto.",
+  "block.createmissilelangtest.cluster_shell.tooltip.condition1": "Cuando detona",
+  "block.createmissilelangtest.cluster_shell.tooltip.summary": "\"Oh no, aqui vienen!\"",
+  "entity.shupapium.cluster_shell_projectile": "Proyectil de racimo",
+
+  "block.shupapium.kinetic_shell": "Proyectil cinético",
+  "block.createmissilelangtest.kinetic_shell.tooltip.behaviour1": "La ordenanza cinética genera un pequeño agujero al impactar y después de un rato explota, arrojando escombros alrededor de la zona de impacto.",
+  "block.createmissilelangtest.kinetic_shell.tooltip.condition1": "Cuando detona",
+  "block.createmissilelangtest.kinetic_shell.tooltip.summary": "\"Excelente para minar.\"",
+  "entity.shupapium.kinetic_shell_projectile": "Proyectil cinético",
+
+  "block.shupapium.toxicgas_shell": "Proyectil de gas",
+  "block.createmissilelangtest.toxicgas_shell.tooltip.behaviour1": "El proyectil de gas disipa un humo tóxico al impactar, aturdiendo a las entidades vivas cercanas.",
+  "block.createmissilelangtest.toxicgas_shell.tooltip.condition1": "Cuando detona",
+  "block.createmissilelangtest.toxicgas_shell.tooltip.summary": "\"Huele a huevos podridos.\"",
+  "entity.shupapium.toxicgas_shell_projectile": "Pryoectil de gas",
+
+  "block.shupapium.fusion_shell": "Proyectil de fusión",
+  "block.createmissilelangtest.fusion_shell.tooltip.behaviour1": "Desata una poderosa explosión nuclear y evapora todo.",
+  "block.createmissilelangtest.fusion_shell.tooltip.condition1": "Cuando detona",
+  "block.createmissilelangtest.fusion_shell.tooltip.summary": "\"Me he convertido en la muerte, el destructor de mundos.\"",
+  "entity.shupapium.fusion_shell_projectile": "Proyectil de fusión",
+
+  "entity.shupapium.daarick_citizen": "Ciudadano Daarick",
+  "item.shupapium.daarick_citizen_spawn_egg": "Huevo generador de Ciudadano Daarick",
+  "subtitle.shupapium.daarick_citizen.ambient": "Murmullos de Ciudadano Daarick",
+  "subtitle.shupapium.daarick_citizen.hurt": "Ciudadano Daarick adolorido",
+  "subtitle.shupapium.daarick_citizen.death": "Ciudadano Daarick muriendo",
+
+  "itemGroup.shupapium": "CBC: Proyectiles de Warium"
+}
