@@ -22,6 +22,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.phys.Vec3;
+import net.minecraftforge.fml.ModList;
 import org.jetbrains.annotations.NotNull;
 import rbasamoyai.createbigcannons.index.CBCMunitionPropertiesHandlers;
 import rbasamoyai.createbigcannons.munitions.ShellExplosion;
@@ -73,17 +74,19 @@ public class FissionShellProjectile extends FuzedBigCannonProjectile {
     @Override
     protected void onTickRotate() {
         super.onTickRotate();
-        if (level() instanceof ServerLevel server && tickCount % 10 == 0) {
-            getNearbySirens(server, 256).forEach(
-                    pos -> {
-                        if (server.getBlockEntity(pos) instanceof NuclearSirenBlockEntity siren)
-                            siren.setNearestNuclearBomb(this);
-                    });
-        }
-        boolean b = random.nextFloat() < 0.5f;
-        if (level().isClientSide && isActivated() && b) {
-            Vec3 center = this.getEyePosition();
-            level().addParticle(ACParticleRegistry.PROTON.get(), center.x, center.y, center.z, center.x, center.y, center.z);
+        if (ModList.get().isLoaded("alexscaves")) {
+            if (level() instanceof ServerLevel server && tickCount % 10 == 0) {
+                getNearbySirens(server, 256).forEach(
+                        pos -> {
+                            if (server.getBlockEntity(pos) instanceof NuclearSirenBlockEntity siren)
+                                siren.setNearestNuclearBomb(this);
+                        });
+            }
+            boolean b = random.nextFloat() < 0.5f;
+            if (level().isClientSide && isActivated() && b) {
+                Vec3 center = this.getEyePosition();
+                level().addParticle(ACParticleRegistry.PROTON.get(), center.x, center.y, center.z, center.x, center.y, center.z);
+            }
         }
     }
 
