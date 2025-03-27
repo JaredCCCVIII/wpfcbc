@@ -32,6 +32,9 @@ public class DaarickCitizen extends Zombie {
     @Override
     protected void registerGoals() {
         super.registerGoals();
+        this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, Mob.class, 10, true, false,
+                entity -> !(entity instanceof DaarickCitizen)
+        ));
     }
 
     @Override
@@ -40,7 +43,7 @@ public class DaarickCitizen extends Zombie {
     }
 
     public static AttributeSupplier.@NotNull Builder createAttributes() {
-        return Monster.createMobAttributes().add(Attributes.MAX_HEALTH, 10.0D).add(Attributes.FOLLOW_RANGE, 64.0F).add(Attributes.MOVEMENT_SPEED, 0.4F).add(Attributes.ATTACK_DAMAGE, 1.0F).add(Attributes.ARMOR, 1.0F).add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);
+        return Monster.createMobAttributes().add(Attributes.MAX_HEALTH, 10.0D).add(Attributes.FOLLOW_RANGE, 64.0F).add(Attributes.MOVEMENT_SPEED, 0.4F).add(Attributes.ATTACK_DAMAGE, 1.0F).add(Attributes.ARMOR, 0.25F).add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);
     }
 
     @Override
@@ -155,7 +158,7 @@ public class DaarickCitizen extends Zombie {
 
     @Override
     public @NotNull MobType getMobType() {
-        return MobType.UNDEAD;
+        return MobType.UNDEFINED;
     }
 
     @Override
