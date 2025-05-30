@@ -41,8 +41,8 @@ public class ShupapiumGroup {
                     pOutput.accept(ShupapiumItems.HEAVY_GUN_AMMO_ITEM.get());
                     pOutput.accept(ShupapiumItems.BATTLE_HE_GUN_AMMO_ITEM.get());
                     pOutput.accept(ShupapiumItems.BATTLE_SOLID_GUN_AMMO_ITEM.get());
-                    pOutput.accept(ShupapiumItems.DAARICK_CITIZEN_SPAWN_EGG.get());
                     pOutput.accept(ShupapiumItems.BATTLE_HEAT_GUN_AMMO_ITEM.get());
+                    pOutput.accept(ShupapiumItems.DAARICK_CITIZEN_SPAWN_EGG.get());
                 })
                 .build();
     });
