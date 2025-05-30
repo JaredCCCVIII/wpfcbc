@@ -53,6 +53,13 @@
   "block.createmissilelangtest.fusion_shell.tooltip.summary": "\"I'm become death, the destroyers of worlds.\"",
   "entity.shupapium.fusion_shell_projectile": "Fusion Shell",
 
+  "item.shupapium.machine_gun_ammo_item": "Warium Machine Gun Ammo",
+  "item.shupapium.light_gun_ammo_item": "Warium Light Gun Ammo",
+  "item.shupapium.rotary_gun_ammo_item": "Warium Rotary Gun Ammo",
+  "item.shupapium.heavy_gun_ammo_item": "Warium Heavy Gun Ammo",
+  "item.shupapium.battle_he_gun_ammo_item": "Warium Battle HE Gun Ammo",
+  "item.shupapium.battle_solid_gun_ammo_item": "Warium Battle Solid Gun Ammo",
+
   "entity.shupapium.daarick_citizen": "Daarick Citizen",
   "item.shupapium.daarick_citizen_spawn_egg": "Daarick Citizen Spawn Egg",
   "subtitle.shupapium.daarick_citizen.ambient": "Daarick Citizen murmurs",

@@ -1,12 +1,18 @@
 {
   "type": "create:mechanical_crafting",
   "pattern": [
-    " P ",
-    "PDP",
-    "HNH",
-    " S "
+    "  P  ",
+    "PLFLP",
+    "HLNLH",
+    " DSD "
   ],
   "key": {
+    "L": {
+      "item": "crusty_chunks:implosion_lens"
+    },
+    "F": {
+      "item": "crusty_chunks:fission_core"
+    },
     "D": {
       "item": "crusty_chunks:beryllium_ingot"
     },

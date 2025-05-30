@@ -35,6 +35,12 @@ public class ShupapiumGroup {
                     pOutput.accept(ShupapiumBlocks.TOXICGAS_SHELL);
                     pOutput.accept(ShupapiumBlocks.FISSION_SHELL);
                     pOutput.accept(ShupapiumBlocks.FUSION_SHELL);
+                    pOutput.accept(ShupapiumItems.MACHINE_GUN_AMMO_ITEM.get());
+                    pOutput.accept(ShupapiumItems.LIGHT_GUN_AMMO_ITEM.get());
+                    pOutput.accept(ShupapiumItems.ROTARY_GUN_AMMO_ITEM.get());
+                    pOutput.accept(ShupapiumItems.HEAVY_GUN_AMMO_ITEM.get());
+                    pOutput.accept(ShupapiumItems.BATTLE_HE_GUN_AMMO_ITEM.get());
+                    pOutput.accept(ShupapiumItems.BATTLE_SOLID_GUN_AMMO_ITEM.get());
                     pOutput.accept(ShupapiumItems.DAARICK_CITIZEN_SPAWN_EGG.get());
                 })
                 .build();

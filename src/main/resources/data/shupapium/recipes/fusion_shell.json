@@ -1,10 +1,10 @@
 {
   "type": "create:mechanical_crafting",
   "pattern": [
-    " P ",
-    "PDP",
-    "HNH",
-    " S "
+    " PPP ",
+    "PDDDP",
+    "HHNHH",
+    "  S  "
   ],
   "key": {
     "D": {
