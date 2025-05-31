@@ -2,6 +2,10 @@ package com.ato.shupapi.entities;
 
 import net.mcreator.crustychunks.entity.ArtilleryFireProjectileEntity;
 import net.mcreator.crustychunks.init.CrustyChunksModEntities;
+import net.mcreator.crustychunks.init.CrustyChunksModSounds;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.util.Mth;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.projectile.Projectile;
@@ -29,6 +33,7 @@ public class BattleArtilleryHEGunAmmoEntity extends AbstractAutocannonProjectile
             shupapiumProjectile.setPos(this.getX(), this.getY(), this.getZ());
             shupapiumProjectile.shoot(this.getDeltaMovement().x, this.getDeltaMovement().y, this.getDeltaMovement().z, 8.0F, 0.1F);
             this.level().addFreshEntity(shupapiumProjectile);
+            this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.CANNONCLOSE.get(), SoundSource.BLOCKS, 10.0F, (float) Mth.nextDouble(RandomSource.create(), 0.9, 1.1));
             this.discard();
         }
     }
