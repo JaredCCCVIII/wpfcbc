@@ -3,23 +3,32 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "crusty_chunks:large_projectile"
+      "item": "crusty_chunks:huge_bullet"
     },
     {
-      "item": "crusty_chunks:large_projectile"
+      "item": "crusty_chunks:huge_bullet"
     },
     {
-      "item": "crusty_chunks:propellent"
+      "item": "crusty_chunks:huge_bullet"
     },
     {
-      "item": "crusty_chunks:huge_casing"
+      "item": "crusty_chunks:huge_bullet"
     },
     {
-      "item": "crusty_chunks:huge_casing"
+      "item": "crusty_chunks:huge_bullet"
+    },
+    {
+      "item": "crusty_chunks:huge_bullet"
+    },
+    {
+      "item": "crusty_chunks:huge_bullet"
+    },
+    {
+      "item": "crusty_chunks:huge_bullet"
     }
   ],
   "result": {
     "item": "shupapium:light_gun_ammo_item",
-    "count": 1
+    "count": 8
   }
 }
