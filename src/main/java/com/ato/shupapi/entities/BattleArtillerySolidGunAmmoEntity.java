@@ -66,7 +66,7 @@ public class BattleArtillerySolidGunAmmoEntity extends AbstractAutocannonProject
     public void onAddedToWorld() {
         super.onAddedToWorld();
         if (!this.level().isClientSide()) {
-            this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.FARBLAST.get(), SoundSource.BLOCKS, 10.0F, (float) Mth.nextDouble(RandomSource.create(), 0.9, 1.1));
+            this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.CANNONCLOSE.get(), SoundSource.BLOCKS, 10.0F, (float) Mth.nextDouble(RandomSource.create(), 0.9, 1.1));
         }
     }
 

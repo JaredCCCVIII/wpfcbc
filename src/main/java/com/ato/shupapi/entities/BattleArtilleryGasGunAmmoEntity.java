@@ -1,10 +1,14 @@
 package com.ato.shupapi.entities;
 
 import net.mcreator.crustychunks.init.CrustyChunksModItems;
+import net.mcreator.crustychunks.init.CrustyChunksModSounds;
 import net.mcreator.crustychunks.procedures.GasArtilleryTracerProcedure;
 import net.mcreator.crustychunks.procedures.GasBombHitsBlockProcedure;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.util.Mth;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.projectile.ItemSupplier;
 import net.minecraft.world.item.ItemStack;
@@ -57,6 +61,13 @@ public class BattleArtilleryGasGunAmmoEntity extends AbstractAutocannonProjectil
             this.discard();
         }
 
+    }
+
+    public void onAddedToWorld() {
+        super.onAddedToWorld();
+        if (!this.level().isClientSide()) {
+            this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.CANNONCLOSE.get(), SoundSource.BLOCKS, 10.0F, (float) Mth.nextDouble(RandomSource.create(), 0.9, 1.1));
+        }
     }
 
     @OnlyIn(Dist.CLIENT)
