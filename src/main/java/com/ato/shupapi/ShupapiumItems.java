@@ -55,6 +55,12 @@ public class ShupapiumItems {
     public static final RegistryObject<Item> ARMOR_PEELER_GUN_AMMO_ITEM =
             ITEMS.register("armor_peeler_gun_ammo_item",
                     () -> new ArmorPeelerGunAmmoItem(new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> MORTAR_GUN_AMMO_ITEM =
+            ITEMS.register("mortar_gun_ammo_item",
+                    () -> new MortarGunAmmoItem(new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> SMOKE_GUN_AMMO_ITEM =
+            ITEMS.register("smoke_gun_ammo_item",
+                    () -> new SmokeGunAmmoItem(new Item.Properties().stacksTo(64)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

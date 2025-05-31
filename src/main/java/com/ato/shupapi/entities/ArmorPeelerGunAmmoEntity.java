@@ -1,6 +1,5 @@
 package com.ato.shupapi.entities;
 
-import net.mcreator.crustychunks.entity.ArtilleryFireProjectileEntity;
 import net.mcreator.crustychunks.entity.RocketEntity;
 import net.mcreator.crustychunks.init.CrustyChunksModEntities;
 import net.mcreator.crustychunks.init.CrustyChunksModSounds;

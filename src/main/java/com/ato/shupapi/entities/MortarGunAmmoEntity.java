@@ -1,6 +1,7 @@
 package com.ato.shupapi.entities;
 
-import net.mcreator.crustychunks.entity.ArtilleryFireProjectileEntity;
+import net.mcreator.crustychunks.entity.ArtillerySolidProjectileEntity;
+import net.mcreator.crustychunks.entity.MortarProjectileEntity;
 import net.mcreator.crustychunks.init.CrustyChunksModEntities;
 import net.mcreator.crustychunks.init.CrustyChunksModSounds;
 import net.minecraft.sounds.SoundSource;
@@ -15,8 +16,8 @@ import rbasamoyai.createbigcannons.munitions.autocannon.config.InertAutocannonPr
 import rbasamoyai.createbigcannons.munitions.config.components.BallisticPropertiesComponent;
 import rbasamoyai.createbigcannons.munitions.config.components.EntityDamagePropertiesComponent;
 
-public class BattleArtilleryHEGunAmmoEntity extends AbstractAutocannonProjectile {
-    public BattleArtilleryHEGunAmmoEntity(EntityType<? extends AbstractAutocannonProjectile> type, Level level) {
+public class MortarGunAmmoEntity extends AbstractAutocannonProjectile {
+    public MortarGunAmmoEntity(EntityType<? extends AbstractAutocannonProjectile> type, Level level) {
         super(type, level);
     }
 
@@ -24,14 +25,14 @@ public class BattleArtilleryHEGunAmmoEntity extends AbstractAutocannonProjectile
     public void onAddedToWorld() {
         super.onAddedToWorld();
         if (!this.level().isClientSide()) {
-            ArtilleryFireProjectileEntity shupapiumProjectile = new ArtilleryFireProjectileEntity(
-                    CrustyChunksModEntities.ARTILLERY_FIRE_PROJECTILE.get(),
+            MortarProjectileEntity shupapiumProjectile = new MortarProjectileEntity(
+                    CrustyChunksModEntities.MORTAR_PROJECTILE.get(),
                     this.level()
             );
             shupapiumProjectile.setPos(this.getX(), this.getY(), this.getZ());
-            shupapiumProjectile.shoot(this.getDeltaMovement().x, this.getDeltaMovement().y, this.getDeltaMovement().z, 8.0F, 0.1F);
+            shupapiumProjectile.shoot(this.getDeltaMovement().x, this.getDeltaMovement().y, this.getDeltaMovement().z, 8.5F, 0.3F);
             this.level().addFreshEntity(shupapiumProjectile);
-            this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.CANNONCLOSE.get(), SoundSource.BLOCKS, 10.0F, (float) Mth.nextDouble(RandomSource.create(), 0.9, 1.1));
+            this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.CANNONCLOSE.get(), SoundSource.BLOCKS, 20.0F, (float) Mth.nextDouble(RandomSource.create(), 0.7, 0.8));
             this.discard();
         }
     }
