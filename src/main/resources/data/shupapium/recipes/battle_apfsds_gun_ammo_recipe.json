@@ -1,22 +1,14 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "pattern": [
-    "ab ",
-    "bcb",
-    " bc"
-  ],
-  "key": {
-    "a": {
-      "item": "crusty_chunks:apfsds_projectile"
+  "ingredients": [
+    {
+      "item": "crusty_chunks:ap_shell"
     },
-    "b": {
-      "item": "minecraft:paper"
-    },
-    "c": {
-      "item": "crusty_chunks:propellent"
+    {
+      "item": "minecraft:gunpowder"
     }
-  },
+  ],
   "result": {
     "item": "shupapium:battle_apfsds_gun_ammo_item",
     "count": 1

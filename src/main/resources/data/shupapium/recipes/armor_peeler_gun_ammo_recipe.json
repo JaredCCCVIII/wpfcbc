@@ -1,25 +1,14 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "pattern": [
-    "ab ",
-    "bcb",
-    " bd"
-  ],
-  "key": {
-    "a": {
-      "item": "crusty_chunks:shaped_charge_fuze"
+  "ingredients": [
+    {
+      "item": "crusty_chunks:armor_peeler_rocket"
     },
-    "b": {
-      "item": "crusty_chunks:bent_component"
-    },
-    "c": {
-      "item": "crusty_chunks:volatile_dust"
-    },
-    "d": {
-      "item": "crusty_chunks:propellent"
+    {
+      "item": "minecraft:gunpowder"
     }
-  },
+  ],
   "result": {
     "item": "shupapium:armor_peeler_gun_ammo_item",
     "count": 1

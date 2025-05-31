@@ -1,21 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "pattern": [
-    "ab",
-    "bc"
-  ],
-  "key": {
-    "a": {
-      "item": "crusty_chunks:impact_fuze"
+  "ingredients": [
+    {
+      "item": "crusty_chunks:artillery_shell"
     },
-    "b": {
-      "item": "crusty_chunks:volatile_dust"
+    {
+      "item": "crusty_chunks:powder_charge"
     },
-    "c": {
-      "item": "crusty_chunks:hollowed_huge_projectile"
+    {
+      "item": "minecraft:gunpowder"
     }
-  },
+  ],
   "result": {
     "item": "shupapium:battle_artillery_he_gun_ammo_item",
     "count": 1

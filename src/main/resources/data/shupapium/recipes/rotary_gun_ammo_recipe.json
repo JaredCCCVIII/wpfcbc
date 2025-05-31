@@ -3,29 +3,35 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "crusty_chunks:large_projectile"
+      "item": "crusty_chunks:huge_bullet"
     },
     {
-      "item": "crusty_chunks:large_projectile"
+      "item": "crusty_chunks:huge_bullet"
     },
     {
-      "item": "crusty_chunks:propellent"
+      "item": "crusty_chunks:huge_bullet"
     },
     {
-      "item": "crusty_chunks:huge_casing"
+      "item": "crusty_chunks:huge_bullet"
     },
     {
-      "item": "crusty_chunks:huge_casing"
+      "item": "crusty_chunks:huge_bullet"
     },
     {
-      "item": "crusty_chunks:propellent"
+      "item": "crusty_chunks:huge_bullet"
     },
     {
-      "item": "crusty_chunks:propellent"
+      "item": "crusty_chunks:huge_bullet"
+    },
+    {
+      "item": "crusty_chunks:huge_bullet"
+    },
+    {
+      "item": "minecraft:gunpowder"
     }
   ],
   "result": {
     "item": "shupapium:rotary_gun_ammo_item",
-    "count": 1
+    "count": 8
   }
 }
