@@ -45,7 +45,7 @@ public class ArmorPeelerGunAmmoItem extends Item implements AutocannonAmmoItem {
 
     @Override
     public ItemStack getSpentItem(ItemStack itemStack) {
-        return CrustyChunksModItems.ARMOR_PEELER_UNLOADED.get().getDefaultInstance();
+        return CrustyChunksModItems.SHAPED_CHARGE_FUZE.get().getDefaultInstance();
     }
 
     @Override

@@ -3,6 +3,10 @@ package com.ato.shupapi.entities;
 import net.mcreator.crustychunks.entity.ArtilleryFireProjectileEntity;
 import net.mcreator.crustychunks.entity.RocketEntity;
 import net.mcreator.crustychunks.init.CrustyChunksModEntities;
+import net.mcreator.crustychunks.init.CrustyChunksModSounds;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.util.Mth;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
@@ -28,6 +32,7 @@ public class ArmorPeelerGunAmmoEntity extends AbstractAutocannonProjectile {
             shupapiumProjectile.setPos(this.getX(), this.getY(), this.getZ());
             shupapiumProjectile.shoot(this.getDeltaMovement().x, this.getDeltaMovement().y, this.getDeltaMovement().z, 6.0F, 2.0F);
             this.level().addFreshEntity(shupapiumProjectile);
+            this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.PEELERPOD.get(), SoundSource.BLOCKS, 10.0F, (float) Mth.nextDouble(RandomSource.create(), 0.9, 1.1));
             this.discard();
         }
     }
