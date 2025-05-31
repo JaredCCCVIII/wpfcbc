@@ -1,30 +1,13 @@
 package com.ato.shupapi.entities;
 
-import net.mcreator.crustychunks.entity.GenericlargeBulletEntity;
 import net.mcreator.crustychunks.entity.HugeBulletFireEntity;
 import net.mcreator.crustychunks.init.CrustyChunksModEntities;
-import net.mcreator.crustychunks.init.CrustyChunksModItems;
 import net.mcreator.crustychunks.init.CrustyChunksModSounds;
-import net.mcreator.crustychunks.procedures.BulletTracerProcedure;
-import net.mcreator.crustychunks.procedures.HugeBulletEntityHitProcedure;
-import net.mcreator.crustychunks.procedures.HugeBulletHitProcedure;
-import net.mcreator.crustychunks.procedures.RACFireScriptProcedure;
-import net.minecraft.network.protocol.Packet;
-import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.projectile.ItemSupplier;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.phys.EntityHitResult;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.network.NetworkHooks;
 import org.jetbrains.annotations.NotNull;
 import rbasamoyai.createbigcannons.index.CBCMunitionPropertiesHandlers;
 import rbasamoyai.createbigcannons.munitions.autocannon.AbstractAutocannonProjectile;
@@ -40,13 +23,19 @@ public class RotaryGunAmmoEntity extends AbstractAutocannonProjectile {
     public void onAddedToWorld() {
         super.onAddedToWorld();
         if (!this.level().isClientSide()) {
-            HugeBulletFireEntity shupapiumProjectile = new HugeBulletFireEntity(
-                    CrustyChunksModEntities.HUGE_BULLET_FIRE.get(),
-                    this.level()
-            );
-            shupapiumProjectile.setPos(this.getX(), this.getY(), this.getZ());
-            shupapiumProjectile.shoot(this.getDeltaMovement().x, this.getDeltaMovement().y, this.getDeltaMovement().z, 14.0F, 4.0F);
-            this.level().addFreshEntity(shupapiumProjectile);
+            for (int i = 0; i < 5; i++) {
+                HugeBulletFireEntity shupapiumProjectile = new HugeBulletFireEntity(
+                        CrustyChunksModEntities.HUGE_BULLET_FIRE.get(),
+                        this.level()
+                );
+                shupapiumProjectile.setPos(this.getX(), this.getY(), this.getZ());
+                double spread = 0.5; // tweak for more/less spread
+                double dx = this.getDeltaMovement().x + (this.level().getRandom().nextDouble() - 0.5) * spread;
+                double dy = this.getDeltaMovement().y + (this.level().getRandom().nextDouble() - 0.5) * spread;
+                double dz = this.getDeltaMovement().z + (this.level().getRandom().nextDouble() - 0.5);
+                shupapiumProjectile.shoot(dx, dy, dz, 14.0F, 1.0F);
+                this.level().addFreshEntity(shupapiumProjectile);
+            }
             this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.SMALLEXPLOSION.get(), SoundSource.BLOCKS, 10.0F, (float) Mth.nextDouble(RandomSource.create(), 0.9, 1.1));
             this.discard();
         }
