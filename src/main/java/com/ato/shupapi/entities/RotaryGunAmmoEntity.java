@@ -1,5 +1,8 @@
 package com.ato.shupapi.entities;
 
+import net.mcreator.crustychunks.entity.GenericlargeBulletEntity;
+import net.mcreator.crustychunks.entity.HugeBulletFireEntity;
+import net.mcreator.crustychunks.init.CrustyChunksModEntities;
 import net.mcreator.crustychunks.init.CrustyChunksModItems;
 import net.mcreator.crustychunks.init.CrustyChunksModSounds;
 import net.mcreator.crustychunks.procedures.BulletTracerProcedure;
@@ -29,50 +32,23 @@ import rbasamoyai.createbigcannons.munitions.autocannon.config.InertAutocannonPr
 import rbasamoyai.createbigcannons.munitions.config.components.BallisticPropertiesComponent;
 import rbasamoyai.createbigcannons.munitions.config.components.EntityDamagePropertiesComponent;
 
-@OnlyIn(
-        value = Dist.CLIENT,
-        _interface = ItemSupplier.class
-)
-public class RotaryGunAmmoEntity extends AbstractAutocannonProjectile implements ItemSupplier {
-    public static final ItemStack PROJECTILE_ITEM;
-    private boolean hitSomething = false;
+public class RotaryGunAmmoEntity extends AbstractAutocannonProjectile {
     public RotaryGunAmmoEntity(EntityType<? extends AbstractAutocannonProjectile> type, Level level) {
         super(type, level);
-    }
-
-    public @NotNull Packet<ClientGamePacketListener> getAddEntityPacket() {
-        return NetworkHooks.getEntitySpawningPacket(this);
-    }
-
-    public void onHitEntity(@NotNull EntityHitResult entityHitResult) {
-        super.onHitEntity(entityHitResult);
-        hitSomething = true;
-        HugeBulletEntityHitProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity(), this);
-    }
-
-    public void onHitBlock(@NotNull BlockHitResult blockHitResult) {
-        super.onHitBlock(blockHitResult);
-        hitSomething = true;
-        HugeBulletHitProcedure.execute(this.level(), (double)blockHitResult.getBlockPos().getX(), (double)blockHitResult.getBlockPos().getY(), (double)blockHitResult.getBlockPos().getZ(), this);
-    }
-
-    public void tick() {
-        super.tick();
-        BulletTracerProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
-        if (hitSomething) {
-            this.discard();
-        }
-
-    }
-
-    static {
-        PROJECTILE_ITEM = new ItemStack((ItemLike) CrustyChunksModItems.TINYPROJECTILE_ITEM.get());
     }
 
     public void onAddedToWorld() {
         super.onAddedToWorld();
         if (!this.level().isClientSide()) {
+            HugeBulletFireEntity shupapiumProjectile = new HugeBulletFireEntity(
+                    CrustyChunksModEntities.HUGE_BULLET_FIRE.get(),
+                    this.level()
+            );
+            shupapiumProjectile.setPos(this.getX(), this.getY(), this.getZ());
+            shupapiumProjectile.shoot(this.getDeltaMovement().x, this.getDeltaMovement().y, this.getDeltaMovement().z, 14.0F, 4.0F);
+            this.level().addFreshEntity(shupapiumProjectile);
             this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.SMALLEXPLOSION.get(), SoundSource.BLOCKS, 10.0F, (float) Mth.nextDouble(RandomSource.create(), 0.9, 1.1));
+            this.discard();
         }
     }
 
@@ -88,10 +64,5 @@ public class RotaryGunAmmoEntity extends AbstractAutocannonProjectile implements
 
     protected InertAutocannonProjectileProperties getAllProperties() {
         return CBCMunitionPropertiesHandlers.INERT_AUTOCANNON_PROJECTILE.getPropertiesOf(this);
-    }
-
-    @OnlyIn(Dist.CLIENT)
-    public @NotNull ItemStack getItem() {
-        return PROJECTILE_ITEM;
     }
 }
