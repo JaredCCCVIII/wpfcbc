@@ -1,14 +1,10 @@
 package com.ato.shupapi.entities;
 
 import net.mcreator.crustychunks.init.CrustyChunksModItems;
-import net.mcreator.crustychunks.init.CrustyChunksModSounds;
-import net.mcreator.crustychunks.procedures.SolidArtilleryHitProcedure;
-import net.mcreator.crustychunks.procedures.SolidArtilleryTracerProcedure;
+import net.mcreator.crustychunks.procedures.GasArtilleryTracerProcedure;
+import net.mcreator.crustychunks.procedures.GasBombHitsBlockProcedure;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.util.Mth;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.projectile.ItemSupplier;
 import net.minecraft.world.item.ItemStack;
@@ -30,11 +26,11 @@ import rbasamoyai.createbigcannons.munitions.config.components.EntityDamagePrope
         value = Dist.CLIENT,
         _interface = ItemSupplier.class
 )
-public class BattleArtillerySolidGunAmmoEntity extends AbstractAutocannonProjectile implements ItemSupplier {
+public class BattleArtilleryGasGunAmmoEntity extends AbstractAutocannonProjectile implements ItemSupplier {
     public static final ItemStack PROJECTILE_ITEM;
     private boolean hitSomething = false;
 
-    public BattleArtillerySolidGunAmmoEntity(EntityType<? extends AbstractAutocannonProjectile> type, Level level) {
+    public BattleArtilleryGasGunAmmoEntity(EntityType<? extends AbstractAutocannonProjectile> type, Level level) {
         super(type, level);
     }
 
@@ -44,30 +40,23 @@ public class BattleArtillerySolidGunAmmoEntity extends AbstractAutocannonProject
 
     public void onHitEntity(@NotNull EntityHitResult entityHitResult) {
         super.onHitEntity(entityHitResult);
-        SolidArtilleryHitProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
+        GasBombHitsBlockProcedure.execute(this.level(), this);
         hitSomething = true;
     }
 
     public void onHitBlock(@NotNull BlockHitResult blockHitResult) {
         super.onHitBlock(blockHitResult);
-        SolidArtilleryHitProcedure.execute(this.level(), (double)blockHitResult.getBlockPos().getX(), (double)blockHitResult.getBlockPos().getY(), (double)blockHitResult.getBlockPos().getZ(), this);
+        GasBombHitsBlockProcedure.execute(this.level(), this);
         hitSomething = true;
     }
 
     public void tick() {
         super.tick();
-        SolidArtilleryTracerProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
+        GasArtilleryTracerProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
         if (hitSomething) {
             this.discard();
         }
 
-    }
-
-    public void onAddedToWorld() {
-        super.onAddedToWorld();
-        if (!this.level().isClientSide()) {
-            this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.FARBLAST.get(), SoundSource.BLOCKS, 10.0F, (float) Mth.nextDouble(RandomSource.create(), 0.9, 1.1));
-        }
     }
 
     @OnlyIn(Dist.CLIENT)
@@ -90,6 +79,6 @@ public class BattleArtillerySolidGunAmmoEntity extends AbstractAutocannonProject
     }
 
     static {
-        PROJECTILE_ITEM = new ItemStack((ItemLike) CrustyChunksModItems.ARTILLERY_SOLID_SHELL.get());
+        PROJECTILE_ITEM = new ItemStack((ItemLike)CrustyChunksModItems.GAS_ARTILLERY_SHELL.get());
     }
 }

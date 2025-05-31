@@ -43,6 +43,12 @@ public class ShupapiumItems {
     public static final RegistryObject<Item> BATTLE_APFSDS_GUN_AMMO_ITEM =
             ITEMS.register("battle_apfsds_gun_ammo_item",
                     () -> new BattleAPFSDSGunAmmoItem(new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> BATTLE_ARTILLERY_SOLID_GUN_AMMO_ITEM =
+            ITEMS.register("battle_artillery_solid_gun_ammo_item",
+                    () -> new BattleArtillerySolidGunAmmoItem(new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> BATTLE_ARTILLERY_GAS_GUN_AMMO_ITEM =
+            ITEMS.register("battle_artillery_gas_gun_ammo_item",
+                    () -> new BattleArtilleryGasGunAmmoItem(new Item.Properties().stacksTo(64)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

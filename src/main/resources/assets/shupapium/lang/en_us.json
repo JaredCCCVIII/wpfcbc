@@ -61,6 +61,8 @@
   "item.shupapium.battle_solid_gun_ammo_item": "Warium Battle Solid Gun Ammo",
   "item.shupapium.battle_heat_gun_ammo_item": "Warium Battle Heat Gun Ammo",
   "item.shupapium.battle_apfsds_gun_ammo_item": "Warium Battle AP Gun Ammo",
+  "item.shupapium.battle_artillery_solid_gun_ammo_item": "Warium Artillery Solid Gun Ammo",
+  "item.shupapium.battle_artillery_gas_gun_ammo_item": "Warium Artillery Gas Gun Ammo",
 
   "entity.shupapium.daarick_citizen": "Daarick Citizen",
   "item.shupapium.daarick_citizen_spawn_egg": "Daarick Citizen Spawn Egg",
