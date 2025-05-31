@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "crusty_chunks:large_projectile"
+    },
+    {
+      "item": "crusty_chunks:large_projectile"
+    },
+    {
+      "item": "crusty_chunks:propellent"
+    },
+    {
+      "item": "crusty_chunks:huge_casing"
+    },
+    {
+      "item": "crusty_chunks:huge_casing"
+    }
+  ],
+  "result": {
+    "item": "shupapium:light_gun_ammo_item",
+    "count": 1
+  }
+}

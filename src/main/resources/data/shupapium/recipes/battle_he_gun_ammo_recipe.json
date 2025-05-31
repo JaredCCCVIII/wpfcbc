@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a  ",
+    " b ",
+    "  c"
+  ],
+  "key": {
+    "a": {
+      "item": "crusty_chunks:impact_fuze"
+    },
+    "b": {
+      "item": "crusty_chunks:volatile_dust"
+    },
+    "c": {
+      "item": "crusty_chunks:hollowed_extra_large_projectile"
+    }
+  },
+  "result": {
+    "item": "shupapium:battle_he_gun_ammo_item",
+    "count": 1
+  }
+}

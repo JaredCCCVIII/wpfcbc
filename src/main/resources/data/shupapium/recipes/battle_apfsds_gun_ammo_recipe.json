@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab ",
+    "bcb",
+    " bc"
+  ],
+  "key": {
+    "a": {
+      "item": "crusty_chunks:apfsds_projectile"
+    },
+    "b": {
+      "item": "minecraft:paper"
+    },
+    "c": {
+      "item": "crusty_chunks:propellent"
+    }
+  },
+  "result": {
+    "item": "shupapium:battle_apfsds_gun_ammo_item",
+    "count": 1
+  }
+}

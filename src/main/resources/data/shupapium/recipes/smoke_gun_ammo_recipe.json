@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "crusty_chunks:steel_component"
+    },
+    "b": {
+      "item": "crusty_chunks:smoke_agent"
+    },
+    "c": {
+      "item": "crusty_chunks:propellent"
+    }
+  },
+  "result": {
+    "item": "shupapium:smoke_gun_ammo_item",
+    "count": 1
+  }
+}

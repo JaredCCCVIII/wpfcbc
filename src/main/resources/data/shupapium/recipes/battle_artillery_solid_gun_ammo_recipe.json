@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "crusty_chunks:huge_projectile"
+    }
+  ],
+  "result": {
+    "item": "shupapium:battle_artillery_solid_gun_ammo_item",
+    "count": 1
+  }
+}
