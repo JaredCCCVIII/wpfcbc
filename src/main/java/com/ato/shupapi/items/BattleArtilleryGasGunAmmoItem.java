@@ -45,7 +45,7 @@ public class BattleArtilleryGasGunAmmoItem extends Item implements AutocannonAmm
 
     @Override
     public ItemStack getSpentItem(ItemStack itemStack) {
-        return CrustyChunksModItems.GAS_ARTILLERY_SHELL.get().getDefaultInstance();
+        return CrustyChunksModItems.HOLLOWED_HUGE_PROJECTILE.get().getDefaultInstance();
     }
 
     @Override

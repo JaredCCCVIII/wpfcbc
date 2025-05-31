@@ -45,7 +45,7 @@ public class BattleArtillerySolidGunAmmoItem extends Item implements AutocannonA
 
     @Override
     public ItemStack getSpentItem(ItemStack itemStack) {
-        return CrustyChunksModItems.ARTILLERY_SOLID_SHELL.get().getDefaultInstance();
+        return CrustyChunksModItems.HUGE_BULLET.get().getDefaultInstance();
     }
 
     @Override
