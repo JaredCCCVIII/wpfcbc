@@ -1,6 +1,7 @@
 package com.ato.shupapi.items;
 
 import com.ato.shupapi.ShupapiumBlockEntities;
+import net.mcreator.crustychunks.init.CrustyChunksModItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -45,7 +46,7 @@ public class SmokeGunAmmoItem extends Item implements AutocannonAmmoItem {
 
     @Override
     public ItemStack getSpentItem(ItemStack itemStack) {
-        return Items.GUNPOWDER.getDefaultInstance();
+        return CrustyChunksModItems.SMOKE_AGENT.get().getDefaultInstance();
     }
 
     @Override
