@@ -39,6 +39,8 @@ public class ShupapiumBlockEntities {
     public static final EntityEntry<BattleAPFSDSGunAmmoEntity> BATTLE_APFSDS_GUN_AMMO = autocannonProjectile("battle_apfsds_gun_ammo", BattleAPFSDSGunAmmoEntity::new, CBCMunitionPropertiesHandlers.INERT_AUTOCANNON_PROJECTILE);
     public static final EntityEntry<BattleArtillerySolidGunAmmoEntity> BATTLE_ARTILLERY_SOLID_GUN_AMMO = autocannonProjectile("battle_artillery_solid_gun_ammo", BattleArtillerySolidGunAmmoEntity::new, CBCMunitionPropertiesHandlers.INERT_AUTOCANNON_PROJECTILE);
     public static final EntityEntry<BattleArtilleryGasGunAmmoEntity> BATTLE_ARTILLERY_GAS_GUN_AMMO = autocannonProjectile("battle_artillery_gas_gun_ammo", BattleArtilleryGasGunAmmoEntity::new, CBCMunitionPropertiesHandlers.INERT_AUTOCANNON_PROJECTILE);
+    public static final EntityEntry<BattleArtilleryHEGunAmmoEntity> BATTLE_ARTILLERY_HE_GUN_AMMO = autocannonProjectile("battle_artillery_he_gun_ammo", BattleArtilleryHEGunAmmoEntity::new, CBCMunitionPropertiesHandlers.INERT_AUTOCANNON_PROJECTILE);
+    public static final EntityEntry<ArmorPeelerGunAmmoEntity> ARMOR_PEELER_GUN_AMMO = autocannonProjectile("armor_peeler_gun_ammo", ArmorPeelerGunAmmoEntity::new, CBCMunitionPropertiesHandlers.INERT_AUTOCANNON_PROJECTILE);
 
     private static <T extends AbstractBigCannonProjectile> EntityEntry<T>
     cannonProjectile(String id, EntityType.EntityFactory<T> factory, PropertiesTypeHandler<EntityType<?>, ?> handler) {
