@@ -30,7 +30,7 @@ public class BattleHEGunAmmoEntity extends AbstractAutocannonProjectile {
                     this.level()
             );
             shupapiumProjectile.setPos(this.getX(), this.getY(), this.getZ());
-            shupapiumProjectile.shoot(this.getDeltaMovement().x, this.getDeltaMovement().y, this.getDeltaMovement().z, 3.4F, 0.9F);
+            shupapiumProjectile.shoot(this.getDeltaMovement().x, this.getDeltaMovement().y, this.getDeltaMovement().z, 7.0F, 0.9F);
             Vec3 finalMotion = shupapiumProjectile.getDeltaMovement().add(0, this.getAllProperties().ballistics().gravity() * 10, 0);
             shupapiumProjectile.setDeltaMovement(finalMotion);
             shupapiumProjectile.setNoGravity(true);

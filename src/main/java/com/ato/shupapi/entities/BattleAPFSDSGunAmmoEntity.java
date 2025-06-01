@@ -28,7 +28,7 @@ public class BattleAPFSDSGunAmmoEntity extends AbstractAutocannonProjectile {
                     this.level()
             );
             shupapiumProjectile.setPos(this.getX(), this.getY(), this.getZ());
-            shupapiumProjectile.shoot(this.getDeltaMovement().x, this.getDeltaMovement().y, this.getDeltaMovement().z, 3.6F, 0.9F);
+            shupapiumProjectile.shoot(this.getDeltaMovement().x, this.getDeltaMovement().y, this.getDeltaMovement().z, 8.0F, 0.9F);
             this.level().addFreshEntity(shupapiumProjectile);
             this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.CANNONCLOSE.get(), SoundSource.BLOCKS, 10.0F, (float) Mth.nextDouble(RandomSource.create(), 0.9, 1.1));
             this.discard();

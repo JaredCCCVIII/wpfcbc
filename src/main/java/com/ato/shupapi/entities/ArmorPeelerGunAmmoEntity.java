@@ -30,7 +30,7 @@ public class ArmorPeelerGunAmmoEntity extends AbstractAutocannonProjectile {
                     this.level()
             );
             shupapiumProjectile.setPos(this.getX(), this.getY(), this.getZ());
-            shupapiumProjectile.shoot(this.getDeltaMovement().x, this.getDeltaMovement().y, this.getDeltaMovement().z, 6.0F, 2.0F);
+            shupapiumProjectile.shoot(this.getDeltaMovement().x, this.getDeltaMovement().y, this.getDeltaMovement().z, 9.5F, 2.0F);
             Vec3 finalMotion = shupapiumProjectile.getDeltaMovement().add(0, this.getAllProperties().ballistics().gravity() * 10, 0);
             shupapiumProjectile.setDeltaMovement(finalMotion);
             shupapiumProjectile.setNoGravity(true);
