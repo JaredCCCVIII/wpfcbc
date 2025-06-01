@@ -45,7 +45,7 @@ public class BattleAPFSDSGunAmmoItem extends Item implements AutocannonAmmoItem 
 
     @Override
     public ItemStack getSpentItem(ItemStack itemStack) {
-        return CrustyChunksModItems.APFSDS_PROJECTILE.get().getDefaultInstance();
+        return CrustyChunksModItems.CAST_COMPONENT.get().getDefaultInstance();
     }
 
     @Override

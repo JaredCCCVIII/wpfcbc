@@ -45,7 +45,7 @@ public class BattleHeatGunAmmoItem extends Item implements AutocannonAmmoItem {
 
     @Override
     public ItemStack getSpentItem(ItemStack itemStack) {
-        return CrustyChunksModItems.HEAT_PROJECTILE.get().getDefaultInstance();
+        return CrustyChunksModItems.HOLLOWED_EXTRA_LARGE_PROJECTILE.get().getDefaultInstance();
     }
 
     @Override
