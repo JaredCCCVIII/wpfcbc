@@ -46,7 +46,7 @@ public class MortarGunAmmoItem extends Item implements AutocannonAmmoItem {
 
     @Override
     public ItemStack getSpentItem(ItemStack itemStack) {
-        return CrustyChunksModItems.VOLATILE_DUST.get().getDefaultInstance();
+        return CrustyChunksModItems.STEEL_COMPONENT.get().getDefaultInstance();
     }
 
     @Override

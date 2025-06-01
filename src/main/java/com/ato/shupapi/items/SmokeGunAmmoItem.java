@@ -46,7 +46,7 @@ public class SmokeGunAmmoItem extends Item implements AutocannonAmmoItem {
 
     @Override
     public ItemStack getSpentItem(ItemStack itemStack) {
-        return CrustyChunksModItems.SMOKE_AGENT.get().getDefaultInstance();
+        return CrustyChunksModItems.STEEL_COMPONENT.get().getDefaultInstance();
     }
 
     @Override
