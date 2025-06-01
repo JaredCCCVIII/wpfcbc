@@ -30,7 +30,7 @@ public class RotaryGunAmmoEntity extends AbstractAutocannonProjectile {
                 );
                 shupapiumProjectile.setNoGravity(true);
                 shupapiumProjectile.setPos(this.getX(), this.getY(), this.getZ());
-                double spread = 0.5; // tweak for more/less spread
+                double spread = 0.6; // tweak for more/less spread
                 double dx = this.getDeltaMovement().x + (this.level().getRandom().nextDouble() - 0.5) * spread;
                 double dy = this.getDeltaMovement().y + (this.level().getRandom().nextDouble() - 0.5) * spread;
                 double dz = this.getDeltaMovement().z + (this.level().getRandom().nextDouble() - 0.5);
