@@ -28,6 +28,7 @@ public class LightGunAmmoEntity extends AbstractAutocannonProjectile {
                     CrustyChunksModEntities.HUGE_BULLET_FIRE.get(),
                     this.level()
             );
+            shupapiumProjectile.setNoGravity(true);
             shupapiumProjectile.setPos(this.getX(), this.getY(), this.getZ());
             shupapiumProjectile.shoot(this.getDeltaMovement().x, this.getDeltaMovement().y, this.getDeltaMovement().z, 10.0F, 0.9F);
             this.level().addFreshEntity(shupapiumProjectile);

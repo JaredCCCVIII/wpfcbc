@@ -33,6 +33,7 @@ public class MachineGunAmmoEntity extends AbstractAutocannonProjectile {
                     CrustyChunksModEntities.GENERICLARGE_BULLET.get(),
                     this.level()
             );
+            shupapiumProjectile.setNoGravity(true);
             shupapiumProjectile.setPos(this.getX(), this.getY(), this.getZ());
             shupapiumProjectile.shoot(this.getDeltaMovement().x, this.getDeltaMovement().y, this.getDeltaMovement().z, 6.0F, 0.9F);
             this.level().addFreshEntity(shupapiumProjectile);

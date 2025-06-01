@@ -8,6 +8,7 @@ import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.NotNull;
 import rbasamoyai.createbigcannons.index.CBCMunitionPropertiesHandlers;
 import rbasamoyai.createbigcannons.munitions.autocannon.AbstractAutocannonProjectile;
@@ -30,6 +31,9 @@ public class ArmorPeelerGunAmmoEntity extends AbstractAutocannonProjectile {
             );
             shupapiumProjectile.setPos(this.getX(), this.getY(), this.getZ());
             shupapiumProjectile.shoot(this.getDeltaMovement().x, this.getDeltaMovement().y, this.getDeltaMovement().z, 6.0F, 2.0F);
+            Vec3 finalMotion = shupapiumProjectile.getDeltaMovement().add(0, this.getAllProperties().ballistics().gravity() * 10, 0);
+            shupapiumProjectile.setDeltaMovement(finalMotion);
+            shupapiumProjectile.setNoGravity(true);
             this.level().addFreshEntity(shupapiumProjectile);
             this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.PEELERPOD.get(), SoundSource.BLOCKS, 10.0F, (float) Mth.nextDouble(RandomSource.create(), 0.9, 1.1));
             this.discard();
