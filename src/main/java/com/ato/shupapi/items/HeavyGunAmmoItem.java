@@ -45,7 +45,7 @@ public class HeavyGunAmmoItem extends Item implements AutocannonAmmoItem {
 
     @Override
     public ItemStack getSpentItem(ItemStack itemStack) {
-        return CrustyChunksModItems.SMALL_HE_PROJECTILE.get().getDefaultInstance();
+        return CrustyChunksModItems.HOLLOWED_LARGE_PROJECTILE.get().getDefaultInstance();
     }
 
     @Override
