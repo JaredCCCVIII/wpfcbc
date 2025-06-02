@@ -42,7 +42,7 @@ public class BattleHEGunAmmoEntity extends AbstractAutocannonProjectile {
             this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.SMALLEXPLOSION.get(), SoundSource.BLOCKS, 10.0F, (float) Mth.nextDouble(RandomSource.create(), 0.9, 1.1));
             this.discard();
             ((ServerLevel) this.level()).sendParticles(
-                    ParticleTypes.FIREWORK,
+                    ParticleTypes.LAVA,
                     this.getX(),
                     this.getY(),
                     this.getZ(),
