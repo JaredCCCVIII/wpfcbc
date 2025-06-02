@@ -3,6 +3,8 @@ package com.ato.shupapi.entities;
 import net.mcreator.crustychunks.entity.LargeHEATFireEntity;
 import net.mcreator.crustychunks.init.CrustyChunksModEntities;
 import net.mcreator.crustychunks.init.CrustyChunksModSounds;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
@@ -29,6 +31,7 @@ public class BattleHeatGunAmmoEntity extends AbstractAutocannonProjectile {
                     CrustyChunksModEntities.LARGE_HEAT_FIRE.get(),
                     this.level()
             );
+            shupapiumProjectile.setOwner(this.getOwner());
             shupapiumProjectile.setPos(this.getX(), this.getY(), this.getZ());
             shupapiumProjectile.shoot(this.getDeltaMovement().x, this.getDeltaMovement().y, this.getDeltaMovement().z, 7.0F, 0.9F);
             Vec3 finalMotion = shupapiumProjectile.getDeltaMovement().add(0, this.getAllProperties().ballistics().gravity(), 0);

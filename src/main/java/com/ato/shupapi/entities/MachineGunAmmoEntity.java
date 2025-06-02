@@ -3,6 +3,8 @@ package com.ato.shupapi.entities;
 import net.mcreator.crustychunks.entity.GenericlargeBulletEntity;
 import net.mcreator.crustychunks.init.CrustyChunksModEntities;
 import net.mcreator.crustychunks.init.CrustyChunksModSounds;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
@@ -33,12 +35,36 @@ public class MachineGunAmmoEntity extends AbstractAutocannonProjectile {
                     CrustyChunksModEntities.GENERICLARGE_BULLET.get(),
                     this.level()
             );
+            shupapiumProjectile.setOwner(this.getOwner());
+            shupapiumProjectile.setSilent(true);
             shupapiumProjectile.setNoGravity(true);
             shupapiumProjectile.setPos(this.getX(), this.getY(), this.getZ());
             shupapiumProjectile.shoot(this.getDeltaMovement().x, this.getDeltaMovement().y, this.getDeltaMovement().z, 10.0F, 0.9F);
             this.level().addFreshEntity(shupapiumProjectile);
             this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.LARGESHOT.get(), SoundSource.BLOCKS, 10.0F, (float) Mth.nextDouble(RandomSource.create(), 0.9, 1.1));
             this.discard();
+            ((ServerLevel) this.level()).sendParticles(
+                    ParticleTypes.FLAME,
+                    this.getX(),
+                    this.getY(),
+                    this.getZ(),
+                    3,
+                    0,
+                    0,
+                    0,
+                    0.2
+            );
+            ((ServerLevel) this.level()).sendParticles(
+                    ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                    this.getX(),
+                    this.getY(),
+                    this.getZ(),
+                    8,
+                    0,
+                    0,
+                    0,
+                    0.4
+            );
         }
     }
 

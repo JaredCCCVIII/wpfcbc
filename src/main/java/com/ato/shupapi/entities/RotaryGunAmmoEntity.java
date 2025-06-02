@@ -3,6 +3,8 @@ package com.ato.shupapi.entities;
 import net.mcreator.crustychunks.entity.HugeBulletFireEntity;
 import net.mcreator.crustychunks.init.CrustyChunksModEntities;
 import net.mcreator.crustychunks.init.CrustyChunksModSounds;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
@@ -28,6 +30,8 @@ public class RotaryGunAmmoEntity extends AbstractAutocannonProjectile {
                         CrustyChunksModEntities.HUGE_BULLET_FIRE.get(),
                         this.level()
                 );
+                shupapiumProjectile.setOwner(this.getOwner());
+                shupapiumProjectile.setSilent(true);
                 shupapiumProjectile.setNoGravity(true);
                 shupapiumProjectile.setPos(this.getX(), this.getY(), this.getZ());
                 double spread = 0.5;
@@ -39,6 +43,28 @@ public class RotaryGunAmmoEntity extends AbstractAutocannonProjectile {
             }
             this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.SMALLEXPLOSION.get(), SoundSource.BLOCKS, 10.0F, (float) Mth.nextDouble(RandomSource.create(), 0.9, 1.1));
             this.discard();
+            ((ServerLevel) this.level()).sendParticles(
+                    ParticleTypes.FLAME,
+                    this.getX(),
+                    this.getY(),
+                    this.getZ(),
+                    6,
+                    0,
+                    0,
+                    0,
+                    0.2
+            );
+            ((ServerLevel) this.level()).sendParticles(
+                    ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                    this.getX(),
+                    this.getY(),
+                    this.getZ(),
+                    16,
+                    0,
+                    0,
+                    0,
+                    0.4
+            );
         }
     }
 
