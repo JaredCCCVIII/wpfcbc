@@ -7,7 +7,7 @@
   "gravity": -0.025,
   "drag": 0.01,
   "quadratic_drag": false,
-  "knockback": 0.050,
+  "knockback": 1,
   "added_recoil": 0.5,
   "can_squib": true,
   "penetration": 1,
