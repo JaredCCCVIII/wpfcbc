@@ -32,6 +32,7 @@ public class HeavyGunAmmoEntity extends AbstractAutocannonProjectile {
                     this.level()
             );
             shupapiumProjectile.setOwner(this.getOwner());
+            shupapiumProjectile.setKnockback((int) this.getAllProperties().damage().knockback());
             shupapiumProjectile.setSilent(true);
             shupapiumProjectile.setPos(this.getX(), this.getY(), this.getZ());
             shupapiumProjectile.shoot(this.getDeltaMovement().x, this.getDeltaMovement().y, this.getDeltaMovement().z, 5.0F, 0.9F);
