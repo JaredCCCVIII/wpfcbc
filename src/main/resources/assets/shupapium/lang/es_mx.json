@@ -54,19 +54,74 @@
   "entity.shupapium.fusion_shell_projectile": "Proyectil de fusión",
 
   "item.shupapium.machine_gun_ammo_item": "Munición de ametralladora pesada",
+  "item.shupapium.machinegunammo.tooltip.behaviour1": "Proyectil de bala larga, efectivo en objetivos no vehiculares.",
+  "item.shupapium.machinegunammo.tooltip.condition1": "Info",
+  "item.shupapium.machinegunammo.tooltip.summary": "\"Ve como Rambo.\"",
+
   "item.shupapium.light_gun_ammo_item": "Munición de cañón liviano",
+  "item.shupapium.lightgunammo.tooltip.behaviour1": "Proyectil de bala grande, efectivo en vehículos regulares.",
+  "item.shupapium.lightgunammo.tooltip.condition1": "Info",
+  "item.shupapium.lightgunammo.tooltip.summary": "\"Nueva tecnología, hijo.\"",
+
   "item.shupapium.rotary_gun_ammo_item": "Munición de cañón rotatorio",
+  "item.shupapium.rotarygunammo.tooltip.behaviour1": "Dispara balas grandes a grandes velocidades causando mucho daño.",
+  "item.shupapium.rotarygunammo.tooltip.condition1": "Info",
+  "item.shupapium.rotarygunammo.tooltip.summary": "\"¡Eres muy lento para esto!\"",
+
   "item.shupapium.heavy_gun_ammo_item": "Munición de cañón pesado",
+  "item.shupapium.heavygunammo.tooltip.behaviour1": "Proyectil explosivo pequeño, efectivo en vehículos pesados.",
+  "item.shupapium.heavygunammo.tooltip.condition1": "Info",
+  "item.shupapium.heavygunammo.tooltip.summary": "\"¡Esta cosa es muy pesada!\"",
+
   "item.shupapium.battle_he_gun_ammo_item": "Munición de cañón de combate (MUY EXPLOSIVA)",
+  "item.shupapium.battlehegunammo.tooltip.behaviour1": "Proyectil altamente explosivo, útil en situaciones difíciles.",
+  "item.shupapium.battlehegunammo.tooltip.condition1": "Info",
+  "item.shupapium.battlehegunammo.tooltip.summary": "\"¡Bum!\"",
+
   "item.shupapium.battle_solid_gun_ammo_item": "Munición de cañón de combate (SÓLIDA)",
+  "item.shupapium.battlesolidgunammo.tooltip.behaviour1": "Proyectil explosivo sólido, explosiones compactas.",
+  "item.shupapium.battlesolidgunammo.tooltip.condition1": "Info",
+  "item.shupapium.battlesolidgunammo.tooltip.summary": "\"Muy duro.\"",
+
   "item.shupapium.battle_heat_gun_ammo_item": "Munición de cañón de combate (INCENDIARIA)",
+  "item.shupapium.battleheatgunammo.tooltip.behaviour1": "Proyectil explosivo incendiario, útil para destruir barricadas de madera.",
+  "item.shupapium.battleheatgunammo.tooltip.condition1": "Info",
+  "item.shupapium.battleheatgunammo.tooltip.summary": "\"¡Quémate! ¡Quémate! ¡QUÉMATE!\"",
+
   "item.shupapium.battle_apfsds_gun_ammo_item": "Munición de cañón de combate (PENETRANTE)",
+  "item.shupapium.battleapfsdsgunammo.tooltip.behaviour1": "Proyectil penetrante, útil para infiltraciones",
+  "item.shupapium.battleapfsdsgunammo.tooltip.condition1": "Info",
+  "item.shupapium.battleapfsdsgunammo.tooltip.summary": "\"¡Eso es un gran agujero!\"",
+
   "item.shupapium.battle_artillery_solid_gun_ammo_item": "Munición de artillería (SÓLIDA)",
+  "item.shupapium.battleartillerysolidgunammo.tooltip.behaviour1": "Artillería explosiva sólida, más pólvora, más poder.",
+  "item.shupapium.battleartillerysolidgunammo.tooltip.condition1": "Info",
+  "item.shupapium.battleartillerysolidgunammo.tooltip.summary": "\"¡Y MÁS COMPACTA!\"",
+
   "item.shupapium.battle_artillery_gas_gun_ammo_item": "Munición de artillería (GAS TÓXICO)",
+  "item.shupapium.battleartillerygasgunammo.tooltip.behaviour1": "Proyectil de gas tóxico, efectiva en grupos.",
+  "item.shupapium.battleartillerygasgunammo.tooltip.condition1": "Info",
+  "item.shupapium.battleartillerygasgunammo.tooltip.summary": "\"Huevos podridos.\"",
+
   "item.shupapium.battle_artillery_he_gun_ammo_item": "Munición de artillería (MUY EXPLOSIVA)",
+  "item.shupapium.battleartilleryhegunammo.tooltip.behaviour1": "Artillería altamente explosiva, más pólvora, más poder.",
+  "item.shupapium.battleartilleryhegunammo.tooltip.condition1": "Info",
+  "item.shupapium.battleartilleryhegunammo.tooltip.summary": "\"Muy pero muy explosiva...\"",
+
   "item.shupapium.armor_peeler_gun_ammo_item": "Munición de lanzacohetes pesado",
+  "item.shupapium.armorpeelergunammo.tooltip.behaviour1": "Proyectil de cohete común",
+  "item.shupapium.armorpeelergunammo.tooltip.condition1": "Info",
+  "item.shupapium.armorpeelergunammo.tooltip.summary": "\"¡Esto se merece un cohete, ahí va!\"",
+
   "item.shupapium.mortar_gun_ammo_item": "Munición de mortero (EXPLOSIVA)",
+  "item.shupapium.mortargunammo.tooltip.behaviour1": "Proyectil de mortero común",
+  "item.shupapium.mortargunammo.tooltip.condition1": "Info",
+  "item.shupapium.mortargunammo.tooltip.summary": "\"¡¡¡Sorpresa!!!\"",
+
   "item.shupapium.smoke_gun_ammo_item": "Munición de mortero (HUMO)",
+  "item.shupapium.smokegunammo.tooltip.behaviour1": "Proyectil de humo común",
+  "item.shupapium.smokegunammo.tooltip.condition1": "Info",
+  "item.shupapium.smokegunammo.tooltip.summary": "\"¡NO VEO!\"",
 
   "entity.shupapium.daarick_citizen": "Ciudadano Daarick",
   "item.shupapium.daarick_citizen_spawn_egg": "Huevo generador de Ciudadano Daarick",

@@ -66,17 +66,17 @@
   "item.shupapium.rotary_gun_ammo_item": "Rotary Cannon Ammo",
   "item.shupapium.rotarygunammo.tooltip.behaviour1": "Shoots huge bullets rapidly causing a lot of damage.",
   "item.shupapium.rotarygunammo.tooltip.condition1": "Info",
-  "item.shupapium.rotarygunammo.tooltip.summary": "\"You are too slow!.\"",
+  "item.shupapium.rotarygunammo.tooltip.summary": "\"You are too slow!\"",
 
   "item.shupapium.heavy_gun_ammo_item": "Heavy Cannon Ammo",
   "item.shupapium.heavygunammo.tooltip.behaviour1": "Small explosive projectile, effective on heavy vehicles.",
   "item.shupapium.heavygunammo.tooltip.condition1": "Info",
-  "item.shupapium.heavygunammo.tooltip.summary": "\"This thing is very heavy!.\"",
+  "item.shupapium.heavygunammo.tooltip.summary": "\"This thing is very heavy!\"",
 
   "item.shupapium.battle_he_gun_ammo_item": "Battle Cannon Ammo (HE)",
   "item.shupapium.battlehegunammo.tooltip.behaviour1": "High explosive projectile, useful in hard situations.",
   "item.shupapium.battlehegunammo.tooltip.condition1": "Info",
-  "item.shupapium.battlehegunammo.tooltip.summary": "\"Kaboom!.\"",
+  "item.shupapium.battlehegunammo.tooltip.summary": "\"Kaboom!\"",
 
   "item.shupapium.battle_solid_gun_ammo_item": "Battle Cannon Ammo (SOLID)",
   "item.shupapium.battlesolidgunammo.tooltip.behaviour1": "Solid explosive projectile, compact explosions.",
@@ -84,22 +84,22 @@
   "item.shupapium.battlesolidgunammo.tooltip.summary": "\"Very hard.\"",
 
   "item.shupapium.battle_heat_gun_ammo_item": "Battle Cannon Ammo (HEAT)",
-  "item.shupapium.battleheatgunammo.tooltip.behaviour1": "Incendiary explosive, useful to destroys wooden barricades.",
+  "item.shupapium.battleheatgunammo.tooltip.behaviour1": "Incendiary explosive projectile, useful to destroys wooden barricades.",
   "item.shupapium.battleheatgunammo.tooltip.condition1": "Info",
-  "item.shupapium.battleheatgunammo.tooltip.summary": "\"Burn! Burn! BURN!.\"",
+  "item.shupapium.battleheatgunammo.tooltip.summary": "\"Burn! Burn! BURN!\"",
 
   "item.shupapium.battle_apfsds_gun_ammo_item": "Battle Cannon Ammo (AP)",
   "item.shupapium.battleapfsdsgunammo.tooltip.behaviour1": "Penetrating projectile, useful for infiltration",
   "item.shupapium.battleapfsdsgunammo.tooltip.condition1": "Info",
-  "item.shupapium.battleapfsdsgunammo.tooltip.summary": "\"That's a big hole!.\"",
+  "item.shupapium.battleapfsdsgunammo.tooltip.summary": "\"That's a big hole!\"",
 
   "item.shupapium.battle_artillery_solid_gun_ammo_item": "Artillery Cannon Ammo (SOLID)",
   "item.shupapium.battleartillerysolidgunammo.tooltip.behaviour1": "Solid explosive artillery, more gunpowder, more powerful.",
   "item.shupapium.battleartillerysolidgunammo.tooltip.condition1": "Info",
-  "item.shupapium.battleartillerysolidgunammo.tooltip.summary": "\"MORE COMPACT.\"",
+  "item.shupapium.battleartillerysolidgunammo.tooltip.summary": "\"AND MORE COMPACT!\"",
 
   "item.shupapium.battle_artillery_gas_gun_ammo_item": "Artillery Cannon Ammo (TOXIC GAS)",
-  "item.shupapium.battleartillerygasgunammo.tooltip.behaviour1": "Gas projectile, effective on groups.",
+  "item.shupapium.battleartillerygasgunammo.tooltip.behaviour1": "Toxic gas projectile, effective on groups.",
   "item.shupapium.battleartillerygasgunammo.tooltip.condition1": "Info",
   "item.shupapium.battleartillerygasgunammo.tooltip.summary": "\"Rotten eggs.\"",
 
