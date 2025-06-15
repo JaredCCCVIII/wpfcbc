@@ -123,17 +123,17 @@
   "item.shupapium.smokegunammo.tooltip.condition1": "Info:",
   "item.shupapium.smokegunammo.tooltip.summary": "\"¡NO VEO!\"",
 
-  "item.shupapium.firespeargunammo": "Munición arpón de lanzacohetes (INCENDIARIA)",
+  "item.shupapium.fire_spear_gun_ammo_item": "Munición arpón de lanzacohetes (INCENDIARIA)",
   "item.shupapium.firespeargunammo.tooltip.behaviour1": "Una pequeña actualización a la munición de lanzacohetes pesado.",
   "item.shupapium.firespeargunammo.tooltip.condition1": "Info:",
   "item.shupapium.firespeargunammo.tooltip.summary": "\"¡Trata de mejorarlo!\"",
 
-  "item.shupapium.seekerspeargunammo": "Munición arpón de lanzacohetes (TELEDIRIGIDA)",
+  "item.shupapium.seeker_spear_gun_ammo_item": "Munición arpón de lanzacohetes (TELEDIRIGIDA)",
   "item.shupapium.seekerspeargunammo.tooltip.behaviour1": "Una actualización mediana a la munición de lanzacohetes pesado.",
   "item.shupapium.seekerspeargunammo.tooltip.condition1": "Info:",
   "item.shupapium.seekerspeargunammo.tooltip.summary": "\"¡Trata de mejorarlo nuevamente!\"",
 
-  "item.shupapium.strikespeargunammo": "Munición arpón de lanzacohetes (OFENSIVA)",
+  "item.shupapium.strike_spear_gun_ammo_item": "Munición arpón de lanzacohetes (OFENSIVA)",
   "item.shupapium.strikespeargunammo.tooltip.behaviour1": "Una gran actualización a la munición de lanzacohetes pesado.",
   "item.shupapium.strikespeargunammo.tooltip.condition1": "Info:",
   "item.shupapium.strikespeargunammo.tooltip.summary": "\"¡Esto es... Metal Pesado!\"",
