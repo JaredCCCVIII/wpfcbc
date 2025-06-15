@@ -123,6 +123,21 @@
   "item.shupapium.smokegunammo.tooltip.condition1": "Info:",
   "item.shupapium.smokegunammo.tooltip.summary": "\"I'M BLIND!\"",
 
+  "item.shupapium.firespeargunammo": "Spear Rocket Ammo (FIRE)",
+  "item.shupapium.firespeargunammo.tooltip.behaviour1": "A low upgrade to the Armor Peeler Rocket.",
+  "item.shupapium.firespeargunammo.tooltip.condition1": "Info:",
+  "item.shupapium.firespeargunammo.tooltip.summary": "\"Try to upgrade it!\"",
+
+  "item.shupapium.seekerspeargunammo": "Spear Rocket Ammo (SEEKER)",
+  "item.shupapium.seekerspeargunammo.tooltip.behaviour1": "A medium upgrade to the Armor Peeler Rocket.",
+  "item.shupapium.seekerspeargunammo.tooltip.condition1": "Info:",
+  "item.shupapium.seekerspeargunammo.tooltip.summary": "\"Try to upgrade it again!\"",
+
+  "item.shupapium.strikespeargunammo": "Spear Rocket Ammo (STRIKE)",
+  "item.shupapium.strikespeargunammo.tooltip.behaviour1": "A big upgrade to the Armor Peeler Rocket.",
+  "item.shupapium.strikespeargunammo.tooltip.condition1": "Info:",
+  "item.shupapium.strikespeargunammo.tooltip.summary": "\"This is a Heavy Metal!\"",
+
   "entity.shupapium.daarick_citizen": "Daarick Citizen",
   "item.shupapium.daarick_citizen_spawn_egg": "Daarick Citizen Spawn Egg",
   "subtitle.shupapium.daarick_citizen.ambient": "Daarick Citizen murmurs",

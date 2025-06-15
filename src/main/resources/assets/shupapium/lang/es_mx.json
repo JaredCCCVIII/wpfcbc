@@ -123,6 +123,21 @@
   "item.shupapium.smokegunammo.tooltip.condition1": "Info:",
   "item.shupapium.smokegunammo.tooltip.summary": "\"¡NO VEO!\"",
 
+  "item.shupapium.firespeargunammo": "Munición arpón de lanzacohetes (INCENDIARIA)",
+  "item.shupapium.firespeargunammo.tooltip.behaviour1": "Una pequeña actualización a la munición de lanzacohetes pesado.",
+  "item.shupapium.firespeargunammo.tooltip.condition1": "Info:",
+  "item.shupapium.firespeargunammo.tooltip.summary": "\"¡Trata de mejorarlo!\"",
+
+  "item.shupapium.seekerspeargunammo": "Munición arpón de lanzacohetes (TELEDIRIGIDA)",
+  "item.shupapium.seekerspeargunammo.tooltip.behaviour1": "Una actualización mediana a la munición de lanzacohetes pesado.",
+  "item.shupapium.seekerspeargunammo.tooltip.condition1": "Info:",
+  "item.shupapium.seekerspeargunammo.tooltip.summary": "\"¡Trata de mejorarlo nuevamente!\"",
+
+  "item.shupapium.strikespeargunammo": "Munición arpón de lanzacohetes (OFENSIVA)",
+  "item.shupapium.strikespeargunammo.tooltip.behaviour1": "Una gran actualización a la munición de lanzacohetes pesado.",
+  "item.shupapium.strikespeargunammo.tooltip.condition1": "Info:",
+  "item.shupapium.strikespeargunammo.tooltip.summary": "\"¡Esto es... Metal Pesado!\"",
+
   "entity.shupapium.daarick_citizen": "Ciudadano Daarick",
   "item.shupapium.daarick_citizen_spawn_egg": "Huevo generador de Ciudadano Daarick",
   "subtitle.shupapium.daarick_citizen.ambient": "Murmullos de Ciudadano Daarick",

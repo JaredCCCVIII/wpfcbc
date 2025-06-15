@@ -95,6 +95,21 @@ public class ShupapiumItems {
             .tag(CBCTags.CBCItemTags.AUTOCANNON_ROUNDS)
             .onRegisterAfter(Registries.ITEM, v -> ItemDescription.useKey(v, "item.shupapium.smokegunammo"))
             .register();
+    public static final ItemEntry<FireSpearGunAmmoItem> FIRE_SPEAR_GUN_AMMO_ITEM = MainShupapium.REGISTRATE
+            .item("fire_spear_gun_ammo_item", FireSpearGunAmmoItem::new)
+            .tag(CBCTags.CBCItemTags.AUTOCANNON_ROUNDS)
+            .onRegisterAfter(Registries.ITEM, v -> ItemDescription.useKey(v, "item.shupapium.firespeargunammo"))
+            .register();
+    public static final ItemEntry<SeekerSpearGunAmmoItem> SEEKER_SPEAR_GUN_AMMO_ITEM = MainShupapium.REGISTRATE
+            .item("seeker_spear_gun_ammo_item", SeekerSpearGunAmmoItem::new)
+            .tag(CBCTags.CBCItemTags.AUTOCANNON_ROUNDS)
+            .onRegisterAfter(Registries.ITEM, v -> ItemDescription.useKey(v, "item.shupapium.seekerspeargunammo"))
+            .register();
+    public static final ItemEntry<StrikeSpearGunAmmoItem> STRIKE_SPEAR_GUN_AMMO_ITEM = MainShupapium.REGISTRATE
+            .item("strike_spear_gun_ammo_item", StrikeSpearGunAmmoItem::new)
+            .tag(CBCTags.CBCItemTags.AUTOCANNON_ROUNDS)
+            .onRegisterAfter(Registries.ITEM, v -> ItemDescription.useKey(v, "item.shupapium.strikespeargunammo"))
+            .register();
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
