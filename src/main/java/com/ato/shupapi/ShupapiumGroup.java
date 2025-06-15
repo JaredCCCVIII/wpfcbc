@@ -47,6 +47,9 @@ public class ShupapiumGroup {
                     pOutput.accept(ShupapiumItems.BATTLE_ARTILLERY_GAS_GUN_AMMO_ITEM);
                     pOutput.accept(ShupapiumItems.BATTLE_ARTILLERY_HE_GUN_AMMO_ITEM);
                     pOutput.accept(ShupapiumItems.ARMOR_PEELER_GUN_AMMO_ITEM);
+                    pOutput.accept(ShupapiumItems.FIRE_SPEAR_GUN_AMMO_ITEM);
+                    pOutput.accept(ShupapiumItems.SEEKER_SPEAR_GUN_AMMO_ITEM);
+                    pOutput.accept(ShupapiumItems.STRIKE_SPEAR_GUN_AMMO_ITEM);
                     pOutput.accept(ShupapiumItems.MORTAR_GUN_AMMO_ITEM);
                     pOutput.accept(ShupapiumItems.SMOKE_GUN_AMMO_ITEM);
                     pOutput.accept(ShupapiumItems.DAARICK_CITIZEN_SPAWN_EGG.get());
