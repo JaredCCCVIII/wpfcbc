@@ -1,5 +1,5 @@
 {
-  "entity_damage": 1.0,
+  "entity_damage": 3.0,
   "durability_mass": 0.3,
   "renders_invulnerable": false,
   "ignores_invulnerability": true,
