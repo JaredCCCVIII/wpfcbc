@@ -5,8 +5,7 @@ import com.github.alexmodguy.alexscaves.client.particle.ACParticleRegistry;
 import com.github.alexmodguy.alexscaves.server.block.blockentity.NuclearSirenBlockEntity;
 import com.github.alexmodguy.alexscaves.server.block.poi.ACPOIRegistry;
 import com.google.common.base.Predicates;
-import net.mcreator.crustychunks.procedures.FusionBombRedstoneOnProcedure;
-import net.mcreator.crustychunks.procedures.NuclearBombHitsBlockProcedure;
+import net.mcreator.crustychunks.procedures.FusionExplosionProcedure;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Position;
@@ -24,7 +23,6 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.fml.ModList;
 import org.jetbrains.annotations.NotNull;
 import rbasamoyai.createbigcannons.index.CBCMunitionPropertiesHandlers;
-import rbasamoyai.createbigcannons.munitions.ShellExplosion;
 import rbasamoyai.createbigcannons.munitions.big_cannon.FuzedBigCannonProjectile;
 import rbasamoyai.createbigcannons.munitions.big_cannon.config.BigCannonCommonShellProperties;
 import rbasamoyai.createbigcannons.munitions.big_cannon.config.BigCannonFuzePropertiesComponent;
@@ -48,7 +46,7 @@ public class FusionShellProjectile extends FuzedBigCannonProjectile {
 
     @Override
     protected void detonate(Position position) {
-        FusionBombRedstoneOnProcedure.execute(this.level(), position.x(), position.y(), position.z());
+        FusionExplosionProcedure.execute(this.level(), position.x(), position.y(), position.z());
     }
 
     @Override
