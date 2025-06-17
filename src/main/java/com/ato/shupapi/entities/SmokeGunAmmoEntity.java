@@ -28,6 +28,9 @@ public class SmokeGunAmmoEntity extends AbstractAutocannonProjectile {
                     CrustyChunksModEntities.SMOKE_LAUNCHER_PROJECTILE.get(),
                     this.level()
             );
+            shupapiumProjectile.setOwner(this.getOwner());
+            shupapiumProjectile.setBaseDamage(this.getAllProperties().damage().entityDamage());
+            shupapiumProjectile.setKnockback((int) this.getAllProperties().damage().knockback());
             shupapiumProjectile.setPos(this.getX(), this.getY(), this.getZ());
             shupapiumProjectile.shoot(this.getDeltaMovement().x, this.getDeltaMovement().y, this.getDeltaMovement().z, 8.5F, 0.3F);
             this.level().addFreshEntity(shupapiumProjectile);

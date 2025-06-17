@@ -30,6 +30,7 @@ public class BattleArtilleryGasGunAmmoEntity extends AbstractAutocannonProjectil
                     this.level()
             );
             shupapiumProjectile.setOwner(this.getOwner());
+            shupapiumProjectile.setBaseDamage(this.getAllProperties().damage().entityDamage());
             shupapiumProjectile.setKnockback((int) this.getAllProperties().damage().knockback());
             shupapiumProjectile.setSilent(true);
             shupapiumProjectile.setPos(this.getX(), this.getY(), this.getZ());
