@@ -36,7 +36,7 @@ public class MachineGunAmmoEntity extends AbstractAutocannonProjectile {
                     this.level()
             );
             shupapiumProjectile.setOwner(this.getOwner());
-            shupapiumProjectile.setBaseDamage(this.getAllProperties().damage().entityDamage());
+            shupapiumProjectile.setBaseDamage(this.getAllProperties().damage().entityDamage() / 10);
             shupapiumProjectile.setKnockback((int) this.getAllProperties().damage().knockback());
             shupapiumProjectile.setSilent(true);
             shupapiumProjectile.setNoGravity(true);
