@@ -39,7 +39,7 @@ public class LightGunAmmoEntity extends AbstractAutocannonProjectile {
             shupapiumProjectile.setPos(this.getX(), this.getY(), this.getZ());
             shupapiumProjectile.shoot(this.getDeltaMovement().x, this.getDeltaMovement().y, this.getDeltaMovement().z, 15.0F, 0.9F);
             this.level().addFreshEntity(shupapiumProjectile);
-            this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.AUTOCANNONSHOT.get(), SoundSource.BLOCKS, 10.0F, (float) Mth.nextDouble(RandomSource.create(), 0.9, 1.1));
+            this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.AUTOCANNONSHOT.get(), SoundSource.BLOCKS, 20.0F, (float) Mth.nextDouble(RandomSource.create(), 0.9, 1.1));
             this.discard();
             MuzzleFlashProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
             ((ServerLevel) this.level()).sendParticles(
