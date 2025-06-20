@@ -41,7 +41,7 @@ public class BattleHeatGunAmmoEntity extends AbstractAutocannonProjectile {
             shupapiumProjectile.setDeltaMovement(finalMotion);
             shupapiumProjectile.setNoGravity(true);
             this.level().addFreshEntity(shupapiumProjectile);
-            this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.CANNONCLOSE.get(), SoundSource.BLOCKS, 10.0F, (float) Mth.nextDouble(RandomSource.create(), 0.9, 1.1));
+            this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.BATTLECANNON.get(), SoundSource.BLOCKS, 15.0F, (float) Mth.nextDouble(RandomSource.create(), 0.9, 1.1));
             this.discard();
             ((ServerLevel) this.level()).sendParticles(
                     ParticleTypes.LAVA,

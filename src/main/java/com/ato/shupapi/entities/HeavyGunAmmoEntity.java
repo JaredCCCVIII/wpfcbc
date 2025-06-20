@@ -42,7 +42,7 @@ public class HeavyGunAmmoEntity extends AbstractAutocannonProjectile {
             shupapiumProjectile.setDeltaMovement(finalMotion);
             shupapiumProjectile.setNoGravity(true);
             this.level().addFreshEntity(shupapiumProjectile);
-            this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.CANNONCLOSE.get(), SoundSource.BLOCKS, 10.0F, (float) Mth.nextDouble(RandomSource.create(), 0.9, 1.1));
+            this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.CANNONCLOSE.get(), SoundSource.BLOCKS, 15.0F, (float) Mth.nextDouble(RandomSource.create(), 1.5, 1.6));
             this.discard();
             MuzzleFlashProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
             ((ServerLevel) this.level()).sendParticles(
