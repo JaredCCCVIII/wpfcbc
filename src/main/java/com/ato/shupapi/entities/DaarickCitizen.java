@@ -182,7 +182,7 @@ public class DaarickCitizen extends Zombie {
 
     @Override
     public boolean killedEntity(@NotNull ServerLevel pLevel, @NotNull LivingEntity pEntity) {
-        return false;
+        return true;
     }
 
     @Override

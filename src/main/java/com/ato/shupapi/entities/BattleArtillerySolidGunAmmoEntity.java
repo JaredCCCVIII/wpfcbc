@@ -51,18 +51,18 @@ public class BattleArtillerySolidGunAmmoEntity extends AbstractAutocannonProject
                     0,
                     0,
                     0,
-                    0.5
+                    0.05
             );
             ((ServerLevel) this.level()).sendParticles(
-                    ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                    ParticleTypes.EXPLOSION,
                     this.getX(),
                     this.getY(),
                     this.getZ(),
-                    8,
+                    4,
                     0,
                     0,
                     0,
-                    0.4
+                    0.1
             );
         }
     }

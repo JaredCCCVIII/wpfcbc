@@ -43,22 +43,22 @@ public class BattleArtilleryGasGunAmmoEntity extends AbstractAutocannonProjectil
                     this.getX(),
                     this.getY(),
                     this.getZ(),
+                    3,
+                    0,
+                    0,
+                    0,
+                    0.1
+            );
+            ((ServerLevel) this.level()).sendParticles(
+                    ParticleTypes.EXPLOSION,
+                    this.getX(),
+                    this.getY(),
+                    this.getZ(),
                     1,
                     0,
                     0,
                     0,
-                    0.8
-            );
-            ((ServerLevel) this.level()).sendParticles(
-                    ParticleTypes.CAMPFIRE_COSY_SMOKE,
-                    this.getX(),
-                    this.getY(),
-                    this.getZ(),
-                    8,
-                    0,
-                    0,
-                    0,
-                    0.4
+                    0.1
             );
         }
     }

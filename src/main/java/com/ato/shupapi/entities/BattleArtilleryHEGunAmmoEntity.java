@@ -48,22 +48,22 @@ public class BattleArtilleryHEGunAmmoEntity extends AbstractAutocannonProjectile
                     this.getX(),
                     this.getY(),
                     this.getZ(),
-                    8,
+                    6,
                     0,
                     0,
                     0,
-                    0.5
+                    0.05
             );
             ((ServerLevel) this.level()).sendParticles(
-                    ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                    ParticleTypes.EXPLOSION,
                     this.getX(),
                     this.getY(),
                     this.getZ(),
-                    8,
-                    0,
-                    0,
-                    0,
-                    0.4
+                    2,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.08
             );
         }
     }

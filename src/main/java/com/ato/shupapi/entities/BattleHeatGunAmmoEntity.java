@@ -48,7 +48,7 @@ public class BattleHeatGunAmmoEntity extends AbstractAutocannonProjectile {
                     this.getX(),
                     this.getY(),
                     this.getZ(),
-                    6,
+                    12,
                     0,
                     0,
                     0,
