@@ -40,6 +40,7 @@ public class MortarGunAmmoEntity extends AbstractAutocannonProjectile {
             this.level().addFreshEntity(shupapiumProjectile);
             this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.CANNONCLOSE.get(), SoundSource.BLOCKS, 20.0F, (float) Mth.nextDouble(RandomSource.create(), 0.7, 0.8));
             this.discard();
+            MuzzleFlashProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
             ((ServerLevel) this.level()).sendParticles(
                     ParticleTypes.CAMPFIRE_COSY_SMOKE,
                     this.getX(),

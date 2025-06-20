@@ -44,7 +44,7 @@ public class RotaryGunAmmoEntity extends AbstractAutocannonProjectile {
                 shupapiumProjectile.shoot(dx, dy, dz, 20.0F, 1.0F);
                 this.level().addFreshEntity(shupapiumProjectile);
             }
-            this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.SMALLEXPLOSION.get(), SoundSource.BLOCKS, 10.0F, (float) Mth.nextDouble(RandomSource.create(), 0.9, 1.1));
+            this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.RAC.get(), SoundSource.BLOCKS, 30.0F, (float) Mth.nextDouble(RandomSource.create(), 0.8, 0.9));
             this.discard();
             MuzzleFlashProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
             ((ServerLevel) this.level()).sendParticles(
