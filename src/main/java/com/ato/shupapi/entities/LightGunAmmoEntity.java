@@ -3,6 +3,7 @@ package com.ato.shupapi.entities;
 import net.mcreator.crustychunks.entity.HugeBulletFireEntity;
 import net.mcreator.crustychunks.init.CrustyChunksModEntities;
 import net.mcreator.crustychunks.init.CrustyChunksModSounds;
+import net.mcreator.crustychunks.procedures.MuzzleFlashProcedure;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundSource;
@@ -40,27 +41,17 @@ public class LightGunAmmoEntity extends AbstractAutocannonProjectile {
             this.level().addFreshEntity(shupapiumProjectile);
             this.level().playSound(null, this.blockPosition(), CrustyChunksModSounds.AUTOCANNONSHOT.get(), SoundSource.BLOCKS, 10.0F, (float) Mth.nextDouble(RandomSource.create(), 0.9, 1.1));
             this.discard();
-            ((ServerLevel) this.level()).sendParticles(
-                    ParticleTypes.FLAME,
-                    this.getX(),
-                    this.getY(),
-                    this.getZ(),
-                    3,
-                    0,
-                    0,
-                    0,
-                    0.2
-            );
+            MuzzleFlashProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
             ((ServerLevel) this.level()).sendParticles(
                     ParticleTypes.CAMPFIRE_COSY_SMOKE,
                     this.getX(),
                     this.getY(),
                     this.getZ(),
-                    8,
-                    0,
-                    0,
-                    0,
-                    0.4
+                    4,
+                    0.2,
+                    0.2,
+                    0.2,
+                    0.03
             );
         }
     }

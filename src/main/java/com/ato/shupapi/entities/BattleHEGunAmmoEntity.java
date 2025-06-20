@@ -48,22 +48,22 @@ public class BattleHEGunAmmoEntity extends AbstractAutocannonProjectile {
                     this.getX(),
                     this.getY(),
                     this.getZ(),
-                    2,
+                    3,
                     0,
                     0,
                     0,
-                    0.2
+                    0.02
             );
             ((ServerLevel) this.level()).sendParticles(
-                    ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                    ParticleTypes.EXPLOSION,
                     this.getX(),
                     this.getY(),
                     this.getZ(),
-                    8,
-                    0,
-                    0,
-                    0,
-                    0.4
+                    2,
+                    0.2,
+                    0.2,
+                    0.2,
+                    0.1
             );
         }
     }

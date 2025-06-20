@@ -47,22 +47,22 @@ public class BattleAPFSDSGunAmmoEntity extends AbstractAutocannonProjectile {
                     this.getX(),
                     this.getY(),
                     this.getZ(),
-                    2,
+                    3,
                     0,
                     0,
                     0,
-                    0.2
+                    0.02
             );
             ((ServerLevel) this.level()).sendParticles(
-                    ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                    ParticleTypes.EXPLOSION,
                     this.getX(),
                     this.getY(),
                     this.getZ(),
-                    8,
+                    1,
                     0,
                     0,
                     0,
-                    0.4
+                    0.1
             );
         }
     }
