@@ -50,6 +50,7 @@ public class FissionShellProjectile extends FuzedBigCannonProjectile {
     @Override
     protected void detonate(Position position) {
         FissionExplosionProcedure.execute(this.level(), position.x(), position.y(), position.z());
+        this.discard();
     }
 
     @Override
