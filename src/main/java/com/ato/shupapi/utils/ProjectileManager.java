@@ -31,12 +31,12 @@ public class ProjectileManager {
         else if (e instanceof LargeFlakProjectileEntity projectile) projectile.onHitBlock(hit);
         else if (e instanceof LargeSolidProjectileEntity projectile) projectile.onHitBlock(hit);
         else if (e instanceof FireSpearRocketProjectileEntity projectile) projectile.onHitBlock(hit);
-        else if (e instanceof SmallShellFireEntity projectile) projectile.onHitBlock(hit);
-        else if (e instanceof HugeBulletFireEntity projectile) projectile.onHitBlock(hit);
-        else if (e instanceof GenericlargeBulletEntity projectile) projectile.onHitBlock(hit);
-        else if (e instanceof MortarProjectileEntity projectile) projectile.onHitBlock(hit);
+        else if (e instanceof SmallShellFireEntity projectile) projectile.setNoGravity(false);
+        else if (e instanceof HugeBulletFireEntity projectile) projectile.setNoGravity(false);
+        else if (e instanceof GenericlargeBulletEntity projectile) projectile.setNoGravity(false);
+        else if (e instanceof MortarProjectileEntity projectile) projectile.setNoGravity(false);
         else if (e instanceof SeekerSpearMissileProjectileEntity projectile) projectile.onHitBlock(hit);
-        else if (e instanceof SmokeLauncherProjectileEntity projectile) projectile.onHitBlock(hit);
+        else if (e instanceof SmokeLauncherProjectileEntity projectile) projectile.setNoGravity(false);
         else if (e instanceof StrikeSpearProjectileEntity projectile) projectile.onHitBlock(hit);
         else e.discard();
 
