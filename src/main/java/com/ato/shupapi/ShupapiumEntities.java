@@ -14,7 +14,7 @@ public class ShupapiumEntities {
 
     public static final RegistryObject<EntityType<DaarickCitizen>> DAARICK_ENTITY =
             SHUPAPI_MOBS.register("daarick_citizen", () -> EntityType.Builder.of(DaarickCitizen::new, MobCategory.CREATURE)
-                    .sized(0.8f, 1.70f).build("daarick_citizen"));
+                    .sized(0.8f, 1.9f).build("daarick_citizen"));
 
     public static void register(IEventBus eventBus) {
         SHUPAPI_MOBS.register(eventBus);

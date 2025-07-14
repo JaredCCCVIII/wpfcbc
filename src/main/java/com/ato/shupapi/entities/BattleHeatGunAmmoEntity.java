@@ -1,5 +1,6 @@
 package com.ato.shupapi.entities;
 
+import com.ato.shupapi.utils.ProjectileManager;
 import net.mcreator.crustychunks.entity.LargeHEATFireEntity;
 import net.mcreator.crustychunks.init.CrustyChunksModEntities;
 import net.mcreator.crustychunks.init.CrustyChunksModSounds;
@@ -65,6 +66,7 @@ public class BattleHeatGunAmmoEntity extends AbstractAutocannonProjectile {
                     0.2,
                     0.1
             );
+            ProjectileManager.track(shupapiumProjectile, this.level(), 1200);
         }
     }
 
