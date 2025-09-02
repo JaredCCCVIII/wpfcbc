@@ -138,11 +138,11 @@
   "item.shupapium.strikespeargunammo.tooltip.condition1": "Info:",
   "item.shupapium.strikespeargunammo.tooltip.summary": "\"This is a Heavy Metal!\"",
 
-  "entity.shupapium.daarick_citizen": "Daarick Citizen",
-  "item.shupapium.daarick_citizen_spawn_egg": "Daarick Citizen Spawn Egg",
-  "subtitle.shupapium.daarick_citizen.ambient": "Daarick Citizen murmurs",
-  "subtitle.shupapium.daarick_citizen.hurt": "Daarick Citizen in pain",
-  "subtitle.shupapium.daarick_citizen.death": "Daarick Citizen dying",
+  "entity.shupapium.daarick_citizen": "Test Dummy",
+  "item.shupapium.daarick_citizen_spawn_egg": "Test Dummy Spawn Egg",
+  "subtitle.shupapium.daarick_citizen.ambient": "Test Dummy murmurs",
+  "subtitle.shupapium.daarick_citizen.hurt": "Test Dummy in pain",
+  "subtitle.shupapium.daarick_citizen.death": "Test Dummy dying",
 
   "itemGroup.shupapium": "CBC: Warium Projectiles"
 }

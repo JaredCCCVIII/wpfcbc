@@ -148,7 +148,7 @@ public class DaarickCitizen extends Zombie {
 
     @Override
     protected @NotNull SoundEvent getStepSound() {
-        return SoundEvents.ZOMBIE_VILLAGER_STEP;
+        return SoundEvents.BAMBOO_STEP;
     }
 
     @Override

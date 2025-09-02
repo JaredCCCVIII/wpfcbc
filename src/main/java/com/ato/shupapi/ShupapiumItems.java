@@ -21,8 +21,8 @@ public class ShupapiumItems {
     public static final RegistryObject<Item> DAARICK_CITIZEN_SPAWN_EGG =
             ITEMS.register("daarick_citizen_spawn_egg",
                     () -> new ForgeSpawnEggItem(ShupapiumEntities.DAARICK_ENTITY,
-                            0x00FFFF,
-                            0x8B4513,
+                            0xFEDFBF,
+                            0xFF8000,
                             new Item.Properties()));
     //Create items
     public static final ItemEntry<MachineGunAmmoItem> MACHINE_GUN_AMMO_ITEM = MainShupapium.REGISTRATE

@@ -138,11 +138,11 @@
   "item.shupapium.strikespeargunammo.tooltip.condition1": "Info:",
   "item.shupapium.strikespeargunammo.tooltip.summary": "\"¡Esto es... Metal Pesado!\"",
 
-  "entity.shupapium.daarick_citizen": "Ciudadano Daarick",
-  "item.shupapium.daarick_citizen_spawn_egg": "Huevo generador de Ciudadano Daarick",
-  "subtitle.shupapium.daarick_citizen.ambient": "Murmullos de Ciudadano Daarick",
-  "subtitle.shupapium.daarick_citizen.hurt": "Ciudadano Daarick adolorido",
-  "subtitle.shupapium.daarick_citizen.death": "Ciudadano Daarick muriendo",
+  "entity.shupapium.daarick_citizen": "Muñeco de prueba",
+  "item.shupapium.daarick_citizen_spawn_egg": "Huevo generador de Muñeco de prueba",
+  "subtitle.shupapium.daarick_citizen.ambient": "Murmullos de Muñeco de prueba",
+  "subtitle.shupapium.daarick_citizen.hurt": "Muñeco de prueba adolorido",
+  "subtitle.shupapium.daarick_citizen.death": "Muñeco de prueba muriendo",
 
   "itemGroup.shupapium": "CBC: Proyectiles de Warium"
 }
