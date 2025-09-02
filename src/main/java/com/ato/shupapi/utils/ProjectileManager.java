@@ -22,6 +22,8 @@ public class ProjectileManager {
                 false
         );
 
+        if (!e.getTags().contains("shupapiumProjectile")) {return;}
+
         if (e instanceof RocketEntity projectile) projectile.onHitBlock(hit);
         else if (e instanceof LargeAPFireEntity projectile) projectile.onHitBlock(hit);
         else if (e instanceof GasArtilleryProjectileEntity projectile) projectile.onHitBlock(hit);

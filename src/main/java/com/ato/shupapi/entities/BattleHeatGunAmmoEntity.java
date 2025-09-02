@@ -32,6 +32,7 @@ public class BattleHeatGunAmmoEntity extends AbstractAutocannonProjectile {
                     CrustyChunksModEntities.LARGE_HEAT_FIRE.get(),
                     this.level()
             );
+            shupapiumProjectile.addTag("shupapiumProjectile");
             shupapiumProjectile.setOwner(this.getOwner());
             shupapiumProjectile.setBaseDamage(this.getAllProperties().damage().entityDamage() / 10);
             shupapiumProjectile.setKnockback((int) this.getAllProperties().damage().knockback());

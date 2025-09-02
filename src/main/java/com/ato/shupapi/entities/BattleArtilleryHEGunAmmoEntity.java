@@ -32,6 +32,7 @@ public class BattleArtilleryHEGunAmmoEntity extends AbstractAutocannonProjectile
                     CrustyChunksModEntities.ARTILLERY_FIRE_PROJECTILE.get(),
                     this.level()
             );
+            shupapiumProjectile.addTag("shupapiumProjectile");
             shupapiumProjectile.setOwner(this.getOwner());
             shupapiumProjectile.setBaseDamage(this.getAllProperties().damage().entityDamage() / 10);
             shupapiumProjectile.setKnockback((int) this.getAllProperties().damage().knockback());
