@@ -97,7 +97,7 @@ side="BOTH"
 [[dependencies.${mod_id}]]
 modId="crusty_chunks"
 mandatory=true
-versionRange="[1.0.0,2.0.0)"
+versionRange="[1.1.0,2.0.0)"
 ordering="NONE"
 side="BOTH"
 # Features are specific properties of the game environment, that you may want to declare you require. This example declares
