@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "createbigcannons:steel_autocannon_breech"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "crusty_chunks:steel_block"
+    },
+    {
+      "item": "crusty_chunks:steelplate"
+    },
+    {
+      "item": "crusty_chunks:steel_spring"
+    },
+    {
+      "item": "crusty_chunks:steel_gear"
+    },
+    {
+      "item": "crusty_chunks:firing_pin"
+    },
+    {
+      "item": "crusty_chunks:steel_ingot"
+    }
+  ],
+  "result": {
+    "item": "shupapium:artillery_gun_breech"
+  }
+}

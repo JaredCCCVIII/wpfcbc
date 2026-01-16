@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "shupapium:item/projectile/large_bullet_ammo_item"
+  }
+}

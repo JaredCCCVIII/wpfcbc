@@ -1,0 +1,6 @@
+{
+  "parent": "shupapium:block/shupapium_ammo_containers/regular",
+  "textures": {
+    "material": "minecraft:block/iron_block"
+  }
+}

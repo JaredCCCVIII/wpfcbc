@@ -1,0 +1,6 @@
+{
+  "type": "createbigcannons:drill_boring",
+  "input": "crusty_chunks:covered_machine_gun_barrel",
+  "obey_facing_or_axis": true,
+  "result": "shupapium:covered_gun_barrel"
+}

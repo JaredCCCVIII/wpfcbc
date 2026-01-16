@@ -1,0 +1,6 @@
+{
+  "type": "createbigcannons:drill_boring",
+  "input": "crusty_chunks:light_autocannon",
+  "obey_facing_or_axis": true,
+  "result": "shupapium:light_cannon_recoil_spring"
+}

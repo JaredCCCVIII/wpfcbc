@@ -1,0 +1,18 @@
+{
+  "values": [
+    "shupapium:block_buster_shell_block",
+    "shupapium:cluster_rocket_shell_block",
+    "shupapium:fire_bomb_shell_block",
+    "shupapium:fission_bomb_shell_block",
+    "shupapium:fusion_bomb_shell_block",
+    "shupapium:gas_bomb_shell_block",
+    "shupapium:heavy_bomb_shell_block",
+    "shupapium:ir_seeker_missile_shell_block",
+    "shupapium:kinetic_bunker_buster_shell_block",
+    "shupapium:medium_bomb_shell_block",
+    "shupapium:sarh_seeker_shell_block",
+    "shupapium:small_bomb_cluster_shell_block",
+    "shupapium:small_bomb_shell_block",
+    "shupapium:super_heavy_bomb_shell_block"
+  ]
+}

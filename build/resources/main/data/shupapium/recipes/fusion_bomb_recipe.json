@@ -1,0 +1,42 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "CCPBPCC",
+    "EPADAPE",
+    "EHHNHHE",
+    "  ESE  "
+  ],
+  "key": {
+    "A": {
+      "item": "crusty_chunks:lithium_ingot"
+    },
+    "B": {
+      "item": "crusty_chunks:fission_bomb"
+    },
+    "C": {
+      "item": "crusty_chunks:steelplate"
+    },
+    "D": {
+      "item": "crusty_chunks:fusion_bomb"
+    },
+    "E": {
+      "item": "crusty_chunks:implosion_lens"
+    },
+    "P": {
+      "item": "crusty_chunks:advanced_component"
+    },
+    "N": {
+      "item": "crusty_chunks:fusion_core"
+    },
+    "S": {
+      "item": "minecraft:repeater"
+    },
+    "H": {
+      "item": "crusty_chunks:lead_block"
+    }
+  },
+  "result": {
+    "item": "shupapium:fusion_bomb_shell_block"
+  },
+  "acceptMirrored": true
+}
