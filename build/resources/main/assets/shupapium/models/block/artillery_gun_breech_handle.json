@@ -1,0 +1,9 @@
+{
+  "parent": "shupapium:custom/gun_handle",
+  "textures": {
+    "all": "crusty_chunks:block/conveyorlifttop",
+    "particle": "crusty_chunks:block/conveyorlifttop",
+    "0": "crusty_chunks:block/gunhandle"
+  },
+  "render_type": "solid"
+}

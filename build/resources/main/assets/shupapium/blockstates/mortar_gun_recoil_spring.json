@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "shupapium:block/mortar_gun_recoil_spring",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "shupapium:block/mortar_gun_recoil_spring",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "shupapium:block/mortar_gun_recoil_spring",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "shupapium:block/mortar_gun_recoil_spring",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "shupapium:block/mortar_gun_recoil_spring"
+    },
+    "facing=west": {
+      "model": "shupapium:block/mortar_gun_recoil_spring",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

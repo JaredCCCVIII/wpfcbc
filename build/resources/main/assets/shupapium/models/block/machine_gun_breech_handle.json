@@ -1,0 +1,9 @@
+{
+  "parent": "shupapium:custom/gun_handle",
+  "textures": {
+    "all": "crusty_chunks:block/solidsteel",
+    "particle": "shupapium:block/autocannon/machine_gun_autocannon",
+    "0": "crusty_chunks:block/gunhandle"
+  },
+  "render_type": "solid"
+}

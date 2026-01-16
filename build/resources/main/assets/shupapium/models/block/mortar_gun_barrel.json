@@ -1,0 +1,9 @@
+{
+  "parent": "shupapium:custom/mortar",
+  "textures": {
+    "all": "crusty_chunks:block/solidsteel",
+    "particle": "crusty_chunks:block/solidsteel",
+    "2": "crusty_chunks:block/mortar"
+  },
+  "render_type": "solid"
+}

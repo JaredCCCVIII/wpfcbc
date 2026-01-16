@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "shupapium:block/autocannon/lmg_chamber"
+  }
+}

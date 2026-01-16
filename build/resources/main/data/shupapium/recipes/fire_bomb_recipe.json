@@ -1,0 +1,27 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    " HDH ",
+    "BDNDB",
+    " DND ",
+    " DDD "
+  ],
+  "key": {
+    "D": {
+      "item": "crusty_chunks:bent_component"
+    },
+    "N": {
+      "item": "crusty_chunks:fire_agent"
+    },
+    "H": {
+      "item": "crusty_chunks:steelplate"
+    },
+    "B": {
+      "item": "crusty_chunks:steel_component"
+    }
+  },
+  "result": {
+    "item": "shupapium:fire_bomb_shell_block"
+  },
+  "acceptMirrored": true
+}
