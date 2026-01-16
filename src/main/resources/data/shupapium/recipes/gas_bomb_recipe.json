@@ -1,0 +1,21 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    " D ",
+    "DND",
+    "DND",
+    " D "
+  ],
+  "key": {
+    "D": {
+      "item": "crusty_chunks:bent_component"
+    },
+    "N": {
+      "item": "crusty_chunks:toxic_agent"
+    }
+  },
+  "result": {
+    "item": "shupapium:gas_bomb_shell_block"
+  },
+  "acceptMirrored": true
+}

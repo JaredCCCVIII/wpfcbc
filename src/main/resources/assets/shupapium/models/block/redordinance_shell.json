@@ -1,9 +1,0 @@
-{
-  "parent": "createbigcannons:block/projectile_block",
-  "textures": {
-    "bottom": "shupapium:block/projectile/redordinance_shell_bottom",
-    "particle": "shupapium:block/projectile/redordinance_shell_top",
-    "side": "shupapium:block/projectile/redordinance_shell",
-    "top": "shupapium:block/projectile/redordinance_shell_top"
-  }
-}

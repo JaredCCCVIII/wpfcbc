@@ -1,0 +1,6 @@
+{
+  "type": "createbigcannons:drill_boring",
+  "input": "crusty_chunks:machine_gun",
+  "obey_facing_or_axis": true,
+  "result": "shupapium:machine_gun_recoil_spring"
+}

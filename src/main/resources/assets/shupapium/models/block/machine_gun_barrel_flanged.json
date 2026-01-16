@@ -1,0 +1,6 @@
+{
+  "parent": "createbigcannons:block/autocannon/barrel_flanged",
+  "textures": {
+    "material": "shupapium:block/autocannon/machine_gun_autocannon"
+  }
+}

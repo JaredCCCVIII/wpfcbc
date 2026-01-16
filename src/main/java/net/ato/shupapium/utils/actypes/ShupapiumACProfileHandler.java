@@ -1,0 +1,79 @@
+package net.ato.shupapium.utils.actypes;
+
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import net.ato.shupapium.MainShupapium;
+import net.ato.shupapium.utils.accombos.JsonCannonProfile;
+import net.minecraft.core.particles.ParticleOptions;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.util.GsonHelper;
+import net.minecraft.world.item.Item;
+import net.minecraftforge.registries.ForgeRegistries;
+import rbasamoyai.createbigcannons.cannons.autocannon.material.AutocannonMaterial;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class ShupapiumACProfileHandler {
+    private static final Map<ResourceLocation, ShupapiumACProfile> PROFILES = new HashMap<>();
+
+    public static void clear() {
+        PROFILES.clear();
+    }
+
+    public static void clearJsons() {
+        PROFILES.entrySet().removeIf(e -> e.getValue() instanceof JsonCannonProfile);
+    }
+
+    public static void register(ShupapiumACProfile profile) {
+        if (PROFILES.containsKey(profile.getProfileId())) {
+            MainShupapium.LOGGER.warn("Duplicate profile id {}", profile.getProfileId());
+            return;
+        }
+        if (PROFILES.containsValue(profile)) {
+            MainShupapium.LOGGER.warn("{} already registered", profile.getProfileId());
+            return;
+        }
+        PROFILES.put(profile.getProfileId(), profile);
+    }
+
+    public static ShupapiumACProfile getProfile(ResourceLocation id) {
+        return PROFILES.get(id);
+    }
+
+    public static ShupapiumACProfile getProfile(ShupapiumACParts acParts) {
+        for (ShupapiumACProfile profile : PROFILES.values()) {
+            if (profile.parts().equals(acParts)) {
+                return profile;
+            }
+        }
+        return null;
+    }
+
+    public static ShupapiumACProfile fromJson(ResourceLocation id, JsonObject json) {
+        JsonObject partsJson = GsonHelper.getAsJsonObject(json, "parts");
+        ShupapiumACParts parts = new ShupapiumACParts(
+               ForgeRegistries.BLOCKS.getValue(ResourceLocation.parse(GsonHelper.getAsString(partsJson, "barrel"))),
+                ForgeRegistries.BLOCKS.getValue(ResourceLocation.parse(GsonHelper.getAsString(partsJson, "chamber"))),
+                ForgeRegistries.BLOCKS.getValue(ResourceLocation.parse(GsonHelper.getAsString(partsJson, "breech")))
+        );
+        SoundEvent fireSoundId = ForgeRegistries.SOUND_EVENTS.getValue(ResourceLocation.parse(GsonHelper.getAsString(json, "fire_sound")));
+        List<ParticleOptions> muzzleParticles = new ArrayList<>();
+        for (JsonElement e : GsonHelper.getAsJsonArray(json, "muzzle_particles")) {
+            muzzleParticles.add((ParticleOptions) ForgeRegistries.PARTICLE_TYPES.getValue(ResourceLocation.parse(e.getAsString())));
+        }
+        int fireRate = GsonHelper.getAsInt(json, "fire_rate");
+        int projectilesPerShot = GsonHelper.getAsInt(json, "projectiles_per_shot");
+        float baseSpeed = GsonHelper.getAsFloat(json, "projectile_base_speed");
+        float baseSpread = GsonHelper.getAsFloat(json, "projectile_base_spread");
+        List<Item> ammoTypes = new ArrayList<>();
+        for (JsonElement e : GsonHelper.getAsJsonArray(json, "ammo_types")) {
+            ammoTypes.add(ForgeRegistries.ITEMS.getValue(ResourceLocation.parse(e.getAsString())));
+        }
+        AutocannonMaterial autocannonMaterial = AutocannonMaterial.fromNameOrNull(ResourceLocation.parse(GsonHelper.getAsString(json, "main_material")));
+        return new JsonCannonProfile(id, parts, fireSoundId, muzzleParticles, fireRate, projectilesPerShot, baseSpeed, baseSpread, ammoTypes, autocannonMaterial);
+    }
+}

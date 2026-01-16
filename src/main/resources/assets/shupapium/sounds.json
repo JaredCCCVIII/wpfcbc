@@ -5,7 +5,7 @@
       "shupapium:entity/daarick_citizen/ambient2",
       "shupapium:entity/daarick_citizen/ambient3"
     ],
-    "subtitle": "subtitle.shupapium.daarick_citizen.ambient"
+    "subtitle": "subtitle.shupapium.dummy_ragdoll.ambient"
   },
   "entity.daarick_citizen.hurt": {
     "sounds": [
@@ -14,10 +14,10 @@
       "shupapium:entity/daarick_citizen/hurt3",
       "shupapium:entity/daarick_citizen/hurt4"
     ],
-    "subtitle": "subtitle.shupapium.daarick_citizen.hurt"
+    "subtitle": "subtitle.shupapium.dummy_ragdoll.hurt"
   },
   "entity.daarick_citizen.death": {
     "sounds": ["shupapium:entity/daarick_citizen/death"],
-    "subtitle": "subtitle.shupapium.daarick_citizen.death"
+    "subtitle": "subtitle.shupapium.dummy_ragdoll.death"
   }
 }

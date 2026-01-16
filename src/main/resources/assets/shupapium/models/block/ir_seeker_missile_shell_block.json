@@ -1,0 +1,9 @@
+{
+  "parent": "createbigcannons:block/projectile_block",
+  "textures": {
+    "bottom": "shupapium:block/projectile/ir_shell_bottom",
+    "particle": "shupapium:block/projectile/ir_shell_top",
+    "side": "shupapium:block/projectile/ir_shell",
+    "top": "shupapium:block/projectile/ir_shell_top"
+  }
+}

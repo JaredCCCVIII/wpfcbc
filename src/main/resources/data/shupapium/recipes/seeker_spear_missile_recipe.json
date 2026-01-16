@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "crusty_chunks:seeker_spear_rocket"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    }
+  ],
+  "result": {
+    "item": "shupapium:seeker_spear_missile_ammo_item"
+  }
+}

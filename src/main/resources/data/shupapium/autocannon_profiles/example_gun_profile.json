@@ -1,0 +1,20 @@
+{
+  "parts": {
+    "barrel": "minecraft:barrel",
+    "chamber": "minecraft:command_block",
+    "breech": "minecraft:piston"
+  },
+  "fire_sound": "crusty_chunks:largeshot",
+  "muzzle_particles": [
+    "minecraft:campfire_cosy_smoke",
+    "minecraft:smoke"
+  ],
+  "fire_rate": 240,
+  "projectiles_per_shot": 1,
+  "projectile_base_speed": 7.9,
+  "projectile_base_spread": 0.05,
+  "ammo_types": [
+    "shupapium:large_bullet_ammo_item"
+  ],
+  "main_material": "shupapium:machine_gun"
+}
