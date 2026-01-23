@@ -5,6 +5,7 @@ import com.github.alexmodguy.alexscaves.server.block.blockentity.NuclearSirenBlo
 import com.github.alexmodguy.alexscaves.server.block.poi.ACPOIRegistry;
 import com.google.common.base.Predicates;
 import com.tterrag.registrate.util.entry.BlockEntry;
+import net.ato.shupapium.ShupapiumAdvancements;
 import net.ato.shupapium.ShupapiumBlocks;
 import net.mcreator.crustychunks.procedures.FissionExplosionProcedure;
 import net.minecraft.core.BlockPos;
@@ -14,6 +15,7 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.village.poi.PoiManager;
 import net.minecraft.world.level.Level;
@@ -32,6 +34,12 @@ public class FissionBombShellProjectile extends AbstractShupapiumBCProjectile {
     @Override
     public BlockEntry<?> getBlock() {
         return ShupapiumBlocks.FISSION_BOMB_SHELL_BLOCK;
+    }
+
+    @Override
+    public void onAddedToWorld() {
+        super.onAddedToWorld();
+        this.setOwner(this.level().getNearestPlayer(this, 28.0D));
     }
 
     @Override
@@ -90,5 +98,10 @@ public class FissionBombShellProjectile extends AbstractShupapiumBCProjectile {
     @Override
     protected void detonate(Position position) {
         FissionExplosionProcedure.execute(this.level(), position.x(), position.y(), position.z());
+        if (!this.level().isClientSide && this.getOwner() instanceof ServerPlayer player) {
+            ShupapiumAdvancements.NUCLEAR_DETONATION.trigger(player, "fission");
+        }
     }
+
+
 }

@@ -5,8 +5,8 @@ import com.github.alexmodguy.alexscaves.server.block.blockentity.NuclearSirenBlo
 import com.github.alexmodguy.alexscaves.server.block.poi.ACPOIRegistry;
 import com.google.common.base.Predicates;
 import com.tterrag.registrate.util.entry.BlockEntry;
+import net.ato.shupapium.ShupapiumAdvancements;
 import net.ato.shupapium.ShupapiumBlocks;
-import net.mcreator.crustychunks.procedures.FissionExplosionProcedure;
 import net.mcreator.crustychunks.procedures.FusionBombHitProcedure;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Position;
@@ -15,6 +15,7 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.village.poi.PoiManager;
 import net.minecraft.world.level.Level;
@@ -33,6 +34,12 @@ public class FusionBombShellProjectile extends AbstractShupapiumBCProjectile {
     @Override
     public BlockEntry<?> getBlock() {
         return ShupapiumBlocks.FUSION_BOMB_SHELL_BLOCK;
+    }
+
+    @Override
+    public void onAddedToWorld() {
+        super.onAddedToWorld();
+        this.setOwner(this.level().getNearestPlayer(this, 28.0D));
     }
 
     @Override
@@ -91,5 +98,8 @@ public class FusionBombShellProjectile extends AbstractShupapiumBCProjectile {
     @Override
     protected void detonate(Position position) {
         FusionBombHitProcedure.execute(this.level(), this);
+        if (!this.level().isClientSide && this.getOwner() instanceof ServerPlayer player) {
+            ShupapiumAdvancements.NUCLEAR_DETONATION.trigger(player, "fusion");
+        }
     }
 }

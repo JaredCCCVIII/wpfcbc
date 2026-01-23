@@ -1,0 +1,26 @@
+{
+  "parent": "crusty_chunks:fission_core_acquired",
+  "display": {
+    "icon": {
+      "item": "shupapium:fusion_bomb_shell_block"
+    },
+    "title": {
+      "translate": "advancements.shupapium.final_explosion.title"
+    },
+    "description": {
+      "translate": "advancements.shupapium.final_explosion.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "detonante_nuclear_bomb": {
+      "trigger": "shupapium:nuclear_explosion_trigger",
+      "conditions": {
+        "type": "fusion"
+      }
+    }
+  }
+}

@@ -83,6 +83,7 @@ public class MainShupapium
     {
         ShupapiumACProfileHandler.clear();
         event.enqueueWork(ShupapiumACProfiles::register);
+        event.enqueueWork(ShupapiumAdvancements::register);
     }
 
     // Add the example block item to the building blocks tab
