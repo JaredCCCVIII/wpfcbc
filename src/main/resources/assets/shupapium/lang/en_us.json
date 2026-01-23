@@ -259,5 +259,10 @@
   "exception.shupapium.cannon_mount.invalid_breech": "Invalid breech detected.",
   "exception.shupapium.cannon_mount.invalid_chamber": "Invalid chamber detected.",
   "exception.shupapium.cannon_mount.invalid_barrel": "Invalid barrel detected.",
-  "shupapium.gui.autocannon_ammo_container.propellant_slot": "Propellant for firing artillery"
+  "shupapium.gui.autocannon_ammo_container.propellant_slot": "Propellant for firing artillery",
+
+  "advancements.shupapium.nuclear_explosion.title": "War Crime",
+  "advancements.shupapium.nuclear_explosion.desc": "Detonate a Fission Bomb",
+  "advancements.shupapium.final_explosion.title": "The destroyer of worlds",
+  "advancements.shupapium.final_explosion.desc": "Detonate a Fusion Bomb"
 }

@@ -1,7 +1,7 @@
 {
   "parent": "shupapium:custom/gun_handle",
   "textures": {
-    "all": "crusty_chunks:block/heavyrocketpod",
+    "all": "shupapium:block/autocannon/rp_breech_handle",
     "particle": "crusty_chunks:block/heavyrocketpod",
     "0": "crusty_chunks:block/gunhandle"
   },
