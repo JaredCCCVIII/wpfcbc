@@ -12,10 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.ForgeRegistries;
 import rbasamoyai.createbigcannons.cannons.autocannon.material.AutocannonMaterial;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class ShupapiumACProfileHandler {
     private static final Map<ResourceLocation, ShupapiumACProfile> PROFILES = new HashMap<>();
@@ -30,7 +27,7 @@ public class ShupapiumACProfileHandler {
 
     public static void register(ShupapiumACProfile profile) {
         if (PROFILES.containsKey(profile.getProfileId())) {
-            MainShupapium.LOGGER.warn("Duplicate profile id {}", profile.getProfileId());
+            applyOverride((JsonCannonProfile) profile);
             return;
         }
         if (PROFILES.containsValue(profile)) {
@@ -51,6 +48,66 @@ public class ShupapiumACProfileHandler {
             }
         }
         return null;
+    }
+
+    public static void applyOverride(JsonCannonProfile override) {
+        ShupapiumACProfile base = PROFILES.get(override.getProfileId());
+        if (base == null) {
+            MainShupapium.LOGGER.warn("No profile found with id {}", override.getProfileId());
+            return;
+        }
+
+        PROFILES.put(base.getProfileId(), new ShupapiumACProfile() {
+            @Override
+            public ResourceLocation getProfileId() {
+                return override.getProfileId() != null ? override.getProfileId() : base.getProfileId();
+            }
+
+            @Override
+            public ShupapiumACParts parts() {
+                return override.parts() != null ? override.parts() : base.parts();
+            }
+
+            @Override
+            public SoundEvent getFireSound() {
+                return override.getFireSound() != null ? override.getFireSound() : base.getFireSound();
+            }
+
+            @Override
+            public List<ParticleOptions> getMuzzleParticles() {
+                return override.getMuzzleParticles() != null ? override.getMuzzleParticles() : base.getMuzzleParticles();
+            }
+
+            @Override
+            public int getCannonFireRate() {
+                return override.getCannonFireRate() > 0 ? override.getCannonFireRate() : base.getCannonFireRate();
+            }
+
+            @Override
+            public int getProjectilePerShot() {
+                return override.getProjectilePerShot() > 0 ? override.getProjectilePerShot() : base.getProjectilePerShot();
+            }
+
+            @Override
+            public float getProjectileBaseSpeed() {
+                return override.getProjectileBaseSpeed() > 0 ? override.getProjectileBaseSpeed() : base.getProjectileBaseSpeed();
+            }
+
+            @Override
+            public float getProjectileSpread() {
+                return override.getProjectileSpread() > 0 ? override.getProjectileSpread() : base.getProjectileSpread();
+            }
+
+            @Override
+            public List<Item> getAmmoTypes() {
+                return override.getAmmoTypes() != null ? override.getAmmoTypes() : base.getAmmoTypes();
+            }
+
+            @Override
+            public AutocannonMaterial getMainMaterial() {
+                return override.getMainMaterial() != null ? override.getMainMaterial() : base.getMainMaterial();
+            }
+        });
     }
 
     public static ShupapiumACProfile fromJson(ResourceLocation id, JsonObject json) {
