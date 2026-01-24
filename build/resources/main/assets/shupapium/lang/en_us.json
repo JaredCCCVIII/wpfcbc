@@ -121,7 +121,7 @@
   "item.shupapium.medium_shell_ammo_item": "Medium Shell Ammo",
   "item.shupapium.medium_shell_ammo_item.tooltip.behaviour1": "The second iteration of the shells, stronger impact.",
   "item.shupapium.medium_shell_ammo_item.tooltip.condition1": "Info:",
-  "item.shupapium.medium_shell_ammo_item.tooltip.summary": "\"These thins are starting to get heavy!\"",
+  "item.shupapium.medium_shell_ammo_item.tooltip.summary": "\"These things are starting to get heavy!\"",
 
   "item.shupapium.medium_flak_shell_ammo_item": "Medium Shell Ammo (Flak)",
   "item.shupapium.medium_flak_shell_ammo_item.tooltip.behaviour1": "The second iteration of the shells, stronger impact, now on air.",
@@ -211,7 +211,7 @@
   "item.shupapium.radar_spear_missile_ammo_item": "Spear Rocket Ammo (RADAR)",
   "item.shupapium.radar_spear_missile_ammo_item.tooltip.behaviour1": "A medium upgrade to the Armor Peeler Rocket. Can follow the enemy in the programmed radius.",
   "item.shupapium.radar_spear_missile_ammo_item.tooltip.condition1": "Info:",
-  "item.shupapium.radar_spear_missile_ammo_item.tooltip.summary": "\"Flasbacks of the modern era.\"",
+  "item.shupapium.radar_spear_missile_ammo_item.tooltip.summary": "\"Flashbacks of the modern era.\"",
 
   "block.shupapium.shupapium_ammo_container": "Warium Ammo Container",
   "block.shupapium.creative_shupapium_ammo_container": "Creative Warium Ammo Container",
