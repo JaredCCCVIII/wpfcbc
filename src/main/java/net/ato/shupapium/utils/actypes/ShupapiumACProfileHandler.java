@@ -6,9 +6,12 @@ import net.ato.shupapium.MainShupapium;
 import net.ato.shupapium.utils.accombos.JsonCannonProfile;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.util.GsonHelper;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.registries.ForgeRegistries;
 import rbasamoyai.createbigcannons.cannons.autocannon.material.AutocannonMaterial;
 
@@ -106,6 +109,16 @@ public class ShupapiumACProfileHandler {
             @Override
             public AutocannonMaterial getMainMaterial() {
                 return override.getMainMaterial() != null ? override.getMainMaterial() : base.getMainMaterial();
+            }
+
+            @Override
+            public void cannonSoundEvent(Level level, Vec3 pos) {
+                base.cannonSoundEvent(level, pos);
+            }
+
+            @Override
+            public void cannonMuzzleEvent(ServerLevel level, Vec3 pos, Vec3 vel) {
+                base.cannonMuzzleEvent(level, pos, vel);
             }
         });
     }
