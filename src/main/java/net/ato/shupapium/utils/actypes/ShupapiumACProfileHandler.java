@@ -30,7 +30,11 @@ public class ShupapiumACProfileHandler {
 
     public static void register(ShupapiumACProfile profile) {
         if (PROFILES.containsKey(profile.getProfileId())) {
-            applyOverride((JsonCannonProfile) profile);
+            if (profile instanceof JsonCannonProfile jsonProfile) {
+                applyOverride(jsonProfile);
+            } else {
+                MainShupapium.LOGGER.warn("Duplicate {} profile id", profile.getProfileId());
+            }
             return;
         }
         if (PROFILES.containsValue(profile)) {
@@ -83,22 +87,22 @@ public class ShupapiumACProfileHandler {
 
             @Override
             public int getCannonFireRate() {
-                return override.getCannonFireRate() > 0 ? override.getCannonFireRate() : base.getCannonFireRate();
+                return override.getCannonFireRate() >= 0 ? override.getCannonFireRate() : base.getCannonFireRate();
             }
 
             @Override
             public int getProjectilePerShot() {
-                return override.getProjectilePerShot() > 0 ? override.getProjectilePerShot() : base.getProjectilePerShot();
+                return override.getProjectilePerShot() >= 0 ? override.getProjectilePerShot() : base.getProjectilePerShot();
             }
 
             @Override
             public float getProjectileBaseSpeed() {
-                return override.getProjectileBaseSpeed() > 0 ? override.getProjectileBaseSpeed() : base.getProjectileBaseSpeed();
+                return override.getProjectileBaseSpeed() >= 0 ? override.getProjectileBaseSpeed() : base.getProjectileBaseSpeed();
             }
 
             @Override
             public float getProjectileSpread() {
-                return override.getProjectileSpread() > 0 ? override.getProjectileSpread() : base.getProjectileSpread();
+                return override.getProjectileSpread() >= 0 ? override.getProjectileSpread() : base.getProjectileSpread();
             }
 
             @Override
