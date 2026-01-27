@@ -25,6 +25,7 @@ import net.minecraft.nbt.NbtUtils;
 import net.minecraft.nbt.Tag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.Main;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundSource;
@@ -162,14 +163,17 @@ public class MountedShupapiumACContraption extends MountedAutocannonContraption 
             if (negativeBreech) break;
         }
         BlockPos negativeEndPos = negativeBreech ? start : start.relative(positive);
+        MainShupapium.LOGGER.info("La lista de bloques es la siguiente: {}", cannonBlocks);
 
-        if (cannonLength < 2 || positiveBreech && negativeBreech) {
+        if (cannonLength < 1 || positiveBreech && negativeBreech) {
             throw invalidCannon();
         }
 
         this.startPos = !positiveBreech && !negativeBreech ? pos : (negativeBreech ? negativeEndPos : positiveEndPos);
         BlockState breechState = level.getBlockState(this.startPos);
         if (!(breechState.getBlock() instanceof ShupapiumACBreechBlock)) {
+            MainShupapium.LOGGER.info("breech positivo: {} breech negativo: {}", positiveBreech, negativeBreech);
+            cannonBlocks.forEach(info -> MainShupapium.LOGGER.info("{} at {}", info.state().getBlock(), info.pos()));
             throw invalidCannon();
         }
         this.initialOrientation = breechState.getValue(BlockStateProperties.FACING);
