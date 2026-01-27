@@ -10,10 +10,12 @@ import net.ato.shupapium.blockentities.ShupapiumACBreechBlockEntity;
 import net.ato.shupapium.items.ShupapiumAmmoContainerItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BlockItem;
@@ -36,9 +38,11 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import rbasamoyai.createbigcannons.cannon_control.contraption.AbstractMountedCannonContraption;
 import rbasamoyai.createbigcannons.cannon_control.contraption.PitchOrientedContraptionEntity;
 import rbasamoyai.createbigcannons.cannons.autocannon.AutocannonBaseBlock;
+import rbasamoyai.createbigcannons.cannons.autocannon.AutocannonBlock;
 import rbasamoyai.createbigcannons.cannons.autocannon.AutocannonBlockEntity;
 import rbasamoyai.createbigcannons.cannons.autocannon.material.AutocannonMaterial;
 import rbasamoyai.createbigcannons.crafting.casting.CannonCastShape;
@@ -51,6 +55,13 @@ public class ShupapiumACBreechBlock extends AutocannonBaseBlock implements IBE<S
     public ShupapiumACBreechBlock(Properties properties, AutocannonMaterial material) {
         super(properties, material);
         this.registerDefaultState(this.defaultBlockState().setValue(HANDLE, false));
+    }
+
+    @Override
+    public void setPlacedBy(@NotNull Level pLevel, @NotNull BlockPos pPos, @NotNull BlockState pState, @Nullable LivingEntity pPlacer, @NotNull ItemStack pStack) {
+        super.setPlacedBy(pLevel, pPos, pState, pPlacer, pStack);
+        if (!(pLevel instanceof ServerLevel server)) return;
+        server.getServer().execute(() -> AutocannonBlock.onPlace(pLevel, pPos));
     }
 
     @Override
