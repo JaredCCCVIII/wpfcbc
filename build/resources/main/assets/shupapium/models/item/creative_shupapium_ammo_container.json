@@ -1,6 +1,0 @@
-{
-  "parent": "shupapium:block/shupapium_ammo_containers/creative",
-  "textures": {
-    "material": "minecraft:block/amethyst_block"
-  }
-}

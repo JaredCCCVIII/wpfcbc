@@ -1,9 +1,0 @@
-{
-  "parent": "shupapium:custom/gun_handle",
-  "textures": {
-    "all": "shupapium:block/autocannon/bc_breech_handle",
-    "particle": "crusty_chunks:block/conveyorliftbottom",
-    "0": "crusty_chunks:block/gunhandle"
-  },
-  "render_type": "solid"
-}
