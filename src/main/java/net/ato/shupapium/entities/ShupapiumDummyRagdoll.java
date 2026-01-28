@@ -125,6 +125,7 @@ public class ShupapiumDummyRagdoll extends Zombie {
         if (this.hasCustomName()) {
             String name = this.getName().getString();
 
+            if (this.hasEffect(ShupapiumMobEffects.JOKE_EFFECT.get())) return;
             if (name.equalsIgnoreCase("Chistoso") || name.equalsIgnoreCase("Pedro")) {
                 this.addEffect(new MobEffectInstance(ShupapiumMobEffects.JOKE_EFFECT.get(), 400));
             }
