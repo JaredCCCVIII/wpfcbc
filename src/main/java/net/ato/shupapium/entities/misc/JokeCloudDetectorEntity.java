@@ -98,7 +98,7 @@ public class JokeCloudDetectorEntity extends AbstractArrow implements ItemSuppli
         entityarrow.shoot(entity.getViewVector(1.0F).x, entity.getViewVector(1.0F).y, entity.getViewVector(1.0F).z, power * 2.0F, 0.0F);
         entityarrow.setSilent(true);
         entityarrow.setCritArrow(false);
-        entityarrow.setBaseDamage(damage);
+        entityarrow.setBaseDamage(0.0F);
         entityarrow.setKnockback(knockback);
         world.addFreshEntity(entityarrow);
         world.playSound(null, entity.getX(), entity.getY(), entity.getZ(), Objects.requireNonNull(ForgeRegistries.SOUND_EVENTS.getValue(ResourceLocation.parse("entity.arrow.shoot"))), SoundSource.PLAYERS, 1.0F, 1.0F / (random.nextFloat() * 0.5F + 1.0F) + power / 2.0F);
@@ -152,11 +152,10 @@ public class JokeCloudDetectorEntity extends AbstractArrow implements ItemSuppli
                                 if (!var10000.is(ItemTags.create(ResourceLocation.parse("crusty_chunks:gasmask")))) {
                                     if (entityiterator instanceof LivingEntity _entity) {
                                         if (!_entity.level().isClientSide()) {
+                                            if (_entity.hasEffect(ShupapiumMobEffects.JOKE_EFFECT.get())) return;
                                             _entity.addEffect(new MobEffectInstance(ShupapiumMobEffects.JOKE_EFFECT.get(), 1040, 1, false, true));
                                         }
                                     }
-
-                                    entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.ON_FIRE)), 1.0F);
                                 }
                             }
                         }
