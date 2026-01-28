@@ -3,6 +3,7 @@ package net.ato.shupapium.events;
 import net.ato.shupapium.MainShupapium;
 import net.ato.shupapium.ShupapiumEntities;
 import net.ato.shupapium.client.renderers.ShupapiumDummyRagdollRenderer;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -13,5 +14,6 @@ public class ClientModEvents {
     @SubscribeEvent
     public static void registerRenderers(final EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(ShupapiumEntities.DUMMY_RAGDOLL_ENTITY.get(), ShupapiumDummyRagdollRenderer::new);
+        event.registerEntityRenderer(ShupapiumEntities.JOKE_CLOUD_DETECTOR.get(), ThrownItemRenderer::new);
     }
 }

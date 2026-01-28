@@ -8,13 +8,22 @@ import net.minecraft.world.entity.monster.Zombie;
 import org.jetbrains.annotations.NotNull;
 
 public class ShupapiumDummyRagdollRenderer extends ZombieRenderer {
-    private static final ResourceLocation TEXTURE = new ResourceLocation(MainShupapium.MODID, "textures/entity/dummy_ragdoll.png");
+    private static final ResourceLocation TEXTURE = ResourceLocation.fromNamespaceAndPath(MainShupapium.MODID, "textures/entity/dummy_ragdoll.png");
+    private static final ResourceLocation EG_C_TEXTURE = ResourceLocation.fromNamespaceAndPath(MainShupapium.MODID, "textures/entity/chistoso.png");
+
     public ShupapiumDummyRagdollRenderer(EntityRendererProvider.Context p_174456_) {
         super(p_174456_);
     }
 
     @Override
     public @NotNull ResourceLocation getTextureLocation(@NotNull Zombie pEntity) {
+        if (pEntity.hasCustomName()) {
+            String name = pEntity.getName().getString();
+
+            if (name.equalsIgnoreCase("Chistoso")) {
+                return EG_C_TEXTURE;
+            }
+        }
         return TEXTURE;
     }
 }
