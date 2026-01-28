@@ -6,6 +6,8 @@ import net.mcreator.crustychunks.procedures.BlockBusterHitProcedure;
 import net.mcreator.crustychunks.procedures.ExplosiveBarrelTriggerProcedure;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
@@ -14,7 +16,12 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
+import net.minecraft.world.entity.animal.Fox;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ChorusFruitItem;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.gameevent.GameEvent;
+import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.NotNull;
 
 public class JokeEffect extends MobEffect {
@@ -36,6 +43,11 @@ public class JokeEffect extends MobEffect {
             float pitch = Mth.lerp(progress, 0.0F, 2.0F);
 
             pLivingEntity.level().playSound(null, pLivingEntity.blockPosition(), SoundEvents.CHICKEN_AMBIENT, SoundSource.NEUTRAL, 1.0F, pitch);
+
+            if (pLivingEntity.hurtDuration > 0) {
+                randomTeleport(pLivingEntity.level(), pLivingEntity.getLastAttacker());
+            }
+
             if (!pLivingEntity.isAlive()) {
                 BlockBusterHitProcedure.execute(pLivingEntity.level(), pLivingEntity.getX(), pLivingEntity.getY(), pLivingEntity.getZ(), pLivingEntity);
             }
@@ -78,5 +90,31 @@ public class JokeEffect extends MobEffect {
     @Override
     public boolean isDurationEffectTick(int pDuration, int pAmplifier) {
         return pDuration % 4 == 0;
+    }
+
+    private void randomTeleport(Level pLevel, LivingEntity pEntityLiving) {
+        double d0 = pEntityLiving.getX();
+        double d1 = pEntityLiving.getY();
+        double d2 = pEntityLiving.getZ();
+
+        for(int i = 0; i < 16; ++i) {
+            double d3 = pEntityLiving.getX() + (pEntityLiving.getRandom().nextDouble() - 0.5D) * 16.0D;
+            double d4 = Mth.clamp(pEntityLiving.getY() + (double)(pEntityLiving.getRandom().nextInt(16) - 8), (double)pLevel.getMinBuildHeight(), (double)(pLevel.getMinBuildHeight() + ((ServerLevel)pLevel).getLogicalHeight() - 1));
+            double d5 = pEntityLiving.getZ() + (pEntityLiving.getRandom().nextDouble() - 0.5D) * 16.0D;
+            if (pEntityLiving.isPassenger()) {
+                pEntityLiving.stopRiding();
+            }
+
+            Vec3 vec3 = pEntityLiving.position();
+            pLevel.gameEvent(GameEvent.TELEPORT, vec3, GameEvent.Context.of(pEntityLiving));
+            net.minecraftforge.event.entity.EntityTeleportEvent.ChorusFruit event = net.minecraftforge.event.ForgeEventFactory.onChorusFruitTeleport(pEntityLiving, d3, d4, d5);
+            if (event.isCanceled()) return;
+            if (pEntityLiving.randomTeleport(event.getTargetX(), event.getTargetY(), event.getTargetZ(), true)) {
+                SoundEvent soundevent = pEntityLiving instanceof Fox ? SoundEvents.FOX_TELEPORT : SoundEvents.CHORUS_FRUIT_TELEPORT;
+                pLevel.playSound(null, d0, d1, d2, soundevent, SoundSource.PLAYERS, 1.0F, 1.0F);
+                pEntityLiving.playSound(soundevent, 1.0F, 1.0F);
+                break;
+            }
+        }
     }
 }

@@ -56,7 +56,7 @@ public class JokeBombShellProjectile extends AbstractShupapiumBCProjectile {
         for(int index0 = 0; index0 < 10; ++index0) {
             if (world instanceof ServerLevel projectileLevel) {
                 AbstractArrow entityToSpawn = new JokeCloudDetectorEntity(ShupapiumEntities.JOKE_CLOUD_DETECTOR.get(), projectileLevel);
-                entityToSpawn.setBaseDamage(damage);
+                entityToSpawn.setBaseDamage(0.0D);
                 entityToSpawn.setSilent(true);
                 entityToSpawn.setPos(x, y + (double)3.0F, z);
                 entityToSpawn.shoot(Mth.nextDouble(RandomSource.create(), -1.0F, 1.0F), Mth.nextDouble(RandomSource.create(), 0.0F, 1.0F), Mth.nextDouble(RandomSource.create(), -1.0F, 1.0F), 5.0F, 0.0F);
