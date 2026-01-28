@@ -12,13 +12,9 @@ import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.BucketItem;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.MilkBucketItem;
 import org.jetbrains.annotations.NotNull;
 
 public class JokeEffect extends MobEffect {
-    private float counter = 0.0F;
     public JokeEffect() {
         super(MobEffectCategory.HARMFUL, 0x94733A);
     }
@@ -26,8 +22,17 @@ public class JokeEffect extends MobEffect {
     @Override
     public void applyEffectTick(@NotNull LivingEntity pLivingEntity, int pAmplifier) {
         if (!pLivingEntity.level().isClientSide) {
-            counter += 0.01F;
-            pLivingEntity.level().playSound(null, pLivingEntity.blockPosition(), SoundEvents.CHICKEN_AMBIENT, SoundSource.NEUTRAL, 1.0F, counter);
+            var instance = pLivingEntity.getEffect(this);
+            if (instance == null) return;
+
+            int remaining = instance.getDuration();
+            int total = pLivingEntity.getPersistentData().getInt("JokeEffectTotalDuration");
+            if (total <= 0) return;
+
+            float progress = 1.0F - ((float) remaining / total);
+            float pitch = Mth.lerp(progress, 0.0F, 2.0F);
+
+            pLivingEntity.level().playSound(null, pLivingEntity.blockPosition(), SoundEvents.CHICKEN_AMBIENT, SoundSource.NEUTRAL, 1.0F, pitch);
             if (!pLivingEntity.isAlive()) {
                 BlockBusterHitProcedure.execute(pLivingEntity.level(), pLivingEntity.getX(), pLivingEntity.getY(), pLivingEntity.getZ(), pLivingEntity);
             }
@@ -38,7 +43,10 @@ public class JokeEffect extends MobEffect {
     public void addAttributeModifiers(@NotNull LivingEntity pLivingEntity, @NotNull AttributeMap pAttributeMap, int pAmplifier) {
         super.addAttributeModifiers(pLivingEntity, pAttributeMap, pAmplifier);
         if (!pLivingEntity.level().isClientSide) {
-            counter = 0;
+            var instance = pLivingEntity.getEffect(this);
+            if (instance != null) {
+                pLivingEntity.getPersistentData().putInt("JokeEffectTotalDuration", instance.getDuration());
+            }
             pLivingEntity.level().playSound(null, pLivingEntity.blockPosition(), SoundEvents.SHULKER_TELEPORT, SoundSource.NEUTRAL, 1.0F, Mth.nextFloat(RandomSource.create(), 0.5F, 1.5F));
         }
     }
@@ -47,6 +55,7 @@ public class JokeEffect extends MobEffect {
     public void removeAttributeModifiers(@NotNull LivingEntity pLivingEntity, @NotNull AttributeMap pAttributeMap, int pAmplifier) {
         super.removeAttributeModifiers(pLivingEntity, pAttributeMap, pAmplifier);
         if (!pLivingEntity.level().isClientSide) {
+            pLivingEntity.getPersistentData().remove("JokeEffectTotalDuration");
             pLivingEntity.level().playSound(null, pLivingEntity.blockPosition(), SoundEvents.CHORUS_FRUIT_TELEPORT, SoundSource.NEUTRAL, 1.0F, Mth.nextFloat(RandomSource.create(), 0.5F, 1.5F));
             if (pLivingEntity instanceof Player playa) {
                 if (playa.getPersistentData().getBoolean("ChistosadaCure")) {

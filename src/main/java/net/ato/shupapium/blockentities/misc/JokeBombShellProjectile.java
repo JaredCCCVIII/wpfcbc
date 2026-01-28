@@ -39,12 +39,6 @@ public class JokeBombShellProjectile extends AbstractShupapiumBCProjectile {
     private void execute(LevelAccessor world, double x, double y, double z) {
         if (world instanceof Level _level) {
             if (!_level.isClientSide()) {
-                _level.explode(null, x, y, z, 2.0F, Level.ExplosionInteraction.NONE);
-            }
-        }
-
-        if (world instanceof Level _level) {
-            if (!_level.isClientSide()) {
                 _level.playSound(null, BlockPos.containing(x, y, z), Objects.requireNonNull(ForgeRegistries.SOUND_EVENTS.getValue(ResourceLocation.parse("crusty_chunks:smallexplosion"))), SoundSource.NEUTRAL, 5.0F, (float)Mth.nextDouble(RandomSource.create(), 1.2, 1.4));
             } else {
                 _level.playLocalSound(x, y, z, Objects.requireNonNull(ForgeRegistries.SOUND_EVENTS.getValue(ResourceLocation.parse("crusty_chunks:smallexplosion"))), SoundSource.NEUTRAL, 5.0F, (float)Mth.nextDouble(RandomSource.create(), 1.2, 1.4), false);
