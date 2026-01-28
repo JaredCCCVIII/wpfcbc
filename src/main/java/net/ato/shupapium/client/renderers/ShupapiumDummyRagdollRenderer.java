@@ -2,6 +2,7 @@ package net.ato.shupapium.client.renderers;
 
 import net.ato.shupapium.MainShupapium;
 import net.ato.shupapium.ShupapiumMobEffects;
+import net.ato.shupapium.entities.ShupapiumDummyRagdoll;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.ZombieRenderer;
 import net.minecraft.resources.ResourceLocation;
@@ -18,8 +19,10 @@ public class ShupapiumDummyRagdollRenderer extends ZombieRenderer {
 
     @Override
     public @NotNull ResourceLocation getTextureLocation(@NotNull Zombie pEntity) {
-        if (pEntity.getPersistentData().contains("JokeEffectTotalDuration")) {
-            return EG_C_TEXTURE;
+        if (pEntity instanceof ShupapiumDummyRagdoll ragdoll) {
+            if (ragdoll.isChistosoConverted()) {
+                return EG_C_TEXTURE;
+            }
         }
         return TEXTURE;
     }
