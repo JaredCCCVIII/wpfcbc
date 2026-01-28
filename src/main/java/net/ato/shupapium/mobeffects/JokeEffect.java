@@ -44,12 +44,12 @@ public class JokeEffect extends MobEffect {
 
             pLivingEntity.level().playSound(null, pLivingEntity.blockPosition(), SoundEvents.CHICKEN_AMBIENT, SoundSource.NEUTRAL, 1.0F, pitch);
 
-            if (pLivingEntity.hurtDuration > 0) {
-                randomTeleport(pLivingEntity.level(), pLivingEntity.getLastAttacker());
-            }
-
             if (!pLivingEntity.isAlive()) {
                 BlockBusterHitProcedure.execute(pLivingEntity.level(), pLivingEntity.getX(), pLivingEntity.getY(), pLivingEntity.getZ(), pLivingEntity);
+            } else {
+                if (pLivingEntity.hurtTime > 0) {
+                    randomTeleport(pLivingEntity.level(), pLivingEntity.getLastAttacker());
+                }
             }
         }
     }
@@ -93,6 +93,7 @@ public class JokeEffect extends MobEffect {
     }
 
     private void randomTeleport(Level pLevel, LivingEntity pEntityLiving) {
+        if (pEntityLiving == null) return;
         double d0 = pEntityLiving.getX();
         double d1 = pEntityLiving.getY();
         double d2 = pEntityLiving.getZ();
