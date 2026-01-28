@@ -65,6 +65,7 @@ public class MainShupapium
         ShupapiumBlocks.register();
         ShupapiumBlockEntities.register();
         ShupapiumSounds.register(modEventBus);
+        ShupapiumMobEffects.register(modEventBus);
         modEventBus.addListener(this::onRegisterForge);
         MinecraftForge.EVENT_BUS.addListener((AddReloadListenerEvent e) -> e.addListener(new ShupapiumReloadListener()));
 

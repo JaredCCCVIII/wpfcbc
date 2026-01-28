@@ -5,6 +5,7 @@ import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
 import net.ato.shupapium.blocks.*;
+import net.ato.shupapium.blocks.misc.JokeBombShellBlock;
 import net.ato.shupapium.utils.ShupapiumBuilderTransformers;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.Direction;
@@ -387,6 +388,22 @@ public class ShupapiumBlocks {
             .transform(CBCBuilderTransformers.fuzedProjectileItem("projectile/fusion_bomb_shell"))
             .tag(CBCTags.CBCItemTags.BIG_CANNON_PROJECTILES)
             .properties(p -> p.rarity(Rarity.EPIC))
+            .build()
+            .register();
+    public static final BlockEntry<JokeBombShellBlock> JOKE_BOMB_SHELL_BLOCK = MainShupapium.REGISTRATE
+            .block("joke_bomb_shell_block", JokeBombShellBlock::new)
+            .transform(shell(MapColor.PODZOL))
+            .transform(axeOrPickaxe())
+            .transform(CBCBuilderTransformers.projectile("projectile/joke_bomb_shell"))
+            .transform(CBCBuilderTransformers.safeNbt())
+            .properties(p -> p.sound(SoundType.FUNGUS))
+            .loot(CBCBuilderTransformers.shellLoot())
+            .onRegisterAfter(Registries.ITEM, v-> ItemDescription.useKey(v, "block.createmissilelangtest.joke_bomb_shell_block"))
+            .lang("Chistoso's Bomb Shell")
+            .item(FuzedProjectileBlockItem::new)
+            .transform(CBCBuilderTransformers.fuzedProjectileItem("projectile/joke_bomb_shell"))
+            .tag(CBCTags.CBCItemTags.BIG_CANNON_PROJECTILES)
+            .properties(p -> p.rarity(Rarity.UNCOMMON))
             .build()
             .register();
 

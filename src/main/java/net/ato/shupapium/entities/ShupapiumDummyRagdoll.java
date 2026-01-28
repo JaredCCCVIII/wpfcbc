@@ -1,11 +1,16 @@
 package net.ato.shupapium.entities;
 
+import net.ato.shupapium.ShupapiumMobEffects;
 import net.ato.shupapium.ShupapiumSounds;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.DifficultyInstance;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -17,7 +22,9 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public class ShupapiumDummyRagdoll extends Zombie {
     public ShupapiumDummyRagdoll(EntityType<? extends Zombie> pEntityType, Level pLevel) {
@@ -92,6 +99,18 @@ public class ShupapiumDummyRagdoll extends Zombie {
     @Override
     protected void populateDefaultEquipmentSlots(@NotNull RandomSource pRandom, @NotNull DifficultyInstance pDifficulty) {
         super.populateDefaultEquipmentSlots(pRandom, pDifficulty);
+    }
+
+    @Override
+    public void setCustomName(@Nullable Component pName) {
+        super.setCustomName(pName);
+        if (this.hasCustomName()) {
+            String name = this.getName().getString();
+
+            if (name.equalsIgnoreCase("Chistoso")) {
+                this.addEffect(new MobEffectInstance(ShupapiumMobEffects.JOKE_EFFECT.get(), 400));
+            }
+        }
     }
 
     @Override

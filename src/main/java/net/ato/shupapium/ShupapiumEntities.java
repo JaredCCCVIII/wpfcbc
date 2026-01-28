@@ -3,7 +3,9 @@ package net.ato.shupapium;
 import com.tterrag.registrate.util.entry.EntityEntry;
 import com.tterrag.registrate.util.nullness.NonNullConsumer;
 import net.ato.shupapium.blockentities.*;
+import net.ato.shupapium.blockentities.misc.JokeBombShellProjectile;
 import net.ato.shupapium.entities.ShupapiumDummyRagdoll;
+import net.ato.shupapium.entities.misc.JokeCloudDetectorEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -27,6 +29,13 @@ public class ShupapiumEntities {
     public static final RegistryObject<EntityType<ShupapiumDummyRagdoll>> DUMMY_RAGDOLL_ENTITY = SHUPAPI_ENTITIES.register(
             "dummy_ragdoll", () -> EntityType.Builder.of(ShupapiumDummyRagdoll::new, MobCategory.CREATURE).sized(0.8F, 1.9F).build("dummy_ragdoll")
     );
+    public static final RegistryObject<EntityType<JokeCloudDetectorEntity>> JOKE_CLOUD_DETECTOR = SHUPAPI_ENTITIES.register("joke_cloud_detector",
+            () -> EntityType.Builder.<JokeCloudDetectorEntity>of(JokeCloudDetectorEntity::new, MobCategory.MISC).setCustomClientFactory(JokeCloudDetectorEntity::new)
+                    .setShouldReceiveVelocityUpdates(true)
+                    .setTrackingRange(64)
+                    .setUpdateInterval(1)
+                    .sized(0.5F, 0.5F)
+                    .build("joke_cloud_detector"));
 
     public static final EntityEntry<GasBombShellProjectile> GAS_BOMB_SHELL_PROJECTILE = cannonProjectile("gas_bomb_shell_projectile", GasBombShellProjectile::new, "Gas Bomb Shell", CBCMunitionPropertiesHandlers.COMMON_SHELL_BIG_CANNON_PROJECTILE);
     public static final EntityEntry<SmallBombShellProjectile> SMALL_BOMB_SHELL_PROJECTILE = cannonProjectile("small_bomb_shell_projectile", SmallBombShellProjectile::new, "Small Bomb Shell", CBCMunitionPropertiesHandlers.COMMON_SHELL_BIG_CANNON_PROJECTILE);
@@ -42,6 +51,7 @@ public class ShupapiumEntities {
     public static final EntityEntry<BlockBusterShellProjectile> BLOCK_BUSTER_SHELL_PROJECTILE = cannonProjectile("block_buster_shell_projectile", BlockBusterShellProjectile::new, "Block Buster Shell", CBCMunitionPropertiesHandlers.COMMON_SHELL_BIG_CANNON_PROJECTILE);
     public static final EntityEntry<FissionBombShellProjectile> FISSION_BOMB_SHELL_PROJECTILE = cannonProjectile("fission_bomb_shell_projectile", FissionBombShellProjectile::new, "Fission Bomb Shell", CBCMunitionPropertiesHandlers.COMMON_SHELL_BIG_CANNON_PROJECTILE);
     public static final EntityEntry<FusionBombShellProjectile> FUSION_BOMB_SHELL_PROJECTILE = cannonProjectile("fusion_bomb_shell_projectile", FusionBombShellProjectile::new, "Fusion Bomb Shell", CBCMunitionPropertiesHandlers.COMMON_SHELL_BIG_CANNON_PROJECTILE);
+    public static final EntityEntry<JokeBombShellProjectile> JOKE_BOMB_SHELL_PROJECTILE = cannonProjectile("joke_bomb_shell_projectile", JokeBombShellProjectile::new, "Chistoso's Bomb Shell", CBCMunitionPropertiesHandlers.COMMON_SHELL_BIG_CANNON_PROJECTILE);
 
     private static <T extends AbstractAutocannonProjectile> EntityEntry<T>
     autocannonProjectile(String id, EntityType.EntityFactory<T> factory, PropertiesTypeHandler<EntityType<?>, ?> handler) {

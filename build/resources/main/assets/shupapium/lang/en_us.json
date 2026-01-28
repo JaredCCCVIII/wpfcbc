@@ -83,6 +83,13 @@
   "block.createmissilelangtest.fusion_bomb_shell_block.tooltip.summary": "\"I'm become death, the destroyers of worlds.\"",
   "entity.shupapium.fusion_bomb_shell_projectile": "Fusion Bomb Shell",
 
+  "block.shupapium.joke_bomb_shell_block": "Chistoso's Bomb Shell",
+  "block.createmissilelangtest.joke_bomb_shell_block.tooltip.behaviour1": "Converts targets into chistosos.",
+  "block.createmissilelangtest.joke_bomb_shell_block.tooltip.condition1": "On Detonation",
+  "block.createmissilelangtest.joke_bomb_shell_block.tooltip.summary": "\"CHISTE!\"",
+  "entity.shupapium.joke_bomb_shell_projectile": "Chistoso's Bomb Shell",
+  "effect.shupapium.joke_effect": "Chistosada",
+
   "item.shupapium.flare_ammo_item": "Flare Ammo",
   "item.shupapium.flare_ammo_item.tooltip.behaviour1": "Incandescent projectile, useful for attracting attention.",
   "item.shupapium.flare_ammo_item.tooltip.condition1": "Info:",
