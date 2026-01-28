@@ -1,8 +1,11 @@
 package net.ato.shupapium.mobeffects;
 
 import net.ato.shupapium.MainShupapium;
+import net.ato.shupapium.entities.ShupapiumDummyRagdoll;
 import net.mcreator.crustychunks.procedures.BlockBusterHitProcedure;
 import net.mcreator.crustychunks.procedures.ExplosiveBarrelTriggerProcedure;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
@@ -45,6 +48,7 @@ public class JokeEffect extends MobEffect {
         if (!pLivingEntity.level().isClientSide) {
             var instance = pLivingEntity.getEffect(this);
             if (instance != null) {
+                if (pLivingEntity instanceof ShupapiumDummyRagdoll ragdoll) ragdoll.setChistosoConverted(true);
                 pLivingEntity.getPersistentData().putInt("JokeEffectTotalDuration", instance.getDuration());
             }
             pLivingEntity.level().playSound(null, pLivingEntity.blockPosition(), SoundEvents.SHULKER_TELEPORT, SoundSource.NEUTRAL, 1.0F, Mth.nextFloat(RandomSource.create(), 0.5F, 1.5F));
@@ -55,6 +59,7 @@ public class JokeEffect extends MobEffect {
     public void removeAttributeModifiers(@NotNull LivingEntity pLivingEntity, @NotNull AttributeMap pAttributeMap, int pAmplifier) {
         super.removeAttributeModifiers(pLivingEntity, pAttributeMap, pAmplifier);
         if (!pLivingEntity.level().isClientSide) {
+            if (pLivingEntity instanceof ShupapiumDummyRagdoll ragdoll) ragdoll.setChistosoConverted(false);
             pLivingEntity.getPersistentData().remove("JokeEffectTotalDuration");
             pLivingEntity.level().playSound(null, pLivingEntity.blockPosition(), SoundEvents.CHORUS_FRUIT_TELEPORT, SoundSource.NEUTRAL, 1.0F, Mth.nextFloat(RandomSource.create(), 0.5F, 1.5F));
             if (pLivingEntity instanceof Player playa) {

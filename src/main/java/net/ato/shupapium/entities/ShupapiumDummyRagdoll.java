@@ -3,6 +3,9 @@ package net.ato.shupapium.entities;
 import net.ato.shupapium.ShupapiumMobEffects;
 import net.ato.shupapium.ShupapiumSounds;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.RandomSource;
@@ -27,6 +30,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class ShupapiumDummyRagdoll extends Zombie {
+    private static final EntityDataAccessor<Boolean> CHISTE_CONVERTED_ID = SynchedEntityData.defineId(ShupapiumDummyRagdoll.class, EntityDataSerializers.BOOLEAN);
     public ShupapiumDummyRagdoll(EntityType<? extends Zombie> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
     }
@@ -39,6 +43,20 @@ public class ShupapiumDummyRagdoll extends Zombie {
 
     public static AttributeSupplier.@NotNull Builder createAttributes() {
         return Monster.createMobAttributes().add(Attributes.MAX_HEALTH, 10.0D).add(Attributes.FOLLOW_RANGE, 50.0F).add(Attributes.MOVEMENT_SPEED, 0.25F).add(Attributes.ATTACK_DAMAGE, 1.0D).add(Attributes.ARMOR, 0.5D).add(Attributes.SPAWN_REINFORCEMENTS_CHANCE, 0.0D);
+    }
+
+    @Override
+    protected void defineSynchedData() {
+        super.defineSynchedData();
+        this.entityData.define(CHISTE_CONVERTED_ID, false);
+    }
+
+    public boolean isChistosoConverted() {
+        return this.getEntityData().get(CHISTE_CONVERTED_ID);
+    }
+
+    public void setChistosoConverted(boolean pChistosoConverted) {
+        this.getEntityData().set(CHISTE_CONVERTED_ID, pChistosoConverted);
     }
 
     @Override
@@ -107,7 +125,7 @@ public class ShupapiumDummyRagdoll extends Zombie {
         if (this.hasCustomName()) {
             String name = this.getName().getString();
 
-            if (name.equalsIgnoreCase("Chistoso")) {
+            if (name.equalsIgnoreCase("Chistoso") || name.equalsIgnoreCase("Pedro")) {
                 this.addEffect(new MobEffectInstance(ShupapiumMobEffects.JOKE_EFFECT.get(), 400));
             }
         }
