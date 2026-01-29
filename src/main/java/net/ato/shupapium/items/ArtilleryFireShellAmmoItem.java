@@ -20,7 +20,7 @@ public class ArtilleryFireShellAmmoItem extends AbstractShupapiumACAmmoItem{
 
     @Override
     protected ResourceLocation propertiesLocation() {
-        return new ResourceLocation(MainShupapium.MODID, "munition_properties/projectiles/artillery_fire_shell");
+        return ResourceLocation.fromNamespaceAndPath(MainShupapium.MODID, "munition_properties/projectiles/artillery_fire_shell");
     }
 
     @Override

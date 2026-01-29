@@ -20,7 +20,7 @@ public class FlareAmmoItem extends AbstractShupapiumACAmmoItem {
 
     @Override
     protected ResourceLocation propertiesLocation() {
-        return new ResourceLocation(MainShupapium.MODID, "munition_properties/projectiles/flare");
+        return ResourceLocation.fromNamespaceAndPath(MainShupapium.MODID, "munition_properties/projectiles/flare");
     }
 
     @Override

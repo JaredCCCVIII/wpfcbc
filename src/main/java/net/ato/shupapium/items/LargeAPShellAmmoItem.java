@@ -20,7 +20,7 @@ public class LargeAPShellAmmoItem extends AbstractShupapiumACAmmoItem{
 
     @Override
     protected ResourceLocation propertiesLocation() {
-        return new ResourceLocation(MainShupapium.MODID, "munition_properties/projectiles/large_ap_shell");
+        return ResourceLocation.fromNamespaceAndPath(MainShupapium.MODID, "munition_properties/projectiles/large_ap_shell");
     }
 
     @Override

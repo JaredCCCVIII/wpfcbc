@@ -20,7 +20,7 @@ public class MortarShellAmmoItem extends AbstractShupapiumACAmmoItem{
 
     @Override
     protected ResourceLocation propertiesLocation() {
-        return new ResourceLocation(MainShupapium.MODID, "munition_properties/projectiles/mortar_shell");
+        return ResourceLocation.fromNamespaceAndPath(MainShupapium.MODID, "munition_properties/projectiles/mortar_shell");
     }
 
     @Override

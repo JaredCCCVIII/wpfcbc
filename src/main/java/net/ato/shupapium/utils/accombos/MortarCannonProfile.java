@@ -19,7 +19,7 @@ import java.util.List;
 public class MortarCannonProfile implements ShupapiumACProfile {
     @Override
     public ResourceLocation getProfileId() {
-        return new ResourceLocation(MainShupapium.MODID, "mortar_cannon_profile");
+        return ResourceLocation.fromNamespaceAndPath(MainShupapium.MODID, "mortar_cannon_profile");
     }
 
     @Override

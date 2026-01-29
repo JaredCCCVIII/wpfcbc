@@ -20,7 +20,7 @@ import java.util.List;
 public class HMGProfile implements ShupapiumACProfile {
     @Override
     public ResourceLocation getProfileId() {
-        return new ResourceLocation(MainShupapium.MODID, "heavy_machine_gun_profile");
+        return ResourceLocation.fromNamespaceAndPath(MainShupapium.MODID, "heavy_machine_gun_profile");
     }
 
     @Override

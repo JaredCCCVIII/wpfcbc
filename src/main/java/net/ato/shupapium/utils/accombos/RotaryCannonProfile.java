@@ -20,7 +20,7 @@ import java.util.List;
 public class RotaryCannonProfile implements ShupapiumACProfile {
     @Override
     public ResourceLocation getProfileId() {
-        return new ResourceLocation(MainShupapium.MODID, "rotary_cannon_profile");
+        return ResourceLocation.fromNamespaceAndPath(MainShupapium.MODID, "rotary_cannon_profile");
     }
 
     @Override

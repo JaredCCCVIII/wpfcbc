@@ -20,7 +20,7 @@ public class ArmorPeelerRocketAmmoItem extends AbstractShupapiumACAmmoItem{
 
     @Override
     protected ResourceLocation propertiesLocation() {
-        return new ResourceLocation(MainShupapium.MODID, "munition_properties/projectiles/armor_peeler_rocket");
+        return ResourceLocation.fromNamespaceAndPath(MainShupapium.MODID, "munition_properties/projectiles/armor_peeler_rocket");
     }
 
     @Override

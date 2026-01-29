@@ -20,7 +20,7 @@ public class FireSpearRocketAmmoItem extends AbstractShupapiumACAmmoItem{
 
     @Override
     protected ResourceLocation propertiesLocation() {
-        return new ResourceLocation(MainShupapium.MODID, "munition_properties/projectiles/fire_spear_rocket");
+        return ResourceLocation.fromNamespaceAndPath(MainShupapium.MODID, "munition_properties/projectiles/fire_spear_rocket");
     }
 
     @Override

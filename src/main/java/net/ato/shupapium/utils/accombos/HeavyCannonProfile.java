@@ -20,7 +20,7 @@ import java.util.List;
 public class HeavyCannonProfile implements ShupapiumACProfile {
     @Override
     public ResourceLocation getProfileId() {
-        return new ResourceLocation(MainShupapium.MODID, "heavy_cannon_profile");
+        return ResourceLocation.fromNamespaceAndPath(MainShupapium.MODID, "heavy_cannon_profile");
     }
 
     @Override

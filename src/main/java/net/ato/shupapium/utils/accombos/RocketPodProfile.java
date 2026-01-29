@@ -19,7 +19,7 @@ import java.util.List;
 public class RocketPodProfile implements ShupapiumACProfile {
     @Override
     public ResourceLocation getProfileId() {
-        return new ResourceLocation(MainShupapium.MODID, "rocket_pod_profile");
+        return ResourceLocation.fromNamespaceAndPath(MainShupapium.MODID, "rocket_pod_profile");
     }
 
     @Override

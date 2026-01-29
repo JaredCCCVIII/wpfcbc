@@ -12,7 +12,7 @@ import net.minecraft.util.GsonHelper;
 import org.jetbrains.annotations.NotNull;
 
 public class NuclearDetonationTrigger extends SimpleCriterionTrigger<NuclearDetonationTrigger.Instance> {
-    public static final ResourceLocation ID = new ResourceLocation(MainShupapium.MODID, "nuclear_explosion_trigger");
+    public static final ResourceLocation ID = ResourceLocation.fromNamespaceAndPath(MainShupapium.MODID, "nuclear_explosion_trigger");
 
     @Override
     protected NuclearDetonationTrigger.@NotNull Instance createInstance(@NotNull JsonObject pJson, @NotNull ContextAwarePredicate pPredicate, @NotNull DeserializationContext pDeserializationContext) {
