@@ -1,10 +1,11 @@
 {
   "type": "create:mechanical_crafting",
   "pattern": [
-    "  P  ",
+    " HPH ",
     "PLFLP",
     "HLNLH",
-    "DLSLD"
+    "DLSLD",
+    " HDH "
   ],
   "key": {
     "L": {
