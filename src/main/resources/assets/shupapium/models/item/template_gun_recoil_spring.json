@@ -1,6 +1,3 @@
 {
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "shupapium:block/autocannon/mg_chamber"
-  }
+  "parent": "shupapium:block/template_gun_recoil_spring"
 }
