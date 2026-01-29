@@ -6,8 +6,9 @@
   },
   "fire_sound": "minecraft:block.note_block.cow_bell",
   "muzzle_particles": [
-    "minecraft:campfire_cosy_smoke",
-    "minecraft:smoke"
+    "minecraft:spit",
+    "minecraft:smoke",
+    "minecraft:heart"
   ],
   "fire_rate": 225,
   "projectiles_per_shot": 1,
