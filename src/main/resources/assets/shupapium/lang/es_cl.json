@@ -1,9 +1,10 @@
 {
-  "block.shupapium.fission_bomb_shell_block": "Armazón de Bomba de Fisión",
-  "block.createmissilelangtest.fission_bomb_shell_block.tooltip.behaviour1": "Desata una poderosa explosión nuclear y crea un hongo pequeño de gas radioactivo.",
-  "block.createmissilelangtest.fission_bomb_shell_block.tooltip.condition1": "Cuando detona",
-  "block.createmissilelangtest.fission_bomb_shell_block.tooltip.summary": "\"No tan fuerte como el de fusión.\"",
-  "entity.shupapium.fission_bomb_shell_projectile": "Armazón de Bomba de Fisión",
+  "block.shupapium.joke_bomb_shell_block": "Bomba Chistosa",
+  "block.createmissilelangtest.joke_bomb_shell_block.tooltip.behaviour1": "Convierte a los objetivos en chistosos.",
+  "block.createmissilelangtest.joke_bomb_shell_block.tooltip.condition1": "Cuando detona",
+  "block.createmissilelangtest.joke_bomb_shell_block.tooltip.summary": "\"CHISTE!\"",
+  "entity.shupapium.joke_bomb_shell_projectile": "Bomba Chistosa",
+  "effect.shupapium.joke_effect": "Chistositis",
 
   "block.shupapium.small_bomb_shell_block": "Armazón de Bomba Pequeña",
   "block.createmissilelangtest.small_bomb_shell_block.tooltip.behaviour1": "Destruye un área pequeña y deja escombros.",

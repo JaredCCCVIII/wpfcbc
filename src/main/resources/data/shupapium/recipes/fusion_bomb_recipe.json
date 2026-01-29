@@ -1,6 +1,7 @@
 {
   "type": "create:mechanical_crafting",
   "pattern": [
+    " CPJPC ",
     "CCPBPCC",
     "EPADAPE",
     "EHHNHHE",
@@ -33,6 +34,9 @@
     },
     "H": {
       "item": "crusty_chunks:lead_block"
+    },
+    "J": {
+      "item": "crusty_chunks:fission_core"
     }
   },
   "result": {

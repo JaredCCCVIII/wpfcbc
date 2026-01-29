@@ -1,4 +1,11 @@
 {
+  "block.shupapium.joke_bomb_shell_block": "Bomba bromista",
+  "block.createmissilelangtest.joke_bomb_shell_block.tooltip.behaviour1": "Convierte a los desafortunados en chistosos.",
+  "block.createmissilelangtest.joke_bomb_shell_block.tooltip.condition1": "Al detonar",
+  "block.createmissilelangtest.joke_bomb_shell_block.tooltip.summary": "\"CHISTE!\"",
+  "entity.shupapium.joke_bomb_shell_projectile": "Bomba bromista",
+  "effect.shupapium.joke_effect": "Chistosada",
+
   "block.shupapium.fission_bomb_shell_block": "Revestimiento de Bomba de Fisión",
   "block.createmissilelangtest.fission_bomb_shell_block.tooltip.behaviour1": "Desata una potente explosión nuclear y crea un hongo pequeño de gas radioactivo.",
   "block.createmissilelangtest.fission_bomb_shell_block.tooltip.condition1": "Al detonar",
