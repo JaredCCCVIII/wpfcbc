@@ -249,6 +249,9 @@
   "block.shupapium.mortar_gun_barrel": "Mortar Cannon Barrel",
   "block.shupapium.mortar_gun_breech": "Mortar Cannon Breech",
   "block.shupapium.mortar_gun_recoil_spring": "Mortar Cannon Chamber",
+  "block.shupapium.template_gun_barrel": "Template Cannon Barrel",
+  "block.shupapium.template_gun_breech": "Template Cannon Breech",
+  "block.shupapium.template_gun_recoil_spring": "Template Cannon Chamber",
 
   "entity.shupapium.dummy_ragdoll": "Test Dummy",
   "item.shupapium.dummy_ragdoll_spawn_egg": "Test Dummy Spawn Egg",

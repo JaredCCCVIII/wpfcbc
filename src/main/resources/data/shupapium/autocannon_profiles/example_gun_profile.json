@@ -1,20 +1,24 @@
 {
   "parts": {
-    "barrel": "minecraft:barrel",
-    "chamber": "minecraft:command_block",
-    "breech": "minecraft:piston"
+    "barrel": "shupapium:template_gun_barrel",
+    "chamber": "shupapium:template_gun_recoil_spring",
+    "breech": "shupapium:template_gun_breech"
   },
-  "fire_sound": "crusty_chunks:largeshot",
+  "fire_sound": "minecraft:block.note_block.cow_bell",
   "muzzle_particles": [
     "minecraft:campfire_cosy_smoke",
     "minecraft:smoke"
   ],
-  "fire_rate": 240,
+  "fire_rate": 225,
   "projectiles_per_shot": 1,
-  "projectile_base_speed": 7.9,
+  "projectile_base_speed": 9.2,
   "projectile_base_spread": 0.05,
   "ammo_types": [
-    "shupapium:large_bullet_ammo_item"
+    "shupapium:medium_bullet_ammo_item",
+    "shupapium:large_bullet_ammo_item",
+    "shupapium:extra_large_bullet_ammo_item",
+    "shupapium:small_shell_ammo_item",
+    "shupapium:small_he_shell_ammo_item"
   ],
   "main_material": "shupapium:machine_gun"
 }

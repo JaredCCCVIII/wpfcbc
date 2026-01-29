@@ -1,0 +1,9 @@
+{
+  "parent": "crusty_chunks:custom/mgbarrel",
+  "textures": {
+    "all": "minecraft:block/iron_ore",
+    "particle": "minecraft:block/iron_ore",
+    "0": "crusty_chunks:block/mgbarrel"
+  },
+  "render_type": "solid"
+}

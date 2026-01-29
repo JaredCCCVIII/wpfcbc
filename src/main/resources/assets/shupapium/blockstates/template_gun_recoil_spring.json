@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "shupapium:block/template_gun_recoil_spring"
+    },
+    "facing=east": {
+      "model": "shupapium:block/template_gun_recoil_spring",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "shupapium:block/template_gun_recoil_spring",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "shupapium:block/template_gun_recoil_spring",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "shupapium:block/template_gun_recoil_spring",
+      "x": -90
+    },
+    "facing=down": {
+      "model": "shupapium:block/template_gun_recoil_spring",
+      "x": 90
+    }
+  }
+}

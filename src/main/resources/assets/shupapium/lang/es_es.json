@@ -249,6 +249,9 @@
   "block.shupapium.mortar_gun_barrel": "Barril de Cañón Mortero",
   "block.shupapium.mortar_gun_breech": "Eyector de Cañón Mortero",
   "block.shupapium.mortar_gun_recoil_spring": "Cuerpo de Cañón Mortero",
+  "block.shupapium.template_gun_barrel": "Barril de plantilla de cañón",
+  "block.shupapium.template_gun_breech": "Eyector de plantilla de cañón",
+  "block.shupapium.template_gun_recoil_spring": "Cuerpo de plantilla de cañón",
 
   "entity.shupapium.dummy_ragdoll": "Muñeco de Prueba",
   "item.shupapium.dummy_ragdoll_spawn_egg": "Generar Muñeco de Prueba",
