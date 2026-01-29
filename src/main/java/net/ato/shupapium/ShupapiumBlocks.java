@@ -425,6 +425,26 @@ public class ShupapiumBlocks {
             .transform(ShupapiumBuilderTransformers.autocannonAmmoContainer(true))
             .register();
 
+    //Misc
+    public static final BlockEntry<ShupapiumACBarrelBlock> TEMPLATE_GUN_BARREL = MainShupapium.REGISTRATE
+            .block("template_gun_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.MACHINE_GUN))
+            .transform(cannonBlock())
+            .loot(CBCBuilderTransformers.bronzeScrapLoot(2))
+            .transform(ShupapiumBuilderTransformers.autocannonBarrel("autocannon/machine_gun"))
+            .register();
+    public static final BlockEntry<ShupapiumACRecoilSpringBlock> TEMPLATE_GUN_RECOIL_SPRING = MainShupapium.REGISTRATE
+            .block("template_gun_recoil_spring", p -> new ShupapiumACRecoilSpringBlock(p, ShupapiumCBCACMaterials.MACHINE_GUN, ShupapiumBlocks::templateGunBarrel))
+            .transform(cannonBlock(false))
+            .loot(CBCBuilderTransformers.bronzeScrapLoot(3))
+            .transform(ShupapiumBuilderTransformers.autocannonRecoilSpring("autocannon/machine_gun", true))
+            .register();
+    public static final BlockEntry<ShupapiumACBreechBlock> TEMPLATE_GUN_BREECH = MainShupapium.REGISTRATE
+            .block("template_gun_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.MACHINE_GUN))
+            .transform(cannonBlock(false))
+            .loot(CBCBuilderTransformers.bronzeScrapLoot(4))
+            .transform(ShupapiumBuilderTransformers.autocannonBreech("autocannon/machine_gun", true))
+            .register();
+
     private static BlockState machineGunBarrel(Direction facing) {
         return MACHINE_GUN_BARREL.getDefaultState().setValue(ShupapiumACBarrelBlock.FACING, facing);
     }
@@ -445,6 +465,9 @@ public class ShupapiumBlocks {
     }
     private static BlockState rocketPodBarrel(Direction facing) {
         return ROCKET_POD_BARREL.getDefaultState().setValue(ShupapiumACBarrelBlock.FACING, facing);
+    }
+    private static BlockState templateGunBarrel(Direction facing) {
+        return TEMPLATE_GUN_BARREL.getDefaultState().setValue(ShupapiumACBarrelBlock.FACING, facing);
     }
 
     private static <T extends Block, P> NonNullUnaryOperator<BlockBuilder<T, P>> cannonBlock() {

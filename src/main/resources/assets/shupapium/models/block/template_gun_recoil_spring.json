@@ -1,0 +1,9 @@
+{
+  "parent": "crusty_chunks:custom/machinegun",
+  "textures": {
+    "all": "minecraft:block/iron_ore",
+    "particle": "minecraft:block/iron_ore",
+    "3": "crusty_chunks:block/machinegun"
+  },
+  "render_type": "solid"
+}
