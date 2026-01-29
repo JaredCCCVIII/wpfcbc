@@ -1,6 +1,0 @@
-{
-  "type": "createbigcannons:drill_boring",
-  "input": "crusty_chunks:rocket_pod",
-  "obey_facing_or_axis": true,
-  "result": "shupapium:rocket_pod_gun_barrel"
-}
