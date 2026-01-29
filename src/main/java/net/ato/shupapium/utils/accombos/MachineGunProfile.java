@@ -25,7 +25,7 @@ public class MachineGunProfile implements ShupapiumACProfile {
 
     @Override
     public ResourceLocation getProfileId() {
-        return new ResourceLocation(MainShupapium.MODID, "machine_gun_profile");
+        return ResourceLocation.fromNamespaceAndPath(MainShupapium.MODID, "machine_gun_profile");
     }
 
     @Override
