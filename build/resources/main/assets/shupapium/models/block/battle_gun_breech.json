@@ -1,7 +1,0 @@
-{
-  "parent": "createbigcannons:block/autocannon/breech",
-  "textures": {
-    "handle": "shupapium:block/autocannon/machine_gun_autocannon_1",
-    "material": "crusty_chunks:block/conveyorliftbottom"
-  }
-}
