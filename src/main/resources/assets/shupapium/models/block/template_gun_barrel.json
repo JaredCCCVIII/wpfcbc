@@ -3,7 +3,7 @@
   "textures": {
     "all": "minecraft:block/iron_ore",
     "particle": "minecraft:block/iron_ore",
-    "0": "crusty_chunks:block/mgbarrel"
+    "0": "shupapium:block/autocannon/template_gun_barrel"
   },
   "render_type": "solid"
 }
