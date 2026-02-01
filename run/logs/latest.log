@@ -1,90 +1,90 @@
-[01feb.2026 13:06:37.307] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\Usuario\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.4.10, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mixin.config, shupapium.mixins.json]
-[01feb.2026 13:06:37.311] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.16 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
-[01feb.2026 13:06:37.411] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[01feb.2026 13:06:37.474] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
-[01feb.2026 13:06:37.684] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
-[01feb.2026 13:06:37.759] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Usuario/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[01feb.2026 13:06:37.800] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 3050/PCIe/SSE2 GL version 4.6.0 NVIDIA 591.74, NVIDIA Corporation
-[01feb.2026 13:06:38.040] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.10\ccc533c7dd67e0983217197d7549c8b49e7ab453\javafmllanguage-1.20.1-47.4.10.jar is missing mods.toml file
-[01feb.2026 13:06:38.040] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.10\e9a2879fe3612ea34b9728ec2633304a1e67d480\lowcodelanguage-1.20.1-47.4.10.jar is missing mods.toml file
-[01feb.2026 13:06:38.055] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.10\ec5cefbbc65c67302b8fac317010faab85fa14b9\mclanguage-1.20.1-47.4.10.jar is missing mods.toml file
-[01feb.2026 13:06:38.055] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.10\94dae566be650566ea9115a1414ab76bfcf5a804\fmlcore-1.20.1-47.4.10.jar is missing mods.toml file
-[01feb.2026 13:06:38.371] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: mixinextras. Using Mod File: C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\io.github.llamalad7\mixinextras-forge\0.4.1\5c35573a7b76103724799ca1174a69699b8a9aec\mixinextras-forge-0.4.1.jar
-[01feb.2026 13:06:38.371] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
-[01feb.2026 13:06:41.748] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[01feb.2026 13:06:41.784] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\Usuario\.gradle\caches\forge_gradle\assets, --assetIndex, 5]
-[01feb.2026 13:06:41.849] [main/WARN] [mixin/]: Reference map 'shupapium.refmap.json' for shupapium.mixins.json could not be read. If this is a development environment you can ignore this message
-[01feb.2026 13:06:42.199] [main/INFO] [mixin/]: Remapping refMap createradar.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
-[01feb.2026 13:06:42.199] [main/INFO] [mixin/]: Remapping refMap createbigcannons-1.20.1-refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
-[01feb.2026 13:06:42.199] [main/INFO] [mixin/]: Remapping refMap createbigcannons-forge_1.20.1-refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
-[01feb.2026 13:06:42.199] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
-[01feb.2026 13:06:42.214] [main/INFO] [mixin/]: Remapping refMap backend-flywheel.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
-[01feb.2026 13:06:42.214] [main/INFO] [mixin/]: Remapping refMap flywheel.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
-[01feb.2026 13:06:42.214] [main/INFO] [mixin/]: Remapping refMap ponder.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
-[01feb.2026 13:06:42.214] [main/INFO] [mixin/]: Remapping refMap ponder.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
-[01feb.2026 13:06:42.214] [main/WARN] [mixin/]: Reference map 'mixins.crusty_chunks.refmap.json' for mixins.crusty_chunks.json could not be read. If this is a development environment you can ignore this message
-[01feb.2026 13:06:42.224] [main/INFO] [mixin/]: Remapping refMap create.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
-[01feb.2026 13:06:42.224] [main/INFO] [mixin/]: Remapping refMap ritchiesprojectilelib-1.20.1-refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
-[01feb.2026 13:06:42.224] [main/INFO] [mixin/]: Remapping refMap citadel.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
-[01feb.2026 13:06:42.224] [main/INFO] [mixin/]: Remapping refMap alexscaves.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
-[01feb.2026 13:06:42.255] [main/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/twin_autocannon/contraption/MountedTwinAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.twin_autocannon.contraption.MountedTwinAutocannonContraption)
-[01feb.2026 13:06:42.255] [main/WARN] [mixin/]: @Mixin target com.dsvv.cbcat.cannon.twin_autocannon.contraption.MountedTwinAutocannonContraption was not found create_radar.mixins.json:AutoCannonAccessor
-[01feb.2026 13:06:42.261] [main/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/heavy_autocannon/contraption/MountedHeavyAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.heavy_autocannon.contraption.MountedHeavyAutocannonContraption)
-[01feb.2026 13:06:42.261] [main/WARN] [mixin/]: @Mixin target com.dsvv.cbcat.cannon.heavy_autocannon.contraption.MountedHeavyAutocannonContraption was not found create_radar.mixins.json:AutoCannonAccessor
-[01feb.2026 13:06:42.468] [main/WARN] [mixin/]: Error loading class: xfacthd/framedblocks/common/blockentity/doubled/FramedAdjustableDoubleBlockEntity (java.lang.ClassNotFoundException: xfacthd.framedblocks.common.blockentity.doubled.FramedAdjustableDoubleBlockEntity)
-[01feb.2026 13:06:42.468] [main/WARN] [mixin/]: @Mixin target xfacthd.framedblocks.common.blockentity.doubled.FramedAdjustableDoubleBlockEntity was not found createbigcannons.mixins.json:compat.FramedAdjustableDoubleBlockEntityAccessor
-[01feb.2026 13:06:42.968] [main/WARN] [mixin/]: Error loading class: xaero/map/gui/GuiMap (java.lang.ClassNotFoundException: xaero.map.gui.GuiMap)
-[01feb.2026 13:06:42.968] [main/WARN] [mixin/]: @Mixin target xaero.map.gui.GuiMap was not found create.mixins.json:compat.xaeros.XaeroFullscreenMapAccessor
-[01feb.2026 13:06:42.968] [main/WARN] [mixin/]: Error loading class: xaero/map/gui/GuiMap (java.lang.ClassNotFoundException: xaero.map.gui.GuiMap)
-[01feb.2026 13:06:42.968] [main/WARN] [mixin/]: @Mixin target xaero.map.gui.GuiMap was not found create.mixins.json:compat.xaeros.XaeroFullscreenMapMixin
-[01feb.2026 13:06:42.984] [main/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/twin_autocannon/contraption/MountedTwinAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.twin_autocannon.contraption.MountedTwinAutocannonContraption)
-[01feb.2026 13:06:42.984] [main/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/heavy_autocannon/contraption/MountedHeavyAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.heavy_autocannon.contraption.MountedHeavyAutocannonContraption)
-[01feb.2026 13:06:42.984] [main/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/twin_autocannon/contraption/MountedTwinAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.twin_autocannon.contraption.MountedTwinAutocannonContraption)
-[01feb.2026 13:06:42.984] [main/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/heavy_autocannon/contraption/MountedHeavyAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.heavy_autocannon.contraption.MountedHeavyAutocannonContraption)
-[01feb.2026 13:06:43.046] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[01feb.2026 13:06:49.133] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 188 Datafixer optimizations took 176 milliseconds
-[01feb.2026 13:06:50.465] [pool-4-thread-1/WARN] [mixin/]: Mixin alexscaves.mixins.json:SwampHutPieceMixin has multiple constructors, (Lnet/minecraft/world/level/levelgen/structure/pieces/StructurePieceType;IIIIIILnet/minecraft/core/Direction;)V was selected
+[01feb.2026 15:33:11.389] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\Usuario\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.4.10, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mixin.config, shupapium.mixins.json]
+[01feb.2026 15:33:11.394] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.16 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
+[01feb.2026 15:33:11.519] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[01feb.2026 15:33:11.598] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[01feb.2026 15:33:11.813] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[01feb.2026 15:33:11.890] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Usuario/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[01feb.2026 15:33:11.936] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 3050/PCIe/SSE2 GL version 4.6.0 NVIDIA 591.74, NVIDIA Corporation
+[01feb.2026 15:33:12.284] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.10\ccc533c7dd67e0983217197d7549c8b49e7ab453\javafmllanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[01feb.2026 15:33:12.287] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.10\e9a2879fe3612ea34b9728ec2633304a1e67d480\lowcodelanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[01feb.2026 15:33:12.291] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.10\ec5cefbbc65c67302b8fac317010faab85fa14b9\mclanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[01feb.2026 15:33:12.294] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.10\94dae566be650566ea9115a1414ab76bfcf5a804\fmlcore-1.20.1-47.4.10.jar is missing mods.toml file
+[01feb.2026 15:33:12.608] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: mixinextras. Using Mod File: C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\io.github.llamalad7\mixinextras-forge\0.4.1\5c35573a7b76103724799ca1174a69699b8a9aec\mixinextras-forge-0.4.1.jar
+[01feb.2026 15:33:12.609] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[01feb.2026 15:33:15.752] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[01feb.2026 15:33:15.788] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\Usuario\.gradle\caches\forge_gradle\assets, --assetIndex, 5]
+[01feb.2026 15:33:15.845] [main/WARN] [mixin/]: Reference map 'shupapium.refmap.json' for shupapium.mixins.json could not be read. If this is a development environment you can ignore this message
+[01feb.2026 15:33:16.241] [main/INFO] [mixin/]: Remapping refMap createradar.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
+[01feb.2026 15:33:16.243] [main/INFO] [mixin/]: Remapping refMap createbigcannons-1.20.1-refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
+[01feb.2026 15:33:16.244] [main/INFO] [mixin/]: Remapping refMap createbigcannons-forge_1.20.1-refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
+[01feb.2026 15:33:16.246] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
+[01feb.2026 15:33:16.247] [main/INFO] [mixin/]: Remapping refMap backend-flywheel.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
+[01feb.2026 15:33:16.248] [main/INFO] [mixin/]: Remapping refMap flywheel.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
+[01feb.2026 15:33:16.251] [main/INFO] [mixin/]: Remapping refMap ponder.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
+[01feb.2026 15:33:16.255] [main/INFO] [mixin/]: Remapping refMap ponder.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
+[01feb.2026 15:33:16.256] [main/WARN] [mixin/]: Reference map 'mixins.crusty_chunks.refmap.json' for mixins.crusty_chunks.json could not be read. If this is a development environment you can ignore this message
+[01feb.2026 15:33:16.262] [main/INFO] [mixin/]: Remapping refMap create.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
+[01feb.2026 15:33:16.265] [main/INFO] [mixin/]: Remapping refMap ritchiesprojectilelib-1.20.1-refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
+[01feb.2026 15:33:16.267] [main/INFO] [mixin/]: Remapping refMap citadel.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
+[01feb.2026 15:33:16.270] [main/INFO] [mixin/]: Remapping refMap alexscaves.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
+[01feb.2026 15:33:16.307] [main/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/twin_autocannon/contraption/MountedTwinAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.twin_autocannon.contraption.MountedTwinAutocannonContraption)
+[01feb.2026 15:33:16.307] [main/WARN] [mixin/]: @Mixin target com.dsvv.cbcat.cannon.twin_autocannon.contraption.MountedTwinAutocannonContraption was not found create_radar.mixins.json:AutoCannonAccessor
+[01feb.2026 15:33:16.310] [main/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/heavy_autocannon/contraption/MountedHeavyAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.heavy_autocannon.contraption.MountedHeavyAutocannonContraption)
+[01feb.2026 15:33:16.310] [main/WARN] [mixin/]: @Mixin target com.dsvv.cbcat.cannon.heavy_autocannon.contraption.MountedHeavyAutocannonContraption was not found create_radar.mixins.json:AutoCannonAccessor
+[01feb.2026 15:33:16.867] [main/WARN] [mixin/]: Error loading class: xfacthd/framedblocks/common/blockentity/doubled/FramedAdjustableDoubleBlockEntity (java.lang.ClassNotFoundException: xfacthd.framedblocks.common.blockentity.doubled.FramedAdjustableDoubleBlockEntity)
+[01feb.2026 15:33:16.867] [main/WARN] [mixin/]: @Mixin target xfacthd.framedblocks.common.blockentity.doubled.FramedAdjustableDoubleBlockEntity was not found createbigcannons.mixins.json:compat.FramedAdjustableDoubleBlockEntityAccessor
+[01feb.2026 15:33:17.388] [main/WARN] [mixin/]: Error loading class: xaero/map/gui/GuiMap (java.lang.ClassNotFoundException: xaero.map.gui.GuiMap)
+[01feb.2026 15:33:17.389] [main/WARN] [mixin/]: @Mixin target xaero.map.gui.GuiMap was not found create.mixins.json:compat.xaeros.XaeroFullscreenMapAccessor
+[01feb.2026 15:33:17.390] [main/WARN] [mixin/]: Error loading class: xaero/map/gui/GuiMap (java.lang.ClassNotFoundException: xaero.map.gui.GuiMap)
+[01feb.2026 15:33:17.390] [main/WARN] [mixin/]: @Mixin target xaero.map.gui.GuiMap was not found create.mixins.json:compat.xaeros.XaeroFullscreenMapMixin
+[01feb.2026 15:33:17.399] [main/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/twin_autocannon/contraption/MountedTwinAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.twin_autocannon.contraption.MountedTwinAutocannonContraption)
+[01feb.2026 15:33:17.401] [main/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/heavy_autocannon/contraption/MountedHeavyAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.heavy_autocannon.contraption.MountedHeavyAutocannonContraption)
+[01feb.2026 15:33:17.403] [main/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/twin_autocannon/contraption/MountedTwinAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.twin_autocannon.contraption.MountedTwinAutocannonContraption)
+[01feb.2026 15:33:17.405] [main/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/heavy_autocannon/contraption/MountedHeavyAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.heavy_autocannon.contraption.MountedHeavyAutocannonContraption)
+[01feb.2026 15:33:17.487] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[01feb.2026 15:33:22.872] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 188 Datafixer optimizations took 232 milliseconds
+[01feb.2026 15:33:23.892] [pool-4-thread-1/WARN] [mixin/]: Mixin alexscaves.mixins.json:SwampHutPieceMixin has multiple constructors, (Lnet/minecraft/world/level/levelgen/structure/pieces/StructurePieceType;IIIIIILnet/minecraft/core/Direction;)V was selected
 
-[01feb.2026 13:06:51.351] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Usuario/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[01feb.2026 13:06:51.352] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Usuario/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[01feb.2026 13:06:51.368] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[01feb.2026 13:06:51.373] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[01feb.2026 13:06:51.494] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
-[01feb.2026 13:06:51.879] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Initializing Create Radar!
-[01feb.2026 13:06:51.931] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.10, for MC 1.20.1 with MCP 20230612.114412
-[01feb.2026 13:06:51.931] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.10 Initialized
-[01feb.2026 13:06:52.049] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering Items!
-[01feb.2026 13:06:52.350] [modloading-worker-0/INFO] [com.simibubi.create.Create/]: Create 6.0.8 initializing! Commit hash: 1a1a9a2819b4f89f78caec41b55ed8cb222fa24b
-[01feb.2026 13:06:52.455] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
-[01feb.2026 13:06:52.459] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 3.979 ms
-[01feb.2026 13:06:52.756] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering blocks!
-[01feb.2026 13:06:53.045] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering block entity types!
-[01feb.2026 13:06:53.049] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering CreativeTabs!
-[01feb.2026 13:06:53.051] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering Lang!
-[01feb.2026 13:06:53.068] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering CBC Compat Items!
-[01feb.2026 13:06:54.917] [Render thread/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/twin_autocannon/contraption/MountedTwinAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.twin_autocannon.contraption.MountedTwinAutocannonContraption)
-[01feb.2026 13:06:54.920] [Render thread/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/heavy_autocannon/contraption/MountedHeavyAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.heavy_autocannon.contraption.MountedHeavyAutocannonContraption)
-[01feb.2026 13:06:57.888] [Render thread/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.github.alexmodguy.alexscaves.server.entity.living.TremorzillaEntity from class com.github.alexmodguy.alexscaves.server.entity.living.LicowitchEntity
-[01feb.2026 13:06:58.178] [Render thread/INFO] [com.github.alexmodguy.alexscaves.AlexsCaves/]: loaded in block colorizer
-[01feb.2026 13:06:58.181] [Render thread/INFO] [com.github.alexmodguy.alexscaves.AlexsCaves/]: loaded in item colorizer
-[01feb.2026 13:06:58.677] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [shupapium]
-[01feb.2026 13:06:59.154] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources
-[01feb.2026 13:06:59.303] [Worker-Main-5/INFO] [com.happysg.radar.CreateRadar/]: Registering Display Sources!
-[01feb.2026 13:06:59.382] [Worker-Main-1/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.0.06.hex, loading
-[01feb.2026 13:06:59.390] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[01feb.2026 13:06:59.621] [Worker-Main-3/ERROR] [net.minecraft.Util/]: Invalid path in pack: crusty_chunks:textures/block/RACBreech.bbmodel, ignoring
-[01feb.2026 13:06:59.687] [Worker-Main-4/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/block/purple_soda/purple_soda_swim_3.ogg does not exist, cannot add it to event alexscaves:purple_soda_swim
-[01feb.2026 13:06:59.687] [Worker-Main-4/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/block/purple_soda/purple_soda_swim_4.ogg does not exist, cannot add it to event alexscaves:purple_soda_swim
-[01feb.2026 13:06:59.687] [Worker-Main-4/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/mob/luxtructosaurus/luxtructosaurus_snort_0.ogg does not exist, cannot add it to event alexscaves:luxtructosaurus_snort
-[01feb.2026 13:06:59.688] [Worker-Main-4/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/mob/luxtructosaurus/luxtructosaurus_snort_1.ogg does not exist, cannot add it to event alexscaves:luxtructosaurus_snort
-[01feb.2026 13:06:59.688] [Worker-Main-4/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/mob/luxtructosaurus/luxtructosaurus_snort_2.ogg does not exist, cannot add it to event alexscaves:luxtructosaurus_snort
-[01feb.2026 13:06:59.688] [Worker-Main-4/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/mob/luxtructosaurus/luxtructosaurus_breathe_0.ogg does not exist, cannot add it to event alexscaves:luxtructosaurus_breathe
-[01feb.2026 13:06:59.688] [Worker-Main-4/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/mob/luxtructosaurus/luxtructosaurus_breathe_1.ogg does not exist, cannot add it to event alexscaves:luxtructosaurus_breathe
-[01feb.2026 13:06:59.688] [Worker-Main-4/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/mob/luxtructosaurus/luxtructosaurus_breathe_2.ogg does not exist, cannot add it to event alexscaves:luxtructosaurus_breathe
-[01feb.2026 13:06:59.692] [Worker-Main-4/WARN] [net.minecraft.client.sounds.SoundManager/]: File crusty_chunks:sounds/smallcasing.ogg does not exist, cannot add it to event crusty_chunks:smallcasing
-[01feb.2026 13:07:00.267] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 47.4.10 Target: null
-[01feb.2026 13:07:00.271] [Render thread/INFO] [com.happysg.radar.CreateRadar/]: Registered contraption type 'create_radar:radar_bearing'
-[01feb.2026 13:07:00.632] [Worker-Main-2/ERROR] [net.minecraft.client.resources.model.ModelManager/]: Failed to load model crusty_chunks:models/displaysettings/flarepistol.item.json
+[01feb.2026 15:33:24.651] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Usuario/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[01feb.2026 15:33:24.651] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Usuario/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[01feb.2026 15:33:24.667] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[01feb.2026 15:33:24.673] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[01feb.2026 15:33:24.822] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
+[01feb.2026 15:33:25.074] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Initializing Create Radar!
+[01feb.2026 15:33:25.109] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.10, for MC 1.20.1 with MCP 20230612.114412
+[01feb.2026 15:33:25.110] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.10 Initialized
+[01feb.2026 15:33:25.229] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering Items!
+[01feb.2026 15:33:25.509] [modloading-worker-0/INFO] [com.simibubi.create.Create/]: Create 6.0.8 initializing! Commit hash: 1a1a9a2819b4f89f78caec41b55ed8cb222fa24b
+[01feb.2026 15:33:25.583] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[01feb.2026 15:33:25.588] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 3.290 ms
+[01feb.2026 15:33:25.869] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering blocks!
+[01feb.2026 15:33:26.128] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering block entity types!
+[01feb.2026 15:33:26.131] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering CreativeTabs!
+[01feb.2026 15:33:26.132] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering Lang!
+[01feb.2026 15:33:26.148] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering CBC Compat Items!
+[01feb.2026 15:33:27.787] [Render thread/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/twin_autocannon/contraption/MountedTwinAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.twin_autocannon.contraption.MountedTwinAutocannonContraption)
+[01feb.2026 15:33:27.789] [Render thread/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/heavy_autocannon/contraption/MountedHeavyAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.heavy_autocannon.contraption.MountedHeavyAutocannonContraption)
+[01feb.2026 15:33:30.083] [Render thread/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.github.alexmodguy.alexscaves.server.entity.living.TremorzillaEntity from class com.github.alexmodguy.alexscaves.server.entity.living.LicowitchEntity
+[01feb.2026 15:33:30.285] [Render thread/INFO] [com.github.alexmodguy.alexscaves.AlexsCaves/]: loaded in block colorizer
+[01feb.2026 15:33:30.287] [Render thread/INFO] [com.github.alexmodguy.alexscaves.AlexsCaves/]: loaded in item colorizer
+[01feb.2026 15:33:30.659] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [shupapium]
+[01feb.2026 15:33:31.117] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources
+[01feb.2026 15:33:31.220] [Worker-Main-3/INFO] [com.happysg.radar.CreateRadar/]: Registering Display Sources!
+[01feb.2026 15:33:31.306] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[01feb.2026 15:33:31.342] [Worker-Main-1/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.0.06.hex, loading
+[01feb.2026 15:33:31.545] [Worker-Main-4/ERROR] [net.minecraft.Util/]: Invalid path in pack: crusty_chunks:textures/block/RACBreech.bbmodel, ignoring
+[01feb.2026 15:33:31.567] [Worker-Main-2/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/block/purple_soda/purple_soda_swim_3.ogg does not exist, cannot add it to event alexscaves:purple_soda_swim
+[01feb.2026 15:33:31.567] [Worker-Main-2/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/block/purple_soda/purple_soda_swim_4.ogg does not exist, cannot add it to event alexscaves:purple_soda_swim
+[01feb.2026 15:33:31.568] [Worker-Main-2/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/mob/luxtructosaurus/luxtructosaurus_snort_0.ogg does not exist, cannot add it to event alexscaves:luxtructosaurus_snort
+[01feb.2026 15:33:31.568] [Worker-Main-2/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/mob/luxtructosaurus/luxtructosaurus_snort_1.ogg does not exist, cannot add it to event alexscaves:luxtructosaurus_snort
+[01feb.2026 15:33:31.569] [Worker-Main-2/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/mob/luxtructosaurus/luxtructosaurus_snort_2.ogg does not exist, cannot add it to event alexscaves:luxtructosaurus_snort
+[01feb.2026 15:33:31.569] [Worker-Main-2/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/mob/luxtructosaurus/luxtructosaurus_breathe_0.ogg does not exist, cannot add it to event alexscaves:luxtructosaurus_breathe
+[01feb.2026 15:33:31.569] [Worker-Main-2/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/mob/luxtructosaurus/luxtructosaurus_breathe_1.ogg does not exist, cannot add it to event alexscaves:luxtructosaurus_breathe
+[01feb.2026 15:33:31.569] [Worker-Main-2/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/mob/luxtructosaurus/luxtructosaurus_breathe_2.ogg does not exist, cannot add it to event alexscaves:luxtructosaurus_breathe
+[01feb.2026 15:33:31.582] [Worker-Main-2/WARN] [net.minecraft.client.sounds.SoundManager/]: File crusty_chunks:sounds/smallcasing.ogg does not exist, cannot add it to event crusty_chunks:smallcasing
+[01feb.2026 15:33:31.909] [Render thread/INFO] [com.happysg.radar.CreateRadar/]: Registered contraption type 'create_radar:radar_bearing'
+[01feb.2026 15:33:32.187] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 47.4.10 Target: null
+[01feb.2026 15:33:32.550] [Worker-Main-2/ERROR] [net.minecraft.client.resources.model.ModelManager/]: Failed to load model crusty_chunks:models/displaysettings/flarepistol.item.json
 com.google.gson.JsonParseException: item/FlarePistol is not valid resource location
 	at net.minecraft.client.renderer.block.model.BlockModel$Deserializer.parseTextureLocationOrReference(BlockModel.java:356) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?]
 	at net.minecraft.client.renderer.block.model.BlockModel$Deserializer.getTextureMap(BlockModel.java:343) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?]
@@ -104,70 +104,70 @@ com.google.gson.JsonParseException: item/FlarePistol is not valid resource locat
 	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
-[01feb.2026 13:07:03.142] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:lmg_animated#inventory:
+[01feb.2026 15:33:35.170] [Worker-Main-4/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:lmg_animated#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/lmgtexture
-[01feb.2026 13:07:03.142] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:flare_pistol#inventory:
+[01feb.2026 15:33:35.170] [Worker-Main-4/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:flare_pistol#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/3dpistol
-[01feb.2026 13:07:03.142] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:breech_rifle#inventory:
+[01feb.2026 15:33:35.170] [Worker-Main-4/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:breech_rifle#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/breechrifle
-[01feb.2026 13:07:03.142] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:burst_rifle#inventory:
+[01feb.2026 15:33:35.170] [Worker-Main-4/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:burst_rifle#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/burstrifle
-[01feb.2026 13:07:03.143] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:rac_barrel#inventory:
+[01feb.2026 15:33:35.170] [Worker-Main-4/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:rac_barrel#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/racbarrel
-[01feb.2026 13:07:03.143] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:semi_automatic_rifle_animated#inventory:
+[01feb.2026 15:33:35.170] [Worker-Main-4/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:semi_automatic_rifle_animated#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/artexture
-[01feb.2026 13:07:03.143] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:battle_rifle#inventory:
+[01feb.2026 15:33:35.170] [Worker-Main-4/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:battle_rifle#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/battlerifletexture
-[01feb.2026 13:07:03.143] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:scoped_breech_rifle#inventory:
+[01feb.2026 15:33:35.170] [Worker-Main-4/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:scoped_breech_rifle#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/breechrifle
-[01feb.2026 13:07:03.143] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:smg_animated#inventory:
+[01feb.2026 15:33:35.170] [Worker-Main-4/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:smg_animated#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/smgtexture
-[01feb.2026 13:07:03.143] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:revolver_animated#inventory:
+[01feb.2026 15:33:35.170] [Worker-Main-4/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:revolver_animated#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/revolver
-[01feb.2026 13:07:03.143] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:machine_carbine#inventory:
+[01feb.2026 15:33:35.171] [Worker-Main-4/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:machine_carbine#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/machinecarbine
-[01feb.2026 13:07:03.143] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:automatic_rifle#inventory:
+[01feb.2026 15:33:35.171] [Worker-Main-4/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:automatic_rifle#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/artexture
-[01feb.2026 13:07:03.143] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:stealth_pistol#inventory:
+[01feb.2026 15:33:35.171] [Worker-Main-4/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:stealth_pistol#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/3dpistol
-[01feb.2026 13:07:03.143] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:semi_automatic_pistol_animated#inventory:
+[01feb.2026 15:33:35.171] [Worker-Main-4/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:semi_automatic_pistol_animated#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/3dpistol
-[01feb.2026 13:07:03.143] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:eradication#inventory:
+[01feb.2026 15:33:35.171] [Worker-Main-4/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:eradication#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/eradicationgun
-[01feb.2026 13:07:03.291] [Worker-Main-1/INFO] [com.github.alexmodguy.alexscaves.AlexsCaves/]: Loaded emissive block models in 138 ms
-[01feb.2026 13:07:03.676] [Worker-Main-4/INFO] [PonderIndex/]: Registering Ponder Scenes took 203.1 ms
-[01feb.2026 13:07:03.680] [Worker-Main-4/INFO] [PonderIndex/]: Registering Ponder Tags took 4.475 ms
-[01feb.2026 13:07:06.561] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[01feb.2026 13:07:06.561] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[01feb.2026 13:07:06.561] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:abyssal_chasm_ambience_mood
-[01feb.2026 13:07:06.561] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:luxtructosaurus_breath
-[01feb.2026 13:07:06.661] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Auriculares (5- BOMGE USB Audio Device)
-[01feb.2026 13:07:06.662] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[01feb.2026 13:07:06.761] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x2048x0 minecraft:textures/atlas/blocks.png-atlas
-[01feb.2026 13:07:06.771] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/signs.png-atlas
-[01feb.2026 13:07:06.772] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
-[01feb.2026 13:07:06.772] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
-[01feb.2026 13:07:06.773] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
-[01feb.2026 13:07:06.776] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x0 minecraft:textures/atlas/decorated_pot.png-atlas
-[01feb.2026 13:07:06.778] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/chest.png-atlas
-[01feb.2026 13:07:06.779] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/shulker_boxes.png-atlas
-[01feb.2026 13:07:06.779] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/beds.png-atlas
-[01feb.2026 13:07:06.920] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[01feb.2026 13:07:06.963] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader alexscaves:rendertype_red_ghost could not find sampler named Sampler2 in the specified shader program.
-[01feb.2026 13:07:06.964] [Render thread/INFO] [com.github.alexmodguy.alexscaves.AlexsCaves/]: registered internal shaders
-[01feb.2026 13:07:06.980] [Render thread/WARN] [net.minecraft.client.renderer.EffectInstance/]: Shader bumpy could not find uniform named OutSize in the specified shader program.
-[01feb.2026 13:07:06.991] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x0 minecraft:textures/atlas/particles.png-atlas
-[01feb.2026 13:07:06.996] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[01feb.2026 13:07:06.996] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[01feb.2026 13:07:07.010] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
-[01feb.2026 13:07:07.055] [Render thread/INFO] [flywheel/backend/shaders/]: Loaded 77 shader sources in 40.200 ms
-[01feb.2026 13:07:07.091] [Render thread/INFO] [com.simibubi.create.Create/]: Loaded 56 train hat configurations.
-[01feb.2026 13:07:07.673] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: 0
-[01feb.2026 13:07:45.055] [Render thread/INFO] [com.simibubi.create.Create/]: Created 184 recipes which will be injected into the game
-[01feb.2026 13:07:45.059] [Render thread/INFO] [com.simibubi.create.Create/]: Created 0 tags which will be injected into the game
-[01feb.2026 13:07:45.099] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
-[01feb.2026 13:07:48.089] [Worker-Main-1/ERROR] [net.minecraft.tags.TagLoader/]: Not a JSON object: null
-[01feb.2026 13:07:48.089] [Worker-Main-1/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't read tag list forge:diesel from forge:tags/fluids/diesel.json in data pack warium-1.2.6_mapped_parchment_2023.09.03-1.20.1.jar
+[01feb.2026 15:33:35.439] [Worker-Main-4/INFO] [com.github.alexmodguy.alexscaves.AlexsCaves/]: Loaded emissive block models in 259 ms
+[01feb.2026 15:33:35.713] [Worker-Main-3/INFO] [PonderIndex/]: Registering Ponder Scenes took 93.03 ms
+[01feb.2026 15:33:35.718] [Worker-Main-3/INFO] [PonderIndex/]: Registering Ponder Tags took 4.880 ms
+[01feb.2026 15:33:38.341] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[01feb.2026 15:33:38.341] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[01feb.2026 15:33:38.341] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:abyssal_chasm_ambience_mood
+[01feb.2026 15:33:38.341] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:luxtructosaurus_breath
+[01feb.2026 15:33:38.420] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Auriculares (5- BOMGE USB Audio Device)
+[01feb.2026 15:33:38.420] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[01feb.2026 15:33:38.524] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x2048x0 minecraft:textures/atlas/blocks.png-atlas
+[01feb.2026 15:33:38.533] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/signs.png-atlas
+[01feb.2026 15:33:38.534] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
+[01feb.2026 15:33:38.535] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
+[01feb.2026 15:33:38.535] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
+[01feb.2026 15:33:38.539] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/chest.png-atlas
+[01feb.2026 15:33:38.541] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x0 minecraft:textures/atlas/decorated_pot.png-atlas
+[01feb.2026 15:33:38.541] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/shulker_boxes.png-atlas
+[01feb.2026 15:33:38.541] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/beds.png-atlas
+[01feb.2026 15:33:38.736] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[01feb.2026 15:33:38.802] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader alexscaves:rendertype_red_ghost could not find sampler named Sampler2 in the specified shader program.
+[01feb.2026 15:33:38.803] [Render thread/INFO] [com.github.alexmodguy.alexscaves.AlexsCaves/]: registered internal shaders
+[01feb.2026 15:33:38.820] [Render thread/WARN] [net.minecraft.client.renderer.EffectInstance/]: Shader bumpy could not find uniform named OutSize in the specified shader program.
+[01feb.2026 15:33:38.835] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x0 minecraft:textures/atlas/particles.png-atlas
+[01feb.2026 15:33:38.840] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[01feb.2026 15:33:38.840] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[01feb.2026 15:33:38.853] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
+[01feb.2026 15:33:38.897] [Render thread/INFO] [flywheel/backend/shaders/]: Loaded 77 shader sources in 39.249 ms
+[01feb.2026 15:33:38.963] [Render thread/INFO] [com.simibubi.create.Create/]: Loaded 56 train hat configurations.
+[01feb.2026 15:33:39.559] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: 0
+[01feb.2026 15:33:58.953] [Render thread/INFO] [com.simibubi.create.Create/]: Created 184 recipes which will be injected into the game
+[01feb.2026 15:33:58.958] [Render thread/INFO] [com.simibubi.create.Create/]: Created 0 tags which will be injected into the game
+[01feb.2026 15:33:58.996] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[01feb.2026 15:34:02.135] [Worker-Main-5/ERROR] [net.minecraft.tags.TagLoader/]: Not a JSON object: null
+[01feb.2026 15:34:02.135] [Worker-Main-5/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't read tag list forge:diesel from forge:tags/fluids/diesel.json in data pack warium-1.2.6_mapped_parchment_2023.09.03-1.20.1.jar
 java.lang.RuntimeException: Not a JSON object: null
 	at com.mojang.serialization.DataResult.lambda$getOrThrow$5(DataResult.java:101) ~[datafixerupper-6.0.8.jar%23136!/:?]
 	at com.mojang.datafixers.util.Either$Right.map(Either.java:99) ~[datafixerupper-6.0.8.jar%23136!/:?]
@@ -182,8 +182,8 @@ java.lang.RuntimeException: Not a JSON object: null
 	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
-[01feb.2026 13:07:48.090] [Worker-Main-1/ERROR] [net.minecraft.tags.TagLoader/]: Not a JSON object: null
-[01feb.2026 13:07:48.091] [Worker-Main-1/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't read tag list forge:gasoline from forge:tags/fluids/gasoline.json in data pack warium-1.2.6_mapped_parchment_2023.09.03-1.20.1.jar
+[01feb.2026 15:34:02.139] [Worker-Main-5/ERROR] [net.minecraft.tags.TagLoader/]: Not a JSON object: null
+[01feb.2026 15:34:02.139] [Worker-Main-5/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't read tag list forge:gasoline from forge:tags/fluids/gasoline.json in data pack warium-1.2.6_mapped_parchment_2023.09.03-1.20.1.jar
 java.lang.RuntimeException: Not a JSON object: null
 	at com.mojang.serialization.DataResult.lambda$getOrThrow$5(DataResult.java:101) ~[datafixerupper-6.0.8.jar%23136!/:?]
 	at com.mojang.datafixers.util.Either$Right.map(Either.java:99) ~[datafixerupper-6.0.8.jar%23136!/:?]
@@ -198,8 +198,8 @@ java.lang.RuntimeException: Not a JSON object: null
 	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
-[01feb.2026 13:07:48.092] [Worker-Main-1/ERROR] [net.minecraft.tags.TagLoader/]: Not a JSON object: null
-[01feb.2026 13:07:48.092] [Worker-Main-1/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't read tag list forge:kerosene from forge:tags/fluids/kerosene.json in data pack warium-1.2.6_mapped_parchment_2023.09.03-1.20.1.jar
+[01feb.2026 15:34:02.140] [Worker-Main-5/ERROR] [net.minecraft.tags.TagLoader/]: Not a JSON object: null
+[01feb.2026 15:34:02.140] [Worker-Main-5/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't read tag list forge:kerosene from forge:tags/fluids/kerosene.json in data pack warium-1.2.6_mapped_parchment_2023.09.03-1.20.1.jar
 java.lang.RuntimeException: Not a JSON object: null
 	at com.mojang.serialization.DataResult.lambda$getOrThrow$5(DataResult.java:101) ~[datafixerupper-6.0.8.jar%23136!/:?]
 	at com.mojang.datafixers.util.Either$Right.map(Either.java:99) ~[datafixerupper-6.0.8.jar%23136!/:?]
@@ -214,8 +214,8 @@ java.lang.RuntimeException: Not a JSON object: null
 	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
-[01feb.2026 13:07:48.223] [Worker-Main-2/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag crusty_chunks:firestarter as it is missing following references: burnt:firestarter (from warium-1.2.6_mapped_parchment_2023.09.03-1.20.1.jar)
-[01feb.2026 13:07:48.944] [Worker-Main-3/ERROR] [net.minecraftforge.common.ForgeHooks/]: Couldn't parse element loot_tables:create_radar:blocks/radar_guidance_block
+[01feb.2026 15:34:02.212] [Worker-Main-3/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag crusty_chunks:firestarter as it is missing following references: burnt:firestarter (from warium-1.2.6_mapped_parchment_2023.09.03-1.20.1.jar)
+[01feb.2026 15:34:02.821] [Worker-Main-2/ERROR] [net.minecraftforge.common.ForgeHooks/]: Couldn't parse element loot_tables:create_radar:blocks/radar_guidance_block
 com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'create_radar:radar_guidance_block'
 	at net.minecraft.util.GsonHelper.lambda$convertToItem$0(GsonHelper.java:143) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -267,7 +267,7 @@ com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown st
 	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
-[01feb.2026 13:07:49.417] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_steel_tube
+[01feb.2026 15:34:03.260] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_steel_tube
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -300,9 +300,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -321,7 +323,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.453] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe shupapium:super_heavy_bomb_recipe
+[01feb.2026 15:34:03.296] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe shupapium:super_heavy_bomb_recipe
 com.google.gson.JsonSyntaxException: Invalid pattern: each row must be the same width
 	at net.minecraft.world.item.crafting.ShapedRecipe.patternFromJson(ShapedRecipe.java:268) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.world.item.crafting.ShapedRecipe$Serializer.fromJson(ShapedRecipe.java:322) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
@@ -357,9 +359,11 @@ com.google.gson.JsonSyntaxException: Invalid pattern: each row must be the same 
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -378,7 +382,7 @@ com.google.gson.JsonSyntaxException: Invalid pattern: each row must be the same 
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.457] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_copper_plate
+[01feb.2026 15:34:03.303] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_copper_plate
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -411,9 +415,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -432,7 +438,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.462] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/2_assembly_steel_gear
+[01feb.2026 15:34:03.308] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/2_assembly_steel_gear
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -465,9 +471,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -486,7 +494,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.464] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_small_cannon_barrel
+[01feb.2026 15:34:03.309] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_small_cannon_barrel
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -519,9 +527,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -540,7 +550,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.469] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/2_assembly_steel_wire
+[01feb.2026 15:34:03.315] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/2_assembly_steel_wire
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -573,9 +583,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -594,7 +606,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.470] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_large_cannon_barrel
+[01feb.2026 15:34:03.316] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_large_cannon_barrel
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -627,9 +639,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -648,7 +662,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.471] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_large_barrel
+[01feb.2026 15:34:03.318] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_large_barrel
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -681,9 +695,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -702,7 +718,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.474] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/2_assembly_copper_wire
+[01feb.2026 15:34:03.320] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/2_assembly_copper_wire
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -735,9 +751,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -756,7 +774,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.475] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/4_assembly_steel_wire
+[01feb.2026 15:34:03.321] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/4_assembly_steel_wire
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -789,9 +807,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -810,7 +830,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.479] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/2_assembly_cut_component
+[01feb.2026 15:34:03.325] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/2_assembly_cut_component
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -843,9 +863,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -864,7 +886,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.480] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_compressed_advanced_mixture
+[01feb.2026 15:34:03.326] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_compressed_advanced_mixture
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -897,9 +919,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -918,7 +942,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.482] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/4_assembly_copper_wire
+[01feb.2026 15:34:03.329] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/4_assembly_copper_wire
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -951,9 +975,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -972,7 +998,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.484] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_medium_barrel
+[01feb.2026 15:34:03.330] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_medium_barrel
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1005,9 +1031,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -1026,7 +1054,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.487] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/4_assembly_copper_coil
+[01feb.2026 15:34:03.333] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/4_assembly_copper_coil
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1059,9 +1087,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -1080,7 +1110,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.488] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_huge_cannon_barrel
+[01feb.2026 15:34:03.334] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_huge_cannon_barrel
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1113,9 +1143,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -1134,7 +1166,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.490] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_steel_plate
+[01feb.2026 15:34:03.336] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_steel_plate
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1167,9 +1199,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -1188,7 +1222,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.491] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_steel_tube
+[01feb.2026 15:34:03.336] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_steel_tube
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1221,9 +1255,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -1242,7 +1278,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.494] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_hollowprojectile1
+[01feb.2026 15:34:03.339] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_hollowprojectile1
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1275,9 +1311,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -1296,7 +1334,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.495] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_hollowprojectile2
+[01feb.2026 15:34:03.340] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_hollowprojectile2
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1329,9 +1367,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -1350,7 +1390,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.495] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_hollowprojectile3
+[01feb.2026 15:34:03.340] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_hollowprojectile3
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1383,9 +1423,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -1404,7 +1446,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.496] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_bent_component
+[01feb.2026 15:34:03.341] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_bent_component
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1437,9 +1479,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -1458,7 +1502,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.503] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_small_barrel
+[01feb.2026 15:34:03.347] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_small_barrel
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1491,9 +1535,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -1512,7 +1558,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.504] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_brass_fitting
+[01feb.2026 15:34:03.348] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_brass_fitting
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1545,9 +1591,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -1566,7 +1614,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.508] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_huge_barrel
+[01feb.2026 15:34:03.351] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_huge_barrel
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1599,9 +1647,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -1620,7 +1670,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.512] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_bored_component
+[01feb.2026 15:34:03.354] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_bored_component
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1653,9 +1703,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -1674,7 +1726,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.516] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/2_assembly_wood_component
+[01feb.2026 15:34:03.358] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/2_assembly_wood_component
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1707,9 +1759,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -1728,7 +1782,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.517] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/4_assembly_steel_spring
+[01feb.2026 15:34:03.360] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/4_assembly_steel_spring
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1761,9 +1815,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -1782,7 +1838,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.524] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_brass_plate
+[01feb.2026 15:34:03.367] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_brass_plate
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1815,9 +1871,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -1836,7 +1894,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.528] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_aluminum_plate
+[01feb.2026 15:34:03.371] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_aluminum_plate
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1869,9 +1927,11 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:198) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:207) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:175) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:184) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:278) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1196) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:723) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -1890,163 +1950,200 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[01feb.2026 13:07:49.530] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 28 recipes
-[01feb.2026 13:07:49.604] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 2611 advancements
-[01feb.2026 13:07:49.629] [Render thread/WARN] [rbasamoyai.createbigcannons.CreateBigCannons/]: createbigcannons:munition_properties/projectiles/bag_of_grapeshot is missing durability_mass value, will be set to 1.0
-[01feb.2026 13:07:49.629] [Render thread/WARN] [rbasamoyai.createbigcannons.CreateBigCannons/]: createbigcannons:munition_properties/projectiles/bag_of_grapeshot is missing penetration value, will be set to 1.0
-[01feb.2026 13:07:49.629] [Render thread/WARN] [rbasamoyai.createbigcannons.CreateBigCannons/]: createbigcannons:munition_properties/projectiles/bag_of_grapeshot is missing toughness value, will be set to 1.0
-[01feb.2026 13:07:49.629] [Render thread/WARN] [rbasamoyai.createbigcannons.CreateBigCannons/]: createbigcannons:munition_properties/projectiles/bag_of_grapeshot is missing deflection value, will be set to 1.0
-[01feb.2026 13:07:49.629] [Render thread/WARN] [rbasamoyai.createbigcannons.CreateBigCannons/]: createbigcannons:munition_properties/projectiles/bag_of_grapeshot is missing entity_damage value, will be set to 1.0
-[01feb.2026 13:07:51.807] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.1
-[01feb.2026 13:07:51.807] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[01feb.2026 13:07:52.135] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[01feb.2026 13:07:54.487] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[01feb.2026 13:07:54.630] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[01feb.2026 13:07:54.630] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[01feb.2026 13:07:54.630] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[01feb.2026 13:07:54.630] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[01feb.2026 13:07:54.665] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[01feb.2026 13:07:55.163] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 12%
-[01feb.2026 13:07:55.467] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
-[01feb.2026 13:07:55.474] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 3328 ms
-[01feb.2026 13:07:55.657] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 14, from 10
-[01feb.2026 13:07:55.659] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 32, from 0
-[01feb.2026 13:07:55.726] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
-[01feb.2026 13:07:56.386] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
-[01feb.2026 13:07:56.427] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:4fb00819] logged in with entity id 56 at (143.3531882052567, 177.2652285668566, -67.30154183595181)
-[01feb.2026 13:07:56.502] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[01feb.2026 13:07:57.647] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.ClientPlayerNetworkEvent$LoggingIn
-[01feb.2026 13:07:57.647] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from DISABLED to ENABLED
-[01feb.2026 13:07:57.653] [Render thread/INFO] [flywheel/]: Started 2 worker threads
-[01feb.2026 13:07:57.967] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.RecipesUpdatedEvent
-[01feb.2026 13:07:57.980] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.event.TagsUpdatedEvent
-[01feb.2026 13:07:57.980] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from ENABLED to JEI_STARTED
-[01feb.2026 13:07:57.981] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI...
-[01feb.2026 13:07:57.988] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes...
-[01feb.2026 13:07:57.992] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes took 3.855 ms
-[01feb.2026 13:07:57.993] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes...
-[01feb.2026 13:07:57.995] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes took 1.755 ms
-[01feb.2026 13:07:57.996] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients...
-[01feb.2026 13:07:58.033] [Render thread/WARN] [mezz.jei.library.plugins.vanilla.ingredients.ItemStackListFactory/]: Item Group has no display items and no search tab display items. Items from this group will be missing from the JEI ingredient list. Operator Utilities
-[01feb.2026 13:07:58.034] [Render thread/WARN] [mezz.jei.library.plugins.vanilla.ingredients.ItemStackListFactory/]: 2 duplicate items were found in 'Create Big Cannons' creative tab's: displayItems
+[01feb.2026 15:34:03.373] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 28 recipes
+[01feb.2026 15:34:03.465] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 2611 advancements
+[01feb.2026 15:34:03.490] [Render thread/WARN] [rbasamoyai.createbigcannons.CreateBigCannons/]: createbigcannons:munition_properties/projectiles/bag_of_grapeshot is missing durability_mass value, will be set to 1.0
+[01feb.2026 15:34:03.490] [Render thread/WARN] [rbasamoyai.createbigcannons.CreateBigCannons/]: createbigcannons:munition_properties/projectiles/bag_of_grapeshot is missing penetration value, will be set to 1.0
+[01feb.2026 15:34:03.490] [Render thread/WARN] [rbasamoyai.createbigcannons.CreateBigCannons/]: createbigcannons:munition_properties/projectiles/bag_of_grapeshot is missing toughness value, will be set to 1.0
+[01feb.2026 15:34:03.490] [Render thread/WARN] [rbasamoyai.createbigcannons.CreateBigCannons/]: createbigcannons:munition_properties/projectiles/bag_of_grapeshot is missing deflection value, will be set to 1.0
+[01feb.2026 15:34:03.490] [Render thread/WARN] [rbasamoyai.createbigcannons.CreateBigCannons/]: createbigcannons:munition_properties/projectiles/bag_of_grapeshot is missing entity_damage value, will be set to 1.0
+[01feb.2026 15:34:05.530] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.1
+[01feb.2026 15:34:05.531] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[01feb.2026 15:34:05.869] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[01feb.2026 15:34:08.297] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[01feb.2026 15:34:08.315] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[01feb.2026 15:34:08.333] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[01feb.2026 15:34:08.333] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[01feb.2026 15:34:08.333] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[01feb.2026 15:34:08.387] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[01feb.2026 15:34:08.879] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 43%
+[01feb.2026 15:34:09.084] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[01feb.2026 15:34:09.099] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 3226 ms
+[01feb.2026 15:34:09.296] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 14, from 10
+[01feb.2026 15:34:09.298] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 32, from 0
+[01feb.2026 15:34:09.372] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
+[01feb.2026 15:34:10.054] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
+[01feb.2026 15:34:10.099] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:5e5dd320] logged in with entity id 56 at (188.5160390544879, 173.0, -81.8556048061362)
+[01feb.2026 15:34:10.150] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[01feb.2026 15:34:12.110] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.ClientPlayerNetworkEvent$LoggingIn
+[01feb.2026 15:34:12.111] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from DISABLED to ENABLED
+[01feb.2026 15:34:12.117] [Render thread/INFO] [flywheel/]: Started 2 worker threads
+[01feb.2026 15:34:12.497] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.RecipesUpdatedEvent
+[01feb.2026 15:34:12.528] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.event.TagsUpdatedEvent
+[01feb.2026 15:34:12.529] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from ENABLED to JEI_STARTED
+[01feb.2026 15:34:12.529] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI...
+[01feb.2026 15:34:12.539] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes...
+[01feb.2026 15:34:12.544] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes took 5.031 ms
+[01feb.2026 15:34:12.545] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes...
+[01feb.2026 15:34:12.547] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes took 2.389 ms
+[01feb.2026 15:34:12.550] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients...
+[01feb.2026 15:34:12.589] [Render thread/WARN] [mezz.jei.library.plugins.vanilla.ingredients.ItemStackListFactory/]: Item Group has no display items and no search tab display items. Items from this group will be missing from the JEI ingredient list. Operator Utilities
+[01feb.2026 15:34:12.590] [Render thread/WARN] [mezz.jei.library.plugins.vanilla.ingredients.ItemStackListFactory/]: 2 duplicate items were found in 'Create Big Cannons' creative tab's: displayItems
 This may indicate that these types of item need a subtype interpreter added to JEI:
-[autocannon_cartridge, big_cartridge]
-[01feb.2026 13:07:58.060] [Render thread/WARN] [mezz.jei.library.plugins.vanilla.ingredients.ItemStackListFactory/]: 45 duplicate items were found in 'Candy Cavity' creative tab's: displayItems
+[big_cartridge, autocannon_cartridge]
+[01feb.2026 15:34:12.619] [Render thread/WARN] [mezz.jei.library.plugins.vanilla.ingredients.ItemStackListFactory/]: 45 duplicate items were found in 'Candy Cavity' creative tab's: displayItems
 This may indicate that these types of item need a subtype interpreter added to JEI:
 [jelly_bean]
-[01feb.2026 13:07:58.076] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft took 79.09 milliseconds
-[01feb.2026 13:07:58.076] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients took 79.58 ms
-[01feb.2026 13:07:58.076] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients...
-[01feb.2026 13:07:58.077] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients took 947.6 μs
-[01feb.2026 13:07:58.078] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases...
-[01feb.2026 13:07:58.078] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases took 653.7 μs
-[01feb.2026 13:07:58.093] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories...
-[01feb.2026 13:07:58.106] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: jei:minecraft took 12.28 milliseconds
-[01feb.2026 13:07:58.120] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: createbigcannons:jei_plugin took 14.25 milliseconds
-[01feb.2026 13:07:58.152] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: create:jei_plugin took 32.65 milliseconds
-[01feb.2026 13:07:58.160] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories took 67.51 ms
-[01feb.2026 13:07:58.161] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions...
-[01feb.2026 13:07:58.165] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions took 4.158 ms
-[01feb.2026 13:07:58.166] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts...
-[01feb.2026 13:07:58.169] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts took 2.478 ms
-[01feb.2026 13:07:58.170] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry...
-[01feb.2026 13:07:58.182] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry took 12.22 ms
-[01feb.2026 13:07:58.183] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins...
-[01feb.2026 13:07:58.184] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins took 434.2 μs
-[01feb.2026 13:07:58.185] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes...
-[01feb.2026 13:07:58.501] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:minecraft took 315.8 milliseconds
-[01feb.2026 13:07:58.553] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: createbigcannons:jei_plugin took 51.78 milliseconds
-[01feb.2026 13:07:58.703] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: create:jei_plugin took 150.0 milliseconds
-[01feb.2026 13:07:58.874] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:internal took 167.8 milliseconds
-[01feb.2026 13:07:58.874] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes took 688.7 ms
-[01feb.2026 13:07:58.882] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers...
-[01feb.2026 13:07:58.887] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers took 4.513 ms
-[01feb.2026 13:07:58.893] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime...
-[01feb.2026 13:07:58.897] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers...
-[01feb.2026 13:07:58.907] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers took 9.386 ms
-[01feb.2026 13:07:58.910] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime...
-[01feb.2026 13:07:58.912] [Render thread/INFO] [mezz.jei.gui.startup.JeiGuiStarter/]: Starting JEI GUI
-[01feb.2026 13:07:58.912] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list...
-[01feb.2026 13:07:58.967] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list took 54.89 ms
-[01feb.2026 13:07:58.968] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter...
-[01feb.2026 13:07:58.998] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Adding 3883 ingredients
-[01feb.2026 13:07:59.464] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Added 3883 ingredients
-[01feb.2026 13:07:59.465] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter took 497.7 ms
-[01feb.2026 13:07:59.541] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering Runtime: jei:forge_gui took 631.0 milliseconds
-[01feb.2026 13:07:59.541] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime took 631.7 ms
-[01feb.2026 13:07:59.542] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime took 649.2 ms
-[01feb.2026 13:07:59.542] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime...
-[01feb.2026 13:07:59.543] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime took 392.4 μs
-[01feb.2026 13:07:59.543] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI took 1.562 s
-[01feb.2026 13:07:59.680] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 104 advancements
-[01feb.2026 13:08:01.918] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[01feb.2026 13:08:01.930] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:overworld
-[01feb.2026 13:08:01.987] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:the_nether
-[01feb.2026 13:08:01.988] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:the_end
-[01feb.2026 13:08:26.217] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[01feb.2026 13:08:26.223] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:overworld
-[01feb.2026 13:08:26.230] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:the_nether
-[01feb.2026 13:08:26.231] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:the_end
-[01feb.2026 13:08:38.769] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[01feb.2026 13:08:38.775] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:overworld
-[01feb.2026 13:08:38.781] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:the_nether
-[01feb.2026 13:08:38.782] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:the_end
-[01feb.2026 13:10:48.567] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[01feb.2026 13:10:48.573] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:overworld
-[01feb.2026 13:10:48.579] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:the_nether
-[01feb.2026 13:10:48.580] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:the_end
-[01feb.2026 13:11:45.969] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[01feb.2026 13:11:45.975] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:overworld
-[01feb.2026 13:11:45.982] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:the_nether
-[01feb.2026 13:11:45.983] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:the_end
-[01feb.2026 13:13:14.326] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 107 advancements
-[01feb.2026 13:13:17.432] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Spectator Mode]
-[01feb.2026 13:13:17.443] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Spectator Mode
-[01feb.2026 13:13:21.303] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
-[01feb.2026 13:13:21.304] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
-[01feb.2026 13:13:21.618] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[01feb.2026 13:13:21.624] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:overworld
-[01feb.2026 13:13:21.628] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:the_nether
-[01feb.2026 13:13:21.629] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:the_end
-[01feb.2026 13:13:31.218] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[01feb.2026 13:13:31.224] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:overworld
-[01feb.2026 13:13:31.228] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:the_nether
-[01feb.2026 13:13:31.228] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:the_end
-[01feb.2026 13:13:35.523] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Spectator Mode]
-[01feb.2026 13:13:35.526] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Spectator Mode
-[01feb.2026 13:13:59.849] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
-[01feb.2026 13:13:59.850] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
-[01feb.2026 13:14:06.251] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Spectator Mode]
-[01feb.2026 13:14:06.252] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Spectator Mode
-[01feb.2026 13:14:29.467] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[01feb.2026 13:14:29.473] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:overworld
-[01feb.2026 13:14:29.477] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:the_nether
-[01feb.2026 13:14:29.478] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:the_end
-[01feb.2026 13:14:40.216] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
-[01feb.2026 13:14:40.217] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
-[01feb.2026 13:14:44.887] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set the time to 1]
-[01feb.2026 13:14:44.888] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set the time to 1
-[01feb.2026 13:14:51.517] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[01feb.2026 13:14:51.522] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:overworld
-[01feb.2026 13:14:51.526] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:the_nether
-[01feb.2026 13:14:51.527] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:the_end
-[01feb.2026 13:14:52.306] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
-[01feb.2026 13:14:52.308] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.ClientPlayerNetworkEvent$LoggingOut
-[01feb.2026 13:14:52.308] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from JEI_STARTED to DISABLED
-[01feb.2026 13:14:52.308] [Render thread/INFO] [mezz.jei.library.startup.JeiStarter/]: Stopping JEI
-[01feb.2026 13:14:52.308] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable...
-[01feb.2026 13:14:52.308] [Render thread/INFO] [mezz.jei.forge.plugins.forge.ForgeGuiPlugin/]: Stopping JEI GUI
-[01feb.2026 13:14:52.309] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable took 1.527 ms
-[01feb.2026 13:14:52.325] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
-[01feb.2026 13:14:52.326] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[01feb.2026 13:14:52.332] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
-[01feb.2026 13:14:52.379] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[01feb.2026 13:14:52.380] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[01feb.2026 13:14:52.380] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[01feb.2026 13:14:52.528] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:overworld
-[01feb.2026 13:14:52.982] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:the_nether
-[01feb.2026 13:14:52.983] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:the_end
-[01feb.2026 13:14:53.011] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (agartha21): All chunks are saved
-[01feb.2026 13:14:53.011] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[01feb.2026 13:14:53.011] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[01feb.2026 13:14:53.011] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[01feb.2026 15:34:12.639] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft took 89.00 milliseconds
+[01feb.2026 15:34:12.640] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients took 89.59 ms
+[01feb.2026 15:34:12.640] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients...
+[01feb.2026 15:34:12.642] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients took 1.529 ms
+[01feb.2026 15:34:12.642] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases...
+[01feb.2026 15:34:12.643] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases took 628.0 μs
+[01feb.2026 15:34:12.664] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories...
+[01feb.2026 15:34:12.684] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: jei:minecraft took 20.17 milliseconds
+[01feb.2026 15:34:12.706] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: createbigcannons:jei_plugin took 21.41 milliseconds
+[01feb.2026 15:34:12.746] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: create:jei_plugin took 39.79 milliseconds
+[01feb.2026 15:34:12.755] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories took 90.96 ms
+[01feb.2026 15:34:12.756] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions...
+[01feb.2026 15:34:12.761] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions took 4.204 ms
+[01feb.2026 15:34:12.762] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts...
+[01feb.2026 15:34:12.765] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts took 2.838 ms
+[01feb.2026 15:34:12.765] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry...
+[01feb.2026 15:34:12.777] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry took 11.62 ms
+[01feb.2026 15:34:12.779] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins...
+[01feb.2026 15:34:12.779] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins took 375.2 μs
+[01feb.2026 15:34:12.780] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes...
+[01feb.2026 15:34:13.108] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:minecraft took 328.1 milliseconds
+[01feb.2026 15:34:13.128] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: createbigcannons:jei_plugin took 19.94 milliseconds
+[01feb.2026 15:34:13.271] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: create:jei_plugin took 142.3 milliseconds
+[01feb.2026 15:34:13.376] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:internal took 102.9 milliseconds
+[01feb.2026 15:34:13.377] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes took 596.5 ms
+[01feb.2026 15:34:13.385] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers...
+[01feb.2026 15:34:13.389] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers took 3.704 ms
+[01feb.2026 15:34:13.394] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime...
+[01feb.2026 15:34:13.398] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers...
+[01feb.2026 15:34:13.406] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers took 7.843 ms
+[01feb.2026 15:34:13.409] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime...
+[01feb.2026 15:34:13.411] [Render thread/INFO] [mezz.jei.gui.startup.JeiGuiStarter/]: Starting JEI GUI
+[01feb.2026 15:34:13.412] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list...
+[01feb.2026 15:34:13.452] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list took 39.27 ms
+[01feb.2026 15:34:13.452] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter...
+[01feb.2026 15:34:13.480] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Adding 3883 ingredients
+[01feb.2026 15:34:13.800] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Added 3883 ingredients
+[01feb.2026 15:34:13.801] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter took 349.3 ms
+[01feb.2026 15:34:13.866] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering Runtime: jei:forge_gui took 455.8 milliseconds
+[01feb.2026 15:34:13.866] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime took 456.4 ms
+[01feb.2026 15:34:13.867] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime took 472.8 ms
+[01feb.2026 15:34:13.867] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime...
+[01feb.2026 15:34:13.867] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime took 329.4 μs
+[01feb.2026 15:34:13.867] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI took 1.338 s
+[01feb.2026 15:34:13.960] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 107 advancements
+[01feb.2026 15:34:25.081] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/]: Audio device was lost!
+[01feb.2026 15:34:25.081] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[01feb.2026 15:34:25.081] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[01feb.2026 15:34:25.081] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:abyssal_chasm_ambience_mood
+[01feb.2026 15:34:25.081] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:luxtructosaurus_breath
+[01feb.2026 15:34:25.098] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on VA1901 Series (NVIDIA High Definition Audio)
+[01feb.2026 15:34:25.098] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[01feb.2026 15:34:25.551] [IO-Worker-7/INFO] [net.minecraft.client.sounds.SoundEngine/]: System default audio device has changed!
+[01feb.2026 15:34:25.583] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[01feb.2026 15:34:25.583] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[01feb.2026 15:34:25.584] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:abyssal_chasm_ambience_mood
+[01feb.2026 15:34:25.584] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:luxtructosaurus_breath
+[01feb.2026 15:34:25.620] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on VA1901 Series (NVIDIA High Definition Audio)
+[01feb.2026 15:34:25.620] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[01feb.2026 15:34:26.587] [IO-Worker-7/INFO] [net.minecraft.client.sounds.SoundEngine/]: System default audio device has changed!
+[01feb.2026 15:34:26.634] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[01feb.2026 15:34:26.635] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[01feb.2026 15:34:26.635] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:abyssal_chasm_ambience_mood
+[01feb.2026 15:34:26.635] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:luxtructosaurus_breath
+[01feb.2026 15:34:26.667] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Auriculares (5- BOMGE USB Audio Device)
+[01feb.2026 15:34:26.667] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[01feb.2026 15:34:59.179] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/]: Audio device was lost!
+[01feb.2026 15:34:59.179] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[01feb.2026 15:34:59.179] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[01feb.2026 15:34:59.180] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:abyssal_chasm_ambience_mood
+[01feb.2026 15:34:59.180] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:luxtructosaurus_breath
+[01feb.2026 15:34:59.192] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on VA1901 Series (NVIDIA High Definition Audio)
+[01feb.2026 15:34:59.192] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[01feb.2026 15:34:59.383] [IO-Worker-7/INFO] [net.minecraft.client.sounds.SoundEngine/]: System default audio device has changed!
+[01feb.2026 15:34:59.430] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[01feb.2026 15:34:59.430] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[01feb.2026 15:34:59.430] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:abyssal_chasm_ambience_mood
+[01feb.2026 15:34:59.430] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:luxtructosaurus_breath
+[01feb.2026 15:34:59.465] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on VA1901 Series (NVIDIA High Definition Audio)
+[01feb.2026 15:34:59.465] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[01feb.2026 15:35:00.383] [IO-Worker-7/INFO] [net.minecraft.client.sounds.SoundEngine/]: System default audio device has changed!
+[01feb.2026 15:35:00.430] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[01feb.2026 15:35:00.430] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[01feb.2026 15:35:00.430] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:abyssal_chasm_ambience_mood
+[01feb.2026 15:35:00.430] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:luxtructosaurus_breath
+[01feb.2026 15:35:00.462] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Auriculares (5- BOMGE USB Audio Device)
+[01feb.2026 15:35:00.462] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[01feb.2026 15:35:32.679] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/]: Audio device was lost!
+[01feb.2026 15:35:32.679] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[01feb.2026 15:35:32.680] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[01feb.2026 15:35:32.680] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:abyssal_chasm_ambience_mood
+[01feb.2026 15:35:32.680] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:luxtructosaurus_breath
+[01feb.2026 15:35:32.712] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on VA1901 Series (NVIDIA High Definition Audio)
+[01feb.2026 15:35:32.712] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[01feb.2026 15:35:33.120] [IO-Worker-6/INFO] [net.minecraft.client.sounds.SoundEngine/]: System default audio device has changed!
+[01feb.2026 15:35:33.132] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[01feb.2026 15:35:33.132] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[01feb.2026 15:35:33.132] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:abyssal_chasm_ambience_mood
+[01feb.2026 15:35:33.132] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:luxtructosaurus_breath
+[01feb.2026 15:35:33.224] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on VA1901 Series (NVIDIA High Definition Audio)
+[01feb.2026 15:35:33.224] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[01feb.2026 15:35:34.135] [IO-Worker-6/INFO] [net.minecraft.client.sounds.SoundEngine/]: System default audio device has changed!
+[01feb.2026 15:35:34.185] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[01feb.2026 15:35:34.185] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[01feb.2026 15:35:34.186] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:abyssal_chasm_ambience_mood
+[01feb.2026 15:35:34.186] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:luxtructosaurus_breath
+[01feb.2026 15:35:34.222] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Auriculares (5- BOMGE USB Audio Device)
+[01feb.2026 15:35:34.222] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[01feb.2026 15:37:47.080] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/]: Audio device was lost!
+[01feb.2026 15:37:47.080] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[01feb.2026 15:37:47.080] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[01feb.2026 15:37:47.080] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:abyssal_chasm_ambience_mood
+[01feb.2026 15:37:47.080] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:luxtructosaurus_breath
+[01feb.2026 15:37:47.095] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on VA1901 Series (NVIDIA High Definition Audio)
+[01feb.2026 15:37:47.095] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[01feb.2026 15:37:47.783] [IO-Worker-10/INFO] [net.minecraft.client.sounds.SoundEngine/]: System default audio device has changed!
+[01feb.2026 15:37:47.831] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[01feb.2026 15:37:47.831] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[01feb.2026 15:37:47.831] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:abyssal_chasm_ambience_mood
+[01feb.2026 15:37:47.832] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:luxtructosaurus_breath
+[01feb.2026 15:37:47.864] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on VA1901 Series (NVIDIA High Definition Audio)
+[01feb.2026 15:37:47.864] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[01feb.2026 15:37:48.784] [IO-Worker-8/INFO] [net.minecraft.client.sounds.SoundEngine/]: System default audio device has changed!
+[01feb.2026 15:37:48.833] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[01feb.2026 15:37:48.833] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[01feb.2026 15:37:48.834] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:abyssal_chasm_ambience_mood
+[01feb.2026 15:37:48.834] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:luxtructosaurus_breath
+[01feb.2026 15:37:48.871] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Auriculares (5- BOMGE USB Audio Device)
+[01feb.2026 15:37:48.871] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[01feb.2026 15:39:57.734] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[01feb.2026 15:39:57.740] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:overworld
+[01feb.2026 15:39:57.745] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:the_nether
+[01feb.2026 15:39:57.746] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:the_end
+[01feb.2026 15:39:58.180] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[01feb.2026 15:39:58.182] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.ClientPlayerNetworkEvent$LoggingOut
+[01feb.2026 15:39:58.182] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from JEI_STARTED to DISABLED
+[01feb.2026 15:39:58.182] [Render thread/INFO] [mezz.jei.library.startup.JeiStarter/]: Stopping JEI
+[01feb.2026 15:39:58.182] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable...
+[01feb.2026 15:39:58.182] [Render thread/INFO] [mezz.jei.forge.plugins.forge.ForgeGuiPlugin/]: Stopping JEI GUI
+[01feb.2026 15:39:58.184] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable took 1.358 ms
+[01feb.2026 15:39:58.189] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[01feb.2026 15:39:58.189] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[01feb.2026 15:39:58.198] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
+[01feb.2026 15:39:58.247] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[01feb.2026 15:39:58.248] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[01feb.2026 15:39:58.248] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[01feb.2026 15:39:58.360] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:overworld
+[01feb.2026 15:39:59.052] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:the_nether
+[01feb.2026 15:39:59.054] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[agartha21]'/minecraft:the_end
+[01feb.2026 15:39:59.092] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (agartha21): All chunks are saved
+[01feb.2026 15:39:59.092] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[01feb.2026 15:39:59.092] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[01feb.2026 15:39:59.092] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
