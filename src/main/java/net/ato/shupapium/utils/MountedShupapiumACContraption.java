@@ -360,8 +360,14 @@ public class MountedShupapiumACContraption extends MountedAutocannonContraption 
         for (int i = 0; i < this.profile.getProjectilePerShot(); i++) {
             AbstractArrow projectile = projectiles.get(Mth.nextInt(level.random, 0, projectiles.size() - 1));
             if (projectile != null) {
-                spread = spread + (i * 0.15F);
-                projectile.setPos(spawnPos.x + Mth.nextFloat(level.random, -this.profile.getProjectileSpread(), this.profile.getProjectileSpread()), spawnPos.y + Mth.nextFloat(level.random, -this.profile.getProjectileSpread(), this.profile.getProjectileSpread()), spawnPos.z + Mth.nextFloat(level.random, -this.profile.getProjectileSpread(), this.profile.getProjectileSpread()));
+                float baseSpread = 0.3F * Mth.clamp(this.profile.getProjectileSpread(), 0F, 1F);
+                float burstSpread = i * 0.015F;
+                spread = baseSpread + burstSpread;
+                float yaw = (float) Math.atan2(vec1.z, vec1.x);
+                float pitch = (float) Math.asin(vec1.y);
+                yaw += (float) (level.random.nextGaussian() * spread);
+                pitch += (float) (level.random.nextGaussian() * spread);
+                projectile.setPos(spawnPos.x + Mth.nextFloat(level.random, -0.005F, 0.005F), spawnPos.y + Mth.nextFloat(level.random, -0.005F, 0.005F), spawnPos.z + Mth.nextFloat(level.random, -0.005F, 0.005F));
                 projectile.addTag("shupapiumProjectile");
                 projectile.setOwner(entity.getControllingPassenger());
                 projectile.setBaseDamage(projectileProperties.damage().entityDamage() / 10);
@@ -370,7 +376,8 @@ public class MountedShupapiumACContraption extends MountedAutocannonContraption 
                 projectile.setNoGravity(!round.projectileAffectedByWorldsGravity());
                 ProjectileManager.track(projectile, level, properties.projectileLifetime());
                 //projectile.setLifetime(properties.projectileLifetime());
-                projectile.shoot(vec1.x + Mth.nextFloat(level.random, -this.profile.getProjectileSpread(), this.profile.getProjectileSpread()) , vec1.y + Mth.nextFloat(level.random, -this.profile.getProjectileSpread(), this.profile.getProjectileSpread()), vec1.z + Mth.nextFloat(level.random, -this.profile.getProjectileSpread(), this.profile.getProjectileSpread()), speed, spread);
+                Vec3 spreadDir = new Vec3(Math.cos(pitch) * Math.cos(yaw), Math.sin(pitch), Math.cos(pitch) * Math.sin(yaw));
+                projectile.shoot(spreadDir.x, spreadDir.y, spreadDir.z, speed, Mth.nextFloat(level.random, -0.01F, 0.01F));
                 projectile.xRotO = projectile.getXRot();
                 projectile.yRotO = projectile.getYRot();
 
