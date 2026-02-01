@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.ato.shupapium.mixin",
+  "refmap": "shupapium.refmap.json",
+  "compatibilityLevel": "JAVA_17",
+  "client": [],
+  "mixins": [
+    "ShupapiumACAccesor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
