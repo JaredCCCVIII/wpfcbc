@@ -48,12 +48,12 @@ public class MachineGunProfile implements ShupapiumACProfile {
 
     @Override
     public int getCannonFireRate() {
-        return 240;
+        return 500;
     }
 
     @Override
     public float getProjectileBaseSpeed() {
-        return 7.9F;
+        return 20.0F;
     }
 
     @Override

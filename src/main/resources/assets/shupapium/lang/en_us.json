@@ -220,6 +220,11 @@
   "item.shupapium.radar_spear_missile_ammo_item.tooltip.condition1": "Info:",
   "item.shupapium.radar_spear_missile_ammo_item.tooltip.summary": "\"Flashbacks of the modern era.\"",
 
+  "item.shupapium.petrol_ammo_item": "Flamethrower Ammo",
+  "item.shupapium.petrol_ammo_item.tooltip.behaviour1": "Creates fire around the area and inflicts a lot of damage in a fraction of twenty ticks.",
+  "item.shupapium.petrol_ammo_item.tooltip.condition1": "Info:",
+  "item.shupapium.petrol_ammo_item.tooltip.summary": "Mmmrph!",
+
   "block.shupapium.shupapium_ammo_container": "Warium Ammo Container",
   "block.shupapium.creative_shupapium_ammo_container": "Creative Warium Ammo Container",
   "item.shupapium.propellant_item": "Propellant",
@@ -252,6 +257,10 @@
   "block.shupapium.template_gun_barrel": "Template Cannon Barrel",
   "block.shupapium.template_gun_breech": "Template Cannon Breech",
   "block.shupapium.template_gun_recoil_spring": "Template Cannon Chamber",
+  "block.shupapium.flamethrower_gun_barrel": "Flamethrower Barrel",
+  "block.shupapium.covered_flamethrower_gun_barrel": "Covered Flamethrower Barrel",
+  "block.shupapium.flamethrower_gun_breech": "Flamethrower Breech",
+  "block.shupapium.flamethrower_gun_recoil_spring": "Flamethrower Chamber",
 
   "entity.shupapium.dummy_ragdoll": "Test Dummy",
   "item.shupapium.dummy_ragdoll_spawn_egg": "Test Dummy Spawn Egg",

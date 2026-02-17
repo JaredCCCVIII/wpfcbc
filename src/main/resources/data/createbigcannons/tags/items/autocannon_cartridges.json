@@ -23,6 +23,7 @@
     "shupapium:small_shell_ammo_item",
     "shupapium:smoke_shell_ammo_item",
     "shupapium:strike_spear_missile_ammo_item",
-    "shupapium:mortar_shell_ammo_item"
+    "shupapium:mortar_shell_ammo_item",
+    "shupapium:petrol_ammo_item"
   ]
 }

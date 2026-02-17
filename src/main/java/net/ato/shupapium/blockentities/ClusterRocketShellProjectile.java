@@ -37,6 +37,6 @@ public class ClusterRocketShellProjectile extends AbstractShupapiumBCProjectile 
 
     @Override
     protected void detonate(Position position) {
-        ClusterRocketHitProcedure.execute(level(), this.getX(), this.getY(), this.getZ(), this);
+        ClusterRocketHitProcedure.execute(level(), this);
     }
 }

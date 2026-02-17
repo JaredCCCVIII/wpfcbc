@@ -1,0 +1,54 @@
+{
+  "variants": {
+    "facing=down,handle=false": {
+      "model": "shupapium:block/flamethrower_gun_breech",
+      "x": 180
+    },
+    "facing=down,handle=true": {
+      "model": "shupapium:block/flamethrower_gun_breech_handle",
+      "x": 180
+    },
+    "facing=east,handle=false": {
+      "model": "shupapium:block/flamethrower_gun_breech",
+      "x": 90,
+      "y": 90
+    },
+    "facing=east,handle=true": {
+      "model": "shupapium:block/flamethrower_gun_breech_handle",
+      "y": 90
+    },
+    "facing=north,handle=false": {
+      "model": "shupapium:block/flamethrower_gun_breech",
+      "x": 90
+    },
+    "facing=north,handle=true": {
+      "model": "shupapium:block/flamethrower_gun_breech_handle",
+      "x": 0
+    },
+    "facing=south,handle=false": {
+      "model": "shupapium:block/flamethrower_gun_breech",
+      "x": 90,
+      "y": 180
+    },
+    "facing=south,handle=true": {
+      "model": "shupapium:block/flamethrower_gun_breech_handle",
+      "y": 180
+    },
+    "facing=up,handle=false": {
+      "model": "shupapium:block/flamethrower_gun_breech"
+    },
+    "facing=up,handle=true": {
+      "model": "shupapium:block/flamethrower_gun_breech_handle"
+    },
+    "facing=west,handle=false": {
+      "model": "shupapium:block/flamethrower_gun_breech",
+      "x": 90,
+      "y": 270
+    },
+    "facing=west,handle=true": {
+      "model": "shupapium:block/flamethrower_gun_breech_handle",
+      "x": 0,
+      "y": 270
+    }
+  }
+}

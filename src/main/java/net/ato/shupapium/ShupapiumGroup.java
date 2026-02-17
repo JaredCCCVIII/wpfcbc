@@ -49,6 +49,7 @@ public class ShupapiumGroup {
                     output.accept(ShupapiumItems.SEEKER_SPEAR_MISSILE_AMMO_ITEM);
                     output.accept(ShupapiumItems.STRIKE_SPEAR_MISSILE_AMMO_ITEM);
                     output.accept(ShupapiumItems.RADAR_SPEAR_MISSILE_AMMO_ITEM);
+                    output.accept(ShupapiumItems.PETROL_AMMO_ITEM);
                     output.accept(ShupapiumItems.FLARE_AMMO_ITEM);
                     output.accept(ShupapiumItems.CHAFF_AMMO_ITEM);
                     output.accept(ShupapiumBlocks.GAS_BOMB_SHELL_BLOCK);
@@ -92,6 +93,10 @@ public class ShupapiumGroup {
                     output.accept(ShupapiumBlocks.ROCKET_POD_BARREL);
                     output.accept(ShupapiumBlocks.ROCKET_POD_BREECH);
                     output.accept(ShupapiumBlocks.ROCKET_POD_RECOIL_SPRING);
+                    output.accept(ShupapiumBlocks.FLAMETHROWER_GUN_BARREL);
+                    output.accept(ShupapiumBlocks.COVERED_FLAMETHROWER_GUN_BARREl);
+                    output.accept(ShupapiumBlocks.FLAMETHROWER_GUN_BREECH);
+                    output.accept(ShupapiumBlocks.FLAMETHROWER_GUN_RECOIL_SPRING);
                     output.accept(ShupapiumItems.DUMMY_RAGDOLL_SPAWN_EGG.get());
                     output.accept(ShupapiumItems.PROPELLANT_ITEM);
                 })

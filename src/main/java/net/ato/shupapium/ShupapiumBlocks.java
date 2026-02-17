@@ -176,6 +176,30 @@ public class ShupapiumBlocks {
             .loot(CBCBuilderTransformers.steelScrapLoot(3))
             .transform(ShupapiumBuilderTransformers.autocannonRecoilSpring("autocannon/mortar_gun", true))
             .register();
+    public static final BlockEntry<ShupapiumACBarrelBlock> FLAMETHROWER_GUN_BARREL = MainShupapium.REGISTRATE
+            .block("flamethrower_gun_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.FLAME_GUN))
+            .transform(cannonBlock())
+            .loot(CBCBuilderTransformers.steelScrapLoot(2))
+            .transform(ShupapiumBuilderTransformers.autocannonBarrel("autocannon/flame_gun"))
+            .register();
+    public static final BlockEntry<ShupapiumACBarrelBlock> COVERED_FLAMETHROWER_GUN_BARREl = MainShupapium.REGISTRATE
+            .block("covered_flamethrower_gun_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.FLAME_GUN))
+            .transform(cannonBlock())
+            .loot(CBCBuilderTransformers.steelScrapLoot(2))
+            .transform(ShupapiumBuilderTransformers.autocannonBarrel("autocannon/flame_gun"))
+            .register();
+    public static final BlockEntry<ShupapiumACRecoilSpringBlock> FLAMETHROWER_GUN_RECOIL_SPRING = MainShupapium.REGISTRATE
+            .block("flamethrower_gun_recoil_spring", p -> new ShupapiumACRecoilSpringBlock(p, ShupapiumCBCACMaterials.FLAME_GUN, ShupapiumBlocks::flameGunBarrel))
+            .transform(cannonBlock(false))
+            .loot(CBCBuilderTransformers.steelScrapLoot(2))
+            .transform(ShupapiumBuilderTransformers.autocannonRecoilSpring("autocannon/flame_gun", true))
+            .register();
+    public static final BlockEntry<ShupapiumACBreechBlock> FLAMETHROWER_GUN_BREECH = MainShupapium.REGISTRATE
+            .block("flamethrower_gun_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.FLAME_GUN))
+            .transform(cannonBlock(false))
+            .loot(CBCBuilderTransformers.steelScrapLoot(2))
+            .transform(ShupapiumBuilderTransformers.autocannonBreech("autocannon/flame_gun", true))
+            .register();
 
     //Shells
     public static final BlockEntry<GasBombShellBlock> GAS_BOMB_SHELL_BLOCK = MainShupapium.REGISTRATE
@@ -465,6 +489,9 @@ public class ShupapiumBlocks {
     }
     private static BlockState rocketPodBarrel(Direction facing) {
         return ROCKET_POD_BARREL.getDefaultState().setValue(ShupapiumACBarrelBlock.FACING, facing);
+    }
+    private static BlockState flameGunBarrel(Direction facing) {
+        return FLAMETHROWER_GUN_BARREL.getDefaultState().setValue(ShupapiumACBarrelBlock.FACING, facing);
     }
     private static BlockState templateGunBarrel(Direction facing) {
         return TEMPLATE_GUN_BARREL.getDefaultState().setValue(ShupapiumACBarrelBlock.FACING, facing);

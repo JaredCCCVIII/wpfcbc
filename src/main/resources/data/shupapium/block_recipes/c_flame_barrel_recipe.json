@@ -1,0 +1,6 @@
+{
+  "type": "createbigcannons:drill_boring",
+  "input": "crusty_chunks:covered_flame_thrower_barrel",
+  "obey_facing_or_axis": true,
+  "result": "shupapium:covered_flamethrower_gun_barrel"
+}
