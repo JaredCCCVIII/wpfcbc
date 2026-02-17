@@ -68,9 +68,11 @@ public class ShupapiumGroup {
                     output.accept(ShupapiumBlocks.FUSION_BOMB_SHELL_BLOCK);
                     output.accept(ShupapiumBlocks.SHUPAPIUM_AMMO_CONTAINER);
                     output.accept(ShupapiumBlocks.CREATIVE_SHUPAPIUM_AMMO_CONTAINER);
+                    output.accept(ShupapiumBlocks.MINIGUN_BARREL);
                     output.accept(ShupapiumBlocks.MACHINE_GUN_BARREL);
                     output.accept(ShupapiumBlocks.COVERED_GUN_BARREL);
                     output.accept(ShupapiumBlocks.MACHINE_GUN_BREECH);
+                    output.accept(ShupapiumBlocks.MINIGUN_RECOIL_SPRING);
                     output.accept(ShupapiumBlocks.MACHINE_GUN_RECOIL_SPRING);
                     output.accept(ShupapiumBlocks.LIGHT_GUN_RECOIL_SPRING);
                     output.accept(ShupapiumBlocks.HEAVY_GUN_RECOIL_SPRING);

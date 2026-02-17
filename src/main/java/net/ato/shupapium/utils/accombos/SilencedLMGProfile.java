@@ -46,12 +46,12 @@ public class SilencedLMGProfile implements ShupapiumACProfile {
 
     @Override
     public int getCannonFireRate() {
-        return 200;
+        return 400;
     }
 
     @Override
     public float getProjectileBaseSpeed() {
-        return 7.0F;
+        return 12.0F;
     }
 
     @Override

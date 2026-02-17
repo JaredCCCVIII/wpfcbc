@@ -8,16 +8,16 @@ import software.bernie.geckolib.model.GeoModel;
 public class RotatoryACBarrelModel extends GeoModel<RotatoryACBarrelBlockEntity> {
     @Override
     public ResourceLocation getModelResource(RotatoryACBarrelBlockEntity rotatoryACBarrelBlockEntity) {
-        return new ResourceLocation(CrustyChunksMod.MODID, "geo/racbarrel.geo.json");
+        return ResourceLocation.fromNamespaceAndPath(CrustyChunksMod.MODID, "geo/racbarrel.geo.json");
     }
 
     @Override
     public ResourceLocation getTextureResource(RotatoryACBarrelBlockEntity rotatoryACBarrelBlockEntity) {
-        return new ResourceLocation(CrustyChunksMod.MODID, "textures/block/racbarrel.png");
+        return ResourceLocation.fromNamespaceAndPath(CrustyChunksMod.MODID, "textures/block/racbarrel.png");
     }
 
     @Override
     public ResourceLocation getAnimationResource(RotatoryACBarrelBlockEntity rotatoryACBarrelBlockEntity) {
-        return new ResourceLocation(CrustyChunksMod.MODID, "animations/racbarrel.animation.json");
+        return ResourceLocation.fromNamespaceAndPath(CrustyChunksMod.MODID, "animations/racbarrel.animation.json");
     }
 }

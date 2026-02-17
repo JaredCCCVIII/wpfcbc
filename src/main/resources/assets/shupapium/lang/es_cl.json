@@ -276,5 +276,7 @@
   "block.shupapium.flamethrower_gun_barrel": "Barril de Lanzallamas",
   "block.shupapium.covered_flamethrower_gun_barrel": "Barril supresor de Lanzallamas",
   "block.shupapium.flamethrower_gun_breech": "Eyector de Lanzallamas",
-  "block.shupapium.flamethrower_gun_recoil_spring": "Cuerpo de Lanzallamas"
+  "block.shupapium.flamethrower_gun_recoil_spring": "Cuerpo de Lanzallamas",
+  "block.shupapium.minigun_barrel": "Barril de Ametralladora pequeña",
+  "block.shupapium.minigun_recoil_spring": "Cuerpo de Ametralladora pequeña"
 }

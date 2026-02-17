@@ -48,7 +48,7 @@ public class LightCannonProfile implements ShupapiumACProfile {
 
     @Override
     public int getCannonFireRate() {
-        return 150;
+        return 300;
     }
 
     @Override
@@ -58,12 +58,12 @@ public class LightCannonProfile implements ShupapiumACProfile {
 
     @Override
     public float getProjectileBaseSpeed() {
-        return 4.0F;
+        return 17.5F;
     }
 
     @Override
     public float getProjectileSpread() {
-        return 0.07F;
+        return 0.05F;
     }
 
     @Override

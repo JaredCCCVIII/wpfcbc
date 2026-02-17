@@ -14,6 +14,14 @@
     "facing=west": {
       "model": "crusty_chunks:block/covered_flame_thrower_barrel",
       "y": 270
+    },
+    "facing=up": {
+      "model": "crusty_chunks:block/covered_flame_thrower_barrel",
+      "x": -90
+    },
+    "facing=down": {
+      "model": "crusty_chunks:block/covered_flame_thrower_barrel",
+      "x": 90
     }
   }
 }

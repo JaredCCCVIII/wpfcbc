@@ -48,12 +48,12 @@ public class RotaryCannonProfile implements ShupapiumACProfile {
 
     @Override
     public int getCannonFireRate() {
-        return 400;
+        return 750;
     }
 
     @Override
     public float getProjectileBaseSpeed() {
-        return 8.0F;
+        return 19.0F;
     }
 
     @Override

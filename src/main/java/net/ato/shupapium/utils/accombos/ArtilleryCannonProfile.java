@@ -52,7 +52,7 @@ public class ArtilleryCannonProfile implements ShupapiumACProfile {
 
     @Override
     public float getProjectileBaseSpeed() {
-        return 6.0F;
+        return 28.0F;
     }
 
     @Override
@@ -62,7 +62,7 @@ public class ArtilleryCannonProfile implements ShupapiumACProfile {
 
     @Override
     public float getProjectileSpread() {
-        return 0.15F;
+        return 0.07F;
     }
 
     @Override

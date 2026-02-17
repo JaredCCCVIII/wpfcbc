@@ -42,6 +42,8 @@
     "shupapium:flamethrower_gun_barrel",
     "shupapium:covered_flamethrower_gun_barrel",
     "shupapium:flamethrower_gun_breech",
-    "shupapium:flamethrower_gun_recoil_spring"
+    "shupapium:flamethrower_gun_recoil_spring",
+    "shupapium:minigun_barrel",
+    "shupapium:minigun_recoil_spring"
   ]
 }

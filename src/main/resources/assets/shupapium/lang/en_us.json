@@ -261,6 +261,8 @@
   "block.shupapium.covered_flamethrower_gun_barrel": "Covered Flamethrower Barrel",
   "block.shupapium.flamethrower_gun_breech": "Flamethrower Breech",
   "block.shupapium.flamethrower_gun_recoil_spring": "Flamethrower Chamber",
+  "block.shupapium.minigun_barrel": "Minigun Barrel",
+  "block.shupapium.minigun_recoil_spring": "Minigun Chamber",
 
   "entity.shupapium.dummy_ragdoll": "Test Dummy",
   "item.shupapium.dummy_ragdoll_spawn_egg": "Test Dummy Spawn Egg",

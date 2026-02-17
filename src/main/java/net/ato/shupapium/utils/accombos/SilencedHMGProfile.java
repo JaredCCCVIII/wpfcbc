@@ -46,7 +46,7 @@ public class SilencedHMGProfile implements ShupapiumACProfile {
 
     @Override
     public int getCannonFireRate() {
-        return 300;
+        return 600;
     }
 
     @Override
@@ -56,7 +56,7 @@ public class SilencedHMGProfile implements ShupapiumACProfile {
 
     @Override
     public float getProjectileBaseSpeed() {
-        return 8.2F;
+        return 21.0F;
     }
 
     @Override

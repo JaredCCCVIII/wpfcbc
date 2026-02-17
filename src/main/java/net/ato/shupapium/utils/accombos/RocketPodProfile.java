@@ -57,7 +57,7 @@ public class RocketPodProfile implements ShupapiumACProfile {
 
     @Override
     public float getProjectileBaseSpeed() {
-        return 7.5F;
+        return 18.6F;
     }
 
     @Override

@@ -48,12 +48,12 @@ public class HMGProfile implements ShupapiumACProfile {
 
     @Override
     public float getProjectileBaseSpeed() {
-        return 7.8F;
+        return 25.0F;
     }
 
     @Override
     public int getCannonFireRate() {
-        return 300;
+        return 600;
     }
 
     @Override
