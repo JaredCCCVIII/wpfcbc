@@ -1,0 +1,6 @@
+{
+  "type": "createbigcannons:drill_boring",
+  "input": "crusty_chunks:flame_thrower",
+  "obey_facing_or_axis": true,
+  "result": "shupapium:flamethrower_gun_recoil_spring"
+}

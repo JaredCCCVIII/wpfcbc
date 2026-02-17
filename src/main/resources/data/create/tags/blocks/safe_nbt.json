@@ -38,6 +38,10 @@
     "shupapium:rocket_pod_gun_recoil_spring",
     "shupapium:rotatory_cannon_barrel",
     "shupapium:rotatory_cannon_recoil_spring",
-    "shupapium:thick_battle_gun_barrel"
+    "shupapium:thick_battle_gun_barrel",
+    "shupapium:flamethrower_gun_barrel",
+    "shupapium:covered_flamethrower_gun_barrel",
+    "shupapium:flamethrower_gun_breech",
+    "shupapium:flamethrower_gun_recoil_spring"
   ]
 }

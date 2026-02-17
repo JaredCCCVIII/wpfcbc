@@ -100,4 +100,20 @@ public class ShupapiumCBCACMaterials {
                     .weldDamage(3)
                     .weldStressPenalty(3)
                     .build());
+    public static final AutocannonMaterial
+            FLAME_GUN = AutocannonMaterial.register(MainShupapium.resource("flame_gun"),
+            AutocannonMaterialProperties.builder()
+                    .maxBarrelLength(2)
+                    .weight(1.5F)
+                    .baseSpread(3.4F)
+                    .spreadReductionPerBarrel(0.2F)
+                    .baseSpeed(4.5F)
+                    .maxSpeedIncreases(4)
+                    .projectileLifetime(5)
+                    .baseRecoil(3.2F)
+                    .connectsInSurvival(false)
+                    .isWeldable(true)
+                    .weldDamage(3)
+                    .weldStressPenalty(3)
+                    .build());
 }

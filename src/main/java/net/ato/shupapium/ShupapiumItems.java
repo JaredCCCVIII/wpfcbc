@@ -148,6 +148,11 @@ public class ShupapiumItems {
             .tag(CBCTags.CBCItemTags.AUTOCANNON_ROUNDS)
             .onRegisterAfter(Registries.ITEM, v -> ItemDescription.useKey(v, "item.shupapium.chaff_ammo_item"))
             .register();
+    public static final ItemEntry<PetrolAmmoItem> PETROL_AMMO_ITEM = MainShupapium.REGISTRATE
+            .item("petrol_ammo_item", PetrolAmmoItem::new)
+            .tag(CBCTags.CBCItemTags.AUTOCANNON_ROUNDS)
+            .onRegisterAfter(Registries.ITEM, v -> ItemDescription.useKey(v, "item.shupapium.petrol_ammo_item"))
+            .register();
 
     //Misc
     public static final RegistryObject<Item> DUMMY_RAGDOLL_SPAWN_EGG = ITEMS.register(

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "createbigcannons:steel_autocannon_breech"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "crusty_chunks:steel_tube"
+    },
+    {
+      "item": "crusty_chunks:brass_fitting"
+    },
+    {
+      "item": "crusty_chunks:fuel_hose"
+    },
+    {
+      "item": "crusty_chunks:steel_ingot"
+    },
+    {
+      "item": "crusty_chunks:steel_block"
+    },
+    {
+      "item": "crusty_chunks:steel_ingot"
+    }
+  ],
+  "result": {
+    "item": "shupapium:flamethrower_gun_breech"
+  }
+}

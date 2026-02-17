@@ -274,5 +274,13 @@
   "advancements.shupapium.nuclear_explosion.title": "Digno del Yermo",
   "advancements.shupapium.nuclear_explosion.desc": "Detona una Bomba de Fisión",
   "advancements.shupapium.final_explosion.title": "El Destructor de Mundos",
-  "advancements.shupapium.final_explosion.desc": "Detona una Bomba de Fusión"
+  "advancements.shupapium.final_explosion.desc": "Detona una Bomba de Fusión",
+  "item.shupapium.petrol_ammo_item": "Munición de Lanzallamas",
+  "item.shupapium.petrol_ammo_item.tooltip.behaviour1": "Crea fuego alrededor, infligiendo un daño considerable en una fracción de segundos.",
+  "item.shupapium.petrol_ammo_item.tooltip.condition1": "Info:",
+  "item.shupapium.petrol_ammo_item.tooltip.summary": "Mmmrph!",
+  "block.shupapium.flamethrower_gun_barrel": "Barril de Lanzallamas",
+  "block.shupapium.covered_flamethrower_gun_barrel": "Barril supresor de Lanzallamas",
+  "block.shupapium.flamethrower_gun_breech": "Eyector de Lanzallamas",
+  "block.shupapium.flamethrower_gun_recoil_spring": "Cuerpo de Lanzallamas"
 }

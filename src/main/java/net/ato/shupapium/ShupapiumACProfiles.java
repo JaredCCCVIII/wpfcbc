@@ -19,6 +19,8 @@ public class ShupapiumACProfiles {
     public static final ShupapiumACProfile ARTILLERY_BATTLE_CANNON_PROFILE = new ArtilleryCannonProfile();
     public static final ShupapiumACProfile MORTAR_PROFILE = new MortarCannonProfile();
     public static final ShupapiumACProfile ROCKET_POD_PROFILE = new RocketPodProfile();
+    public static final ShupapiumACProfile FLAME_GUN_PROFILE = new FlamethrowerGunProfile();
+    public static final ShupapiumACProfile COVERED_FLAME_GUN_PROFILE = new SilencedFlamethrowerGunProfile();
 
     public static void register() {
         ShupapiumACProfileHandler.register(MACHINE_GUN_PROFILE);
@@ -35,5 +37,7 @@ public class ShupapiumACProfiles {
         ShupapiumACProfileHandler.register(ARTILLERY_BATTLE_CANNON_PROFILE);
         ShupapiumACProfileHandler.register(MORTAR_PROFILE);
         ShupapiumACProfileHandler.register(ROCKET_POD_PROFILE);
+        ShupapiumACProfileHandler.register(FLAME_GUN_PROFILE);
+        ShupapiumACProfileHandler.register(COVERED_FLAME_GUN_PROFILE);
     }
 }
