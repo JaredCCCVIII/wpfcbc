@@ -63,7 +63,7 @@ public class ShupapiumBlocks {
             .transform(ShupapiumBuilderTransformers.autocannonRecoilSpring("autocannon/machine_gun", true))
             .register();
     public static final BlockEntry<RotatoryACBarrel> ROTATORY_CANNON_BARREL = MainShupapium.REGISTRATE
-            .block("rotatory_cannon_barrel", p -> new RotatoryACBarrel(p, ShupapiumCBCACMaterials.CANNON_GUN))
+            .block("rotatory_cannon_barrel", p -> new RotatoryACBarrel(p, ShupapiumCBCACMaterials.CANNON_GUN, ShupapiumBlockEntities.ROTARY_CANNON_BARREL))
             .transform(cannonBlock())
             .loot(CBCBuilderTransformers.steelScrapLoot(4))
             .transform(ShupapiumBuilderTransformers.autocannonBarrel("autocannon/cannon_gun"))
@@ -199,6 +199,18 @@ public class ShupapiumBlocks {
             .transform(cannonBlock(false))
             .loot(CBCBuilderTransformers.steelScrapLoot(2))
             .transform(ShupapiumBuilderTransformers.autocannonBreech("autocannon/flame_gun", true))
+            .register();
+    public static final BlockEntry<RotatoryACBarrel> MINIGUN_BARREL = MainShupapium.REGISTRATE
+            .block("minigun_barrel", p -> new RotatoryACBarrel(p, ShupapiumCBCACMaterials.MACHINE_GUN, ShupapiumBlockEntities.MINIGUN_BARREL))
+            .transform(cannonBlock())
+            .loot(CBCBuilderTransformers.steelScrapLoot(1))
+            .transform(ShupapiumBuilderTransformers.autocannonBarrel("autocannon/machine_gun"))
+            .register();
+    public static final BlockEntry<ShupapiumACRecoilSpringBlock> MINIGUN_RECOIL_SPRING = MainShupapium.REGISTRATE
+            .block("minigun_recoil_spring", p -> new ShupapiumACRecoilSpringBlock(p, ShupapiumCBCACMaterials.MACHINE_GUN, ShupapiumBlocks::minigunBarrel))
+            .transform(cannonBlock(false))
+            .loot(CBCBuilderTransformers.steelScrapLoot(2))
+            .transform(ShupapiumBuilderTransformers.autocannonRecoilSpring("autocannon/machine_gun", true))
             .register();
 
     //Shells
@@ -492,6 +504,9 @@ public class ShupapiumBlocks {
     }
     private static BlockState flameGunBarrel(Direction facing) {
         return FLAMETHROWER_GUN_BARREL.getDefaultState().setValue(ShupapiumACBarrelBlock.FACING, facing);
+    }
+    private static BlockState minigunBarrel(Direction facing) {
+        return MINIGUN_BARREL.getDefaultState().setValue(ShupapiumACBarrelBlock.FACING, facing);
     }
     private static BlockState templateGunBarrel(Direction facing) {
         return TEMPLATE_GUN_BARREL.getDefaultState().setValue(ShupapiumACBarrelBlock.FACING, facing);

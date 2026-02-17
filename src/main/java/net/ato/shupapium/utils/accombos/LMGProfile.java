@@ -50,12 +50,12 @@ public class LMGProfile implements ShupapiumACProfile {
 
     @Override
     public float getProjectileBaseSpeed() {
-        return 7.0F;
+        return 15.0F;
     }
 
     @Override
     public int getCannonFireRate() {
-        return 200;
+        return 400;
     }
 
     @Override

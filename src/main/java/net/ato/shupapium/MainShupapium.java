@@ -5,6 +5,7 @@ import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.item.ItemDescription;
 import com.simibubi.create.foundation.item.KineticStats;
 import com.simibubi.create.foundation.item.TooltipModifier;
+import net.ato.shupapium.client.renderers.MgBarrelRenderer;
 import net.ato.shupapium.client.renderers.RotatoryACBarrelRenderer;
 import net.ato.shupapium.events.ShupapiumReloadListener;
 import net.ato.shupapium.utils.accombos.*;
@@ -109,6 +110,7 @@ public class MainShupapium
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             BlockEntityRenderers.register(ShupapiumBlockEntities.ROTARY_CANNON_BARREL.get(), RotatoryACBarrelRenderer::new);
+            BlockEntityRenderers.register(ShupapiumBlockEntities.MINIGUN_BARREL.get(), MgBarrelRenderer::new);
 
             ShupapiumFlywheelVisuals.registerVisuals();
         }

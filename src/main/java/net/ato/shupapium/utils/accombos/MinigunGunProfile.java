@@ -11,48 +11,52 @@ import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.util.Mth;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.Vec3;
 import rbasamoyai.createbigcannons.cannons.autocannon.material.AutocannonMaterial;
 
 import java.util.List;
 
-public class BattleCannonProfile implements ShupapiumACProfile {
+public class MinigunGunProfile implements ShupapiumACProfile {
+    private static final ShupapiumACParts PARTS = new ShupapiumACParts(
+            ShupapiumBlocks.MINIGUN_BARREL.get(),
+            ShupapiumBlocks.MINIGUN_RECOIL_SPRING.get(),
+            ShupapiumBlocks.MACHINE_GUN_BREECH.get()
+    );
+
     @Override
     public ResourceLocation getProfileId() {
-        return ResourceLocation.fromNamespaceAndPath(MainShupapium.MODID, "battle_cannon_profile");
+        return ResourceLocation.fromNamespaceAndPath(MainShupapium.MODID, "minigun_profile");
     }
 
     @Override
     public ShupapiumACParts parts() {
-        return new ShupapiumACParts(ShupapiumBlocks.BATTLE_GUN_BARREL.get(),
-                ShupapiumBlocks.BATTLE_GUN_RECOIL_SPRING.get(),
-                ShupapiumBlocks.BATTLE_GUN_BREECH.get());
+        return PARTS;
     }
 
     @Override
     public SoundEvent getFireSound() {
-        return CrustyChunksModSounds.BATTLECANNON.get();
+        return CrustyChunksModSounds.LARGESHOT.get();
     }
 
     @Override
     public List<ParticleOptions> getMuzzleParticles() {
         return List.of(
-                ParticleTypes.CAMPFIRE_COSY_SMOKE,
-                ParticleTypes.SMOKE,
-                ParticleTypes.LAVA,
-                ParticleTypes.EXPLOSION
+                ParticleTypes.LARGE_SMOKE
         );
     }
 
     @Override
     public int getCannonFireRate() {
-        return 30;
+        return 675;
     }
 
     @Override
     public float getProjectileBaseSpeed() {
-        return 22.1F;
+        return 16.4F;
     }
 
     @Override
@@ -62,21 +66,27 @@ public class BattleCannonProfile implements ShupapiumACProfile {
 
     @Override
     public float getProjectileSpread() {
-        return 0.06F;
+        return 0.035F;
     }
 
     @Override
     public List<Item> getAmmoTypes() {
-        return List.of(ShupapiumItems.LARGE_SOLID_SHELL_AMMO_ITEM.get(),
-                ShupapiumItems.LARGE_HE_SHELL_AMMO_ITEM.get(),
-                ShupapiumItems.LARGE_HEAT_SHELL_AMMO_ITEM.get(),
-                ShupapiumItems.LARGE_AP_SHELL_AMMO_ITEM.get(),
-                ShupapiumItems.LARGE_FLAK_SHELL_AMMO_ITEM.get(),
-                ShupapiumItems.LARGE_SMOKE_SHELL_AMMO_ITEM.get());
+        return List.of(ShupapiumItems.LARGE_BULLET_AMMO_ITEM.get());
     }
 
     @Override
     public AutocannonMaterial getMainMaterial() {
-        return ShupapiumCBCACMaterials.BATTLE_GUN;
+        return ShupapiumCBCACMaterials.MACHINE_GUN;
+    }
+
+    @Override
+    public void cannonSoundEvent(Level level, Vec3 pos) {
+        SoundEvent rSnd;
+        if (level.random.nextBoolean()) {
+            rSnd = getFireSound();
+        } else {
+            rSnd = CrustyChunksModSounds.RAC.get();
+        }
+        level.playSound(null, pos.x, pos.y, pos.z, rSnd, SoundSource.BLOCKS, Mth.nextFloat(level.random, 10.0F, 12.0F), Mth.nextFloat(level.random, 0.75F, 1.1F));
     }
 }

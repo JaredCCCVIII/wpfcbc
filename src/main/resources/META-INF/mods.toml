@@ -86,7 +86,7 @@ side="BOTH"
 [[dependencies.${mod_id}]]
 modId="crusty_chunks"
 mandatory=true
-versionRange="[1.2.5,)"
+versionRange="[1.2.7,)"
 ordering="NONE"
 side="BOTH"
 [[dependencies.${mod_id}]]

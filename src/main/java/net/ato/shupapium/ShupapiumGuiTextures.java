@@ -19,7 +19,7 @@ public enum ShupapiumGuiTextures implements ScreenElement {
     }
 
     ShupapiumGuiTextures(String namespace, String path, int texX, int texY, int width, int height) {
-        this.texture = new ResourceLocation(namespace, "textures/gui/" + path + ".png");
+        this.texture = ResourceLocation.fromNamespaceAndPath(namespace, "textures/gui/" + path + ".png");
         this.texX = texX;
         this.texY = texY;
         this.width = width;

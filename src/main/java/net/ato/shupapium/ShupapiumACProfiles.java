@@ -21,6 +21,7 @@ public class ShupapiumACProfiles {
     public static final ShupapiumACProfile ROCKET_POD_PROFILE = new RocketPodProfile();
     public static final ShupapiumACProfile FLAME_GUN_PROFILE = new FlamethrowerGunProfile();
     public static final ShupapiumACProfile COVERED_FLAME_GUN_PROFILE = new SilencedFlamethrowerGunProfile();
+    public static final ShupapiumACProfile MINIGUN_PROFILE = new MinigunGunProfile();
 
     public static void register() {
         ShupapiumACProfileHandler.register(MACHINE_GUN_PROFILE);
@@ -39,5 +40,6 @@ public class ShupapiumACProfiles {
         ShupapiumACProfileHandler.register(ROCKET_POD_PROFILE);
         ShupapiumACProfileHandler.register(FLAME_GUN_PROFILE);
         ShupapiumACProfileHandler.register(COVERED_FLAME_GUN_PROFILE);
+        ShupapiumACProfileHandler.register(MINIGUN_PROFILE);
     }
 }
