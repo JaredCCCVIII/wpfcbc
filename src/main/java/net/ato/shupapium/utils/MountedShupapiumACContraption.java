@@ -370,8 +370,9 @@ public class MountedShupapiumACContraption extends MountedAutocannonContraption 
                 projectile.setPos(spawnPos.x + Mth.nextFloat(level.random, -0.005F, 0.005F), spawnPos.y + Mth.nextFloat(level.random, -0.005F, 0.005F), spawnPos.z + Mth.nextFloat(level.random, -0.005F, 0.005F));
                 projectile.addTag("shupapiumProjectile");
                 projectile.setOwner(entity.getControllingPassenger());
-                projectile.setBaseDamage(projectileProperties.damage().entityDamage());
+                projectile.setBaseDamage(projectileProperties.damage().entityDamage() / 100);
                 projectile.setKnockback((int) projectileProperties.damage().knockback());
+                projectile.setPierceLevel((byte) Mth.nextInt(level.random, 0, (int) projectileProperties.damage().knockback()));
                 projectile.setSilent(true);
                 projectile.setNoGravity(!round.projectileAffectedByWorldsGravity());
                 ProjectileManager.track(projectile, level, properties.projectileLifetime());
@@ -380,6 +381,8 @@ public class MountedShupapiumACContraption extends MountedAutocannonContraption 
                 projectile.shoot(spreadDir.x, spreadDir.y, spreadDir.z, speed, Mth.nextFloat(level.random, -0.01F, 0.01F));
                 projectile.xRotO = projectile.getXRot();
                 projectile.yRotO = projectile.getYRot();
+
+                projectile.setDeltaMovement(projectile.getDeltaMovement().add(0, projectileProperties.ballistics().gravity(), 0));
 
                 //projectile.addUntouchableEntity(entity, 1);
                 //Entity vehicle = entity.getVehicle();
