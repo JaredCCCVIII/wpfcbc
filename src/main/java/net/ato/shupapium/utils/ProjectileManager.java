@@ -1,20 +1,15 @@
 package net.ato.shupapium.utils;
 
-import net.minecraft.sounds.SoundEvents;
+import net.ato.shupapium.MainShupapium;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 
-import java.util.Iterator;
-import java.util.Map;
-import java.util.WeakHashMap;
-
 public class ProjectileManager {
-    private static final Map<AbstractArrow, Long> tracked = new WeakHashMap<>();
-
     public static void projectileDiscard(AbstractArrow projectile, boolean activeHit) {
+        MainShupapium.LOGGER.info("Projectile Discarded!: {}", projectile);
         if (activeHit) {
             BlockHitResult hit = new BlockHitResult(projectile.position(), projectile.getDirection(), projectile.blockPosition(), false);
             onHitBlock(projectile, hit);
@@ -25,28 +20,7 @@ public class ProjectileManager {
 
     public static void track(AbstractArrow projectile, Level level, long durationSeconds) {
         if (!level.isClientSide()) {
-            tracked.put(projectile, level.getGameTime() + (durationSeconds * 20));
-        }
-    }
-
-    public static void tick(Level level) {
-        long now = level.getGameTime();
-        Iterator<Map.Entry<AbstractArrow, Long>> it = tracked.entrySet().iterator();
-
-        while (it.hasNext()) {
-            Map.Entry<AbstractArrow, Long> entry = it.next();
-            AbstractArrow projectile = entry.getKey();
-            long spawnTime = entry.getValue();
-
-            if (!projectile.isAlive()) {
-                it.remove();
-                continue;
-            }
-
-            if (now >= spawnTime) {
-                projectileDiscard(projectile, false);
-                it.remove();
-            }
+            projectile.getPersistentData().putLong("shupapiumLifeTime", level.getGameTime() + (durationSeconds * 20));
         }
     }
 

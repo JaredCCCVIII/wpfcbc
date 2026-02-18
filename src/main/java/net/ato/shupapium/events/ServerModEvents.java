@@ -8,6 +8,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.item.MilkBucketItem;
@@ -22,7 +23,6 @@ import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber
 public class ServerModEvents {
-    private static int tickCounter = 0;
 
     @SubscribeEvent
     public static void onUsedItem(LivingEntityUseItemEvent.Finish event) {
@@ -44,6 +44,10 @@ public class ServerModEvents {
             EntityHitResult entityHit =  (EntityHitResult) hit;
             Entity target = entityHit.getEntity();
 
+            if (target instanceof LivingEntity living) {
+                MainShupapium.LOGGER.info("The {} health is {}", living, living.getHealth());
+            }
+
             if (!target.hurt(projectile.level().damageSources().arrow(projectile, projectile.getOwner()), 0.01F)) {
                 ProjectileManager.projectileDiscard(projectile, true);
             }
@@ -51,13 +55,21 @@ public class ServerModEvents {
     }
 
     @SubscribeEvent
-    public static void onServerTick(TickEvent.ServerTickEvent event) {
-        if (event.phase == TickEvent.Phase.END) {
-            tickCounter++;
-            if (tickCounter % 10 == 0) {
-                for (ServerLevel level : event.getServer().getAllLevels()) {
-                    ProjectileManager.tick(level);
-                }
+    public static void onLevelTick(TickEvent.LevelTickEvent event) {
+        if (event.phase != TickEvent.Phase.END) return;
+        if (!(event.level instanceof ServerLevel svLvl)) return;
+
+        long gameTime = event.level.getGameTime();
+
+        for (Entity entity : svLvl.getAllEntities()) {
+            if (!(entity instanceof AbstractArrow projectile)) continue;
+            if (!projectile.getTags().contains("shupapiumProjectile")) return;
+
+            long expire = projectile.getPersistentData().getLong("shupapiumLifeTime");
+
+            if (expire != 0 && gameTime >= expire) {
+                projectile.getPersistentData().remove("shupapiumLifeTime");
+                ProjectileManager.projectileDiscard(projectile, false);
             }
         }
     }

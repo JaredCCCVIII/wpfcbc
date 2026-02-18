@@ -56,7 +56,7 @@ public class MinigunGunProfile implements ShupapiumACProfile {
 
     @Override
     public float getProjectileBaseSpeed() {
-        return 16.4F;
+        return 11.4F;
     }
 
     @Override
@@ -71,7 +71,7 @@ public class MinigunGunProfile implements ShupapiumACProfile {
 
     @Override
     public List<Item> getAmmoTypes() {
-        return List.of(ShupapiumItems.LARGE_BULLET_AMMO_ITEM.get());
+        return List.of(ShupapiumItems.MEDIUM_BULLET_AMMO_ITEM.get());
     }
 
     @Override

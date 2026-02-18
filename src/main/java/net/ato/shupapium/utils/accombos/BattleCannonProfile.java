@@ -62,7 +62,7 @@ public class BattleCannonProfile implements ShupapiumACProfile {
 
     @Override
     public float getProjectileSpread() {
-        return 0.06F;
+        return 0.015F;
     }
 
     @Override

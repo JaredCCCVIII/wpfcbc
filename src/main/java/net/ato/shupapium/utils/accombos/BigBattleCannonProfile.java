@@ -66,7 +66,7 @@ public class BigBattleCannonProfile implements ShupapiumACProfile {
 
     @Override
     public float getProjectileSpread() {
-        return 0.02F;
+        return 0.01F;
     }
 
     @Override

@@ -372,7 +372,7 @@ public class MountedShupapiumACContraption extends MountedAutocannonContraption 
                 projectile.setOwner(entity.getControllingPassenger());
                 projectile.setBaseDamage(projectileProperties.damage().entityDamage() / 100);
                 projectile.setKnockback((int) projectileProperties.damage().knockback());
-                projectile.setPierceLevel((byte) Mth.nextInt(level.random, 0, (int) projectileProperties.damage().knockback()));
+                //projectile.setPierceLevel((byte) Mth.nextInt(level.random, 0, (int) projectileProperties.ballistics().penetration()));
                 projectile.setSilent(true);
                 projectile.setNoGravity(!round.projectileAffectedByWorldsGravity());
                 ProjectileManager.track(projectile, level, properties.projectileLifetime());
