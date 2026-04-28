@@ -23,7 +23,7 @@ public class ShupapiumMetalRagdoll extends ShupapiumDummyRagdoll {
     }
 
     public static AttributeSupplier.@NotNull Builder createAttributes() {
-        return Monster.createMobAttributes().add(Attributes.MAX_HEALTH, 40.0D).add(Attributes.FOLLOW_RANGE, 50.0F).add(Attributes.MOVEMENT_SPEED, 0.3F).add(Attributes.ATTACK_DAMAGE, 2.0D).add(Attributes.ARMOR, 2.8D).add(Attributes.SPAWN_REINFORCEMENTS_CHANCE, 0.0D);
+        return Monster.createMobAttributes().add(Attributes.MAX_HEALTH, 60.0D).add(Attributes.FOLLOW_RANGE, 50.0F).add(Attributes.MOVEMENT_SPEED, 0.3F).add(Attributes.ATTACK_DAMAGE, 2.0D).add(Attributes.ARMOR, 4.0D).add(Attributes.SPAWN_REINFORCEMENTS_CHANCE, 0.0D);
     }
 
     @Override
@@ -54,6 +54,6 @@ public class ShupapiumMetalRagdoll extends ShupapiumDummyRagdoll {
     @Override
     protected void playHurtSound(@NotNull DamageSource pSource) {
         super.playHurtSound(pSource);
-        this.playSound(CrustyChunksModSounds.MECHSTEP.get(), Mth.nextFloat(RandomSource.create(), 0.5F, 1.0F), Mth.nextFloat(RandomSource.create(), 0.1F, 0.4F));
+        this.playSound(CrustyChunksModSounds.GUNMECHANISM.get(), Mth.nextFloat(RandomSource.create(), 0.5F, 1.0F), Mth.nextFloat(RandomSource.create(), 0.1F, 0.4F));
     }
 }

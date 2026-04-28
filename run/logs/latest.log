@@ -1,91 +1,91 @@
-[27abr.2026 22:05:21.505] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\Usuario\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.4.10, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mixin.config, shupapium.mixins.json]
-[27abr.2026 22:05:21.509] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.16 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
-[27abr.2026 22:05:21.629] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[27abr.2026 22:05:21.833] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
-[27abr.2026 22:05:22.190] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
-[27abr.2026 22:05:22.268] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Usuario/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[27abr.2026 22:05:22.324] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 3050/PCIe/SSE2 GL version 4.6.0 NVIDIA 591.74, NVIDIA Corporation
-[27abr.2026 22:05:22.630] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.10\ccc533c7dd67e0983217197d7549c8b49e7ab453\javafmllanguage-1.20.1-47.4.10.jar is missing mods.toml file
-[27abr.2026 22:05:22.635] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.10\e9a2879fe3612ea34b9728ec2633304a1e67d480\lowcodelanguage-1.20.1-47.4.10.jar is missing mods.toml file
-[27abr.2026 22:05:22.639] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.10\ec5cefbbc65c67302b8fac317010faab85fa14b9\mclanguage-1.20.1-47.4.10.jar is missing mods.toml file
-[27abr.2026 22:05:22.643] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.10\94dae566be650566ea9115a1414ab76bfcf5a804\fmlcore-1.20.1-47.4.10.jar is missing mods.toml file
-[27abr.2026 22:05:23.043] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: mixinextras. Using Mod File: C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\io.github.llamalad7\mixinextras-forge\0.4.1\5c35573a7b76103724799ca1174a69699b8a9aec\mixinextras-forge-0.4.1.jar
-[27abr.2026 22:05:23.043] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
-[27abr.2026 22:05:26.636] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[27abr.2026 22:05:26.671] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\Usuario\.gradle\caches\forge_gradle\assets, --assetIndex, 5]
-[27abr.2026 22:05:26.726] [main/WARN] [mixin/]: Reference map 'shupapium.refmap.json' for shupapium.mixins.json could not be read. If this is a development environment you can ignore this message
-[27abr.2026 22:05:27.272] [main/INFO] [mixin/]: Remapping refMap createradar.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
-[27abr.2026 22:05:27.274] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
-[27abr.2026 22:05:27.275] [main/INFO] [mixin/]: Remapping refMap backend-flywheel.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
-[27abr.2026 22:05:27.277] [main/INFO] [mixin/]: Remapping refMap flywheel.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
-[27abr.2026 22:05:27.279] [main/INFO] [mixin/]: Remapping refMap ponder.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
-[27abr.2026 22:05:27.280] [main/INFO] [mixin/]: Remapping refMap ponder.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
-[27abr.2026 22:05:27.282] [main/WARN] [mixin/]: Reference map 'mixins.crusty_chunks.refmap.json' for mixins.crusty_chunks.json could not be read. If this is a development environment you can ignore this message
-[27abr.2026 22:05:27.288] [main/INFO] [mixin/]: Remapping refMap create.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
-[27abr.2026 22:05:27.291] [main/INFO] [mixin/]: Remapping refMap ritchiesprojectilelib-1.20.1-refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
-[27abr.2026 22:05:27.293] [main/INFO] [mixin/]: Remapping refMap createbigcannons-1.20.1-refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
-[27abr.2026 22:05:27.294] [main/INFO] [mixin/]: Remapping refMap createbigcannons-forge_1.20.1-refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
-[27abr.2026 22:05:27.296] [main/INFO] [mixin/]: Remapping refMap citadel.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
-[27abr.2026 22:05:27.298] [main/INFO] [mixin/]: Remapping refMap alexscaves.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
-[27abr.2026 22:05:27.349] [main/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/twin_autocannon/contraption/MountedTwinAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.twin_autocannon.contraption.MountedTwinAutocannonContraption)
-[27abr.2026 22:05:27.349] [main/WARN] [mixin/]: @Mixin target com.dsvv.cbcat.cannon.twin_autocannon.contraption.MountedTwinAutocannonContraption was not found create_radar.mixins.json:AutoCannonAccessor
-[27abr.2026 22:05:27.352] [main/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/heavy_autocannon/contraption/MountedHeavyAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.heavy_autocannon.contraption.MountedHeavyAutocannonContraption)
-[27abr.2026 22:05:27.353] [main/WARN] [mixin/]: @Mixin target com.dsvv.cbcat.cannon.heavy_autocannon.contraption.MountedHeavyAutocannonContraption was not found create_radar.mixins.json:AutoCannonAccessor
-[27abr.2026 22:05:27.805] [main/WARN] [mixin/]: Error loading class: xfacthd/framedblocks/common/blockentity/doubled/FramedAdjustableDoubleBlockEntity (java.lang.ClassNotFoundException: xfacthd.framedblocks.common.blockentity.doubled.FramedAdjustableDoubleBlockEntity)
-[27abr.2026 22:05:27.805] [main/WARN] [mixin/]: @Mixin target xfacthd.framedblocks.common.blockentity.doubled.FramedAdjustableDoubleBlockEntity was not found createbigcannons.mixins.json:compat.FramedAdjustableDoubleBlockEntityAccessor
-[27abr.2026 22:05:28.221] [main/WARN] [mixin/]: Error loading class: xaero/map/gui/GuiMap (java.lang.ClassNotFoundException: xaero.map.gui.GuiMap)
-[27abr.2026 22:05:28.221] [main/WARN] [mixin/]: @Mixin target xaero.map.gui.GuiMap was not found create.mixins.json:compat.xaeros.XaeroFullscreenMapAccessor
-[27abr.2026 22:05:28.223] [main/WARN] [mixin/]: Error loading class: xaero/map/gui/GuiMap (java.lang.ClassNotFoundException: xaero.map.gui.GuiMap)
-[27abr.2026 22:05:28.223] [main/WARN] [mixin/]: @Mixin target xaero.map.gui.GuiMap was not found create.mixins.json:compat.xaeros.XaeroFullscreenMapMixin
-[27abr.2026 22:05:28.230] [main/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/twin_autocannon/contraption/MountedTwinAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.twin_autocannon.contraption.MountedTwinAutocannonContraption)
-[27abr.2026 22:05:28.231] [main/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/heavy_autocannon/contraption/MountedHeavyAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.heavy_autocannon.contraption.MountedHeavyAutocannonContraption)
-[27abr.2026 22:05:28.233] [main/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/twin_autocannon/contraption/MountedTwinAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.twin_autocannon.contraption.MountedTwinAutocannonContraption)
-[27abr.2026 22:05:28.234] [main/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/heavy_autocannon/contraption/MountedHeavyAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.heavy_autocannon.contraption.MountedHeavyAutocannonContraption)
-[27abr.2026 22:05:28.314] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[27abr.2026 22:05:34.543] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 188 Datafixer optimizations took 163 milliseconds
-[27abr.2026 22:05:35.631] [pool-4-thread-1/WARN] [mixin/]: Mixin alexscaves.mixins.json:SwampHutPieceMixin has multiple constructors, (Lnet/minecraft/world/level/levelgen/structure/pieces/StructurePieceType;IIIIIILnet/minecraft/core/Direction;)V was selected
+[27abr.2026 22:10:46.314] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\Usuario\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.4.10, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mixin.config, shupapium.mixins.json]
+[27abr.2026 22:10:46.319] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.16 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
+[27abr.2026 22:10:46.433] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[27abr.2026 22:10:46.509] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[27abr.2026 22:10:46.745] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[27abr.2026 22:10:46.839] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Usuario/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[27abr.2026 22:10:46.899] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 3050/PCIe/SSE2 GL version 4.6.0 NVIDIA 591.74, NVIDIA Corporation
+[27abr.2026 22:10:47.145] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.10\ccc533c7dd67e0983217197d7549c8b49e7ab453\javafmllanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[27abr.2026 22:10:47.149] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.10\e9a2879fe3612ea34b9728ec2633304a1e67d480\lowcodelanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[27abr.2026 22:10:47.152] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.10\ec5cefbbc65c67302b8fac317010faab85fa14b9\mclanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[27abr.2026 22:10:47.157] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.10\94dae566be650566ea9115a1414ab76bfcf5a804\fmlcore-1.20.1-47.4.10.jar is missing mods.toml file
+[27abr.2026 22:10:47.525] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: mixinextras. Using Mod File: C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\io.github.llamalad7\mixinextras-forge\0.4.1\5c35573a7b76103724799ca1174a69699b8a9aec\mixinextras-forge-0.4.1.jar
+[27abr.2026 22:10:47.525] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[27abr.2026 22:10:50.927] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[27abr.2026 22:10:50.962] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\Usuario\.gradle\caches\forge_gradle\assets, --assetIndex, 5]
+[27abr.2026 22:10:51.021] [main/WARN] [mixin/]: Reference map 'shupapium.refmap.json' for shupapium.mixins.json could not be read. If this is a development environment you can ignore this message
+[27abr.2026 22:10:51.495] [main/INFO] [mixin/]: Remapping refMap createradar.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
+[27abr.2026 22:10:51.496] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
+[27abr.2026 22:10:51.497] [main/INFO] [mixin/]: Remapping refMap backend-flywheel.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
+[27abr.2026 22:10:51.499] [main/INFO] [mixin/]: Remapping refMap flywheel.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
+[27abr.2026 22:10:51.500] [main/INFO] [mixin/]: Remapping refMap ponder.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
+[27abr.2026 22:10:51.502] [main/INFO] [mixin/]: Remapping refMap ponder.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
+[27abr.2026 22:10:51.505] [main/WARN] [mixin/]: Reference map 'mixins.crusty_chunks.refmap.json' for mixins.crusty_chunks.json could not be read. If this is a development environment you can ignore this message
+[27abr.2026 22:10:51.509] [main/INFO] [mixin/]: Remapping refMap create.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
+[27abr.2026 22:10:51.512] [main/INFO] [mixin/]: Remapping refMap ritchiesprojectilelib-1.20.1-refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
+[27abr.2026 22:10:51.514] [main/INFO] [mixin/]: Remapping refMap createbigcannons-1.20.1-refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
+[27abr.2026 22:10:51.515] [main/INFO] [mixin/]: Remapping refMap createbigcannons-forge_1.20.1-refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
+[27abr.2026 22:10:51.517] [main/INFO] [mixin/]: Remapping refMap citadel.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
+[27abr.2026 22:10:51.520] [main/INFO] [mixin/]: Remapping refMap alexscaves.refmap.json using D:\Users\pc\Videos\wariumprojectilescbcredux/build/createSrgToMcp/output.srg
+[27abr.2026 22:10:51.566] [main/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/twin_autocannon/contraption/MountedTwinAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.twin_autocannon.contraption.MountedTwinAutocannonContraption)
+[27abr.2026 22:10:51.566] [main/WARN] [mixin/]: @Mixin target com.dsvv.cbcat.cannon.twin_autocannon.contraption.MountedTwinAutocannonContraption was not found create_radar.mixins.json:AutoCannonAccessor
+[27abr.2026 22:10:51.568] [main/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/heavy_autocannon/contraption/MountedHeavyAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.heavy_autocannon.contraption.MountedHeavyAutocannonContraption)
+[27abr.2026 22:10:51.568] [main/WARN] [mixin/]: @Mixin target com.dsvv.cbcat.cannon.heavy_autocannon.contraption.MountedHeavyAutocannonContraption was not found create_radar.mixins.json:AutoCannonAccessor
+[27abr.2026 22:10:52.059] [main/WARN] [mixin/]: Error loading class: xfacthd/framedblocks/common/blockentity/doubled/FramedAdjustableDoubleBlockEntity (java.lang.ClassNotFoundException: xfacthd.framedblocks.common.blockentity.doubled.FramedAdjustableDoubleBlockEntity)
+[27abr.2026 22:10:52.059] [main/WARN] [mixin/]: @Mixin target xfacthd.framedblocks.common.blockentity.doubled.FramedAdjustableDoubleBlockEntity was not found createbigcannons.mixins.json:compat.FramedAdjustableDoubleBlockEntityAccessor
+[27abr.2026 22:10:52.354] [main/WARN] [mixin/]: Error loading class: xaero/map/gui/GuiMap (java.lang.ClassNotFoundException: xaero.map.gui.GuiMap)
+[27abr.2026 22:10:52.354] [main/WARN] [mixin/]: @Mixin target xaero.map.gui.GuiMap was not found create.mixins.json:compat.xaeros.XaeroFullscreenMapAccessor
+[27abr.2026 22:10:52.355] [main/WARN] [mixin/]: Error loading class: xaero/map/gui/GuiMap (java.lang.ClassNotFoundException: xaero.map.gui.GuiMap)
+[27abr.2026 22:10:52.356] [main/WARN] [mixin/]: @Mixin target xaero.map.gui.GuiMap was not found create.mixins.json:compat.xaeros.XaeroFullscreenMapMixin
+[27abr.2026 22:10:52.364] [main/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/twin_autocannon/contraption/MountedTwinAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.twin_autocannon.contraption.MountedTwinAutocannonContraption)
+[27abr.2026 22:10:52.365] [main/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/heavy_autocannon/contraption/MountedHeavyAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.heavy_autocannon.contraption.MountedHeavyAutocannonContraption)
+[27abr.2026 22:10:52.367] [main/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/twin_autocannon/contraption/MountedTwinAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.twin_autocannon.contraption.MountedTwinAutocannonContraption)
+[27abr.2026 22:10:52.368] [main/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/heavy_autocannon/contraption/MountedHeavyAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.heavy_autocannon.contraption.MountedHeavyAutocannonContraption)
+[27abr.2026 22:10:52.436] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[27abr.2026 22:10:58.160] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 188 Datafixer optimizations took 192 milliseconds
+[27abr.2026 22:10:59.357] [pool-4-thread-1/WARN] [mixin/]: Mixin alexscaves.mixins.json:SwampHutPieceMixin has multiple constructors, (Lnet/minecraft/world/level/levelgen/structure/pieces/StructurePieceType;IIIIIILnet/minecraft/core/Direction;)V was selected
 
-[27abr.2026 22:05:36.506] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Usuario/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[27abr.2026 22:05:36.506] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Usuario/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[27abr.2026 22:05:36.522] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[27abr.2026 22:05:36.527] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[27abr.2026 22:05:36.651] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
-[27abr.2026 22:05:36.916] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Initializing Create Radar!
-[27abr.2026 22:05:36.947] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.10, for MC 1.20.1 with MCP 20230612.114412
-[27abr.2026 22:05:36.947] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.10 Initialized
-[27abr.2026 22:05:37.244] [modloading-worker-0/INFO] [com.simibubi.create.Create/]: Create 6.0.8 initializing! Commit hash: 1a1a9a2819b4f89f78caec41b55ed8cb222fa24b
-[27abr.2026 22:05:37.279] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering Items!
-[27abr.2026 22:05:37.477] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
-[27abr.2026 22:05:37.520] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 41.33 ms
-[27abr.2026 22:05:37.767] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering blocks!
-[27abr.2026 22:05:38.052] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering block entity types!
-[27abr.2026 22:05:38.055] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering CreativeTabs!
-[27abr.2026 22:05:38.056] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering Lang!
-[27abr.2026 22:05:38.083] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering CBC Compat Items!
-[27abr.2026 22:05:38.093] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering CBC WPF
-[27abr.2026 22:05:40.207] [Render thread/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/twin_autocannon/contraption/MountedTwinAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.twin_autocannon.contraption.MountedTwinAutocannonContraption)
-[27abr.2026 22:05:40.209] [Render thread/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/heavy_autocannon/contraption/MountedHeavyAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.heavy_autocannon.contraption.MountedHeavyAutocannonContraption)
-[27abr.2026 22:05:42.814] [Render thread/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.github.alexmodguy.alexscaves.server.entity.living.TremorzillaEntity from class com.github.alexmodguy.alexscaves.server.entity.living.LicowitchEntity
-[27abr.2026 22:05:43.008] [Render thread/INFO] [com.github.alexmodguy.alexscaves.AlexsCaves/]: loaded in block colorizer
-[27abr.2026 22:05:43.011] [Render thread/INFO] [com.github.alexmodguy.alexscaves.AlexsCaves/]: loaded in item colorizer
-[27abr.2026 22:05:43.344] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [shupapium]
-[27abr.2026 22:05:43.768] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources
-[27abr.2026 22:05:43.912] [Worker-Main-3/INFO] [com.happysg.radar.CreateRadar/]: Registering Display Sources!
-[27abr.2026 22:05:44.002] [Worker-Main-2/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.0.06.hex, loading
-[27abr.2026 22:05:44.027] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[27abr.2026 22:05:44.228] [Worker-Main-5/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/block/purple_soda/purple_soda_swim_3.ogg does not exist, cannot add it to event alexscaves:purple_soda_swim
-[27abr.2026 22:05:44.228] [Worker-Main-5/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/block/purple_soda/purple_soda_swim_4.ogg does not exist, cannot add it to event alexscaves:purple_soda_swim
-[27abr.2026 22:05:44.228] [Worker-Main-5/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/mob/luxtructosaurus/luxtructosaurus_snort_0.ogg does not exist, cannot add it to event alexscaves:luxtructosaurus_snort
-[27abr.2026 22:05:44.228] [Worker-Main-5/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/mob/luxtructosaurus/luxtructosaurus_snort_1.ogg does not exist, cannot add it to event alexscaves:luxtructosaurus_snort
-[27abr.2026 22:05:44.228] [Worker-Main-5/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/mob/luxtructosaurus/luxtructosaurus_snort_2.ogg does not exist, cannot add it to event alexscaves:luxtructosaurus_snort
-[27abr.2026 22:05:44.228] [Worker-Main-5/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/mob/luxtructosaurus/luxtructosaurus_breathe_0.ogg does not exist, cannot add it to event alexscaves:luxtructosaurus_breathe
-[27abr.2026 22:05:44.228] [Worker-Main-5/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/mob/luxtructosaurus/luxtructosaurus_breathe_1.ogg does not exist, cannot add it to event alexscaves:luxtructosaurus_breathe
-[27abr.2026 22:05:44.228] [Worker-Main-5/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/mob/luxtructosaurus/luxtructosaurus_breathe_2.ogg does not exist, cannot add it to event alexscaves:luxtructosaurus_breathe
-[27abr.2026 22:05:44.241] [Worker-Main-5/WARN] [net.minecraft.client.sounds.SoundManager/]: File crusty_chunks:sounds/smallcasing.ogg does not exist, cannot add it to event crusty_chunks:smallcasing
-[27abr.2026 22:05:44.290] [Worker-Main-3/ERROR] [net.minecraft.Util/]: Invalid path in pack: crusty_chunks:textures/block/RACBreech.bbmodel, ignoring
-[27abr.2026 22:05:44.563] [Render thread/INFO] [com.happysg.radar.CreateRadar/]: Registered contraption type 'create_radar:radar_bearing'
-[27abr.2026 22:05:44.773] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 47.4.10 Target: null
-[27abr.2026 22:05:45.152] [Worker-Main-5/ERROR] [net.minecraft.client.resources.model.ModelManager/]: Failed to load model crusty_chunks:models/displaysettings/flarepistol.item.json
+[27abr.2026 22:11:00.224] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Usuario/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[27abr.2026 22:11:00.224] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Usuario/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[27abr.2026 22:11:00.240] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[27abr.2026 22:11:00.245] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[27abr.2026 22:11:00.377] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
+[27abr.2026 22:11:00.667] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Initializing Create Radar!
+[27abr.2026 22:11:00.701] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.10, for MC 1.20.1 with MCP 20230612.114412
+[27abr.2026 22:11:00.701] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.10 Initialized
+[27abr.2026 22:11:01.013] [modloading-worker-0/INFO] [com.simibubi.create.Create/]: Create 6.0.8 initializing! Commit hash: 1a1a9a2819b4f89f78caec41b55ed8cb222fa24b
+[27abr.2026 22:11:01.015] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering Items!
+[27abr.2026 22:11:01.256] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[27abr.2026 22:11:01.260] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 2.652 ms
+[27abr.2026 22:11:01.537] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering blocks!
+[27abr.2026 22:11:01.775] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering block entity types!
+[27abr.2026 22:11:01.779] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering CreativeTabs!
+[27abr.2026 22:11:01.781] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering Lang!
+[27abr.2026 22:11:01.814] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering CBC Compat Items!
+[27abr.2026 22:11:01.821] [modloading-worker-0/INFO] [com.happysg.radar.CreateRadar/]: Registering CBC WPF
+[27abr.2026 22:11:04.287] [Render thread/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/twin_autocannon/contraption/MountedTwinAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.twin_autocannon.contraption.MountedTwinAutocannonContraption)
+[27abr.2026 22:11:04.290] [Render thread/WARN] [mixin/]: Error loading class: com/dsvv/cbcat/cannon/heavy_autocannon/contraption/MountedHeavyAutocannonContraption (java.lang.ClassNotFoundException: com.dsvv.cbcat.cannon.heavy_autocannon.contraption.MountedHeavyAutocannonContraption)
+[27abr.2026 22:11:07.456] [Render thread/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.github.alexmodguy.alexscaves.server.entity.living.TremorzillaEntity from class com.github.alexmodguy.alexscaves.server.entity.living.LicowitchEntity
+[27abr.2026 22:11:07.703] [Render thread/INFO] [com.github.alexmodguy.alexscaves.AlexsCaves/]: loaded in block colorizer
+[27abr.2026 22:11:07.706] [Render thread/INFO] [com.github.alexmodguy.alexscaves.AlexsCaves/]: loaded in item colorizer
+[27abr.2026 22:11:08.116] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [shupapium]
+[27abr.2026 22:11:08.634] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources
+[27abr.2026 22:11:09.147] [Worker-Main-3/INFO] [com.happysg.radar.CreateRadar/]: Registering Display Sources!
+[27abr.2026 22:11:09.161] [Worker-Main-4/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/block/purple_soda/purple_soda_swim_3.ogg does not exist, cannot add it to event alexscaves:purple_soda_swim
+[27abr.2026 22:11:09.162] [Worker-Main-4/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/block/purple_soda/purple_soda_swim_4.ogg does not exist, cannot add it to event alexscaves:purple_soda_swim
+[27abr.2026 22:11:09.162] [Worker-Main-4/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/mob/luxtructosaurus/luxtructosaurus_snort_0.ogg does not exist, cannot add it to event alexscaves:luxtructosaurus_snort
+[27abr.2026 22:11:09.162] [Worker-Main-4/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/mob/luxtructosaurus/luxtructosaurus_snort_1.ogg does not exist, cannot add it to event alexscaves:luxtructosaurus_snort
+[27abr.2026 22:11:09.162] [Worker-Main-4/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/mob/luxtructosaurus/luxtructosaurus_snort_2.ogg does not exist, cannot add it to event alexscaves:luxtructosaurus_snort
+[27abr.2026 22:11:09.162] [Worker-Main-4/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/mob/luxtructosaurus/luxtructosaurus_breathe_0.ogg does not exist, cannot add it to event alexscaves:luxtructosaurus_breathe
+[27abr.2026 22:11:09.162] [Worker-Main-4/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/mob/luxtructosaurus/luxtructosaurus_breathe_1.ogg does not exist, cannot add it to event alexscaves:luxtructosaurus_breathe
+[27abr.2026 22:11:09.163] [Worker-Main-4/WARN] [net.minecraft.client.sounds.SoundManager/]: File alexscaves:sounds/mob/luxtructosaurus/luxtructosaurus_breathe_2.ogg does not exist, cannot add it to event alexscaves:luxtructosaurus_breathe
+[27abr.2026 22:11:09.177] [Worker-Main-1/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.0.06.hex, loading
+[27abr.2026 22:11:09.181] [Worker-Main-4/WARN] [net.minecraft.client.sounds.SoundManager/]: File crusty_chunks:sounds/smallcasing.ogg does not exist, cannot add it to event crusty_chunks:smallcasing
+[27abr.2026 22:11:09.279] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[27abr.2026 22:11:09.394] [Worker-Main-4/ERROR] [net.minecraft.Util/]: Invalid path in pack: crusty_chunks:textures/block/RACBreech.bbmodel, ignoring
+[27abr.2026 22:11:10.438] [Render thread/INFO] [com.happysg.radar.CreateRadar/]: Registered contraption type 'create_radar:radar_bearing'
+[27abr.2026 22:11:10.552] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 47.4.10 Target: null
+[27abr.2026 22:11:10.693] [Worker-Main-5/ERROR] [net.minecraft.client.resources.model.ModelManager/]: Failed to load model crusty_chunks:models/displaysettings/flarepistol.item.json
 com.google.gson.JsonParseException: item/FlarePistol is not valid resource location
 	at net.minecraft.client.renderer.block.model.BlockModel$Deserializer.parseTextureLocationOrReference(BlockModel.java:356) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?]
 	at net.minecraft.client.renderer.block.model.BlockModel$Deserializer.getTextureMap(BlockModel.java:343) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?]
@@ -105,73 +105,73 @@ com.google.gson.JsonParseException: item/FlarePistol is not valid resource locat
 	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
-[27abr.2026 22:05:47.830] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:lmg_animated#inventory:
+[27abr.2026 22:11:13.653] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:lmg_animated#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/lmgtexture
-[27abr.2026 22:05:47.830] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:flare_pistol#inventory:
+[27abr.2026 22:11:13.653] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:flare_pistol#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/3dpistol
-[27abr.2026 22:05:47.830] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:breech_rifle#inventory:
+[27abr.2026 22:11:13.653] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:breech_rifle#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/breechrifle
-[27abr.2026 22:05:47.830] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:burst_rifle#inventory:
+[27abr.2026 22:11:13.653] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:burst_rifle#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/burstrifle
-[27abr.2026 22:05:47.830] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:rac_barrel#inventory:
+[27abr.2026 22:11:13.653] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:rac_barrel#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/racbarrel
-[27abr.2026 22:05:47.830] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:semi_automatic_rifle_animated#inventory:
+[27abr.2026 22:11:13.653] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:semi_automatic_rifle_animated#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/artexture
-[27abr.2026 22:05:47.830] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:battle_rifle#inventory:
+[27abr.2026 22:11:13.653] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:battle_rifle#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/battlerifletexture
-[27abr.2026 22:05:47.831] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:scoped_breech_rifle#inventory:
+[27abr.2026 22:11:13.653] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:scoped_breech_rifle#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/breechrifle
-[27abr.2026 22:05:47.831] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:smg_animated#inventory:
+[27abr.2026 22:11:13.653] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:smg_animated#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/smgtexture
-[27abr.2026 22:05:47.831] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:revolver_animated#inventory:
+[27abr.2026 22:11:13.653] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:revolver_animated#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/revolver
-[27abr.2026 22:05:47.831] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:machine_carbine#inventory:
+[27abr.2026 22:11:13.654] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:machine_carbine#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/machinecarbine
-[27abr.2026 22:05:47.831] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:automatic_rifle#inventory:
+[27abr.2026 22:11:13.654] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:automatic_rifle#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/artexture
-[27abr.2026 22:05:47.831] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:stealth_pistol#inventory:
+[27abr.2026 22:11:13.654] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:stealth_pistol#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/3dpistol
-[27abr.2026 22:05:47.831] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:semi_automatic_pistol_animated#inventory:
+[27abr.2026 22:11:13.654] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:semi_automatic_pistol_animated#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/3dpistol
-[27abr.2026 22:05:47.831] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:eradication#inventory:
+[27abr.2026 22:11:13.654] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:eradication#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/eradicationgun
-[27abr.2026 22:05:47.831] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:mini_gun_barrel#inventory:
+[27abr.2026 22:11:13.654] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model crusty_chunks:mini_gun_barrel#inventory:
     minecraft:textures/atlas/blocks.png:minecraft:item/racbarrel
-[27abr.2026 22:05:47.980] [Worker-Main-1/INFO] [com.github.alexmodguy.alexscaves.AlexsCaves/]: Loaded emissive block models in 139 ms
-[27abr.2026 22:05:48.311] [Worker-Main-5/INFO] [com.happysg.radar.CreateRadar/]: Registering Ponder!
-[27abr.2026 22:05:48.333] [Worker-Main-5/INFO] [PonderIndex/]: Registering Ponder Scenes took 98.75 ms
-[27abr.2026 22:05:48.340] [Worker-Main-5/INFO] [PonderIndex/]: Registering Ponder Tags took 6.753 ms
-[27abr.2026 22:05:51.415] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[27abr.2026 22:05:51.415] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[27abr.2026 22:05:51.415] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:abyssal_chasm_ambience_mood
-[27abr.2026 22:05:51.415] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:luxtructosaurus_breath
-[27abr.2026 22:05:51.439] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Auriculares (3- BOMGE USB Audio Device)
-[27abr.2026 22:05:51.440] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[27abr.2026 22:05:51.552] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x2048x0 minecraft:textures/atlas/blocks.png-atlas
-[27abr.2026 22:05:51.566] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/signs.png-atlas
-[27abr.2026 22:05:51.566] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
-[27abr.2026 22:05:51.566] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
-[27abr.2026 22:05:51.567] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
-[27abr.2026 22:05:51.569] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/chest.png-atlas
-[27abr.2026 22:05:51.572] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x0 minecraft:textures/atlas/decorated_pot.png-atlas
-[27abr.2026 22:05:51.572] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/beds.png-atlas
-[27abr.2026 22:05:51.572] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/shulker_boxes.png-atlas
-[27abr.2026 22:05:51.725] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[27abr.2026 22:05:51.761] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader alexscaves:rendertype_red_ghost could not find sampler named Sampler2 in the specified shader program.
-[27abr.2026 22:05:51.762] [Render thread/INFO] [com.github.alexmodguy.alexscaves.AlexsCaves/]: registered internal shaders
-[27abr.2026 22:05:51.780] [Render thread/WARN] [net.minecraft.client.renderer.EffectInstance/]: Shader bumpy could not find uniform named OutSize in the specified shader program.
-[27abr.2026 22:05:51.793] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x0 minecraft:textures/atlas/particles.png-atlas
-[27abr.2026 22:05:51.798] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[27abr.2026 22:05:51.798] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[27abr.2026 22:05:51.800] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
-[27abr.2026 22:05:51.842] [Render thread/INFO] [flywheel/backend/shaders/]: Loaded 77 shader sources in 37.405 ms
-[27abr.2026 22:05:51.877] [Render thread/INFO] [com.simibubi.create.Create/]: Loaded 56 train hat configurations.
-[27abr.2026 22:05:52.859] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: 0
-[27abr.2026 22:05:55.487] [Render thread/INFO] [com.simibubi.create.Create/]: Created 184 recipes which will be injected into the game
-[27abr.2026 22:05:55.493] [Render thread/INFO] [com.simibubi.create.Create/]: Created 0 tags which will be injected into the game
-[27abr.2026 22:05:55.533] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
-[27abr.2026 22:05:58.789] [Worker-Main-5/ERROR] [net.minecraft.tags.TagLoader/]: Not a JSON object: null
-[27abr.2026 22:05:58.789] [Worker-Main-5/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't read tag list forge:diesel from forge:tags/fluids/diesel.json in data pack warium-1.2.7_mapped_parchment_2023.09.03-1.20.1.jar
+[27abr.2026 22:11:13.821] [Worker-Main-2/INFO] [com.github.alexmodguy.alexscaves.AlexsCaves/]: Loaded emissive block models in 155 ms
+[27abr.2026 22:11:14.125] [Worker-Main-1/INFO] [com.happysg.radar.CreateRadar/]: Registering Ponder!
+[27abr.2026 22:11:14.148] [Worker-Main-1/INFO] [PonderIndex/]: Registering Ponder Scenes took 107.9 ms
+[27abr.2026 22:11:14.155] [Worker-Main-1/INFO] [PonderIndex/]: Registering Ponder Tags took 6.739 ms
+[27abr.2026 22:11:17.490] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[27abr.2026 22:11:17.490] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[27abr.2026 22:11:17.491] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:abyssal_chasm_ambience_mood
+[27abr.2026 22:11:17.491] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: alexscaves:luxtructosaurus_breath
+[27abr.2026 22:11:17.520] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Auriculares (3- BOMGE USB Audio Device)
+[27abr.2026 22:11:17.521] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[27abr.2026 22:11:17.625] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x2048x0 minecraft:textures/atlas/blocks.png-atlas
+[27abr.2026 22:11:17.636] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/signs.png-atlas
+[27abr.2026 22:11:17.636] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
+[27abr.2026 22:11:17.637] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
+[27abr.2026 22:11:17.637] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
+[27abr.2026 22:11:17.640] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x0 minecraft:textures/atlas/decorated_pot.png-atlas
+[27abr.2026 22:11:17.643] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/chest.png-atlas
+[27abr.2026 22:11:17.643] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/shulker_boxes.png-atlas
+[27abr.2026 22:11:17.643] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/beds.png-atlas
+[27abr.2026 22:11:17.792] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[27abr.2026 22:11:17.834] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader alexscaves:rendertype_red_ghost could not find sampler named Sampler2 in the specified shader program.
+[27abr.2026 22:11:17.835] [Render thread/INFO] [com.github.alexmodguy.alexscaves.AlexsCaves/]: registered internal shaders
+[27abr.2026 22:11:17.855] [Render thread/WARN] [net.minecraft.client.renderer.EffectInstance/]: Shader bumpy could not find uniform named OutSize in the specified shader program.
+[27abr.2026 22:11:17.870] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x0 minecraft:textures/atlas/particles.png-atlas
+[27abr.2026 22:11:17.876] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[27abr.2026 22:11:17.876] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[27abr.2026 22:11:17.878] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
+[27abr.2026 22:11:17.926] [Render thread/INFO] [flywheel/backend/shaders/]: Loaded 77 shader sources in 41.839 ms
+[27abr.2026 22:11:17.968] [Render thread/INFO] [com.simibubi.create.Create/]: Loaded 56 train hat configurations.
+[27abr.2026 22:11:18.595] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: 0
+[27abr.2026 22:13:05.894] [Render thread/INFO] [com.simibubi.create.Create/]: Created 184 recipes which will be injected into the game
+[27abr.2026 22:13:05.899] [Render thread/INFO] [com.simibubi.create.Create/]: Created 0 tags which will be injected into the game
+[27abr.2026 22:13:05.940] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[27abr.2026 22:13:09.203] [Worker-Main-1/ERROR] [net.minecraft.tags.TagLoader/]: Not a JSON object: null
+[27abr.2026 22:13:09.203] [Worker-Main-1/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't read tag list forge:diesel from forge:tags/fluids/diesel.json in data pack warium-1.2.7_mapped_parchment_2023.09.03-1.20.1.jar
 java.lang.RuntimeException: Not a JSON object: null
 	at com.mojang.serialization.DataResult.lambda$getOrThrow$5(DataResult.java:101) ~[datafixerupper-6.0.8.jar%23136!/:?]
 	at com.mojang.datafixers.util.Either$Right.map(Either.java:99) ~[datafixerupper-6.0.8.jar%23136!/:?]
@@ -186,8 +186,8 @@ java.lang.RuntimeException: Not a JSON object: null
 	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
-[27abr.2026 22:05:58.790] [Worker-Main-5/ERROR] [net.minecraft.tags.TagLoader/]: Not a JSON object: null
-[27abr.2026 22:05:58.790] [Worker-Main-5/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't read tag list forge:gasoline from forge:tags/fluids/gasoline.json in data pack warium-1.2.7_mapped_parchment_2023.09.03-1.20.1.jar
+[27abr.2026 22:13:09.204] [Worker-Main-1/ERROR] [net.minecraft.tags.TagLoader/]: Not a JSON object: null
+[27abr.2026 22:13:09.204] [Worker-Main-1/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't read tag list forge:gasoline from forge:tags/fluids/gasoline.json in data pack warium-1.2.7_mapped_parchment_2023.09.03-1.20.1.jar
 java.lang.RuntimeException: Not a JSON object: null
 	at com.mojang.serialization.DataResult.lambda$getOrThrow$5(DataResult.java:101) ~[datafixerupper-6.0.8.jar%23136!/:?]
 	at com.mojang.datafixers.util.Either$Right.map(Either.java:99) ~[datafixerupper-6.0.8.jar%23136!/:?]
@@ -202,8 +202,8 @@ java.lang.RuntimeException: Not a JSON object: null
 	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
-[27abr.2026 22:05:58.791] [Worker-Main-5/ERROR] [net.minecraft.tags.TagLoader/]: Not a JSON object: null
-[27abr.2026 22:05:58.791] [Worker-Main-5/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't read tag list forge:kerosene from forge:tags/fluids/kerosene.json in data pack warium-1.2.7_mapped_parchment_2023.09.03-1.20.1.jar
+[27abr.2026 22:13:09.206] [Worker-Main-1/ERROR] [net.minecraft.tags.TagLoader/]: Not a JSON object: null
+[27abr.2026 22:13:09.206] [Worker-Main-1/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't read tag list forge:kerosene from forge:tags/fluids/kerosene.json in data pack warium-1.2.7_mapped_parchment_2023.09.03-1.20.1.jar
 java.lang.RuntimeException: Not a JSON object: null
 	at com.mojang.serialization.DataResult.lambda$getOrThrow$5(DataResult.java:101) ~[datafixerupper-6.0.8.jar%23136!/:?]
 	at com.mojang.datafixers.util.Either$Right.map(Either.java:99) ~[datafixerupper-6.0.8.jar%23136!/:?]
@@ -218,8 +218,8 @@ java.lang.RuntimeException: Not a JSON object: null
 	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
-[27abr.2026 22:05:58.820] [Worker-Main-3/ERROR] [net.minecraft.tags.TagLoader/]: Not a JSON object: null
-[27abr.2026 22:05:58.820] [Worker-Main-3/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't read tag list create_radar:radar_animal from create_radar:tags/entity_types/radar_animal.json in data pack radars-0.4.4_mapped_parchment_2023.09.03-1.20.1.jar
+[27abr.2026 22:13:09.225] [Worker-Main-5/ERROR] [net.minecraft.tags.TagLoader/]: Not a JSON object: null
+[27abr.2026 22:13:09.225] [Worker-Main-5/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't read tag list create_radar:radar_animal from create_radar:tags/entity_types/radar_animal.json in data pack radars-0.4.4_mapped_parchment_2023.09.03-1.20.1.jar
 java.lang.RuntimeException: Not a JSON object: null
 	at com.mojang.serialization.DataResult.lambda$getOrThrow$5(DataResult.java:101) ~[datafixerupper-6.0.8.jar%23136!/:?]
 	at com.mojang.datafixers.util.Either$Right.map(Either.java:99) ~[datafixerupper-6.0.8.jar%23136!/:?]
@@ -234,8 +234,8 @@ java.lang.RuntimeException: Not a JSON object: null
 	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
-[27abr.2026 22:05:58.821] [Worker-Main-3/ERROR] [net.minecraft.tags.TagLoader/]: Not a JSON object: null
-[27abr.2026 22:05:58.821] [Worker-Main-3/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't read tag list create_radar:radar_hostile from create_radar:tags/entity_types/radar_hostile.json in data pack radars-0.4.4_mapped_parchment_2023.09.03-1.20.1.jar
+[27abr.2026 22:13:09.226] [Worker-Main-5/ERROR] [net.minecraft.tags.TagLoader/]: Not a JSON object: null
+[27abr.2026 22:13:09.226] [Worker-Main-5/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't read tag list create_radar:radar_hostile from create_radar:tags/entity_types/radar_hostile.json in data pack radars-0.4.4_mapped_parchment_2023.09.03-1.20.1.jar
 java.lang.RuntimeException: Not a JSON object: null
 	at com.mojang.serialization.DataResult.lambda$getOrThrow$5(DataResult.java:101) ~[datafixerupper-6.0.8.jar%23136!/:?]
 	at com.mojang.datafixers.util.Either$Right.map(Either.java:99) ~[datafixerupper-6.0.8.jar%23136!/:?]
@@ -250,15 +250,15 @@ java.lang.RuntimeException: Not a JSON object: null
 	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
-[27abr.2026 22:05:58.964] [Worker-Main-5/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag crusty_chunks:firestarter as it is missing following references: burnt:firestarter (from warium-1.2.7_mapped_parchment_2023.09.03-1.20.1.jar)
-[27abr.2026 22:05:58.966] [Worker-Main-5/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag minecraft:mineable/pickaxe as it is missing following references: create_radar:plane_radar (from radars-0.4.4_mapped_parchment_2023.09.03-1.20.1.jar), 
+[27abr.2026 22:13:09.293] [Worker-Main-7/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag crusty_chunks:firestarter as it is missing following references: burnt:firestarter (from warium-1.2.7_mapped_parchment_2023.09.03-1.20.1.jar)
+[27abr.2026 22:13:09.295] [Worker-Main-7/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag minecraft:mineable/pickaxe as it is missing following references: create_radar:plane_radar (from radars-0.4.4_mapped_parchment_2023.09.03-1.20.1.jar), 
 	create_radar:identification_transponder (from radars-0.4.4_mapped_parchment_2023.09.03-1.20.1.jar), 
 	create_radar:radar_warning_receiver (from radars-0.4.4_mapped_parchment_2023.09.03-1.20.1.jar)
-[27abr.2026 22:05:58.967] [Worker-Main-5/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag crusty_chunks:resistant as it is missing following references: #minecraft:mineable/pickaxe (from warium-1.2.7_mapped_parchment_2023.09.03-1.20.1.jar)
-[27abr.2026 22:05:58.968] [Worker-Main-5/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag minecraft:mineable/axe as it is missing following references: create_radar:plane_radar (from radars-0.4.4_mapped_parchment_2023.09.03-1.20.1.jar), 
+[27abr.2026 22:13:09.295] [Worker-Main-7/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag crusty_chunks:resistant as it is missing following references: #minecraft:mineable/pickaxe (from warium-1.2.7_mapped_parchment_2023.09.03-1.20.1.jar)
+[27abr.2026 22:13:09.296] [Worker-Main-7/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag minecraft:mineable/axe as it is missing following references: create_radar:plane_radar (from radars-0.4.4_mapped_parchment_2023.09.03-1.20.1.jar), 
 	create_radar:identification_transponder (from radars-0.4.4_mapped_parchment_2023.09.03-1.20.1.jar), 
 	create_radar:radar_warning_receiver (from radars-0.4.4_mapped_parchment_2023.09.03-1.20.1.jar)
-[27abr.2026 22:05:59.495] [Worker-Main-1/ERROR] [net.minecraftforge.common.ForgeHooks/]: Couldn't parse element loot_tables:create_radar:blocks/plane_radar
+[27abr.2026 22:13:09.783] [Worker-Main-4/ERROR] [net.minecraftforge.common.ForgeHooks/]: Couldn't parse element loot_tables:create_radar:blocks/plane_radar
 com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'create_radar:plane_radar'
 	at net.minecraft.util.GsonHelper.lambda$convertToItem$0(GsonHelper.java:143) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -310,7 +310,7 @@ com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown st
 	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
-[27abr.2026 22:05:59.549] [Worker-Main-1/ERROR] [net.minecraftforge.common.ForgeHooks/]: Couldn't parse element loot_tables:create_radar:blocks/identification_transponder
+[27abr.2026 22:13:09.837] [Worker-Main-4/ERROR] [net.minecraftforge.common.ForgeHooks/]: Couldn't parse element loot_tables:create_radar:blocks/identification_transponder
 com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'create_radar:identification_transponder'
 	at net.minecraft.util.GsonHelper.lambda$convertToItem$0(GsonHelper.java:143) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -362,7 +362,7 @@ com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown st
 	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
-[27abr.2026 22:05:59.608] [Worker-Main-1/ERROR] [net.minecraftforge.common.ForgeHooks/]: Couldn't parse element loot_tables:create_radar:blocks/radar_guidance_block
+[27abr.2026 22:13:09.893] [Worker-Main-4/ERROR] [net.minecraftforge.common.ForgeHooks/]: Couldn't parse element loot_tables:create_radar:blocks/radar_guidance_block
 com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'create_radar:radar_guidance_block'
 	at net.minecraft.util.GsonHelper.lambda$convertToItem$0(GsonHelper.java:143) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -414,7 +414,7 @@ com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown st
 	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
-[27abr.2026 22:06:00.061] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_steel_tube
+[27abr.2026 22:13:10.365] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_steel_tube
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -468,7 +468,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.091] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe create_radar:crafting/plane_radar
+[27abr.2026 22:13:10.394] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe create_radar:crafting/plane_radar
 com.google.gson.JsonSyntaxException: Unknown item 'create_radar:plane_radar'
 	at net.minecraftforge.common.crafting.CraftingHelper.getItem(CraftingHelper.java:160) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraftforge.common.crafting.CraftingHelper.getItemStack(CraftingHelper.java:186) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
@@ -526,7 +526,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'create_radar:plane_radar'
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.100] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe shupapium:super_heavy_bomb_recipe
+[27abr.2026 22:13:10.404] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe shupapium:super_heavy_bomb_recipe
 com.google.gson.JsonSyntaxException: Invalid pattern: each row must be the same width
 	at net.minecraft.world.item.crafting.ShapedRecipe.patternFromJson(ShapedRecipe.java:268) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraft.world.item.crafting.ShapedRecipe$Serializer.fromJson(ShapedRecipe.java:322) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
@@ -583,7 +583,7 @@ com.google.gson.JsonSyntaxException: Invalid pattern: each row must be the same 
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.102] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_copper_plate
+[27abr.2026 22:13:10.406] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_copper_plate
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -637,7 +637,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.107] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/2_assembly_steel_gear
+[27abr.2026 22:13:10.409] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/2_assembly_steel_gear
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -691,7 +691,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.108] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_small_cannon_barrel
+[27abr.2026 22:13:10.411] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_small_cannon_barrel
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -745,7 +745,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.114] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/2_assembly_steel_wire
+[27abr.2026 22:13:10.417] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/2_assembly_steel_wire
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -799,7 +799,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.115] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_large_cannon_barrel
+[27abr.2026 22:13:10.418] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_large_cannon_barrel
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -853,7 +853,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.116] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_large_barrel
+[27abr.2026 22:13:10.420] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_large_barrel
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -907,7 +907,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.119] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/2_assembly_copper_wire
+[27abr.2026 22:13:10.422] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/2_assembly_copper_wire
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -961,7 +961,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.121] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/4_assembly_steel_wire
+[27abr.2026 22:13:10.423] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/4_assembly_steel_wire
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1015,7 +1015,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.125] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/2_assembly_cut_component
+[27abr.2026 22:13:10.427] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/2_assembly_cut_component
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1069,7 +1069,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.126] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe create_radar:sequenced_assembly/network_filterer
+[27abr.2026 22:13:10.429] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe create_radar:sequenced_assembly/network_filterer
 com.google.gson.JsonSyntaxException: Unknown item 'create_radar:incomplete_network_controller'
 	at net.minecraft.world.item.crafting.ShapedRecipe.lambda$itemFromJson$2(ShapedRecipe.java:307) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1139,7 +1139,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'create_radar:incomplete_netwo
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.131] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_compressed_advanced_mixture
+[27abr.2026 22:13:10.435] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_compressed_advanced_mixture
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1193,7 +1193,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.133] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/4_assembly_copper_wire
+[27abr.2026 22:13:10.438] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/4_assembly_copper_wire
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1247,7 +1247,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.135] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_medium_barrel
+[27abr.2026 22:13:10.439] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_medium_barrel
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1301,7 +1301,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.138] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/4_assembly_copper_coil
+[27abr.2026 22:13:10.442] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/4_assembly_copper_coil
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1355,7 +1355,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.139] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_huge_cannon_barrel
+[27abr.2026 22:13:10.443] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_huge_cannon_barrel
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1409,7 +1409,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.140] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_steel_plate
+[27abr.2026 22:13:10.444] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_steel_plate
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1463,7 +1463,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.141] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_steel_tube
+[27abr.2026 22:13:10.445] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_steel_tube
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1517,7 +1517,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.143] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_hollowprojectile1
+[27abr.2026 22:13:10.448] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_hollowprojectile1
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1571,7 +1571,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.144] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_hollowprojectile2
+[27abr.2026 22:13:10.449] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_hollowprojectile2
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1625,7 +1625,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.145] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_hollowprojectile3
+[27abr.2026 22:13:10.449] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_hollowprojectile3
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1679,7 +1679,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.146] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_bent_component
+[27abr.2026 22:13:10.450] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_bent_component
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1733,7 +1733,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.153] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_small_barrel
+[27abr.2026 22:13:10.456] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_small_barrel
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1787,7 +1787,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.154] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_brass_fitting
+[27abr.2026 22:13:10.457] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_brass_fitting
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1841,7 +1841,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.157] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_huge_barrel
+[27abr.2026 22:13:10.461] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_huge_barrel
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1895,7 +1895,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.160] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_bored_component
+[27abr.2026 22:13:10.464] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/3_assembly_bored_component
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1949,7 +1949,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.164] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/2_assembly_wood_component
+[27abr.2026 22:13:10.467] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/2_assembly_wood_component
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -2003,7 +2003,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.166] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/4_assembly_steel_spring
+[27abr.2026 22:13:10.469] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/4_assembly_steel_spring
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -2057,7 +2057,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.172] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_brass_plate
+[27abr.2026 22:13:10.475] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_brass_plate
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -2111,7 +2111,7 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.175] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe create_radar:crafting/identification_transponder
+[27abr.2026 22:13:10.478] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe create_radar:crafting/identification_transponder
 com.google.gson.JsonSyntaxException: Unknown item 'create_radar:identification_transponder'
 	at net.minecraftforge.common.crafting.CraftingHelper.getItem(CraftingHelper.java:160) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at net.minecraftforge.common.crafting.CraftingHelper.getItemStack(CraftingHelper.java:186) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
@@ -2169,7 +2169,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'create_radar:identification_t
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.177] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_aluminum_plate
+[27abr.2026 22:13:10.480] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe crusty_chunks:assembly/1_assembly_aluminum_plate
 com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_chunks:assembly'
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$fromJson$9(RecipeManager.java:179) ~[forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -2223,225 +2223,230 @@ com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'crusty_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[27abr.2026 22:06:00.180] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 28 recipes
-[27abr.2026 22:06:00.265] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 2622 advancements
-[27abr.2026 22:06:00.290] [Render thread/WARN] [rbasamoyai.createbigcannons.CreateBigCannons/]: createbigcannons:munition_properties/projectiles/bag_of_grapeshot is missing durability_mass value, will be set to 1.0
-[27abr.2026 22:06:00.290] [Render thread/WARN] [rbasamoyai.createbigcannons.CreateBigCannons/]: createbigcannons:munition_properties/projectiles/bag_of_grapeshot is missing penetration value, will be set to 1.0
-[27abr.2026 22:06:00.290] [Render thread/WARN] [rbasamoyai.createbigcannons.CreateBigCannons/]: createbigcannons:munition_properties/projectiles/bag_of_grapeshot is missing toughness value, will be set to 1.0
-[27abr.2026 22:06:00.290] [Render thread/WARN] [rbasamoyai.createbigcannons.CreateBigCannons/]: createbigcannons:munition_properties/projectiles/bag_of_grapeshot is missing deflection value, will be set to 1.0
-[27abr.2026 22:06:00.290] [Render thread/WARN] [rbasamoyai.createbigcannons.CreateBigCannons/]: createbigcannons:munition_properties/projectiles/bag_of_grapeshot is missing entity_damage value, will be set to 1.0
-[27abr.2026 22:06:02.720] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.1
-[27abr.2026 22:06:02.720] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[27abr.2026 22:06:03.064] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[27abr.2026 22:06:04.843] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[27abr.2026 22:06:04.843] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[27abr.2026 22:06:04.843] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[27abr.2026 22:06:04.843] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[27abr.2026 22:06:05.084] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 5%
-[27abr.2026 22:06:05.476] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
-[27abr.2026 22:06:05.488] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 2414 ms
-[27abr.2026 22:06:05.680] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 16, from 10
-[27abr.2026 22:06:05.681] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 32, from 0
-[27abr.2026 22:06:05.744] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
-[27abr.2026 22:06:06.387] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
-[27abr.2026 22:06:06.442] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:60a6ef65] logged in with entity id 13 at (3.1215507920593226, 57.64293985755457, 15.025148763884648)
-[27abr.2026 22:06:06.510] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[27abr.2026 22:06:07.461] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.ClientPlayerNetworkEvent$LoggingIn
-[27abr.2026 22:06:07.461] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from DISABLED to ENABLED
-[27abr.2026 22:06:07.466] [Render thread/INFO] [flywheel/]: Started 2 worker threads
-[27abr.2026 22:06:07.812] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.RecipesUpdatedEvent
-[27abr.2026 22:06:07.824] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.event.TagsUpdatedEvent
-[27abr.2026 22:06:07.824] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from ENABLED to JEI_STARTED
-[27abr.2026 22:06:07.825] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI...
-[27abr.2026 22:06:07.831] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes...
-[27abr.2026 22:06:07.834] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes took 3.262 ms
-[27abr.2026 22:06:07.834] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes...
-[27abr.2026 22:06:07.836] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes took 1.412 ms
-[27abr.2026 22:06:07.837] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients...
-[27abr.2026 22:06:07.869] [Render thread/WARN] [mezz.jei.library.plugins.vanilla.ingredients.ItemStackListFactory/]: Item Group has no display items and no search tab display items. Items from this group will be missing from the JEI ingredient list. Operator Utilities
-[27abr.2026 22:06:07.886] [Render thread/WARN] [mezz.jei.library.plugins.vanilla.ingredients.ItemStackListFactory/]: 2 duplicate items were found in 'Create Big Cannons' creative tab's: displayItems
+[27abr.2026 22:13:10.483] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 28 recipes
+[27abr.2026 22:13:10.565] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 2622 advancements
+[27abr.2026 22:13:10.589] [Render thread/WARN] [rbasamoyai.createbigcannons.CreateBigCannons/]: createbigcannons:munition_properties/projectiles/bag_of_grapeshot is missing durability_mass value, will be set to 1.0
+[27abr.2026 22:13:10.590] [Render thread/WARN] [rbasamoyai.createbigcannons.CreateBigCannons/]: createbigcannons:munition_properties/projectiles/bag_of_grapeshot is missing penetration value, will be set to 1.0
+[27abr.2026 22:13:10.590] [Render thread/WARN] [rbasamoyai.createbigcannons.CreateBigCannons/]: createbigcannons:munition_properties/projectiles/bag_of_grapeshot is missing toughness value, will be set to 1.0
+[27abr.2026 22:13:10.590] [Render thread/WARN] [rbasamoyai.createbigcannons.CreateBigCannons/]: createbigcannons:munition_properties/projectiles/bag_of_grapeshot is missing deflection value, will be set to 1.0
+[27abr.2026 22:13:10.590] [Render thread/WARN] [rbasamoyai.createbigcannons.CreateBigCannons/]: createbigcannons:munition_properties/projectiles/bag_of_grapeshot is missing entity_damage value, will be set to 1.0
+[27abr.2026 22:13:13.015] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.1
+[27abr.2026 22:13:13.015] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[27abr.2026 22:13:13.327] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[27abr.2026 22:13:14.903] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[27abr.2026 22:13:14.903] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[27abr.2026 22:13:14.903] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[27abr.2026 22:13:14.903] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[27abr.2026 22:13:15.349] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 15%
+[27abr.2026 22:13:15.707] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[27abr.2026 22:13:15.708] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 2380 ms
+[27abr.2026 22:13:15.907] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 16, from 10
+[27abr.2026 22:13:15.909] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 32, from 0
+[27abr.2026 22:13:15.977] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
+[27abr.2026 22:13:16.719] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
+[27abr.2026 22:13:16.792] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:de763648] logged in with entity id 18 at (-17.275513673620974, 56.0, 0.6087094934720116)
+[27abr.2026 22:13:16.879] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[27abr.2026 22:13:18.199] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.ClientPlayerNetworkEvent$LoggingIn
+[27abr.2026 22:13:18.199] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from DISABLED to ENABLED
+[27abr.2026 22:13:18.204] [Render thread/INFO] [flywheel/]: Started 2 worker threads
+[27abr.2026 22:13:18.492] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.RecipesUpdatedEvent
+[27abr.2026 22:13:18.506] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.event.TagsUpdatedEvent
+[27abr.2026 22:13:18.506] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from ENABLED to JEI_STARTED
+[27abr.2026 22:13:18.506] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI...
+[27abr.2026 22:13:18.514] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes...
+[27abr.2026 22:13:18.518] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes took 4.597 ms
+[27abr.2026 22:13:18.519] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes...
+[27abr.2026 22:13:18.521] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes took 1.799 ms
+[27abr.2026 22:13:18.522] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients...
+[27abr.2026 22:13:18.554] [Render thread/WARN] [mezz.jei.library.plugins.vanilla.ingredients.ItemStackListFactory/]: Item Group has no display items and no search tab display items. Items from this group will be missing from the JEI ingredient list. Operator Utilities
+[27abr.2026 22:13:18.572] [Render thread/WARN] [mezz.jei.library.plugins.vanilla.ingredients.ItemStackListFactory/]: 2 duplicate items were found in 'Create Big Cannons' creative tab's: displayItems
 This may indicate that these types of item need a subtype interpreter added to JEI:
 [big_cartridge, autocannon_cartridge]
-[27abr.2026 22:06:07.892] [Render thread/WARN] [mezz.jei.library.plugins.vanilla.ingredients.ItemStackListFactory/]: 45 duplicate items were found in 'Candy Cavity' creative tab's: displayItems
+[27abr.2026 22:13:18.577] [Render thread/WARN] [mezz.jei.library.plugins.vanilla.ingredients.ItemStackListFactory/]: 45 duplicate items were found in 'Candy Cavity' creative tab's: displayItems
 This may indicate that these types of item need a subtype interpreter added to JEI:
 [jelly_bean]
-[27abr.2026 22:06:07.907] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft took 69.38 milliseconds
-[27abr.2026 22:06:07.907] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients took 69.87 ms
-[27abr.2026 22:06:07.908] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients...
-[27abr.2026 22:06:07.909] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients took 1.150 ms
-[27abr.2026 22:06:07.909] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases...
-[27abr.2026 22:06:07.910] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases took 741.2 μs
-[27abr.2026 22:06:07.923] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories...
-[27abr.2026 22:06:07.961] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: create:jei_plugin took 27.17 milliseconds
-[27abr.2026 22:06:07.974] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories took 51.78 ms
-[27abr.2026 22:06:07.975] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions...
-[27abr.2026 22:06:07.978] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions took 2.512 ms
-[27abr.2026 22:06:07.979] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts...
-[27abr.2026 22:06:07.981] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts took 1.873 ms
-[27abr.2026 22:06:07.981] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry...
-[27abr.2026 22:06:07.992] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry took 10.36 ms
-[27abr.2026 22:06:07.993] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins...
-[27abr.2026 22:06:07.993] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins took 390.8 μs
-[27abr.2026 22:06:07.994] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes...
-[27abr.2026 22:06:08.275] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:minecraft took 280.5 milliseconds
-[27abr.2026 22:06:08.418] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: create:jei_plugin took 142.3 milliseconds
-[27abr.2026 22:06:08.435] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: createbigcannons:jei_plugin took 17.53 milliseconds
-[27abr.2026 22:06:08.533] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:internal took 96.02 milliseconds
-[27abr.2026 22:06:08.534] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes took 539.5 ms
-[27abr.2026 22:06:08.541] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers...
-[27abr.2026 22:06:08.545] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers took 3.744 ms
-[27abr.2026 22:06:08.548] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime...
-[27abr.2026 22:06:08.552] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers...
-[27abr.2026 22:06:08.560] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers took 7.756 ms
-[27abr.2026 22:06:08.562] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime...
-[27abr.2026 22:06:08.564] [Render thread/INFO] [mezz.jei.gui.startup.JeiGuiStarter/]: Starting JEI GUI
-[27abr.2026 22:06:08.565] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list...
-[27abr.2026 22:06:08.602] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list took 37.30 ms
-[27abr.2026 22:06:08.602] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter...
-[27abr.2026 22:06:08.627] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Adding 3916 ingredients
-[27abr.2026 22:06:08.951] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Added 3916 ingredients
-[27abr.2026 22:06:08.952] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter took 349.3 ms
-[27abr.2026 22:06:09.012] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering Runtime: jei:forge_gui took 449.3 milliseconds
-[27abr.2026 22:06:09.013] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime took 450.0 ms
-[27abr.2026 22:06:09.013] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime took 464.8 ms
-[27abr.2026 22:06:09.014] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime...
-[27abr.2026 22:06:09.014] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime took 349.0 μs
-[27abr.2026 22:06:09.014] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI took 1.189 s
-[27abr.2026 22:06:09.106] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 18 advancements
-[27abr.2026 22:06:48.736] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Summoned new Villager]
-[27abr.2026 22:06:48.747] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Summoned new Villager
-[27abr.2026 22:07:02.655] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: setTarget() → new target=(-10.024920405328032, 56.0, 12.837963378491729) config=TargetingConfig[player=false, contraption=false, mob=true, animal=false, projectile=false, autoTarget=true, autoFire=true, lineOfSight=true] atTick=8745
-[27abr.2026 22:07:02.657] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.dummy_ragdoll height=1.9 blocksHigh=2 target=(-10.923930214447006, 56.0, 12.02201740351765)
-[27abr.2026 22:07:02.683] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.dummy_ragdoll height=1.9 blocksHigh=2 target=(-11.021823083152148, 56.0, 11.92920124002243)
-[27abr.2026 22:07:02.731] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.dummy_ragdoll height=1.9 blocksHigh=2 target=(-11.119307493843017, 56.0, 11.835950258488738)
-[27abr.2026 22:07:02.780] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.dummy_ragdoll height=1.9 blocksHigh=2 target=(-11.216552556472838, 56.0, 11.74244498139986)
-[27abr.2026 22:07:02.831] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.dummy_ragdoll height=1.9 blocksHigh=2 target=(-11.313658768241078, 56.0, 11.648792418307812)
-[27abr.2026 22:07:02.898] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: setTarget() → new target=(-10.024920405328032, 56.0, 12.837963378491729) config=TargetingConfig[player=false, contraption=false, mob=true, animal=false, projectile=false, autoTarget=true, autoFire=true, lineOfSight=true] atTick=8750
-[27abr.2026 22:07:02.899] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.dummy_ragdoll height=1.9 blocksHigh=2 target=(-11.41068100062502, 56.0, 11.555051000085566)
-[27abr.2026 22:07:02.937] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.dummy_ragdoll height=1.9 blocksHigh=2 target=(-11.507653295031885, 56.0, 11.46125684664964)
-[27abr.2026 22:07:02.987] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.dummy_ragdoll height=1.9 blocksHigh=2 target=(-11.60459423807217, 56.0, 11.367429683127531)
-[27abr.2026 22:07:03.036] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.dummy_ragdoll height=1.9 blocksHigh=2 target=(-11.701518063264315, 56.0, 11.273584496096271)
-[27abr.2026 22:07:03.085] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.dummy_ragdoll height=1.9 blocksHigh=2 target=(-11.798050827028678, 56.0, 11.17933890364448)
-[27abr.2026 22:07:03.131] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: The ShupapiumDummyRagdoll['Test Dummy'/29, l='ServerLevel[Agartha23]', x=-11.89, y=56.00, z=11.08] health is 10.0
-[27abr.2026 22:07:03.137] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC: entity id=7e77bdf3-2df5-4353-bb41-1fbe1949a471 not loaded/alive, stopping fire
-[27abr.2026 22:07:03.183] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC: entity id=7e77bdf3-2df5-4353-bb41-1fbe1949a471 not loaded/alive, stopping fire
-[27abr.2026 22:07:03.232] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC: entity id=7e77bdf3-2df5-4353-bb41-1fbe1949a471 not loaded/alive, stopping fire
-[27abr.2026 22:07:03.281] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC: entity id=7e77bdf3-2df5-4353-bb41-1fbe1949a471 not loaded/alive, stopping fire
-[27abr.2026 22:07:03.331] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC: entity id=7e77bdf3-2df5-4353-bb41-1fbe1949a471 not loaded/alive, stopping fire
-[27abr.2026 22:07:03.631] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: setTarget() → new target=(-19.430742800368918, 56.0, 9.680610184694906) config=TargetingConfig[player=false, contraption=false, mob=true, animal=false, projectile=false, autoTarget=true, autoFire=true, lineOfSight=true] atTick=8765
-[27abr.2026 22:07:03.632] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-19.481373394047168, 56.0, 8.060880263620742)
-[27abr.2026 22:07:03.679] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-19.482430377490353, 56.0, 7.866898473795921)
-[27abr.2026 22:07:03.730] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-19.48357191514043, 56.0, 7.672791778143668)
-[27abr.2026 22:07:03.781] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-19.484814916310928, 56.0, 7.478618256012751)
-[27abr.2026 22:07:03.829] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-19.48618474460249, 56.0, 7.284410128672933)
-[27abr.2026 22:07:03.880] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: setTarget() → new target=(-19.430742800368918, 56.0, 9.680610184694906) config=TargetingConfig[player=false, contraption=false, mob=true, animal=false, projectile=false, autoTarget=true, autoFire=true, lineOfSight=true] atTick=8770
-[27abr.2026 22:07:03.881] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-19.48686967940715, 56.0, 7.090175126562902)
-[27abr.2026 22:07:03.931] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-19.4876053490113, 56.0, 6.895925860882802)
-[27abr.2026 22:07:03.980] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-19.488391753127438, 56.0, 6.701669243634363)
-[27abr.2026 22:07:04.030] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-19.48924580287623, 56.0, 6.507409243284794)
-[27abr.2026 22:07:04.080] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-19.49019286456903, 56.0, 6.313148342045267)
-[27abr.2026 22:07:04.130] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-19.491258303531474, 56.0, 6.118888300002279)
-[27abr.2026 22:07:04.179] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-19.491740297125688, 56.0, 5.9246236118927715)
-[27abr.2026 22:07:04.230] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-19.492256114480867, 56.0, 5.730356576287344)
-[27abr.2026 22:07:04.279] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-19.492814211403775, 56.0, 5.536088516548385)
-[27abr.2026 22:07:04.329] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-19.49343149950793, 56.0, 5.341820291917233)
-[27abr.2026 22:07:04.381] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-19.494124890119352, 56.0, 5.147552539767887)
-[27abr.2026 22:07:04.382] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC FIREGATES: auto=true lead=true laserNoLead=false yawPitchOk=false safeOk=true cannonReady=true stableOk=true firingBE=true target=(-19.494124890119352, 56.0, 5.147552539767887) aim=(-19.496088777793414, 56.0, 4.565665560338084) offset=1.5 stable=1/2
-[27abr.2026 22:07:04.382] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC AIMCHK: yawCtrl=BlockPos{x=12, y=55, z=7} pitchCtrl=BlockPos{x=13, y=56, z=7} atYaw=false atPitch=true targYaw=95.2398910522461 targPitch=-4.449107646942139
-[27abr.2026 22:07:04.382] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC BLOCK: yaw/pitch not aligned
-[27abr.2026 22:07:04.431] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-19.494446220078885, 56.0, 4.953282905941562)
-[27abr.2026 22:07:04.481] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-19.544636222814397, 56.0, 4.774684397088998)
-[27abr.2026 22:07:04.531] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-19.62493994735136, 56.0, 4.60659457461389)
-[27abr.2026 22:07:04.580] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-19.723494739217536, 56.0, 4.44563535124007)
-[27abr.2026 22:07:04.633] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-19.833278765609055, 56.0, 4.289588167415118)
-[27abr.2026 22:07:04.682] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-19.92401478410943, 56.0, 4.121736677060225)
-[27abr.2026 22:07:04.731] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.003079183647145, 56.0, 3.946977401858439)
-[27abr.2026 22:07:04.782] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.074900739294637, 56.0, 3.7681425031549143)
-[27abr.2026 22:07:04.832] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.142151121807544, 56.0, 3.5868730694565185)
-[27abr.2026 22:07:04.881] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.2064562639919, 56.0, 3.4041250612215843)
-[27abr.2026 22:07:04.931] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.268807701017142, 56.0, 3.220456738663576)
-[27abr.2026 22:07:04.980] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.314604291010546, 56.0, 3.0327603455763974)
-[27abr.2026 22:07:05.030] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.350204407330313, 56.0, 2.8427167847035357)
-[27abr.2026 22:07:05.080] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.379422502907175, 56.0, 2.6512969260666455)
-[27abr.2026 22:07:05.131] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.404567524347385, 56.0, 2.459061944914086)
-[27abr.2026 22:07:05.180] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.427034384983635, 56.0, 2.2663354916119154)
-[27abr.2026 22:07:05.230] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.442944821458358, 56.0, 2.0729821108769757)
-[27abr.2026 22:07:05.279] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.45483606619424, 56.0, 1.879269357821554)
-[27abr.2026 22:07:05.331] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.46422014444064, 56.0, 1.6853495787962416)
-[27abr.2026 22:07:05.381] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.4720071090938, 56.0, 1.4913095718238432)
-[27abr.2026 22:07:05.381] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC FIREGATES: auto=true lead=true laserNoLead=false yawPitchOk=false safeOk=true cannonReady=true stableOk=true firingBE=true target=(-20.4720071090938, 56.0, 1.4913095718238432) aim=(-20.513615692416096, 56.0, 0.9115630880076839) offset=1.5 stable=0/2
-[27abr.2026 22:07:05.381] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC AIMCHK: yawCtrl=BlockPos{x=12, y=55, z=7} pitchCtrl=BlockPos{x=13, y=56, z=7} atYaw=false atPitch=true targYaw=101.28608703613281 targPitch=-4.247100353240967
-[27abr.2026 22:07:05.381] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC BLOCK: yaw/pitch not aligned
-[27abr.2026 22:07:05.430] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.478753000516974, 56.0, 1.2971989786821285)
-[27abr.2026 22:07:05.480] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.52601285080269, 56.0, 1.1145313184103176)
-[27abr.2026 22:07:05.531] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.597378004953566, 56.0, 0.9392738202013236)
-[27abr.2026 22:07:05.582] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.617257993359903, 56.0, 0.7574728804844668)
-[27abr.2026 22:07:05.632] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.59156028982813, 56.0, 0.5779401297420848)
-[27abr.2026 22:07:05.682] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.51036935392439, 56.0, 0.422742008653686)
-[27abr.2026 22:07:05.731] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.465049758318486, 56.0, 0.24980935859551207)
-[27abr.2026 22:07:05.780] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.442072456729708, 56.0, 0.06720581433775949)
-[27abr.2026 22:07:05.831] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.43279014659088, 56.0, -0.12063535612451251)
-[27abr.2026 22:07:05.882] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.432015990339853, 56.0, -0.31129207413128956)
-[27abr.2026 22:07:05.931] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.437053066139168, 56.0, -0.5034467158834408)
-[27abr.2026 22:07:05.980] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.442613470541946, 56.0, -0.696387728627297)
-[27abr.2026 22:07:06.031] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.451935434068613, 56.0, -0.8897092612410168)
-[27abr.2026 22:07:06.082] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.505144161928623, 56.0, -1.0691804232501267)
-[27abr.2026 22:07:06.134] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.584552884369536, 56.0, -1.239583287654513)
-[27abr.2026 22:07:06.182] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.67974177230577, 56.0, -1.4039865208458167)
-[27abr.2026 22:07:06.231] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.784567513756905, 56.0, -1.564361207539866)
-[27abr.2026 22:07:06.281] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.89538326388497, 56.0, -1.721985276210215)
-[27abr.2026 22:07:06.334] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-20.984285005174854, 56.0, -1.8915518612536215)
-[27abr.2026 22:07:06.383] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-21.05976038748155, 56.0, -2.0681218127650935)
-[27abr.2026 22:07:06.384] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC FIREGATES: auto=true lead=true laserNoLead=false yawPitchOk=true safeOk=true cannonReady=true stableOk=true firingBE=true target=(-21.05976038748155, 56.0, -2.0681218127650935) aim=(-21.31102262071107, 56.0, -2.5792210603140884) offset=1.5 stable=2/2
-[27abr.2026 22:07:06.432] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-21.12689655154875, 56.0, -2.2488323606906753)
-[27abr.2026 22:07:06.480] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-21.18875922774842, 56.0, -2.432021829661443)
-[27abr.2026 22:07:06.531] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-21.247215370543707, 56.0, -2.616720227254829)
-[27abr.2026 22:07:06.581] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: The ShupapiumMetalRagdoll['entity.shupapium.heavy_dummy_ragdoll'/27, l='ServerLevel[Agartha23]', x=-21.30, y=56.00, z=-2.80] health is 37.06
-[27abr.2026 22:07:06.582] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-21.30340534844615, 56.0, -2.802359828608278)
-[27abr.2026 22:07:06.633] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: The ShupapiumMetalRagdoll['entity.shupapium.heavy_dummy_ragdoll'/27, l='ServerLevel[Agartha23]', x=-21.89, y=56.02, z=-3.15] health is 27.080399
-[27abr.2026 22:07:06.633] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: Projectile Discarded!: GenericlargeBulletEntity['entity.crusty_chunks.genericlarge_bullet'/132, l='ServerLevel[Agartha23]', x=-17.39, y=56.62, z=-1.77]
-[27abr.2026 22:07:06.635] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-21.893662579780393, 56.02159999847412, -3.1533483464923227)
-[27abr.2026 22:07:06.683] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-22.214293461867015, 56.0, -3.3506319644130778)
-[27abr.2026 22:07:06.732] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-22.459518317045433, 56.0, -3.6050760732720835)
-[27abr.2026 22:07:06.782] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: The ShupapiumMetalRagdoll['entity.shupapium.heavy_dummy_ragdoll'/27, l='ServerLevel[Agartha23]', x=-22.53, y=56.00, z=-3.80] health is 18.080399
-[27abr.2026 22:07:06.782] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: Projectile Discarded!: GenericlargeBulletEntity['entity.crusty_chunks.genericlarge_bullet'/144, l='ServerLevel[Agartha23]', x=-17.40, y=56.45, z=-1.69]
-[27abr.2026 22:07:06.783] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-22.52891198039177, 56.0, -3.8041615720861004)
-[27abr.2026 22:07:06.831] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-22.493743645657744, 56.0, -3.9622776106059834)
-[27abr.2026 22:07:06.882] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-22.396972557968926, 56.0, -4.090588325789036)
-[27abr.2026 22:07:06.951] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-22.263901192657595, 56.0, -4.19727510361084)
-[27abr.2026 22:07:06.980] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: The ShupapiumMetalRagdoll['entity.shupapium.heavy_dummy_ragdoll'/27, l='ServerLevel[Agartha23]', x=-22.11, y=56.00, z=-4.29] health is 9.080399
-[27abr.2026 22:07:06.980] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: Projectile Discarded!: GenericlargeBulletEntity['entity.crusty_chunks.genericlarge_bullet'/156, l='ServerLevel[Agartha23]', x=-17.11, y=56.37, z=-2.58]
-[27abr.2026 22:07:06.981] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-22.109249880830404, 56.0, -4.288024869529586)
-[27abr.2026 22:07:07.032] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: The ShupapiumMetalRagdoll['entity.shupapium.heavy_dummy_ragdoll'/27, l='ServerLevel[Agartha23]', x=-21.94, y=56.00, z=-4.37] health is 0.08039856
-[27abr.2026 22:07:07.032] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: Projectile Discarded!: GenericlargeBulletEntity['entity.crusty_chunks.genericlarge_bullet'/162, l='ServerLevel[Agartha23]', x=-17.13, y=56.73, z=-2.58]
-[27abr.2026 22:07:07.033] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC: entity id=d73b611b-81ad-48fc-b6db-6358d96357ac not loaded/alive, stopping fire
-[27abr.2026 22:07:07.081] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC: entity id=d73b611b-81ad-48fc-b6db-6358d96357ac not loaded/alive, stopping fire
-[27abr.2026 22:07:07.130] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC: entity id=d73b611b-81ad-48fc-b6db-6358d96357ac not loaded/alive, stopping fire
-[27abr.2026 22:07:07.180] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC: entity id=d73b611b-81ad-48fc-b6db-6358d96357ac not loaded/alive, stopping fire
-[27abr.2026 22:07:07.229] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC: entity id=d73b611b-81ad-48fc-b6db-6358d96357ac not loaded/alive, stopping fire
-[27abr.2026 22:07:07.280] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC: entity id=d73b611b-81ad-48fc-b6db-6358d96357ac not loaded/alive, stopping fire
-[27abr.2026 22:07:07.330] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC: entity id=d73b611b-81ad-48fc-b6db-6358d96357ac not loaded/alive, stopping fire
-[27abr.2026 22:07:13.278] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[27abr.2026 22:07:13.287] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Agartha23]'/minecraft:overworld
-[27abr.2026 22:07:13.299] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Agartha23]'/minecraft:the_nether
-[27abr.2026 22:07:13.301] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Agartha23]'/minecraft:the_end
-[27abr.2026 22:07:13.975] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
-[27abr.2026 22:07:13.977] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.ClientPlayerNetworkEvent$LoggingOut
-[27abr.2026 22:07:13.977] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from JEI_STARTED to DISABLED
-[27abr.2026 22:07:13.977] [Render thread/INFO] [mezz.jei.library.startup.JeiStarter/]: Stopping JEI
-[27abr.2026 22:07:13.977] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable...
-[27abr.2026 22:07:13.977] [Render thread/INFO] [mezz.jei.forge.plugins.forge.ForgeGuiPlugin/]: Stopping JEI GUI
-[27abr.2026 22:07:13.978] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable took 1.440 ms
-[27abr.2026 22:07:14.030] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
-[27abr.2026 22:07:14.030] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[27abr.2026 22:07:14.037] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
-[27abr.2026 22:07:14.089] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[27abr.2026 22:07:14.089] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[27abr.2026 22:07:14.089] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[27abr.2026 22:07:14.340] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Agartha23]'/minecraft:overworld
-[27abr.2026 22:07:15.468] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Agartha23]'/minecraft:the_nether
-[27abr.2026 22:07:15.470] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Agartha23]'/minecraft:the_end
-[27abr.2026 22:07:15.512] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (Agartha23): All chunks are saved
-[27abr.2026 22:07:15.512] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[27abr.2026 22:07:15.512] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[27abr.2026 22:07:15.512] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[27abr.2026 22:13:18.593] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft took 70.25 milliseconds
+[27abr.2026 22:13:18.593] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients took 70.78 ms
+[27abr.2026 22:13:18.593] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients...
+[27abr.2026 22:13:18.594] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients took 987.0 μs
+[27abr.2026 22:13:18.595] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases...
+[27abr.2026 22:13:18.595] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases took 593.2 μs
+[27abr.2026 22:13:18.608] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories...
+[27abr.2026 22:13:18.620] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: jei:minecraft took 11.74 milliseconds
+[27abr.2026 22:13:18.651] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: create:jei_plugin took 30.46 milliseconds
+[27abr.2026 22:13:18.666] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories took 57.38 ms
+[27abr.2026 22:13:18.667] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions...
+[27abr.2026 22:13:18.670] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions took 2.990 ms
+[27abr.2026 22:13:18.671] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts...
+[27abr.2026 22:13:18.673] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts took 2.272 ms
+[27abr.2026 22:13:18.674] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry...
+[27abr.2026 22:13:18.685] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry took 11.31 ms
+[27abr.2026 22:13:18.686] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins...
+[27abr.2026 22:13:18.687] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins took 421.0 μs
+[27abr.2026 22:13:18.688] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes...
+[27abr.2026 22:13:19.002] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:minecraft took 313.3 milliseconds
+[27abr.2026 22:13:19.148] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: create:jei_plugin took 147.1 milliseconds
+[27abr.2026 22:13:19.163] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: createbigcannons:jei_plugin took 14.60 milliseconds
+[27abr.2026 22:13:19.257] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:internal took 91.03 milliseconds
+[27abr.2026 22:13:19.257] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes took 569.0 ms
+[27abr.2026 22:13:19.265] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers...
+[27abr.2026 22:13:19.268] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers took 3.537 ms
+[27abr.2026 22:13:19.274] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime...
+[27abr.2026 22:13:19.278] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers...
+[27abr.2026 22:13:19.287] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers took 9.190 ms
+[27abr.2026 22:13:19.290] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime...
+[27abr.2026 22:13:19.292] [Render thread/INFO] [mezz.jei.gui.startup.JeiGuiStarter/]: Starting JEI GUI
+[27abr.2026 22:13:19.293] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list...
+[27abr.2026 22:13:19.345] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list took 51.81 ms
+[27abr.2026 22:13:19.345] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter...
+[27abr.2026 22:13:19.374] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Adding 3916 ingredients
+[27abr.2026 22:13:19.703] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Added 3916 ingredients
+[27abr.2026 22:13:19.704] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter took 359.7 ms
+[27abr.2026 22:13:19.812] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering Runtime: jei:forge_gui took 521.4 milliseconds
+[27abr.2026 22:13:19.812] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime took 522.1 ms
+[27abr.2026 22:13:19.813] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime took 539.3 ms
+[27abr.2026 22:13:19.813] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime...
+[27abr.2026 22:13:19.814] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime took 320.0 μs
+[27abr.2026 22:13:19.814] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI took 1.307 s
+[27abr.2026 22:13:19.892] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 18 advancements
+[27abr.2026 22:13:39.758] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[27abr.2026 22:13:39.767] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Agartha23]'/minecraft:overworld
+[27abr.2026 22:13:39.780] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Agartha23]'/minecraft:the_end
+[27abr.2026 22:13:39.781] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Agartha23]'/minecraft:the_nether
+[27abr.2026 22:13:57.748] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: setTarget() → new target=(-31.60182264091285, 56.0, -15.685172871356905) config=TargetingConfig[player=false, contraption=false, mob=true, animal=false, projectile=false, autoTarget=true, autoFire=true, lineOfSight=true] atTick=9545
+[27abr.2026 22:13:57.750] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-28.845973324220445, 56.0, -14.911572180212088)
+[27abr.2026 22:13:57.762] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-28.718167181996257, 56.0, -14.766389577804738)
+[27abr.2026 22:13:57.811] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-28.592496918995707, 56.0, -14.618886720478827)
+[27abr.2026 22:13:57.861] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-28.469717563473516, 56.0, -14.46874001942419)
+[27abr.2026 22:13:57.912] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-28.31452604663173, 56.0, -14.389609111192707)
+[27abr.2026 22:13:57.961] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: setTarget() → new target=(-28.718167181996257, 56.0, -14.766389577804738) config=TargetingConfig[player=false, contraption=false, mob=true, animal=false, projectile=false, autoTarget=true, autoFire=true, lineOfSight=true] atTick=9550
+[27abr.2026 22:13:57.962] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-28.14239157043943, 56.0, -14.358256891407926)
+[27abr.2026 22:13:58.012] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-27.962279361894964, 56.0, -14.360149659479054)
+[27abr.2026 22:13:58.062] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-27.77951876910795, 56.0, -14.385696122177619)
+[27abr.2026 22:13:58.111] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-27.598094021482567, 56.0, -14.433029651994003)
+[27abr.2026 22:13:58.162] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-27.42619745724773, 56.0, -14.508610821169539)
+[27abr.2026 22:13:58.213] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-27.24414564771974, 56.0, -14.54906637308377)
+[27abr.2026 22:13:58.262] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-27.05673602768917, 56.0, -14.565358424151404)
+[27abr.2026 22:13:58.322] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-26.866811025356302, 56.0, -14.563977783432923)
+[27abr.2026 22:13:58.364] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-26.676223503814715, 56.0, -14.548823964407278)
+[27abr.2026 22:13:58.413] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-26.487164411180977, 56.0, -14.517001461685092)
+[27abr.2026 22:13:58.469] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-26.295751112608265, 56.0, -14.4981128108366)
+[27abr.2026 22:13:58.470] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC FIREGATES: auto=true lead=true laserNoLead=false yawPitchOk=true safeOk=true cannonReady=true stableOk=true firingBE=true target=(-26.295751112608265, 56.0, -14.4981128108366) aim=(-25.73576842197962, 56.0, -14.464040826897744) offset=1.5 stable=2/2
+[27abr.2026 22:13:58.513] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: The Villager['Villager'/17, l='ServerLevel[Agartha23]', x=-23.42, y=56.00, z=-13.35] health is 4.0
+[27abr.2026 22:13:58.516] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Villager'/17, l='ServerLevel[Agartha23]', x=-23.42, y=56.00, z=-13.35] died, message: 'Villager died whilst trying to escape Heavy Dummy'
+[27abr.2026 22:13:58.522] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-26.103039679416593, 56.0, -14.488011007831007)
+[27abr.2026 22:13:58.527] [Render thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Villager'/17, l='ClientLevel', x=-23.42, y=56.00, z=-13.35] died, message: 'Villager died'
+[27abr.2026 22:13:58.563] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-25.90963675008542, 56.0, -14.484254168784084)
+[27abr.2026 22:13:58.613] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-25.80403873840511, 56.0, -14.484254168784084)
+[27abr.2026 22:13:58.663] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-25.74638221733071, 56.0, -14.484254168784084)
+[27abr.2026 22:13:58.713] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-25.714901753167545, 56.0, -14.484254168784084)
+[27abr.2026 22:13:58.764] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-25.697713417737987, 56.0, -14.484254168784084)
+[27abr.2026 22:13:58.812] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-25.688328585503374, 56.0, -14.484254168784084)
+[27abr.2026 22:13:58.861] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-25.683204466508098, 56.0, -14.484254168784084)
+[27abr.2026 22:13:58.911] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: The ShupapiumMetalRagdoll['Heavy Dummy'/37, l='ServerLevel[Agartha23]', x=-25.68, y=56.00, z=-14.48] health is 23.62563
+[27abr.2026 22:13:58.912] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-25.683204466508098, 56.0, -14.484254168784084)
+[27abr.2026 22:13:58.966] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-26.176086622341348, 56.02159999847412, -14.779995404669801)
+[27abr.2026 22:13:59.012] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-26.445200310684566, 56.0, -14.941470138219117)
+[27abr.2026 22:13:59.064] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-26.69009377413468, 56.0, -15.088412149983839)
+[27abr.2026 22:13:59.113] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-26.823805620709425, 56.0, -15.168642497726342)
+[27abr.2026 22:13:59.162] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-26.896812297419153, 56.0, -15.212448272681906)
+[27abr.2026 22:13:59.215] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-26.865256062270973, 56.0, -15.28812266166867)
+[27abr.2026 22:13:59.263] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-26.7717346743882, 56.0, -15.373699465123213)
+[27abr.2026 22:13:59.315] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-26.64069240591657, 56.0, -15.457606498321493)
+[27abr.2026 22:13:59.363] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-26.48469466873364, 56.0, -15.52886906521199)
+[27abr.2026 22:13:59.412] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-26.336724044657274, 56.0, -15.629713262859692)
+[27abr.2026 22:13:59.463] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-26.194809075284375, 56.0, -15.748360528751366)
+[27abr.2026 22:13:59.464] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC FIREGATES: auto=true lead=true laserNoLead=false yawPitchOk=true safeOk=true cannonReady=true stableOk=true firingBE=true target=(-26.194809075284375, 56.0, -15.748360528751366) aim=(-25.848491272461544, 55.99983507107687, -16.04395892692908) offset=1.5 stable=2/2
+[27abr.2026 22:13:59.514] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-26.05745574404796, 56.0, -15.877911493373952)
+[27abr.2026 22:13:59.563] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-25.92359991839599, 56.0, -16.0143322275678)
+[27abr.2026 22:13:59.613] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-25.792540666742983, 56.0, -16.15528796264052)
+[27abr.2026 22:13:59.662] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-25.663918616800697, 56.0, -16.299502889597584)
+[27abr.2026 22:13:59.712] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: The ShupapiumMetalRagdoll['Heavy Dummy'/37, l='ServerLevel[Agartha23]', x=-25.54, y=56.00, z=-16.45] health is 13.686026
+[27abr.2026 22:13:59.714] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-25.537868308893625, 56.0, -16.44653094519659)
+[27abr.2026 22:13:59.761] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-25.907083632138196, 56.02159999847412, -16.900885834124264)
+[27abr.2026 22:13:59.813] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: The ShupapiumMetalRagdoll['Heavy Dummy'/37, l='ServerLevel[Agartha23]', x=-26.10, y=56.00, z=-17.15] health is 3.7464218
+[27abr.2026 22:13:59.813] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: Projectile Discarded!: GenericlargeBulletEntity['entity.crusty_chunks.genericlarge_bullet'/144, l='ServerLevel[Agartha23]', x=-14.22, y=57.00, z=-8.84]
+[27abr.2026 22:13:59.814] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC: entity id=d217e3cf-8d56-43fd-a2e0-4683f7691bb2 not loaded/alive, stopping fire
+[27abr.2026 22:13:59.863] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC: entity id=d217e3cf-8d56-43fd-a2e0-4683f7691bb2 not loaded/alive, stopping fire
+[27abr.2026 22:13:59.910] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC: entity id=d217e3cf-8d56-43fd-a2e0-4683f7691bb2 not loaded/alive, stopping fire
+[27abr.2026 22:14:02.710] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: setTarget() → new target=(-16.5, 56.0, -17.5) config=TargetingConfig[player=false, contraption=false, mob=true, animal=false, projectile=false, autoTarget=true, autoFire=true, lineOfSight=true] atTick=9645
+[27abr.2026 22:14:02.710] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-16.5, 56.0, -17.5)
+[27abr.2026 22:14:02.760] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-16.5, 56.0, -17.5)
+[27abr.2026 22:14:02.811] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-16.5, 56.0, -17.5)
+[27abr.2026 22:14:02.862] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-16.5, 56.0, -17.5)
+[27abr.2026 22:14:02.913] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-16.5, 56.0, -17.5)
+[27abr.2026 22:14:02.962] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: setTarget() → new target=(-16.5, 56.0, -17.5) config=TargetingConfig[player=false, contraption=false, mob=true, animal=false, projectile=false, autoTarget=true, autoFire=true, lineOfSight=true] atTick=9650
+[27abr.2026 22:14:02.963] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-16.5, 56.0, -17.5)
+[27abr.2026 22:14:03.010] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: The ShupapiumMetalRagdoll['Heavy Dummy'/155, l='ServerLevel[Agartha23]', x=-16.50, y=56.00, z=-17.50] health is 40.0
+[27abr.2026 22:14:03.011] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-16.5, 56.0, -17.5)
+[27abr.2026 22:14:03.060] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: The ShupapiumMetalRagdoll['Heavy Dummy'/155, l='ServerLevel[Agartha23]', x=-16.94, y=56.02, z=-17.87] health is 30.060398
+[27abr.2026 22:14:03.060] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: Projectile Discarded!: GenericlargeBulletEntity['entity.crusty_chunks.genericlarge_bullet'/164, l='ServerLevel[Agartha23]', x=-11.01, y=56.59, z=-13.16]
+[27abr.2026 22:14:03.061] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-16.937285547881054, 56.02159999847412, -17.869722100006104)
+[27abr.2026 22:14:03.113] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-17.17604348475647, 56.0, -18.07159039005697)
+[27abr.2026 22:14:03.163] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-17.393313213574775, 56.0, -18.255290539297462)
+[27abr.2026 22:14:03.211] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-17.511942499288672, 56.0, -18.355590832432913)
+[27abr.2026 22:14:03.260] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: The ShupapiumMetalRagdoll['Heavy Dummy'/155, l='ServerLevel[Agartha23]', x=-17.58, y=56.00, z=-18.41] health is 21.060398
+[27abr.2026 22:14:03.260] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: Projectile Discarded!: GenericlargeBulletEntity['entity.crusty_chunks.genericlarge_bullet'/170, l='ServerLevel[Agartha23]', x=-11.17, y=56.82, z=-12.99]
+[27abr.2026 22:14:03.261] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-17.576714096811852, 56.0, -18.410354798845848)
+[27abr.2026 22:14:03.312] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-17.61207939316728, 56.0, -18.440255927980406)
+[27abr.2026 22:14:03.360] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-17.63138884722019, 56.0, -18.456581946384183)
+[27abr.2026 22:14:03.412] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: The ShupapiumMetalRagdoll['Heavy Dummy'/155, l='ServerLevel[Agartha23]', x=-17.64, y=56.00, z=-18.47] health is 12.060398
+[27abr.2026 22:14:03.412] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: Projectile Discarded!: GenericlargeBulletEntity['entity.crusty_chunks.genericlarge_bullet'/182, l='ServerLevel[Agartha23]', x=-11.13, y=56.84, z=-13.04]
+[27abr.2026 22:14:03.413] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-17.641931810357672, 56.0, -18.465495953468032)
+[27abr.2026 22:14:03.461] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: The ShupapiumMetalRagdoll['Heavy Dummy'/155, l='ServerLevel[Agartha23]', x=-17.65, y=56.00, z=-18.47] health is 3.060398
+[27abr.2026 22:14:03.461] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: Projectile Discarded!: GenericlargeBulletEntity['entity.crusty_chunks.genericlarge_bullet'/188, l='ServerLevel[Agartha23]', x=-11.03, y=56.58, z=-13.14]
+[27abr.2026 22:14:06.211] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: setTarget() → new target=(-10.5, 56.0, -19.5) config=TargetingConfig[player=false, contraption=false, mob=true, animal=false, projectile=false, autoTarget=true, autoFire=true, lineOfSight=true] atTick=9715
+[27abr.2026 22:14:06.211] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-10.5, 56.0, -19.5)
+[27abr.2026 22:14:06.260] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-10.5, 56.0, -19.5)
+[27abr.2026 22:14:06.309] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-10.421884121068558, 56.0, -19.50487183755958)
+[27abr.2026 22:14:06.362] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-10.29900399187488, 56.0, -19.48214614275463)
+[27abr.2026 22:14:06.412] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-10.231911433542155, 56.0, -19.469737911949878)
+[27abr.2026 22:14:06.461] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: setTarget() → new target=(-10.5, 56.0, -19.5) config=TargetingConfig[player=false, contraption=false, mob=true, animal=false, projectile=false, autoTarget=true, autoFire=true, lineOfSight=true] atTick=9720
+[27abr.2026 22:14:06.461] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-10.195278892437521, 56.0, -19.46296301714356)
+[27abr.2026 22:14:06.461] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: WFC FIREGATES: auto=true lead=true laserNoLead=false yawPitchOk=true safeOk=true cannonReady=true stableOk=true firingBE=true target=(-10.195278892437521, 56.0, -19.46296301714356) aim=(-10.0339861539879, 56.0, -19.43870389852413) offset=1.5 stable=0/2
+[27abr.2026 22:14:06.510] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: The ShupapiumMetalRagdoll['Heavy Dummy'/205, l='ServerLevel[Agartha23]', x=-10.18, y=56.00, z=-19.46] health is 40.0
+[27abr.2026 22:14:06.511] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-10.17527752267118, 56.0, -19.459263924149653)
+[27abr.2026 22:14:06.560] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: The ShupapiumMetalRagdoll['Heavy Dummy'/205, l='ServerLevel[Agartha23]', x=-10.54, y=56.02, z=-19.90] health is 30.060398
+[27abr.2026 22:14:06.560] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: Projectile Discarded!: GenericlargeBulletEntity['entity.crusty_chunks.genericlarge_bullet'/214, l='ServerLevel[Agartha23]', x=-7.84, y=56.84, z=-16.30]
+[27abr.2026 22:14:06.561] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-10.535013874544578, 56.02159999847412, -19.898007459820473)
+[27abr.2026 22:14:06.610] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-10.731429945481695, 56.0, -20.137561458121567)
+[27abr.2026 22:14:06.660] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-10.910168575185688, 56.0, -20.355555602858118)
+[27abr.2026 22:14:06.711] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: The ShupapiumMetalRagdoll['Heavy Dummy'/205, l='ServerLevel[Agartha23]', x=-11.01, y=56.00, z=-20.47] health is 21.060398
+[27abr.2026 22:14:06.711] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: Projectile Discarded!: GenericlargeBulletEntity['entity.crusty_chunks.genericlarge_bullet'/226, l='ServerLevel[Agartha23]', x=-7.69, y=56.35, z=-16.39]
+[27abr.2026 22:14:06.712] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-11.007759878339554, 56.0, -20.47458041970932)
+[27abr.2026 22:14:06.761] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-11.061044736050741, 56.0, -20.53956797725855)
+[27abr.2026 22:14:06.812] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-11.09013827174034, 56.0, -20.575051187801897)
+[27abr.2026 22:14:06.862] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: The ShupapiumMetalRagdoll['Heavy Dummy'/205, l='ServerLevel[Agartha23]', x=-11.11, y=56.00, z=-20.59] health is 12.060398
+[27abr.2026 22:14:06.863] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: Projectile Discarded!: GenericlargeBulletEntity['entity.crusty_chunks.genericlarge_bullet'/238, l='ServerLevel[Agartha23]', x=-7.68, y=56.84, z=-16.44]
+[27abr.2026 22:14:06.863] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-11.106023344071954, 56.0, -20.59442502300889)
+[27abr.2026 22:14:06.911] [Server thread/WARN] [com.happysg.radar.block.behavior.networks.WeaponFiringControl/]: LOS DBG: trackCat=HOSTILE entityType=entity.shupapium.heavy_dummy_ragdoll height=1.9 blocksHigh=2 target=(-11.114696594572436, 56.0, -20.60500313826058)
+[27abr.2026 22:14:06.960] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: The ShupapiumMetalRagdoll['Heavy Dummy'/205, l='ServerLevel[Agartha23]', x=-11.12, y=56.00, z=-20.61] health is 3.060398
+[27abr.2026 22:14:06.960] [Server thread/INFO] [net.ato.shupapium.MainShupapium/]: Projectile Discarded!: GenericlargeBulletEntity['entity.crusty_chunks.genericlarge_bullet'/244, l='ServerLevel[Agartha23]', x=-7.51, y=56.60, z=-16.56]
+[27abr.2026 22:14:12.558] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[27abr.2026 22:14:12.564] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Agartha23]'/minecraft:overworld
+[27abr.2026 22:14:12.568] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Agartha23]'/minecraft:the_end
+[27abr.2026 22:14:12.569] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Agartha23]'/minecraft:the_nether
+[27abr.2026 22:14:40.608] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[27abr.2026 22:14:40.614] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Agartha23]'/minecraft:overworld
+[27abr.2026 22:14:40.616] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Agartha23]'/minecraft:the_end
+[27abr.2026 22:14:40.617] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Agartha23]'/minecraft:the_nether
+[27abr.2026 22:14:41.341] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[27abr.2026 22:14:41.345] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.ClientPlayerNetworkEvent$LoggingOut
+[27abr.2026 22:14:41.345] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from JEI_STARTED to DISABLED
+[27abr.2026 22:14:41.345] [Render thread/INFO] [mezz.jei.library.startup.JeiStarter/]: Stopping JEI
+[27abr.2026 22:14:41.345] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable...
+[27abr.2026 22:14:41.346] [Render thread/INFO] [mezz.jei.forge.plugins.forge.ForgeGuiPlugin/]: Stopping JEI GUI
+[27abr.2026 22:14:41.347] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable took 1.399 ms
+[27abr.2026 22:14:41.360] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[27abr.2026 22:14:41.360] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[27abr.2026 22:14:41.367] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
+[27abr.2026 22:14:41.418] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[27abr.2026 22:14:41.419] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[27abr.2026 22:14:41.419] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[27abr.2026 22:14:41.646] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Agartha23]'/minecraft:overworld
+[27abr.2026 22:14:42.692] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Agartha23]'/minecraft:the_end
+[27abr.2026 22:14:42.693] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Agartha23]'/minecraft:the_nether
+[27abr.2026 22:14:42.723] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (Agartha23): All chunks are saved
+[27abr.2026 22:14:42.723] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[27abr.2026 22:14:42.723] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[27abr.2026 22:14:42.723] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
