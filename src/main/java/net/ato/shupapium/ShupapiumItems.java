@@ -158,6 +158,9 @@ public class ShupapiumItems {
     public static final RegistryObject<Item> DUMMY_RAGDOLL_SPAWN_EGG = ITEMS.register(
             "dummy_ragdoll_spawn_egg", () -> new ForgeSpawnEggItem(ShupapiumEntities.DUMMY_RAGDOLL_ENTITY, 0xFEDFBF, 0xFF8000, new Item.Properties())
     );
+    public static final RegistryObject<Item> HEAVY_DUMMY_RAGDOLL_SPAWN_EGG = ITEMS.register(
+            "heavy_dummy_ragdoll_spawn_egg", () -> new ForgeSpawnEggItem(ShupapiumEntities.HEAVY_DUMMY_RAGDOLL_ENTITY, 0x7993AC, 0x303A44, new Item.Properties())
+    );
 
     public static void register() {}
 

@@ -5,6 +5,7 @@ import com.tterrag.registrate.util.nullness.NonNullConsumer;
 import net.ato.shupapium.blockentities.*;
 import net.ato.shupapium.blockentities.misc.JokeBombShellProjectile;
 import net.ato.shupapium.entities.ShupapiumDummyRagdoll;
+import net.ato.shupapium.entities.ShupapiumMetalRagdoll;
 import net.ato.shupapium.entities.misc.JokeCloudDetectorEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -28,6 +29,9 @@ public class ShupapiumEntities {
     public static final DeferredRegister<EntityType<?>> SHUPAPI_ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, MainShupapium.MODID);
     public static final RegistryObject<EntityType<ShupapiumDummyRagdoll>> DUMMY_RAGDOLL_ENTITY = SHUPAPI_ENTITIES.register(
             "dummy_ragdoll", () -> EntityType.Builder.of(ShupapiumDummyRagdoll::new, MobCategory.CREATURE).sized(0.8F, 1.9F).build("dummy_ragdoll")
+    );
+    public static final RegistryObject<EntityType<ShupapiumMetalRagdoll>> HEAVY_DUMMY_RAGDOLL_ENTITY = SHUPAPI_ENTITIES.register(
+            "heavy_dummy_ragdoll", () -> EntityType.Builder.of(ShupapiumMetalRagdoll::new, MobCategory.CREATURE).sized(0.8F, 1.9F).build("heavy_dummy_ragdoll")
     );
     public static final RegistryObject<EntityType<JokeCloudDetectorEntity>> JOKE_CLOUD_DETECTOR = SHUPAPI_ENTITIES.register("joke_cloud_detector",
             () -> EntityType.Builder.<JokeCloudDetectorEntity>of(JokeCloudDetectorEntity::new, MobCategory.MISC).setCustomClientFactory(JokeCloudDetectorEntity::new)

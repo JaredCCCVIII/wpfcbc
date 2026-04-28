@@ -9,17 +9,18 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import rbasamoyai.createbigcannons.cannon_control.contraption.AbstractMountedCannonContraption;
 
-@Mixin(CannonUtil.class)
+//@Mixin(CannonUtil.class)
 public abstract class CannonUtilMixin {
-    @Inject(
-            method = "getProjectileGravity",
-            at = @At("HEAD"),
-            cancellable = true
-    )
-
-    private static void shupapium$overrideGravity(AbstractMountedCannonContraption cannon, ServerLevel level, CallbackInfoReturnable<Double> cir) {
-        if (cannon instanceof MountedShupapiumACContraption) {
-            cir.setReturnValue(0.0001);
-        }
-    }
+    // Unused
+//    @Inject(
+//            method = "getProjectileGravity",
+//            at = @At("HEAD"),
+//            cancellable = true
+//    )
+//
+//    private static void shupapium$overrideGravity(AbstractMountedCannonContraption cannon, ServerLevel level, CallbackInfoReturnable<Double> cir) {
+//        if (cannon instanceof MountedShupapiumACContraption) {
+//            cir.setReturnValue(0.0001);
+//        }
+//    }
 }

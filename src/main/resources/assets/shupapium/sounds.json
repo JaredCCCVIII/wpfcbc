@@ -19,5 +19,26 @@
   "entity.daarick_citizen.death": {
     "sounds": ["shupapium:entity/daarick_citizen/death"],
     "subtitle": "subtitle.shupapium.dummy_ragdoll.death"
+  },
+  "entity.metal_ragdoll.ambient": {
+    "sounds": [
+      "shupapium:entity/hdummy_ragdoll/ambient1",
+      "shupapium:entity/hdummy_ragdoll/ambient2",
+      "shupapium:entity/hdummy_ragdoll/ambient3"
+    ],
+    "subtitle": "subtitle.shupapium.dummy_ragdoll.ambient"
+  },
+  "entity.metal_ragdoll.hurt": {
+    "sounds": [
+      "shupapium:entity/hdummy_ragdoll/hurt1",
+      "shupapium:entity/hdummy_ragdoll/hurt2",
+      "shupapium:entity/hdummy_ragdoll/hurt3",
+      "shupapium:entity/hdummy_ragdoll/hurt4"
+    ],
+    "subtitle": "subtitle.shupapium.dummy_ragdoll.hurt"
+  },
+  "entity.metal_ragdoll.death": {
+    "sounds": ["shupapium:entity/hdummy_ragdoll/death"],
+    "subtitle": "subtitle.shupapium.dummy_ragdoll.death"
   }
 }

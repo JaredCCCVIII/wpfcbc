@@ -259,6 +259,12 @@
   "subtitle.shupapium.dummy_ragdoll.hurt": "Muñeco de Prueba adolorido",
   "subtitle.shupapium.dummy_ragdoll.death": "Muñeco de Prueba muriendo",
 
+  "entity.shupapium.heavy_dummy_ragdoll": "Muñeco de Prueba Pesado",
+  "item.shupapium.heavy_dummy_ragdoll_spawn_egg": "Generar Muñeco de Prueba Pesado",
+  "subtitle.shupapium.heavy_dummy_ragdoll.ambient": "Muñeco de Prueba Pesado murmurando",
+  "subtitle.shupapium.heavy_dummy_ragdoll.hurt": "Muñeco de Prueba Pesado adolorido",
+  "subtitle.shupapium.heavy_dummy_ragdoll.death": "Muñeco de Prueba Pesado muriendo",
+
   "itemGroup.shupapium": "CBC: Proyectiles de Warium",
   "block.shupapium.shupapium_ammo_container.tooltip.main_ammo": "Munición: x%1$s %2$s",
   "block.shupapium.shupapium_ammo_container.tooltip.propellants": "Propulsores: x%1$s %2$s",

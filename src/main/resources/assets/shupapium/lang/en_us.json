@@ -270,6 +270,12 @@
   "subtitle.shupapium.dummy_ragdoll.hurt": "Test Dummy in pain",
   "subtitle.shupapium.dummy_ragdoll.death": "Test Dummy dying",
 
+  "entity.shupapium.heavy_dummy_ragdoll": "Heavy Dummy",
+  "item.shupapium.heavy_dummy_ragdoll_spawn_egg": "Heavy Dummy Spawn Egg",
+  "subtitle.shupapium.heavy_dummy_ragdoll.ambient": "Heavy Dummy murmurs",
+  "subtitle.shupapium.heavy_dummy_ragdoll.hurt": "Heavy Dummy in pain",
+  "subtitle.shupapium.heavy_dummy_ragdoll.death": "Heavy Dummy dying",
+
   "itemGroup.shupapium": "CBC: Warium Projectiles",
   "block.shupapium.shupapium_ammo_container.tooltip.main_ammo": "Ammo: x%1$s %2$s",
   "block.shupapium.shupapium_ammo_container.tooltip.propellants": "Propellants: x%1$s %2$s",

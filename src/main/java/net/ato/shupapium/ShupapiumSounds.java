@@ -13,6 +13,9 @@ public class ShupapiumSounds {
     public static final RegistryObject<SoundEvent> DUMMY_AMBIENT = register("entity.daarick_citizen.ambient");
     public static final RegistryObject<SoundEvent> DUMMY_HURT = register("entity.daarick_citizen.hurt");
     public static final RegistryObject<SoundEvent> DUMMY_DEATH = register("entity.daarick_citizen.death");
+    public static final RegistryObject<SoundEvent> METAL_DUMMY_AMBIENT = register("entity.metal_ragdoll.ambient");
+    public static final RegistryObject<SoundEvent> METAL_DUMMY_HURT = register("entity.metal_ragdoll.hurt");
+    public static final RegistryObject<SoundEvent> METAL_DUMMY_DEATH = register("entity.metal_ragdoll.death");
 
     private static RegistryObject<SoundEvent> register(String name) {
         return SOUNDS.register(name, () -> SoundEvent.createVariableRangeEvent(MainShupapium.resource(name)));

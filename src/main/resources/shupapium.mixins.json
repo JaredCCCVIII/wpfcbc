@@ -6,8 +6,7 @@
   "compatibilityLevel": "JAVA_17",
   "client": [],
   "mixins": [
-    "ShupapiumACAccesor",
-    "CannonUtilMixin"
+
   ],
   "injectors": {
     "defaultRequire": 1

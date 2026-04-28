@@ -80,7 +80,7 @@ side="BOTH"
 [[dependencies.${mod_id}]]
 modId="createbigcannons"
 mandatory=true
-versionRange="[5.10.0,)"
+versionRange="[5.11.0,)"
 ordering="NONE"
 side="BOTH"
 [[dependencies.${mod_id}]]
@@ -98,7 +98,7 @@ side="BOTH"
 [[dependencies.${mod_id}]]
 modId="create_radar"
 mandatory=false
-versionRange="[0.3,)"
+versionRange="[0.4,)"
 ordering="NONE"
 side="BOTH"
 # Features are specific properties of the game environment, that you may want to declare you require. This example declares

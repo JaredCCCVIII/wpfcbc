@@ -5,8 +5,9 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Accessor;
 import rbasamoyai.createbigcannons.cannons.autocannon.material.AutocannonMaterial;
 
-@Mixin(MountedShupapiumACContraption.class)
+//@Mixin(MountedShupapiumACContraption.class)
 public interface ShupapiumACAccesor {
-    @Accessor(value = "cannonMaterial", remap = false)
-    AutocannonMaterial getMaterial();
+    // Unused
+//    @Accessor(value = "cannonMaterial", remap = false)
+//    AutocannonMaterial getMaterial();
 }

@@ -14,6 +14,7 @@ public class ClientModEvents {
     @SubscribeEvent
     public static void registerRenderers(final EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(ShupapiumEntities.DUMMY_RAGDOLL_ENTITY.get(), ShupapiumDummyRagdollRenderer::new);
+        event.registerEntityRenderer(ShupapiumEntities.HEAVY_DUMMY_RAGDOLL_ENTITY.get(), ShupapiumDummyRagdollRenderer::new);
         event.registerEntityRenderer(ShupapiumEntities.JOKE_CLOUD_DETECTOR.get(), ThrownItemRenderer::new);
     }
 }

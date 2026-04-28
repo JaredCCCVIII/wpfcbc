@@ -100,6 +100,7 @@ public class ShupapiumGroup {
                     output.accept(ShupapiumBlocks.FLAMETHROWER_GUN_BREECH);
                     output.accept(ShupapiumBlocks.FLAMETHROWER_GUN_RECOIL_SPRING);
                     output.accept(ShupapiumItems.DUMMY_RAGDOLL_SPAWN_EGG.get());
+                    output.accept(ShupapiumItems.HEAVY_DUMMY_RAGDOLL_SPAWN_EGG.get());
                     output.accept(ShupapiumItems.PROPELLANT_ITEM);
                 })
                 .build();
