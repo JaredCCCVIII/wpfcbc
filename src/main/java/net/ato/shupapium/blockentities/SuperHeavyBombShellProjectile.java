@@ -20,6 +20,6 @@ public class SuperHeavyBombShellProjectile extends AbstractShupapiumBCProjectile
 
     @Override
     protected void detonate(Position position) {
-        SuperLargeBombProjectileHitsBlockProcedure.execute(this.level(), position.x(), position.y(), position.z(), this);
+        SuperLargeBombProjectileHitsBlockProcedure.execute(this.level(), this);
     }
 }

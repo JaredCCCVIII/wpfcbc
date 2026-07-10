@@ -350,7 +350,7 @@ public class MountedShupapiumACContraption extends MountedAutocannonContraption 
 
         Vec3 spawnPos = entity.toGlobalVector(Vec3.atCenterOf(currentPos.relative(this.initialOrientation)), 0);
         Vec3 vec1 = spawnPos.subtract(centerPos).normalize();
-        spawnPos = spawnPos.subtract(vec1.scale(1.5));
+        spawnPos = spawnPos.subtract(vec1.scale(2.2));
         Vec3 particlePos = spawnPos;
 
         float recoilMagnitude = properties.baseRecoil();
@@ -367,7 +367,7 @@ public class MountedShupapiumACContraption extends MountedAutocannonContraption 
                 float pitch = (float) Math.asin(vec1.y);
                 yaw += (float) (level.random.nextGaussian() * spread);
                 pitch += (float) (level.random.nextGaussian() * spread);
-                projectile.setPos(spawnPos.x + Mth.nextFloat(level.random, -0.005F, 0.005F), spawnPos.y + Mth.nextFloat(level.random, -0.005F, 0.005F), spawnPos.z + Mth.nextFloat(level.random, -0.005F, 0.005F));
+                projectile.setPos(spawnPos.x, spawnPos.y + Mth.nextFloat(level.random, -0.005F, 0.005F), spawnPos.z);
                 projectile.addTag("shupapiumProjectile");
                 projectile.setOwner(entity.getControllingPassenger());
                 projectile.setBaseDamage(projectileProperties.damage().entityDamage() / 100);

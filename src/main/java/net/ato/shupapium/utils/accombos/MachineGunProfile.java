@@ -7,11 +7,15 @@ import net.ato.shupapium.ShupapiumItems;
 import net.ato.shupapium.utils.actypes.ShupapiumACParts;
 import net.ato.shupapium.utils.actypes.ShupapiumACProfile;
 import net.mcreator.crustychunks.init.CrustyChunksModSounds;
+import net.mcreator.crustychunks.procedures.LargeFireSoundProcedure;
+import net.mcreator.crustychunks.procedures.MGFireScriptProcedure;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.Vec3;
 import rbasamoyai.createbigcannons.cannons.autocannon.material.AutocannonMaterial;
 
 import java.util.List;
@@ -74,5 +78,10 @@ public class MachineGunProfile implements ShupapiumACProfile {
     @Override
     public AutocannonMaterial getMainMaterial() {
         return ShupapiumCBCACMaterials.MACHINE_GUN;
+    }
+
+    @Override
+    public void cannonSoundEvent(Level level, Vec3 pos) {
+        LargeFireSoundProcedure.execute(level, pos.x, pos.y, pos.z);
     }
 }

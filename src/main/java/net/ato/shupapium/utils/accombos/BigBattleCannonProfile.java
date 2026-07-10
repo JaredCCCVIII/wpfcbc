@@ -7,6 +7,7 @@ import net.ato.shupapium.ShupapiumItems;
 import net.ato.shupapium.utils.actypes.ShupapiumACParts;
 import net.ato.shupapium.utils.actypes.ShupapiumACProfile;
 import net.mcreator.crustychunks.init.CrustyChunksModSounds;
+import net.mcreator.crustychunks.procedures.BCFireScriptProcedure;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.resources.ResourceLocation;

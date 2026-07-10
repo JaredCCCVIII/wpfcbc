@@ -20,6 +20,6 @@ public class SARHSeekerShellProjectile extends AbstractShupapiumBCProjectile {
 
     @Override
     protected void detonate(Position position) {
-        ArtilleryHitProcedure.execute(level(), position.x(), position.y(), position.z(), this);
+        ArtilleryHitProcedure.execute(level(), this);
     }
 }

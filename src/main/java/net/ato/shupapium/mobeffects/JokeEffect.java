@@ -3,6 +3,7 @@ package net.ato.shupapium.mobeffects;
 import net.ato.shupapium.MainShupapium;
 import net.ato.shupapium.entities.ShupapiumDummyRagdoll;
 import net.mcreator.crustychunks.procedures.BlockBusterHitProcedure;
+import net.mcreator.crustychunks.procedures.ExplosionExampleProcedure;
 import net.mcreator.crustychunks.procedures.ExplosiveBarrelTriggerProcedure;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
@@ -45,7 +46,7 @@ public class JokeEffect extends MobEffect {
             pLivingEntity.level().playSound(null, pLivingEntity.blockPosition(), SoundEvents.CHICKEN_AMBIENT, SoundSource.NEUTRAL, 1.0F, pitch);
 
             if (!pLivingEntity.isAlive()) {
-                BlockBusterHitProcedure.execute(pLivingEntity.level(), pLivingEntity.getX(), pLivingEntity.getY(), pLivingEntity.getZ(), pLivingEntity);
+                BlockBusterHitProcedure.execute(pLivingEntity.level(), pLivingEntity);
             } else {
                 if (pLivingEntity.hurtTime > 0) {
                     randomTeleport(pLivingEntity.level(), pLivingEntity.getLastAttacker());
@@ -79,10 +80,10 @@ public class JokeEffect extends MobEffect {
                     MainShupapium.LOGGER.info("{} saved from the chistosada!", pLivingEntity.getName());
                     playa.getPersistentData().remove("ChistosadaCure");
                 } else {
-                    ExplosiveBarrelTriggerProcedure.execute(pLivingEntity.level(), pLivingEntity.getX(), pLivingEntity.getY(), pLivingEntity.getZ());
+                    ExplosionExampleProcedure.execute(pLivingEntity.level(), pLivingEntity.getX(), pLivingEntity.getY(), pLivingEntity.getZ(), 5.0F);
                 }
             } else {
-                ExplosiveBarrelTriggerProcedure.execute(pLivingEntity.level(), pLivingEntity.getX(), pLivingEntity.getY(), pLivingEntity.getZ());
+                ExplosionExampleProcedure.execute(pLivingEntity.level(), pLivingEntity.getX(), pLivingEntity.getY(), pLivingEntity.getZ(), 5.0F);
             }
         }
     }

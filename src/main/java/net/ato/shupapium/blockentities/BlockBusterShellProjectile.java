@@ -20,6 +20,6 @@ public class BlockBusterShellProjectile extends AbstractShupapiumBCProjectile {
 
     @Override
     protected void detonate(Position position) {
-        BlockBusterHitProcedure.execute(this.level(), position.x(), position.y(), position.z(), this);
+        BlockBusterHitProcedure.execute(this.level(), this);
     }
 }

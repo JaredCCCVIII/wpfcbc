@@ -28,6 +28,6 @@ public class IRSeekerMissileShellProjectile extends AbstractShupapiumBCProjectil
 
     @Override
     protected void detonate(Position position) {
-        ArtilleryHitProcedure.execute(level(), this.getX(), this.getY(), this.getZ(), this);
+        ArtilleryHitProcedure.execute(level(), this);
     }
 }

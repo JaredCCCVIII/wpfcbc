@@ -7,6 +7,7 @@ import net.ato.shupapium.ShupapiumItems;
 import net.ato.shupapium.utils.actypes.ShupapiumACParts;
 import net.ato.shupapium.utils.actypes.ShupapiumACProfile;
 import net.mcreator.crustychunks.init.CrustyChunksModSounds;
+import net.mcreator.crustychunks.procedures.MiniGunFireSoundProcedure;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.resources.ResourceLocation;
@@ -81,12 +82,6 @@ public class MinigunGunProfile implements ShupapiumACProfile {
 
     @Override
     public void cannonSoundEvent(Level level, Vec3 pos) {
-        SoundEvent rSnd;
-        if (level.random.nextBoolean()) {
-            rSnd = getFireSound();
-        } else {
-            rSnd = CrustyChunksModSounds.RAC.get();
-        }
-        level.playSound(null, pos.x, pos.y, pos.z, rSnd, SoundSource.BLOCKS, Mth.nextFloat(level.random, 10.0F, 12.0F), Mth.nextFloat(level.random, 0.75F, 1.1F));
+        MiniGunFireSoundProcedure.execute(level, pos.x, pos.y, pos.z);
     }
 }
