@@ -350,7 +350,7 @@ public class MountedShupapiumACContraption extends MountedAutocannonContraption 
 
         Vec3 spawnPos = entity.toGlobalVector(Vec3.atCenterOf(currentPos.relative(this.initialOrientation)), 0);
         Vec3 vec1 = spawnPos.subtract(centerPos).normalize();
-        spawnPos = spawnPos.subtract(vec1.scale(2.2));
+        spawnPos = spawnPos.subtract(vec1.scale(1.0));
         Vec3 particlePos = spawnPos;
 
         float recoilMagnitude = properties.baseRecoil();
