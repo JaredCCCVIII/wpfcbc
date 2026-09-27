@@ -40,7 +40,39 @@ repositories {
             includeGroup("com.rbasamoyai") // THIS IS IMPORTANT
         }
     }
+    maven { url = "https://maven.theillusivec4.top/" } // Curios
     maven { url = "https://maven.ryanhcode.dev/releases" } // Sable
+    maven {
+        name = 'GeckoLib'
+        url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+        content {
+            includeGroup("software.bernie.geckolib")
+        }
+    }
+
+    exclusiveContent {
+        forRepository {
+            maven {
+                url "https://cursemaven.com"
+            }
+        }
+        filter {
+            includeGroup "curse.maven"
+        }
+    }
+
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Modrinth"
+                url = "https://api.modrinth.com/maven"
+            }
+        }
+        filter {
+            includeGroup "maven.modrinth"
+        }
+    }
+
     flatDir {
         dir 'libs'
     }
@@ -140,15 +172,36 @@ dependencies {
     // compileOnly "mezz.jei:jei-${mc_version}-neoforge-api:${jei_version}"
     // We add the full version to localRuntime, not runtimeOnly, so that we do not publish a dependency on it
 
+    // Create
     implementation("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
     implementation("net.createmod.ponder:ponder-neoforge:${ponder_version}+mc${minecraft_version}")
     compileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}")
     runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}")
     implementation("com.tterrag.registrate:Registrate:${registrate_version}")
+
+    // Geckolib
+    implementation "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
+
+    // Big Cannons
     implementation("com.rbasamoyai:ritchiesprojectilelib:${rpl_version}+mc.${minecraft_version}-neoforge-build.${rpl_build_number}") { transitive = false }
     implementation("com.rbasamoyai:createbigcannons:${cbc_version}") { transitive = false}
-    api("dev.ryanhcode.sable:sable-neoforge-${minecraft_version}:${sable_version}")
 
+    // Curios
+    localRuntime("top.theillusivec4.curios:curios-neoforge:${curios_version}+${minecraft_version}")
+    compileOnly("top.theillusivec4.curios:curios-neoforge:${curios_version}+${minecraft_version}:api")
+
+    // Sable + Simulated
+    api("dev.ryanhcode.sable:sable-neoforge-${minecraft_version}:${sable_version}")
+    implementation("dev.simulated_team.simulated:simulated-neoforge-${minecraft_version}:${simulated_version}") {
+        exclude(group: "cc.tweaked", module: "cc-tweaked-1.21.1-forge")
+    }
+    implementation("dev.eriksonn.aeronautics:aeronautics-neoforge-${minecraft_version}:${simulated_version}") {
+        exclude(group: "cc.tweaked", module: "cc-tweaked-1.21.1-forge")
+    }
+    implementation("dev.ryanhcode.offroad:offroad-neoforge-${minecraft_version}:${simulated_version}") {
+        exclude(group: "cc.tweaked", module: "cc-tweaked-1.21.1-forge")
+    }
+    // Misc
     localRuntime "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
