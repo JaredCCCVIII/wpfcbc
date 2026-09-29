@@ -1,0 +1,9 @@
+{
+  "parent": "shupapium:block/projectile_fullblock_fuze_head",
+  "textures": {
+    "bottom": "shupapium:block/projectile/barrel_shell_bottom",
+    "particle": "shupapium:block/projectile/barrel_shell_top",
+    "side": "shupapium:block/projectile/barrel_shell",
+    "top": "shupapium:block/projectile/barrel_shell_top"
+  }
+}

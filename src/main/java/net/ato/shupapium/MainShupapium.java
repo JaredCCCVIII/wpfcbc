@@ -48,7 +48,10 @@ public class MainShupapium {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
         ShupapiumSounds.register(modEventBus);
+        ShupapiumBlockEntities.register();
+        ShupapiumEntities.register();
         ShupapiumEntities.register(modEventBus);
+        ShupapiumBlocks.register();
         ShupapiumItems.register(modEventBus);
         ShupapiumGroup.register(modEventBus);
         ShupapiumMobEffects.register(modEventBus);

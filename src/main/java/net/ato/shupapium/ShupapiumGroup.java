@@ -25,6 +25,10 @@ public class ShupapiumGroup {
                 .title(Component.translatable("itemGroup.shupapium"))
                 .icon(Blocks.REDSTONE_BLOCK.asItem()::getDefaultInstance)
                 .displayItems((itemDisplayParameters, output) -> {
+                    output.accept(ShupapiumBlocks.SMOKE_BOMB_SHELL_BLOCK);
+                    output.accept(ShupapiumBlocks.BARREL_SHELL_BLOCK);
+                    output.accept(ShupapiumBlocks.TOXIC_BOMB_SHELL_BLOCK);
+                    output.accept(ShupapiumBlocks.SMALL_BOMB_SHELL_BLOCK);
                     output.accept(ShupapiumItems.DUMMY_RAGDOLL_SPAWN_EGG.value());
                     output.accept(ShupapiumItems.HEAVY_DUMMY_RAGDOLL_SPAWN_EGG.value());
                 })
@@ -41,8 +45,8 @@ public class ShupapiumGroup {
         return CreativeModeTab.builder().withTabsBefore(Create.asResource("palettes"));
     }
 
-    public static void useModTab(ResourceKey<CreativeModeTab> key) {
-        MainShupapium.REGISTRATE.setCreativeTab(TABS.get(key));
+    public static void setDefaultTabToNull() {
+        MainShupapium.REGISTRATE.defaultCreativeTab((ResourceKey<CreativeModeTab>) null);
     }
 
     public static ResourceKey<CreativeModeTab> makeKey(String id) {
