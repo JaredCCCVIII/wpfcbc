@@ -73,6 +73,48 @@ public class ShupapiumEntities {
             "Heavy Bomb Shell",
             CBCMunitionPropertiesHandlers.COMMON_SHELL_BIG_CANNON_PROJECTILE
     );
+    public static final EntityEntry<FireBombBCProjectile> FIRE_BOMB_SHELL_PROJECTILE = cannonProjectile(
+            "fire_bomb_shell_projectile",
+            FireBombBCProjectile::new,
+            "Fire Bomb Shell",
+            CBCMunitionPropertiesHandlers.COMMON_SHELL_BIG_CANNON_PROJECTILE
+    );
+    public static final EntityEntry<SuperHeavyBombBCProjectile> SUPER_HEAVY_BOMB_SHELL_PROJECTILE = cannonProjectile(
+            "super_heavy_bomb_shell_projectile",
+            SuperHeavyBombBCProjectile::new,
+            "Super Heavy Bomb Shell",
+            CBCMunitionPropertiesHandlers.COMMON_SHELL_BIG_CANNON_PROJECTILE
+    );
+    public static final EntityEntry<BlockBusterBCProjectile> BLOCK_BUSTER_SHELL_PROJECTILE = cannonProjectile(
+            "block_buster_shell_projectile",
+            BlockBusterBCProjectile::new,
+            "Block Buster Shell",
+            CBCMunitionPropertiesHandlers.COMMON_SHELL_BIG_CANNON_PROJECTILE
+    );
+    public static final EntityEntry<KineticBombBCProjectile> KINETIC_BOMB_SHELL_PROJECTILE = cannonProjectile(
+            "kinetic_bomb_shell_projectile",
+            KineticBombBCProjectile::new,
+            "Kinetic Bomb Shell",
+            CBCMunitionPropertiesHandlers.COMMON_SHELL_BIG_CANNON_PROJECTILE
+    );
+    public static final EntityEntry<ClusterBombBCProjectile> CLUSTER_BOMB_SHELL_PROJECTILE = cannonProjectile(
+            "cluster_bomb_shell_projectile",
+            ClusterBombBCProjectile::new,
+            "Cluster Bomb Shell",
+            CBCMunitionPropertiesHandlers.COMMON_SHELL_BIG_CANNON_PROJECTILE
+    );
+    public static final EntityEntry<FissionBombBCProjectile> FISSION_BOMB_SHELL_PROJECTILE = cannonProjectile(
+            "fission_bomb_shell_projectile",
+            FissionBombBCProjectile::new,
+            "Fission Bomb Shell",
+            CBCMunitionPropertiesHandlers.COMMON_SHELL_BIG_CANNON_PROJECTILE
+    );
+    public static final EntityEntry<FusionBombBCProjectile> FUSION_BOMB_SHELL_PROJECTILE = cannonProjectile(
+            "fusion_bomb_shell_projectile",
+            FusionBombBCProjectile::new,
+            "Fusion Bomb Shell",
+            CBCMunitionPropertiesHandlers.COMMON_SHELL_BIG_CANNON_PROJECTILE
+    );
 
     // Auxiliary Functions
     private static <T extends AbstractBigCannonProjectile> EntityEntry<T> cannonProjectile(String id, EntityType.EntityFactory<T> factory, PropertiesTypeHandler<EntityType<?>, ?> handler) {

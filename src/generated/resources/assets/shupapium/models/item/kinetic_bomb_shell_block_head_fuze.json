@@ -1,0 +1,9 @@
+{
+  "parent": "createbigcannons:block/projectile_block_fuze_head",
+  "textures": {
+    "bottom": "shupapium:block/projectile/kinetic_bomb_shell_bottom",
+    "particle": "shupapium:block/projectile/kinetic_bomb_shell_top",
+    "side": "shupapium:block/projectile/kinetic_bomb_shell",
+    "top": "shupapium:block/projectile/kinetic_bomb_shell_top"
+  }
+}

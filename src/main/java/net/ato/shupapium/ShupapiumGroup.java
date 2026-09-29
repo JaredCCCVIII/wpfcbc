@@ -5,7 +5,6 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.level.block.Blocks;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -20,10 +19,10 @@ public class ShupapiumGroup {
     private static Map<ResourceKey<CreativeModeTab>, DeferredHolder<CreativeModeTab, CreativeModeTab>> TABS = new HashMap<>();
 
     public static final Supplier<CreativeModeTab> GROUP = wrapGroup("shells", () -> {
-        Blocks.REDSTONE_BLOCK.asItem();
+        ShupapiumBlocks.FISSION_BOMB_SHELL_BLOCK.asItem();
         return createBuilder()
                 .title(Component.translatable("itemGroup.shupapium"))
-                .icon(Blocks.REDSTONE_BLOCK.asItem()::getDefaultInstance)
+                .icon(ShupapiumBlocks.FISSION_BOMB_SHELL_BLOCK::asStack)
                 .displayItems((itemDisplayParameters, output) -> {
                     output.accept(ShupapiumBlocks.SMOKE_BOMB_SHELL_BLOCK);
                     output.accept(ShupapiumBlocks.BARREL_SHELL_BLOCK);
@@ -32,6 +31,13 @@ public class ShupapiumGroup {
                     output.accept(ShupapiumBlocks.SMALL_BOMB_CLUSTER_SHELL_BLOCK);
                     output.accept(ShupapiumBlocks.MEDIUM_BOMB_SHELL_BLOCK);
                     output.accept(ShupapiumBlocks.HEAVY_BOMB_SHELL_BLOCK);
+                    output.accept(ShupapiumBlocks.FIRE_BOMB_SHELL_BLOCK);
+                    output.accept(ShupapiumBlocks.SUPER_HEAVY_BOMB_SHELL_BLOCK);
+                    output.accept(ShupapiumBlocks.BLOCK_BUSTER_BOMB_SHELL_BLOCK);
+                    output.accept(ShupapiumBlocks.KINETIC_BOMB_SHELL_BLOCK);
+                    output.accept(ShupapiumBlocks.CLUSTER_BOMB_SHELL_BLOCK);
+                    output.accept(ShupapiumBlocks.FISSION_BOMB_SHELL_BLOCK);
+                    output.accept(ShupapiumBlocks.FUSION_BOMB_SHELL_BLOCK);
                     output.accept(ShupapiumItems.DUMMY_RAGDOLL_SPAWN_EGG.value());
                     output.accept(ShupapiumItems.HEAVY_DUMMY_RAGDOLL_SPAWN_EGG.value());
                 })

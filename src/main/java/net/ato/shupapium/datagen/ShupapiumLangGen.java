@@ -59,6 +59,34 @@ public class ShupapiumLangGen {
                 .header("Show info")
                 .summary("Try to upgrade it!")
                 .conditionAndBehavior("On Detonation", "The first level of ordinance destroys a large area and drops debris.");
+        tooltip(ShupapiumBlocks.FIRE_BOMB_SHELL_BLOCK)
+                .header("Show info")
+                .summary("Forged with cursed fire...")
+                .conditionAndBehavior("On Detonation", "The red ordinance destroys a medium area and drops fire around.");
+        tooltip(ShupapiumBlocks.SUPER_HEAVY_BOMB_SHELL_BLOCK)
+                .header("Show info")
+                .summary("Try to upgrade it again.")
+                .conditionAndBehavior("On Detonation", "The second level of ordinance destroys a big area and drops debris.");
+        tooltip(ShupapiumBlocks.BLOCK_BUSTER_BOMB_SHELL_BLOCK)
+                .header("Show info")
+                .summary("Not so strong as the fission one.")
+                .conditionAndBehavior("On Detonation", "The last level of ordinance destroys a grand area and drops debris.");
+        tooltip(ShupapiumBlocks.KINETIC_BOMB_SHELL_BLOCK)
+                .header("Show info")
+                .summary("Sharp head!")
+                .conditionAndBehavior("On Detonation", "The kinetic ordinance make a small hole when impact and after a few while explodes, dropping debris around the impact zone.");
+        tooltip(ShupapiumBlocks.CLUSTER_BOMB_SHELL_BLOCK)
+                .header("Show info")
+                .summary("They are spamming us with shells!")
+                .conditionAndBehavior("On Firing", "The cluster ordinance drops explosive pieces to deal various damage near the impact zone.");
+        tooltip(ShupapiumBlocks.FISSION_BOMB_SHELL_BLOCK)
+                .header("Show info")
+                .summary("Not so strong as the fusion one.")
+                .conditionAndBehavior("On Detonation", "Unleashes a powerful nuclear blast and creates a mushroom of radioactive gas.");
+        tooltip(ShupapiumBlocks.FUSION_BOMB_SHELL_BLOCK)
+                .header("Show info")
+                .summary("I'm become death, the destroyers of worlds.")
+                .conditionAndBehavior("On Detonation", "Unleashes a powerful nuclear blast and evaporates everything.");
     }
 
     private static class TooltipBuilder {

@@ -1,4 +1,25 @@
 package net.ato.shupapium.entities;
 
-public class KineticBombBCProjectile {
+import com.tterrag.registrate.util.entry.BlockEntry;
+import com.wariumce.procedures.BunkerBusterHitBlockProcedure;
+import net.ato.shupapium.ShupapiumBlocks;
+import net.minecraft.core.Position;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.level.Level;
+import rbasamoyai.createbigcannons.munitions.big_cannon.FuzedBigCannonProjectile;
+
+public class KineticBombBCProjectile extends AbstractShupapiumBCProjectile {
+    public KineticBombBCProjectile(EntityType<? extends FuzedBigCannonProjectile> type, Level level) {
+        super(type, level);
+    }
+
+    @Override
+    public BlockEntry<?> getBlock() {
+        return ShupapiumBlocks.KINETIC_BOMB_SHELL_BLOCK;
+    }
+
+    @Override
+    protected void detonate(Position position) {
+        BunkerBusterHitBlockProcedure.execute(this.level(), position.x(), position.y(), position.z(), this);
+    }
 }

@@ -17,7 +17,14 @@ public class ShupapiumBlockEntities {
                     ShupapiumBlocks.SMALL_BOMB_SHELL_BLOCK,
                     ShupapiumBlocks.SMALL_BOMB_CLUSTER_SHELL_BLOCK,
                     ShupapiumBlocks.MEDIUM_BOMB_SHELL_BLOCK,
-                    ShupapiumBlocks.HEAVY_BOMB_SHELL_BLOCK)
+                    ShupapiumBlocks.HEAVY_BOMB_SHELL_BLOCK,
+                    ShupapiumBlocks.FIRE_BOMB_SHELL_BLOCK,
+                    ShupapiumBlocks.SUPER_HEAVY_BOMB_SHELL_BLOCK,
+                    ShupapiumBlocks.BLOCK_BUSTER_BOMB_SHELL_BLOCK,
+                    ShupapiumBlocks.KINETIC_BOMB_SHELL_BLOCK,
+                    ShupapiumBlocks.CLUSTER_BOMB_SHELL_BLOCK,
+                    ShupapiumBlocks.FISSION_BOMB_SHELL_BLOCK,
+                    ShupapiumBlocks.FUSION_BOMB_SHELL_BLOCK)
             .register();
 
     public static void register() {}
