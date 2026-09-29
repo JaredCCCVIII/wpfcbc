@@ -10,7 +10,14 @@ public class ShupapiumBlockEntities {
             .blockEntity("shupaped_fuzed_block", ShupapiumFuzedBlockEntity::new)
             .visual(() -> FuzedBlockVisual::new)
             .renderer(() -> FuzedBlockEntityRenderer::new)
-            .validBlocks(ShupapiumBlocks.SMOKE_BOMB_SHELL_BLOCK, ShupapiumBlocks.BARREL_SHELL_BLOCK, ShupapiumBlocks.TOXIC_BOMB_SHELL_BLOCK, ShupapiumBlocks.SMALL_BOMB_SHELL_BLOCK)
+            .validBlocks(
+                    ShupapiumBlocks.SMOKE_BOMB_SHELL_BLOCK,
+                    ShupapiumBlocks.BARREL_SHELL_BLOCK,
+                    ShupapiumBlocks.TOXIC_BOMB_SHELL_BLOCK,
+                    ShupapiumBlocks.SMALL_BOMB_SHELL_BLOCK,
+                    ShupapiumBlocks.SMALL_BOMB_CLUSTER_SHELL_BLOCK,
+                    ShupapiumBlocks.MEDIUM_BOMB_SHELL_BLOCK,
+                    ShupapiumBlocks.HEAVY_BOMB_SHELL_BLOCK)
             .register();
 
     public static void register() {}

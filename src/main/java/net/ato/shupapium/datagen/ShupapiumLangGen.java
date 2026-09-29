@@ -8,7 +8,6 @@ import net.ato.shupapium.ShupapiumBlocks;
 import net.ato.shupapium.ShupapiumEntities;
 import net.ato.shupapium.ShupapiumItems;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.TagKey;
 
 import java.util.Objects;
 
@@ -29,16 +28,17 @@ public class ShupapiumLangGen {
         MainShupapium.REGISTRATE.addRawLang("subtitle." + MainShupapium.MOD_ID + "." + HEAVY_DUMMY_RAGDOLL_NAME + ".ambient", "Test Dummy murmurs");
         MainShupapium.REGISTRATE.addRawLang("subtitle." + MainShupapium.MOD_ID + "." + HEAVY_DUMMY_RAGDOLL_NAME + ".hurt", "Test Dummy in pain");
         MainShupapium.REGISTRATE.addRawLang("subtitle." + MainShupapium.MOD_ID + "." + HEAVY_DUMMY_RAGDOLL_NAME + ".death", "Test Dummy dying");
+        MainShupapium.REGISTRATE.addRawLang("effect." + MainShupapium.MOD_ID + ".joke_effect", "Chistosada");
 
         // Shells
         tooltip(ShupapiumBlocks.SMOKE_BOMB_SHELL_BLOCK)
                 .header("Show info")
                 .summary("Common Smoke Projectile.")
-                .conditionAndBehavior("On Detonation", "Drops a smoke cloud on impact");
+                .conditionAndBehavior("On Detonation", "Drops a smoke cloud on impact.");
         tooltip(ShupapiumBlocks.BARREL_SHELL_BLOCK)
                 .header("Show info")
                 .summary("Throwable barrel...")
-                .conditionAndBehavior("On Detonation", "Explodes on impact");
+                .conditionAndBehavior("On Detonation", "Explodes on impact.");
         tooltip(ShupapiumBlocks.TOXIC_BOMB_SHELL_BLOCK)
                 .header("Show info")
                 .summary("Smells like rotten eggs.")
@@ -47,6 +47,18 @@ public class ShupapiumLangGen {
                 .header("Show info")
                 .summary("Stronger than a common autocannon projectile.")
                 .conditionAndBehavior("On Detonation", "Destroys a small area and drops debris.");
+        tooltip(ShupapiumBlocks.SMALL_BOMB_CLUSTER_SHELL_BLOCK)
+                .header("Show info")
+                .summary("Cluster little brother.")
+                .conditionAndBehavior("On Firing", "Drops multiple small bombs in a small area.");
+        tooltip(ShupapiumBlocks.MEDIUM_BOMB_SHELL_BLOCK)
+                .header("Show info")
+                .summary("A good upgrade from the artillery ammo.")
+                .conditionAndBehavior("On Detonation", "Destroys a medium area and drop debris.");
+        tooltip(ShupapiumBlocks.HEAVY_BOMB_SHELL_BLOCK)
+                .header("Show info")
+                .summary("Try to upgrade it!")
+                .conditionAndBehavior("On Detonation", "The first level of ordinance destroys a large area and drops debris.");
     }
 
     private static class TooltipBuilder {

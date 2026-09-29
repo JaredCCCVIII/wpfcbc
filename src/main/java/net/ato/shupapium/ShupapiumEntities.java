@@ -11,6 +11,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import rbasamoyai.createbigcannons.index.CBCMunitionPropertiesHandlers;
 import rbasamoyai.createbigcannons.multiloader.EntityTypeConfigurator;
+import rbasamoyai.createbigcannons.munitions.big_cannon.AbstractBigCannonProjectile;
 import rbasamoyai.createbigcannons.munitions.big_cannon.BigCannonProjectileRenderer;
 import rbasamoyai.createbigcannons.munitions.config.MunitionPropertiesHandler;
 import rbasamoyai.createbigcannons.munitions.config.PropertiesTypeHandler;
@@ -54,9 +55,27 @@ public class ShupapiumEntities {
             "Small Bomb Shell",
             CBCMunitionPropertiesHandlers.COMMON_SHELL_BIG_CANNON_PROJECTILE
     );
+    public static final EntityEntry<SmallBombClusterBCProjectile> SMALL_BOMB_CLUSTER_SHELL_PROJECTILE = cannonProjectile(
+            "small_bomb_cluster_shell_projectile",
+            SmallBombClusterBCProjectile::new,
+            "Small Bomb Cluster Shell",
+            CBCMunitionPropertiesHandlers.COMMON_SHELL_BIG_CANNON_PROJECTILE
+    );
+    public static final EntityEntry<MediumBombBCProjectile> MEDIUM_BOMB_SHELL_PROJECTILE = cannonProjectile(
+            "medium_bomb_shell_projectile",
+            MediumBombBCProjectile::new,
+            "Medium Bomb Shell",
+            CBCMunitionPropertiesHandlers.COMMON_SHELL_BIG_CANNON_PROJECTILE
+    );
+    public static final EntityEntry<HeavyBombBCProjectile> HEAVY_BOMB_SHELL_PROJECTILE = cannonProjectile(
+            "heavy_bomb_shell_projectile",
+            HeavyBombBCProjectile::new,
+            "Heavy Bomb Shell",
+            CBCMunitionPropertiesHandlers.COMMON_SHELL_BIG_CANNON_PROJECTILE
+    );
 
     // Auxiliary Functions
-    private static <T extends AbstractShupapiumBCProjectile> EntityEntry<T> cannonProjectile(String id, EntityType.EntityFactory<T> factory, PropertiesTypeHandler<EntityType<?>, ?> handler) {
+    private static <T extends AbstractBigCannonProjectile> EntityEntry<T> cannonProjectile(String id, EntityType.EntityFactory<T> factory, PropertiesTypeHandler<EntityType<?>, ?> handler) {
         return MainShupapium.REGISTRATE
                 .entity(id, factory, MobCategory.MISC)
                 .properties(cannonProperties())
@@ -65,7 +84,7 @@ public class ShupapiumEntities {
                 .onRegister(type -> MunitionPropertiesHandler.registerProjectileHandler(type, handler))
                 .register();
     }
-    private static <T extends AbstractShupapiumBCProjectile> EntityEntry<T> cannonProjectile(String id, EntityType.EntityFactory<T> factory, String enUSDiffLang, PropertiesTypeHandler<EntityType<?>, ?> handler) {
+    private static <T extends AbstractBigCannonProjectile> EntityEntry<T> cannonProjectile(String id, EntityType.EntityFactory<T> factory, String enUSDiffLang, PropertiesTypeHandler<EntityType<?>, ?> handler) {
         return MainShupapium.REGISTRATE
                 .entity(id, factory, MobCategory.MISC)
                 .properties(cannonProperties())

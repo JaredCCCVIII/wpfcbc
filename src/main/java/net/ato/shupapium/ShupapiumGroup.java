@@ -29,6 +29,9 @@ public class ShupapiumGroup {
                     output.accept(ShupapiumBlocks.BARREL_SHELL_BLOCK);
                     output.accept(ShupapiumBlocks.TOXIC_BOMB_SHELL_BLOCK);
                     output.accept(ShupapiumBlocks.SMALL_BOMB_SHELL_BLOCK);
+                    output.accept(ShupapiumBlocks.SMALL_BOMB_CLUSTER_SHELL_BLOCK);
+                    output.accept(ShupapiumBlocks.MEDIUM_BOMB_SHELL_BLOCK);
+                    output.accept(ShupapiumBlocks.HEAVY_BOMB_SHELL_BLOCK);
                     output.accept(ShupapiumItems.DUMMY_RAGDOLL_SPAWN_EGG.value());
                     output.accept(ShupapiumItems.HEAVY_DUMMY_RAGDOLL_SPAWN_EGG.value());
                 })

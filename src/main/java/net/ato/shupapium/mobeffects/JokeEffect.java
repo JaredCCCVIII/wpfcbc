@@ -1,5 +1,7 @@
 package net.ato.shupapium.mobeffects;
 
+import com.wariumce.procedures.BlockBusterHitProcedure;
+import com.wariumce.procedures.GasolineExplosionProcedure;
 import net.ato.shupapium.MainShupapium;
 import net.ato.shupapium.ShupapiumMobEffects;
 import net.ato.shupapium.entities.ShupapiumDummyRagdoll;
@@ -40,8 +42,7 @@ public class JokeEffect extends MobEffect {
             livingEntity.level().playSound(null, livingEntity.blockPosition(), SoundEvents.CHICKEN_AMBIENT, SoundSource.NEUTRAL, 1.0F, pitch);
 
             if (!livingEntity.isAlive()) {
-                livingEntity.level().explode(livingEntity, livingEntity.getX(), livingEntity.getY(), livingEntity.getZ(), 9, false, Level.ExplosionInteraction.MOB);
-                //BlockBusterHitProcedure.execute(pLivingEntity.level(), pLivingEntity);
+                BlockBusterHitProcedure.execute(livingEntity.level(), livingEntity.getX(), livingEntity.getY(), livingEntity.getZ(), livingEntity);
                 return false;
             } else {
                 if (livingEntity.hurtTime > 0) {
@@ -73,7 +74,7 @@ public class JokeEffect extends MobEffect {
             if (isExternalRemove) {
                 MainShupapium.LOGGER.info("{} saved from the chistosada!", livingEntity.getName());
             } else {
-                //ExplosionExampleProcedure.execute(pLivingEntity.level(), pLivingEntity.getX(), pLivingEntity.getY(), pLivingEntity.getZ(), 5.0F);
+                GasolineExplosionProcedure.execute(livingEntity.level(), livingEntity.getX(), livingEntity.getY(), livingEntity.getZ());
                 livingEntity.level().explode(livingEntity, livingEntity.getX(), livingEntity.getY(), livingEntity.getZ(), 5, false, Level.ExplosionInteraction.MOB);
             }
         }

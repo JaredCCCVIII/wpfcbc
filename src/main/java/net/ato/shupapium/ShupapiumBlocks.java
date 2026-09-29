@@ -4,10 +4,7 @@ import com.simibubi.create.foundation.item.ItemDescription;
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
-import net.ato.shupapium.blocks.BarrelBCShellBlock;
-import net.ato.shupapium.blocks.SmallBombBCShellBlock;
-import net.ato.shupapium.blocks.SmokeBombBCShellBlock;
-import net.ato.shupapium.blocks.ToxicBombBCShellBlock;
+import net.ato.shupapium.blocks.*;
 import net.ato.shupapium.datagen.ShupapiumBuilderTransformers;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.registries.Registries;
@@ -72,6 +69,42 @@ public class ShupapiumBlocks {
             .lang("Small Bomb Shell")
             .item(FuzedProjectileBlockItem::new)
             .transform(ShupapiumBuilderTransformers.fuzedProjectileItem("projectile/small_bomb_shell"))
+            .tag(CBCTags.CBCItemTags.BIG_CANNON_PROJECTILES)
+            .build()
+            .register();
+    public static final BlockEntry<SmallBombClusterBCShellBlock> SMALL_BOMB_CLUSTER_SHELL_BLOCK = MainShupapium.REGISTRATE
+            .block("small_bomb_cluster_shell_block", SmallBombClusterBCShellBlock::new)
+            .transform(shell(MapColor.COLOR_LIGHT_GREEN, SoundType.COPPER))
+            .transform(axeOrPickaxe())
+            .transform(ShupapiumBuilderTransformers.projectile("projectile/small_bomb_cluster_shell"))
+            .loot(CBCBuilderTransformers.shellLoot())
+            .lang("Small Bomb Cluster Shell")
+            .item(FuzedProjectileBlockItem::new)
+            .transform(ShupapiumBuilderTransformers.fuzedProjectileItem("projectile/small_bomb_cluster_shell"))
+            .tag(CBCTags.CBCItemTags.BIG_CANNON_PROJECTILES)
+            .build()
+            .register();
+    public static final BlockEntry<MediumBombBCShellBlock> MEDIUM_BOMB_SHELL_BLOCK = MainShupapium.REGISTRATE
+            .block("medium_bomb_shell_block", MediumBombBCShellBlock::new)
+            .transform(shell(MapColor.COLOR_LIGHT_GREEN, SoundType.METAL))
+            .transform(axeOrPickaxe())
+            .transform(ShupapiumBuilderTransformers.projectile("projectile/medium_bomb_shell"))
+            .loot(CBCBuilderTransformers.shellLoot())
+            .lang("Medium Bomb Shell")
+            .item(FuzedProjectileBlockItem::new)
+            .transform(ShupapiumBuilderTransformers.fuzedProjectileItem("projectile/medium_bomb_shell"))
+            .tag(CBCTags.CBCItemTags.BIG_CANNON_PROJECTILES)
+            .build()
+            .register();
+    public static final BlockEntry<HeavyBombBCShellBlock> HEAVY_BOMB_SHELL_BLOCK = MainShupapium.REGISTRATE
+            .block("heavy_bomb_shell_block", HeavyBombBCShellBlock::new)
+            .transform(shell(MapColor.COLOR_GREEN, SoundType.ANVIL))
+            .transform(axeOrPickaxe())
+            .transform(ShupapiumBuilderTransformers.projectile("projectile/heavy_bomb_shell"))
+            .loot(CBCBuilderTransformers.shellLoot())
+            .lang("Heavy Bomb Shell")
+            .item(FuzedProjectileBlockItem::new)
+            .transform(ShupapiumBuilderTransformers.fuzedProjectileItem("projectile/heavy_bomb_shell"))
             .tag(CBCTags.CBCItemTags.BIG_CANNON_PROJECTILES)
             .build()
             .register();

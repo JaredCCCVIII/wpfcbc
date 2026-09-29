@@ -3,6 +3,9 @@
     "shupapium:smoke_bomb_shell_block",
     "shupapium:barrel_shell_block",
     "shupapium:toxic_bomb_shell_block",
-    "shupapium:small_bomb_shell_block"
+    "shupapium:small_bomb_shell_block",
+    "shupapium:small_bomb_cluster_shell_block",
+    "shupapium:medium_bomb_shell_block",
+    "shupapium:heavy_bomb_shell_block"
   ]
 }
