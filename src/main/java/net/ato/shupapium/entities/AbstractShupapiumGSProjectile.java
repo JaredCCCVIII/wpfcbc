@@ -10,14 +10,20 @@ import rbasamoyai.createbigcannons.munitions.big_cannon.AbstractBigCannonProject
 import rbasamoyai.createbigcannons.munitions.big_cannon.FuzedBigCannonProjectile;
 
 public abstract class AbstractShupapiumGSProjectile extends AbstractShupapiumBCProjectile {
+    private ItemStack clusterFuze = ItemStack.EMPTY;
     public AbstractShupapiumGSProjectile(EntityType<? extends FuzedBigCannonProjectile> type, Level level) {
         super(type, level);
     }
 
     public abstract EntityType<? extends AbstractBigCannonProjectile> getClusterEntity();
-    protected abstract ItemStack getClusterFuze(); // Can be empty for not fuzed projectiles
     protected abstract int burstProjectileCount();
     protected abstract double burstProjectileSpread();
+
+    @Override
+    public void setFuze(ItemStack stack) {
+        super.setFuze(stack);
+        this.clusterFuze = stack != null && !stack.isEmpty() ? stack.copy() : ItemStack.EMPTY;
+    }
 
     @Override
     public void tick() {
@@ -52,7 +58,7 @@ public abstract class AbstractShupapiumGSProjectile extends AbstractShupapiumBCP
             burst.setDeltaMovement(vel.x, vel.y, vel.z);
             level.addFreshEntity(burst);
             if (burst instanceof FuzedBigCannonProjectile bas) {
-                bas.setFuze(this.getClusterFuze());
+                bas.setFuze(clusterFuze);
             }
         }
     }

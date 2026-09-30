@@ -6,9 +6,7 @@ import net.ato.shupapium.ShupapiumBlocks;
 import net.ato.shupapium.ShupapiumEntities;
 import net.minecraft.core.Position;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import rbasamoyai.createbigcannons.index.CBCItems;
 import rbasamoyai.createbigcannons.munitions.big_cannon.AbstractBigCannonProjectile;
 import rbasamoyai.createbigcannons.munitions.big_cannon.FuzedBigCannonProjectile;
 
@@ -20,11 +18,6 @@ public class SmallBombClusterBCProjectile extends AbstractShupapiumGSProjectile 
     @Override
     public EntityType<? extends AbstractBigCannonProjectile> getClusterEntity() {
         return ShupapiumEntities.SMALL_BOMB_SHELL_PROJECTILE.get();
-    }
-
-    @Override
-    protected ItemStack getClusterFuze() {
-        return CBCItems.IMPACT_FUZE.asStack();
     }
 
     @Override
