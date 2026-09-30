@@ -35,6 +35,7 @@ public class ShupapiumGroup {
                     output.accept(ShupapiumBlocks.SUPER_HEAVY_BOMB_SHELL_BLOCK);
                     output.accept(ShupapiumBlocks.BLOCK_BUSTER_BOMB_SHELL_BLOCK);
                     output.accept(ShupapiumBlocks.KINETIC_BOMB_SHELL_BLOCK);
+                    output.accept(ShupapiumBlocks.IR_SEEKER_SHELL_BLOCK);
                     output.accept(ShupapiumBlocks.CLUSTER_BOMB_SHELL_BLOCK);
                     output.accept(ShupapiumBlocks.FISSION_BOMB_SHELL_BLOCK);
                     output.accept(ShupapiumBlocks.FUSION_BOMB_SHELL_BLOCK);

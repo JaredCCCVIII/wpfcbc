@@ -75,6 +75,10 @@ public class ShupapiumLangGen {
                 .header("Show info")
                 .summary("Sharp head!")
                 .conditionAndBehavior("On Detonation", "The kinetic ordinance make a small hole when impact and after a few while explodes, dropping debris around the impact zone.");
+        tooltip(ShupapiumBlocks.IR_SEEKER_SHELL_BLOCK)
+                .header("Show info")
+                .summary("What was that?")
+                .conditionAndBehavior("On Firing", "Follows a heat source and explodes in contact.");
         tooltip(ShupapiumBlocks.CLUSTER_BOMB_SHELL_BLOCK)
                 .header("Show info")
                 .summary("They are spamming us with shells!")

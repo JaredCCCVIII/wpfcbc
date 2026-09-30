@@ -97,6 +97,12 @@ public class ShupapiumEntities {
             "Kinetic Bomb Shell",
             CBCMunitionPropertiesHandlers.COMMON_SHELL_BIG_CANNON_PROJECTILE
     );
+    public static final EntityEntry<IRSeekerBCProjectile> IR_SEEKER_SHELL_PROJECTILE = cannonProjectile(
+            "ir_seeker_shell_projectile",
+            IRSeekerBCProjectile::new,
+            "IR Seeker Shell",
+            CBCMunitionPropertiesHandlers.COMMON_SHELL_BIG_CANNON_PROJECTILE
+    );
     public static final EntityEntry<ClusterBombBCProjectile> CLUSTER_BOMB_SHELL_PROJECTILE = cannonProjectile(
             "cluster_bomb_shell_projectile",
             ClusterBombBCProjectile::new,

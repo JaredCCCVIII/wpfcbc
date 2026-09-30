@@ -22,6 +22,7 @@ public class ShupapiumBlockEntities {
                     ShupapiumBlocks.SUPER_HEAVY_BOMB_SHELL_BLOCK,
                     ShupapiumBlocks.BLOCK_BUSTER_BOMB_SHELL_BLOCK,
                     ShupapiumBlocks.KINETIC_BOMB_SHELL_BLOCK,
+                    ShupapiumBlocks.IR_SEEKER_SHELL_BLOCK,
                     ShupapiumBlocks.CLUSTER_BOMB_SHELL_BLOCK,
                     ShupapiumBlocks.FISSION_BOMB_SHELL_BLOCK,
                     ShupapiumBlocks.FUSION_BOMB_SHELL_BLOCK)

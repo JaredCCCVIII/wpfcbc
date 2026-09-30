@@ -156,6 +156,18 @@ public class ShupapiumBlocks {
             .tag(CBCTags.CBCItemTags.BIG_CANNON_PROJECTILES)
             .build()
             .register();
+    public static final BlockEntry<IRSeekerBCShellBlock> IR_SEEKER_SHELL_BLOCK = MainShupapium.REGISTRATE
+            .block("ir_seeker_shell_block", IRSeekerBCShellBlock::new)
+            .transform(shell(MapColor.COLOR_GRAY, SoundType.METAL))
+            .transform(axeOrPickaxe())
+            .transform(ShupapiumBuilderTransformers.projectile("projectile/ir_seeker_shell"))
+            .loot(CBCBuilderTransformers.shellLoot())
+            .lang("IR Seeker Shell")
+            .item(FuzedProjectileBlockItem::new)
+            .transform(ShupapiumBuilderTransformers.fuzedProjectileItem("projectile/ir_seeker_shell"))
+            .tag(CBCTags.CBCItemTags.BIG_CANNON_PROJECTILES)
+            .build()
+            .register();
     public static final BlockEntry<ClusterBombBCShellBlock> CLUSTER_BOMB_SHELL_BLOCK = MainShupapium.REGISTRATE
             .block("cluster_bomb_shell_block", ClusterBombBCShellBlock::new)
             .transform(shell(MapColor.EMERALD, SoundType.ANVIL))
