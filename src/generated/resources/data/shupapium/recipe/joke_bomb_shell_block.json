@@ -1,0 +1,46 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:dragon_egg"
+    },
+    "B": {
+      "item": "shupapium:fusion_bomb_shell_block"
+    },
+    "C": {
+      "item": "minecraft:beacon"
+    },
+    "F": {
+      "item": "wariumce:fission_core"
+    },
+    "I": {
+      "item": "wariumce:implosion_lens"
+    },
+    "R": {
+      "item": "minecraft:dragon_head"
+    },
+    "S": {
+      "item": "minecraft:nether_star"
+    },
+    "W": {
+      "item": "minecraft:composter"
+    }
+  },
+  "pattern": [
+    "SAAIIIAAS",
+    "SSSSRSSSS",
+    "SSSSRSSSS",
+    "SBBIIIBBS",
+    "SBBIWIBBS",
+    "RABIFIBAR",
+    "SAAICIAAS",
+    "SAAIIIAAS",
+    "SSSSRSSSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "shupapium:joke_bomb_shell_block"
+  }
+}

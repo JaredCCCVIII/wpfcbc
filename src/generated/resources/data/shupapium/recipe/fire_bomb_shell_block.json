@@ -1,0 +1,26 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "wariumce:bent_component"
+    },
+    "F": {
+      "item": "wariumce:fire_agent"
+    },
+    "S": {
+      "item": "wariumce:steelplate"
+    }
+  },
+  "pattern": [
+    "BBBB",
+    "BFFB",
+    "SFFS",
+    "SSSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "shupapium:fire_bomb_shell_block"
+  }
+}

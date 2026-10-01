@@ -1,17 +1,3 @@
 {
-  "parent": "shupapium:block/ir_seeker_shell_block",
-  "overrides": [
-    {
-      "model": "shupapium:item/ir_seeker_shell_block_head_fuze",
-      "predicate": {
-        "createbigcannons:fuze_state": 1.0
-      }
-    },
-    {
-      "model": "shupapium:item/ir_seeker_shell_block_base_fuze",
-      "predicate": {
-        "createbigcannons:fuze_state": 2.0
-      }
-    }
-  ]
+  "parent": "shupapium:block/ir_seeker_shell_block"
 }

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "wariumce:explosive_barrel"
+    },
+    {
+      "tag": "c:gunpowders"
+    },
+    {
+      "tag": "createbigcannons:gunpowder"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "shupapium:barrel_shell_block"
+  }
+}

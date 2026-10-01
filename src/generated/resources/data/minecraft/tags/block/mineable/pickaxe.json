@@ -14,6 +14,7 @@
     "shupapium:ir_seeker_shell_block",
     "shupapium:cluster_bomb_shell_block",
     "shupapium:fission_bomb_shell_block",
-    "shupapium:fusion_bomb_shell_block"
+    "shupapium:fusion_bomb_shell_block",
+    "shupapium:joke_bomb_shell_block"
   ]
 }

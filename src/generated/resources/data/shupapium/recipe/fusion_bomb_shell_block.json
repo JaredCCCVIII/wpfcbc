@@ -1,0 +1,44 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "wariumce:advanced_component"
+    },
+    "B": {
+      "item": "wariumce:beryllium_ingot"
+    },
+    "C": {
+      "item": "wariumce:fusion_core"
+    },
+    "F": {
+      "item": "wariumce:fission_core"
+    },
+    "I": {
+      "item": "wariumce:implosion_lens"
+    },
+    "R": {
+      "item": "minecraft:repeater"
+    },
+    "S": {
+      "item": "wariumce:steelplate"
+    },
+    "W": {
+      "item": "wariumce:fusion_bomb"
+    }
+  },
+  "pattern": [
+    "SSSSRSSSS",
+    "SBBIIIBBS",
+    "SBBIWIBBS",
+    "RABIFIBAR",
+    "SAAICIAAS",
+    "SAAIIIAAS",
+    "SSSSRSSSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "shupapium:fusion_bomb_shell_block"
+  }
+}

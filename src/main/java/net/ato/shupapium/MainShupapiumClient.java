@@ -1,6 +1,7 @@
 package net.ato.shupapium;
 
 import net.ato.shupapium.client.renderers.ShupapiumDummyRagdollRenderer;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -30,5 +31,6 @@ public class MainShupapiumClient {
     public static void registerRenderers(final EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(ShupapiumEntities.DUMMY_RAGDOLL_ENTITY.get(), ShupapiumDummyRagdollRenderer::new);
         event.registerEntityRenderer(ShupapiumEntities.HEAVY_DUMMY_RAGDOLL_ENTITY.get(), ShupapiumDummyRagdollRenderer::new);
+        event.registerEntityRenderer(ShupapiumEntities.JOKE_CLOUD_DETECTOR.get(), ThrownItemRenderer::new);
     }
 }

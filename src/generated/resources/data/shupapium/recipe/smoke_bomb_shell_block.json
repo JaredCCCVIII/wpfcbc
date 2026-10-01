@@ -1,0 +1,23 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "wariumce:bent_component"
+    },
+    "S": {
+      "item": "wariumce:smoke_agent"
+    }
+  },
+  "pattern": [
+    " B ",
+    "BSB",
+    "BSB",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "shupapium:smoke_bomb_shell_block"
+  }
+}

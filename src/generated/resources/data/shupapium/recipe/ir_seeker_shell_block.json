@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "wariumce:advanced_component"
+    },
+    "I": {
+      "item": "wariumce:ir_component"
+    },
+    "M": {
+      "item": "shupapium:medium_bomb_shell_block"
+    },
+    "T": {
+      "item": "wariumce:tech_component"
+    },
+    "W": {
+      "item": "wariumce:aimer"
+    }
+  },
+  "pattern": [
+    "AAIAA",
+    "AAWAA",
+    "TTMTT",
+    "TTTTT"
+  ],
+  "result": {
+    "count": 1,
+    "id": "shupapium:ir_seeker_shell_block"
+  }
+}

@@ -25,7 +25,8 @@ public class ShupapiumBlockEntities {
                     ShupapiumBlocks.IR_SEEKER_SHELL_BLOCK,
                     ShupapiumBlocks.CLUSTER_BOMB_SHELL_BLOCK,
                     ShupapiumBlocks.FISSION_BOMB_SHELL_BLOCK,
-                    ShupapiumBlocks.FUSION_BOMB_SHELL_BLOCK)
+                    ShupapiumBlocks.FUSION_BOMB_SHELL_BLOCK,
+                    ShupapiumBlocks.JOKE_BOMB_SHELL_BLOCK)
             .register();
 
     public static void register() {}

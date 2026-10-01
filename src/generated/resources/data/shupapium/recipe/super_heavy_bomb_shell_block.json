@@ -1,0 +1,26 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "wariumce:bent_component"
+    },
+    "L": {
+      "item": "wariumce:large_volatile_pile"
+    },
+    "S": {
+      "item": "wariumce:steelplate"
+    }
+  },
+  "pattern": [
+    "SSSSSS",
+    "BBLLBB",
+    "BBLLBB",
+    "SSSSSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "shupapium:super_heavy_bomb_shell_block"
+  }
+}

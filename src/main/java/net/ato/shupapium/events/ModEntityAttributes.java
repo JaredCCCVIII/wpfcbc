@@ -2,6 +2,7 @@ package net.ato.shupapium.events;
 
 import net.ato.shupapium.MainShupapium;
 import net.ato.shupapium.ShupapiumEntities;
+import net.ato.shupapium.datagen.ShupapiumCraftingRecipeProvider;
 import net.ato.shupapium.datagen.ShupapiumLangGen;
 import net.ato.shupapium.entities.ShupapiumDummyRagdoll;
 import net.ato.shupapium.entities.ShupapiumMetalRagdoll;
@@ -17,6 +18,7 @@ public class ModEntityAttributes {
     public static void onGatherRegistrateData(GatherDataEvent event) {
         if (!event.getMods().contains(MainShupapium.MOD_ID)) return;
         ShupapiumLangGen.prepare();
+        ShupapiumCraftingRecipeProvider.register();
     }
 
     @SubscribeEvent

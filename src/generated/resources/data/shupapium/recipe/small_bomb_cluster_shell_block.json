@@ -1,0 +1,23 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "shupapium:small_bomb_shell_block"
+    },
+    "R": {
+      "tag": "c:dusts/redstone"
+    }
+  },
+  "pattern": [
+    " B ",
+    "BRB",
+    "BRB",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "shupapium:small_bomb_cluster_shell_block"
+  }
+}

@@ -3,6 +3,7 @@ package net.ato.shupapium;
 import com.tterrag.registrate.util.entry.EntityEntry;
 import com.tterrag.registrate.util.nullness.NonNullConsumer;
 import net.ato.shupapium.entities.*;
+import net.ato.shupapium.entities.misc.JokeCloudDetectorEntity;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -28,6 +29,13 @@ public class ShupapiumEntities {
     );
     public static final DeferredHolder<EntityType<?>, EntityType<ShupapiumMetalRagdoll>> HEAVY_DUMMY_RAGDOLL_ENTITY = SHUPAPI_ENTITIES.register(
             "heavy_dummy_ragdoll", () -> EntityType.Builder.of(ShupapiumMetalRagdoll::new, MobCategory.CREATURE).sized(0.8F, 1.9F).build("heavy_dummy_ragdoll")
+    );
+
+    // Misc
+    public static final DeferredHolder<EntityType<?>, EntityType<JokeCloudDetectorEntity>> JOKE_CLOUD_DETECTOR = SHUPAPI_ENTITIES.register(
+            "joke_cloud_detector", () -> EntityType.Builder.of(JokeCloudDetectorEntity::new, MobCategory.MISC)
+                    .setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5F, 0.5F)
+                    .build("joke_cloud_detector")
     );
 
     // Big Cannons Projectiles
@@ -119,6 +127,12 @@ public class ShupapiumEntities {
             "fusion_bomb_shell_projectile",
             FusionBombBCProjectile::new,
             "Fusion Bomb Shell",
+            CBCMunitionPropertiesHandlers.COMMON_SHELL_BIG_CANNON_PROJECTILE
+    );
+    public static final EntityEntry<JokeBombBCProjectile> JOKE_BOMB_SHELL_PROJECTILE = cannonProjectile(
+            "joke_bomb_shell_projectile",
+            JokeBombBCProjectile::new,
+            "Chistoso's Bomb Shell",
             CBCMunitionPropertiesHandlers.COMMON_SHELL_BIG_CANNON_PROJECTILE
     );
 

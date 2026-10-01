@@ -14,6 +14,7 @@ import net.minecraft.world.level.material.MapColor;
 import rbasamoyai.createbigcannons.CBCTags;
 import rbasamoyai.createbigcannons.datagen.assets.CBCBuilderTransformers;
 import rbasamoyai.createbigcannons.munitions.FuzedProjectileBlockItem;
+import rbasamoyai.createbigcannons.munitions.big_cannon.ProjectileBlockItem;
 
 import static com.simibubi.create.foundation.data.TagGen.axeOrPickaxe;
 
@@ -163,8 +164,7 @@ public class ShupapiumBlocks {
             .transform(ShupapiumBuilderTransformers.projectile("projectile/ir_seeker_shell"))
             .loot(CBCBuilderTransformers.shellLoot())
             .lang("IR Seeker Shell")
-            .item(FuzedProjectileBlockItem::new)
-            .transform(ShupapiumBuilderTransformers.fuzedProjectileItem("projectile/ir_seeker_shell"))
+            .item(ProjectileBlockItem::new)
             .tag(CBCTags.CBCItemTags.BIG_CANNON_PROJECTILES)
             .build()
             .register();
@@ -201,6 +201,18 @@ public class ShupapiumBlocks {
             .lang("Fusion Bomb Shell")
             .item(FuzedProjectileBlockItem::new)
             .transform(ShupapiumBuilderTransformers.fuzedProjectileItem("projectile/fusion_bomb_shell"))
+            .tag(CBCTags.CBCItemTags.BIG_CANNON_PROJECTILES)
+            .build()
+            .register();
+    public static final BlockEntry<JokeBombBCShellBlock> JOKE_BOMB_SHELL_BLOCK = MainShupapium.REGISTRATE
+            .block("joke_bomb_shell_block", JokeBombBCShellBlock::new)
+            .transform(shell(MapColor.PODZOL, SoundType.FUNGUS))
+            .transform(axeOrPickaxe())
+            .transform(ShupapiumBuilderTransformers.projectile("projectile/joke_bomb_shell"))
+            .loot(CBCBuilderTransformers.shellLoot())
+            .lang("Chistoso's Bomb Shell")
+            .item(FuzedProjectileBlockItem::new)
+            .transform(ShupapiumBuilderTransformers.fuzedProjectileItem("projectile/joke_bomb_shell"))
             .tag(CBCTags.CBCItemTags.BIG_CANNON_PROJECTILES)
             .build()
             .register();

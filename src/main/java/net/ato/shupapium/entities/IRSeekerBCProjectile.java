@@ -10,7 +10,9 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
+import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
+import rbasamoyai.createbigcannons.munitions.ProjectileContext;
 import rbasamoyai.createbigcannons.munitions.big_cannon.FuzedBigCannonProjectile;
 
 import java.util.Comparator;
@@ -37,6 +39,21 @@ public class IRSeekerBCProjectile extends AbstractShupapiumBCProjectile {
         }
         if (this.target != null) {
             guideTowardsTarget();
+        }
+    }
+
+    @Override
+    protected boolean onImpact(HitResult hitResult, ImpactResult impactResult, ProjectileContext projectileContext) {
+        super.onImpact(hitResult, impactResult, projectileContext);
+        if (!this.level().isClientSide && this.level().hasChunkAt(this.blockPosition()) && !this.isRemoved()) {
+            if (hitResult.getType() != HitResult.Type.MISS) {
+                this.detonate(hitResult.getLocation());
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
         }
     }
 
@@ -75,5 +92,10 @@ public class IRSeekerBCProjectile extends AbstractShupapiumBCProjectile {
         }
 
         this.setDeltaMovement(velocity.add(change));
+
+        if (this.target instanceof FlareProjectileEntity flare && this.position().distanceToSqr(flare.position()) < 4) {
+            this.detonate(this.position());
+            return;
+        }
     }
 }

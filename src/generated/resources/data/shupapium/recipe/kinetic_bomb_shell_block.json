@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "I": {
+      "tag": "c:ingots/steel"
+    },
+    "O": {
+      "item": "shupapium:heavy_bomb_shell_block"
+    },
+    "S": {
+      "item": "wariumce:steelplate"
+    },
+    "T": {
+      "item": "wariumce:steel_tube"
+    }
+  },
+  "pattern": [
+    "IIIII",
+    "STOTS",
+    "STTTS",
+    "IIIII"
+  ],
+  "result": {
+    "count": 1,
+    "id": "shupapium:kinetic_bomb_shell_block"
+  }
+}

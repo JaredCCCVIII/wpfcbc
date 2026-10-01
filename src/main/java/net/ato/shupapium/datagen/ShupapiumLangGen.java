@@ -38,7 +38,7 @@ public class ShupapiumLangGen {
         tooltip(ShupapiumBlocks.BARREL_SHELL_BLOCK)
                 .header("Show info")
                 .summary("Throwable barrel...")
-                .conditionAndBehavior("On Detonation", "Explodes on impact.");
+                .conditionAndBehavior("On Detonation", "Its internal flammable fuel explodes.");
         tooltip(ShupapiumBlocks.TOXIC_BOMB_SHELL_BLOCK)
                 .header("Show info")
                 .summary("Smells like rotten eggs.")
@@ -91,6 +91,11 @@ public class ShupapiumLangGen {
                 .header("Show info")
                 .summary("I'm become death, the destroyers of worlds.")
                 .conditionAndBehavior("On Detonation", "Unleashes a powerful nuclear blast and evaporates everything.");
+
+        tooltip(ShupapiumBlocks.JOKE_BOMB_SHELL_BLOCK)
+                .header("Show info")
+                .summary("CHISTE!")
+                .conditionAndBehavior("On Detonation", "Converts targets into chistosos.");
     }
 
     private static class TooltipBuilder {

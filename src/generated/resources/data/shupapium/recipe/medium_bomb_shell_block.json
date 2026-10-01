@@ -1,0 +1,23 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "wariumce:bent_component"
+    },
+    "V": {
+      "item": "wariumce:volatile_dust"
+    }
+  },
+  "pattern": [
+    " BB ",
+    "BVVB",
+    "BVVB",
+    " BB "
+  ],
+  "result": {
+    "count": 1,
+    "id": "shupapium:medium_bomb_shell_block"
+  }
+}
