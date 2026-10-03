@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "wariumce:block/autocannon_barrel",
+      "x": 90
+    },
+    "facing=east": {
+      "model": "wariumce:block/autocannon_barrel",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "wariumce:block/autocannon_barrel"
+    },
+    "facing=south": {
+      "model": "wariumce:block/autocannon_barrel",
+      "y": 180
+    },
+    "facing=up": {
+      "model": "wariumce:block/autocannon_barrel",
+      "x": 270
+    },
+    "facing=west": {
+      "model": "wariumce:block/autocannon_barrel",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "wariumce:block/rocket_pod",
+      "x": 90
+    },
+    "facing=east": {
+      "model": "wariumce:block/rocket_pod",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "wariumce:block/rocket_pod"
+    },
+    "facing=south": {
+      "model": "wariumce:block/rocket_pod",
+      "y": 180
+    },
+    "facing=up": {
+      "model": "wariumce:block/rocket_pod",
+      "x": 270
+    },
+    "facing=west": {
+      "model": "wariumce:block/rocket_pod",
+      "y": 270
+    }
+  }
+}

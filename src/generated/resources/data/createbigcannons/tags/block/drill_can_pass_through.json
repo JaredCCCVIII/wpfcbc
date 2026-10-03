@@ -1,0 +1,11 @@
+{
+  "values": [
+    "shupapium:machine_gun_barrel",
+    "shupapium:cannon_barrel",
+    "shupapium:battle_cannon_barrel",
+    "shupapium:thick_battle_cannon_barrel",
+    "shupapium:artillery_cannon_barrel",
+    "shupapium:rocket_pod_barrel",
+    "shupapium:large_rocket_pod_barrel"
+  ]
+}

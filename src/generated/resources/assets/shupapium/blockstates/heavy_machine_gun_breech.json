@@ -1,0 +1,118 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "wariumce:block/heavy_machine_gun"
+      },
+      "when": {
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wariumce:block/heavy_machine_gun",
+        "y": 90
+      },
+      "when": {
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wariumce:block/heavy_machine_gun",
+        "y": 180
+      },
+      "when": {
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wariumce:block/heavy_machine_gun",
+        "y": 270
+      },
+      "when": {
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wariumce:block/heavy_machine_gun",
+        "x": 270
+      },
+      "when": {
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wariumce:block/heavy_machine_gun",
+        "x": 90
+      },
+      "when": {
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wariumce:block/manual_aimer",
+        "y": 180
+      },
+      "when": {
+        "facing": "north",
+        "handle": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "wariumce:block/manual_aimer",
+        "y": 270
+      },
+      "when": {
+        "facing": "east",
+        "handle": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "wariumce:block/manual_aimer"
+      },
+      "when": {
+        "facing": "south",
+        "handle": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "wariumce:block/manual_aimer",
+        "y": 90
+      },
+      "when": {
+        "facing": "west",
+        "handle": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "wariumce:block/manual_aimer",
+        "x": 270,
+        "y": 180
+      },
+      "when": {
+        "facing": "up",
+        "handle": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "wariumce:block/manual_aimer",
+        "x": 90,
+        "y": 180
+      },
+      "when": {
+        "facing": "down",
+        "handle": "true"
+      }
+    }
+  ]
+}

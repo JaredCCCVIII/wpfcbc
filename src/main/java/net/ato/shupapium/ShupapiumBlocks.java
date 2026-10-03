@@ -1,17 +1,25 @@
 package net.ato.shupapium;
 
-import com.simibubi.create.foundation.item.ItemDescription;
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
+import com.wariumce.CrustyChunksMod;
 import net.ato.shupapium.blocks.*;
+import net.ato.shupapium.cannons.ShupapiumACBarrelBlock;
+import net.ato.shupapium.cannons.ShupapiumACBreechBlock;
+import net.ato.shupapium.cannons.ShupapiumACRecoilSpringBlock;
 import net.ato.shupapium.datagen.ShupapiumBuilderTransformers;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.core.registries.Registries;
+import net.minecraft.core.Direction;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.MapColor;
 import rbasamoyai.createbigcannons.CBCTags;
+import rbasamoyai.createbigcannons.cannons.autocannon.AutocannonBarrelBlock;
 import rbasamoyai.createbigcannons.datagen.assets.CBCBuilderTransformers;
 import rbasamoyai.createbigcannons.munitions.FuzedProjectileBlockItem;
 import rbasamoyai.createbigcannons.munitions.big_cannon.ProjectileBlockItem;
@@ -23,6 +31,129 @@ public class ShupapiumBlocks {
         ShupapiumGroup.setDefaultTabToNull();
         MainShupapium.REGISTRATE.setCreativeTab(null);
     }
+
+    // Cannon Blocks
+
+    public static final BlockEntry<ShupapiumACBarrelBlock> MACHINE_GUN_BARREL = MainShupapium.REGISTRATE
+            .block("machine_gun_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.MACHINE_GUN))
+            .transform(cannonBlock())
+            .loot(CBCBuilderTransformers.steelScrapLoot(2))
+            .transform(ShupapiumBuilderTransformers.autocannonBarrel(CrustyChunksMod.MODID, "block/machine_gun_barrel"))
+            .register();
+    public static final BlockEntry<ShupapiumACRecoilSpringBlock> COVERED_MACHINE_GUN_BARREL = MainShupapium.REGISTRATE
+            .block("covered_machine_gun_barrel", p -> new ShupapiumACRecoilSpringBlock(p, ShupapiumCBCACMaterials.MACHINE_GUN, ShupapiumBlocks::machineGunBarrel))
+            .transform(cannonBlock(false, SoundType.NETHERITE_BLOCK))
+            .loot(CBCBuilderTransformers.steelScrapLoot(3))
+            .transform(ShupapiumBuilderTransformers.autocannonRecoilSpring(CrustyChunksMod.MODID, "block/covered_machine_gun_barrel"))
+            .register();
+    public static final BlockEntry<ShupapiumACBreechBlock> MINIGUN_BREECH = MainShupapium.REGISTRATE
+            .block("minigun_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.MACHINE_GUN))
+            .transform(cannonBlock(false, SoundType.ANVIL))
+            .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/minigun"))
+            .register();
+    public static final BlockEntry<ShupapiumACBreechBlock> LIGHT_MACHINE_GUN_BREECH = MainShupapium.REGISTRATE
+            .block("light_machine_gun_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.MACHINE_GUN))
+            .transform(cannonBlock(false, SoundType.ANVIL))
+            .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/light_machine_gun"))
+            .register();
+    public static final BlockEntry<ShupapiumACBreechBlock> MACHINE_GUN_BREECH = MainShupapium.REGISTRATE
+            .block("machine_gun_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.MACHINE_GUN))
+            .transform(cannonBlock(false, SoundType.ANVIL))
+            .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/machine_gun"))
+            .register();
+    public static final BlockEntry<ShupapiumACBreechBlock> HEAVY_MACHINE_GUN_BREECH = MainShupapium.REGISTRATE
+            .block("heavy_machine_gun_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.MACHINE_GUN))
+            .transform(cannonBlock(false, SoundType.ANVIL))
+            .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/heavy_machine_gun"))
+            .register();
+    public static final BlockEntry<ShupapiumACBarrelBlock> CANNON_BARREL = MainShupapium.REGISTRATE
+            .block("cannon_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.CANNON_GUN))
+            .transform(cannonBlock())
+            .loot(CBCBuilderTransformers.steelScrapLoot(2))
+            .transform(ShupapiumBuilderTransformers.autocannonBarrel(CrustyChunksMod.MODID, "block/autocannon_barrel"))
+            .register();
+    public static final BlockEntry<ShupapiumACBreechBlock> LIGHT_CANNON_BREECH = MainShupapium.REGISTRATE
+            .block("light_cannon_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.CANNON_GUN))
+            .transform(cannonBlock(false, SoundType.ANVIL))
+            .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/light_autocannon"))
+            .register();
+    public static final BlockEntry<ShupapiumACBreechBlock> ROTARY_CANNON_BREECH = MainShupapium.REGISTRATE
+            .block("rotary_cannon_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.CANNON_GUN))
+            .transform(cannonBlock(false, SoundType.ANVIL))
+            .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/rotary_auto_cannon"))
+            .register();
+    public static final BlockEntry<ShupapiumACBreechBlock> HEAVY_CANNON_BREECH = MainShupapium.REGISTRATE
+            .block("heavy_cannon_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.CANNON_GUN))
+            .transform(cannonBlock(false, SoundType.ANVIL))
+            .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/autocannon"))
+            .register();
+    public static final BlockEntry<ShupapiumACBarrelBlock> BATTLE_CANNON_BARREL = MainShupapium.REGISTRATE
+            .block("battle_cannon_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.BATTLE_GUN))
+            .transform(cannonBlock())
+            .loot(CBCBuilderTransformers.steelScrapLoot(2))
+            .transform(ShupapiumBuilderTransformers.autocannonBarrel(CrustyChunksMod.MODID, "block/battle_cannon_barrel"))
+            .register();
+    public static final BlockEntry<ShupapiumACBarrelBlock> THICK_BATTLE_CANNON_BARREL = MainShupapium.REGISTRATE
+            .block("thick_battle_cannon_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.BATTLE_GUN))
+            .transform(cannonBlock())
+            .loot(CBCBuilderTransformers.steelScrapLoot(2))
+            .transform(ShupapiumBuilderTransformers.autocannonBarrel(CrustyChunksMod.MODID, "block/thick_battle_cannon_barrel"))
+            .register();
+    public static final BlockEntry<ShupapiumACRecoilSpringBlock> COVERED_BATTLE_CANNON_BARREL = MainShupapium.REGISTRATE
+            .block("covered_battle_cannon_barrel", p -> new ShupapiumACRecoilSpringBlock(p, ShupapiumCBCACMaterials.BATTLE_GUN, ShupapiumBlocks::battleCannonBarrel))
+            .transform(cannonBlock(false, SoundType.NETHERITE_BLOCK))
+            .loot(CBCBuilderTransformers.steelScrapLoot(3))
+            .transform(ShupapiumBuilderTransformers.autocannonRecoilSpring(CrustyChunksMod.MODID, "block/battle_cannon_mantlet"))
+            .register();
+    public static final BlockEntry<ShupapiumACBreechBlock> BATTLE_CANNON_BREECH = MainShupapium.REGISTRATE
+            .block("battle_cannon_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.BATTLE_GUN))
+            .transform(cannonBlock(false, SoundType.ANVIL))
+            .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/battle_cannon_breech"))
+            .register();
+    public static final BlockEntry<ShupapiumACBarrelBlock> ARTILLERY_CANNON_BARREL = MainShupapium.REGISTRATE
+            .block("artillery_cannon_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.ARTILLERY_GUN))
+            .transform(cannonBlock())
+            .loot(CBCBuilderTransformers.steelScrapLoot(2))
+            .transform(ShupapiumBuilderTransformers.autocannonBarrel(CrustyChunksMod.MODID, "block/artillery_barrel"))
+            .register();
+    public static final BlockEntry<ShupapiumACBreechBlock> ARTILLERY_CANNON_BREECH = MainShupapium.REGISTRATE
+            .block("artillery_cannon_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.ARTILLERY_GUN))
+            .transform(cannonBlock(false, SoundType.ANVIL))
+            .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/artillerybreech"))
+            .register();
+    public static final BlockEntry<ShupapiumACBarrelBlock> ROCKET_POD_BARREL = MainShupapium.REGISTRATE
+            .block("rocket_pod_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.ROCKET_GUN))
+            .transform(cannonBlock())
+            .loot(CBCBuilderTransformers.steelScrapLoot(2))
+            .transform(ShupapiumBuilderTransformers.autocannonBarrel(CrustyChunksMod.MODID, "block/rocket_pod"))
+            .register();
+    public static final BlockEntry<ShupapiumACBarrelBlock> LARGE_ROCKET_POD_BARREL = MainShupapium.REGISTRATE
+            .block("large_rocket_pod_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.LARGE_ROCKET_GUN))
+            .transform(cannonBlock())
+            .loot(CBCBuilderTransformers.steelScrapLoot(2))
+            .transform(ShupapiumBuilderTransformers.autocannonBarrel(CrustyChunksMod.MODID, "block/large_rocket_pod"))
+            .register();
+    public static final BlockEntry<ShupapiumACBreechBlock> ROCKET_POD_BREECH = MainShupapium.REGISTRATE
+            .block("rocket_pod_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.ROCKET_GUN))
+            .transform(cannonBlock(false, SoundType.ANVIL))
+            .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/rocket_pod_chamber"))
+            .register();
+    public static final BlockEntry<ShupapiumACBreechBlock> LARGE_ROCKET_POD_BREECH = MainShupapium.REGISTRATE
+            .block("large_rocket_pod_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.LARGE_ROCKET_GUN))
+            .transform(cannonBlock(false, SoundType.ANVIL))
+            .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/large_rocket_pod_chamber"))
+            .register();
 
     // Shells
     public static final BlockEntry<SmokeBombBCShellBlock> SMOKE_BOMB_SHELL_BLOCK = MainShupapium.REGISTRATE
@@ -190,6 +321,7 @@ public class ShupapiumBlocks {
             .item(FuzedProjectileBlockItem::new)
             .transform(ShupapiumBuilderTransformers.fuzedProjectileItem("projectile/fission_bomb_shell"))
             .tag(CBCTags.CBCItemTags.BIG_CANNON_PROJECTILES)
+            .properties(p -> p.rarity(Rarity.RARE))
             .build()
             .register();
     public static final BlockEntry<FusionBombBCShellBlock> FUSION_BOMB_SHELL_BLOCK = MainShupapium.REGISTRATE
@@ -202,6 +334,7 @@ public class ShupapiumBlocks {
             .item(FuzedProjectileBlockItem::new)
             .transform(ShupapiumBuilderTransformers.fuzedProjectileItem("projectile/fusion_bomb_shell"))
             .tag(CBCTags.CBCItemTags.BIG_CANNON_PROJECTILES)
+            .properties(p -> p.rarity(Rarity.EPIC))
             .build()
             .register();
     public static final BlockEntry<JokeBombBCShellBlock> JOKE_BOMB_SHELL_BLOCK = MainShupapium.REGISTRATE
@@ -214,10 +347,30 @@ public class ShupapiumBlocks {
             .item(FuzedProjectileBlockItem::new)
             .transform(ShupapiumBuilderTransformers.fuzedProjectileItem("projectile/joke_bomb_shell"))
             .tag(CBCTags.CBCItemTags.BIG_CANNON_PROJECTILES)
+            .properties(p -> p.rarity(Rarity.UNCOMMON))
             .build()
             .register();
 
+    // AC Facing
+    private static BlockState machineGunBarrel(Direction facing) {
+        return MACHINE_GUN_BARREL.getDefaultState().setValue(ShupapiumACBarrelBlock.FACING, facing);
+    }
+    private static BlockState battleCannonBarrel(Direction facing) {
+        return BATTLE_CANNON_BARREL.getDefaultState().setValue(ShupapiumACBarrelBlock.FACING, facing);
+    }
+
     // Auxiliary Functions
+    private static <T extends Block, P> NonNullUnaryOperator<BlockBuilder<T, P>> cannonBlock() {
+        return cannonBlock(true, SoundType.NETHERITE_BLOCK);
+    }
+    private static <T extends Block, P> NonNullUnaryOperator<BlockBuilder<T, P>> cannonBlock(boolean canPassThrough, SoundType sound) {
+        NonNullUnaryOperator<BlockBuilder<T, P>> transform = b -> b.properties(p -> p.strength(5.0F, 6.0F))
+                .properties(p -> p.sound(sound))
+                .properties(BlockBehaviour.Properties::requiresCorrectToolForDrops)
+                .tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .tag(BlockTags.NEEDS_IRON_TOOL);
+        return canPassThrough ? transform.andThen(b -> b.tag(CBCTags.CBCBlockTags.DRILL_CAN_PASS_THROUGH)) : transform;
+    }
     private static <T extends Block, P> NonNullUnaryOperator<BlockBuilder<T, P>> shell(MapColor color, SoundType sound) {
         return b -> b.addLayer(() -> RenderType::solid)
                 .properties(p -> p.mapColor(color))

@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "wariumce:block/battle_cannon_mantlet",
+      "x": 90
+    },
+    "facing=east": {
+      "model": "wariumce:block/battle_cannon_mantlet",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "wariumce:block/battle_cannon_mantlet"
+    },
+    "facing=south": {
+      "model": "wariumce:block/battle_cannon_mantlet",
+      "y": 180
+    },
+    "facing=up": {
+      "model": "wariumce:block/battle_cannon_mantlet",
+      "x": 270
+    },
+    "facing=west": {
+      "model": "wariumce:block/battle_cannon_mantlet",
+      "y": 270
+    }
+  }
+}

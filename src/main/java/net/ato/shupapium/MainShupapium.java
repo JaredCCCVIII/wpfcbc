@@ -5,7 +5,10 @@ import com.simibubi.create.foundation.item.ItemDescription;
 import com.simibubi.create.foundation.item.KineticStats;
 import com.simibubi.create.foundation.item.TooltipModifier;
 import net.createmod.catnip.lang.FontHelper;
+import net.minecraft.core.Registry;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.neoforged.neoforge.registries.RegisterEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -55,7 +58,7 @@ public class MainShupapium {
         ShupapiumItems.register(modEventBus);
         ShupapiumGroup.register(modEventBus);
         ShupapiumMobEffects.register(modEventBus);
-
+        modEventBus.addListener(this::onRegister);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -70,6 +73,10 @@ public class MainShupapium {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
+    }
+
+    private void onRegister(RegisterEvent evt) {
+        ShupapiumContraptionTypes.init();
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
