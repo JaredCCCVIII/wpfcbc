@@ -1,5 +1,6 @@
 {
   "values": [
+    "shupapium:minigun_barrel",
     "shupapium:machine_gun_barrel",
     "shupapium:covered_machine_gun_barrel",
     "shupapium:minigun_breech",
@@ -7,6 +8,7 @@
     "shupapium:machine_gun_breech",
     "shupapium:heavy_machine_gun_breech",
     "shupapium:cannon_barrel",
+    "shupapium:rotary_cannon_barrel",
     "shupapium:light_cannon_breech",
     "shupapium:rotary_cannon_breech",
     "shupapium:heavy_cannon_breech",
@@ -19,6 +21,12 @@
     "shupapium:rocket_pod_barrel",
     "shupapium:large_rocket_pod_barrel",
     "shupapium:rocket_pod_breech",
-    "shupapium:large_rocket_pod_breech"
+    "shupapium:large_rocket_pod_breech",
+    "shupapium:smoke_launcher_barrel",
+    "shupapium:mortar_launcher_barrel",
+    "shupapium:launcher_breech",
+    "shupapium:flamethrower_barrel",
+    "shupapium:covered_flamethrower_barrel",
+    "shupapium:flamethrower_breech"
   ]
 }

@@ -58,6 +58,7 @@ public class MainShupapium {
         ShupapiumItems.register(modEventBus);
         ShupapiumGroup.register(modEventBus);
         ShupapiumMobEffects.register(modEventBus);
+        ShupapiumACProfiles.register();
         modEventBus.addListener(this::onRegister);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

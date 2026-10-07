@@ -30,6 +30,14 @@ public class ShupapiumLangGen {
         MainShupapium.REGISTRATE.addRawLang("subtitle." + MainShupapium.MOD_ID + "." + HEAVY_DUMMY_RAGDOLL_NAME + ".death", "Test Dummy dying");
         MainShupapium.REGISTRATE.addRawLang("effect." + MainShupapium.MOD_ID + ".joke_effect", "Chistosada");
 
+        // CBC related
+        MainShupapium.REGISTRATE.addLang("exception", MainShupapium.resource("cannon_mount"), "invalid_barrel", "Invalid barrel detected.");
+        MainShupapium.REGISTRATE.addLang("exception", MainShupapium.resource("cannon_mount"), "invalid_attachment", "Invalid attachment detected.");
+        MainShupapium.REGISTRATE.addLang("exception", MainShupapium.resource("cannon_mount"), "invalid_breech", "Invalid breech detected.");
+        MainShupapium.REGISTRATE.addLang("exception", MainShupapium.resource("cannon_mount"), "invalid_compatibility", "Invalid cannon compatibility detected.");
+        MainShupapium.REGISTRATE.addLang("exception", MainShupapium.resource("cannon_mount"), "invalid_ammo_type", "Invalid ammo type detected.");
+        MainShupapium.REGISTRATE.addLang("block", MainShupapium.resource("cannon_carriage"), "hotbar.fireRate", "Rate of fire: %1$s RPM");
+
         // Shells
         tooltip(ShupapiumBlocks.SMOKE_BOMB_SHELL_BLOCK)
                 .header("Show info")

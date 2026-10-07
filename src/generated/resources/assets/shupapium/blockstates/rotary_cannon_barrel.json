@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "wariumce:custom/rac_barrel_particle",
+      "x": 90
+    },
+    "facing=east": {
+      "model": "wariumce:custom/rac_barrel_particle",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "wariumce:custom/rac_barrel_particle"
+    },
+    "facing=south": {
+      "model": "wariumce:custom/rac_barrel_particle",
+      "y": 180
+    },
+    "facing=up": {
+      "model": "wariumce:custom/rac_barrel_particle",
+      "x": 270
+    },
+    "facing=west": {
+      "model": "wariumce:custom/rac_barrel_particle",
+      "y": 270
+    }
+  }
+}

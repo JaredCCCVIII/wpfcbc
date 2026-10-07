@@ -24,6 +24,7 @@ public class ShupapiumGroup {
                 .title(Component.translatable("itemGroup.shupapium"))
                 .icon(ShupapiumBlocks.FISSION_BOMB_SHELL_BLOCK::asStack)
                 .displayItems((itemDisplayParameters, output) -> {
+                    output.accept(ShupapiumBlocks.MINIGUN_BARREL);
                     output.accept(ShupapiumBlocks.MACHINE_GUN_BARREL);
                     output.accept(ShupapiumBlocks.COVERED_MACHINE_GUN_BARREL);
                     output.accept(ShupapiumBlocks.MINIGUN_BREECH);
@@ -31,6 +32,7 @@ public class ShupapiumGroup {
                     output.accept(ShupapiumBlocks.MACHINE_GUN_BREECH);
                     output.accept(ShupapiumBlocks.HEAVY_MACHINE_GUN_BREECH);
                     output.accept(ShupapiumBlocks.CANNON_BARREL);
+                    output.accept(ShupapiumBlocks.ROTARY_CANNON_BARREL);
                     output.accept(ShupapiumBlocks.LIGHT_CANNON_BREECH);
                     output.accept(ShupapiumBlocks.ROTARY_CANNON_BREECH);
                     output.accept(ShupapiumBlocks.HEAVY_CANNON_BREECH);
@@ -44,6 +46,12 @@ public class ShupapiumGroup {
                     output.accept(ShupapiumBlocks.LARGE_ROCKET_POD_BARREL);
                     output.accept(ShupapiumBlocks.ROCKET_POD_BREECH);
                     output.accept(ShupapiumBlocks.LARGE_ROCKET_POD_BREECH);
+                    output.accept(ShupapiumBlocks.SMOKE_LAUNCHER_BARREL);
+                    output.accept(ShupapiumBlocks.MORTAR_LAUNCHER_BARREL);
+                    output.accept(ShupapiumBlocks.LAUNCHER_BREECH);
+                    output.accept(ShupapiumBlocks.FLAMETHROWER_BARREL);
+                    output.accept(ShupapiumBlocks.COVERED_FLAMETHROWER_BARREL);
+                    output.accept(ShupapiumBlocks.FLAMETHROWER_BREECH);
                     output.accept(ShupapiumBlocks.SMOKE_BOMB_SHELL_BLOCK);
                     output.accept(ShupapiumBlocks.BARREL_SHELL_BLOCK);
                     output.accept(ShupapiumBlocks.TOXIC_BOMB_SHELL_BLOCK);

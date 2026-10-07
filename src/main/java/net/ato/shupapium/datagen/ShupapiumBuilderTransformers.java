@@ -6,10 +6,10 @@ import com.tterrag.registrate.builders.ItemBuilder;
 import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
 import com.wariumce.CrustyChunksMod;
 import net.ato.shupapium.MainShupapium;
-import net.ato.shupapium.cannons.ShupapiumACBarrelBlock;
-import net.ato.shupapium.cannons.ShupapiumACBreechBlock;
-import net.ato.shupapium.cannons.ShupapiumACRecoilSpringBlock;
+import net.ato.shupapium.cannons.*;
+import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.block.model.BlockModel;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -20,6 +20,9 @@ import rbasamoyai.createbigcannons.CreateBigCannons;
 import rbasamoyai.createbigcannons.cannons.autocannon.AutocannonBlock;
 import rbasamoyai.createbigcannons.cannons.autocannon.AutocannonBlockItem;
 import rbasamoyai.createbigcannons.cannons.autocannon.breech.AutocannonBreechBlock;
+import software.bernie.geckolib.renderer.GeoItemRenderer;
+
+import java.util.function.Supplier;
 
 public class ShupapiumBuilderTransformers {
     public static <T extends Item, P> NonNullUnaryOperator<ItemBuilder<T, P>> fuzedProjectileItem(String pathAndMaterial) {
@@ -128,6 +131,119 @@ public class ShupapiumBuilderTransformers {
                 })
                 .item(AutocannonBlockItem::new)
                 .model((c, p) -> p.withExistingParent(c.getName(), modelLocation))
+                .build();
+    }
+
+    public static <T extends Block & AutocannonBlock, P> NonNullUnaryOperator<BlockBuilder<T, P>> autocannonMortarBarrel(String mod, String path) {
+        ResourceLocation modelLocation = ResourceLocation.fromNamespaceAndPath(mod, path);
+        return b -> b
+                .properties(BlockBehaviour.Properties::noOcclusion)
+                .addLayer(() -> RenderType::cutoutMipped)
+                .blockstate((c, p) -> {
+                    ModelFile model = p.models().getExistingFile(modelLocation);
+                    p.getVariantBuilder(c.get())
+                            .partialState()
+                            .with(ShupapiumACBarrelBlock.FACING, Direction.NORTH)
+                            .modelForState()
+                            .modelFile(model)
+                            .rotationX(-90)
+                            .rotationY(180)
+                            .addModel()
+
+                            .partialState()
+                            .with(ShupapiumACBarrelBlock.FACING, Direction.EAST)
+                            .modelForState()
+                            .modelFile(model)
+                            .rotationX(-90)
+                            .rotationY(270)
+                            .addModel()
+
+                            .partialState()
+                            .with(ShupapiumACBarrelBlock.FACING, Direction.SOUTH)
+                            .modelForState()
+                            .modelFile(model)
+                            .rotationX(-90)
+                            .addModel()
+
+                            .partialState()
+                            .with(ShupapiumACBarrelBlock.FACING, Direction.WEST)
+                            .modelForState()
+                            .modelFile(model)
+                            .rotationX(-90)
+                            .rotationY(90)
+                            .addModel()
+
+                            .partialState()
+                            .with(ShupapiumACBarrelBlock.FACING, Direction.UP)
+                            .modelForState()
+                            .modelFile(model)
+                            .rotationY(90)
+                            .addModel()
+
+                            .partialState()
+                            .with(ShupapiumACBarrelBlock.FACING, Direction.DOWN)
+                            .modelForState()
+                            .modelFile(model)
+                            .rotationX(180)
+                            .rotationY(-90)
+                            .addModel();
+                })
+                .item(AutocannonBlockItem::new)
+                .model((c, p) -> p.withExistingParent(c.getName(), modelLocation))
+                .build();
+    }
+
+    public static <T extends Block & AutocannonBlock, P> NonNullUnaryOperator<BlockBuilder<T, P>> geckoAutocannonBarrel(String mod, String path, Supplier<BlockEntityWithoutLevelRenderer> factory) {
+        ResourceLocation modelLocation = ResourceLocation.fromNamespaceAndPath(mod, path);
+        return b -> b
+                .properties(BlockBehaviour.Properties::noOcclusion)
+                .addLayer(() -> RenderType::cutoutMipped)
+                .blockstate((c, p) -> {
+                    ModelFile model = p.models().getExistingFile(modelLocation);
+                    p.getVariantBuilder(c.get())
+                            .partialState()
+                            .with(ShupapiumACBarrelBlock.FACING, Direction.NORTH)
+                            .modelForState()
+                            .modelFile(model)
+                            .addModel()
+
+                            .partialState()
+                            .with(ShupapiumACBarrelBlock.FACING, Direction.EAST)
+                            .modelForState()
+                            .modelFile(model)
+                            .rotationY(90)
+                            .addModel()
+
+                            .partialState()
+                            .with(ShupapiumACBarrelBlock.FACING, Direction.SOUTH)
+                            .modelForState()
+                            .modelFile(model)
+                            .rotationY(180)
+                            .addModel()
+
+                            .partialState()
+                            .with(ShupapiumACBarrelBlock.FACING, Direction.WEST)
+                            .modelForState()
+                            .modelFile(model)
+                            .rotationY(270)
+                            .addModel()
+
+                            .partialState()
+                            .with(ShupapiumACBarrelBlock.FACING, Direction.UP)
+                            .modelForState()
+                            .modelFile(model)
+                            .rotationX(270)
+                            .addModel()
+
+                            .partialState()
+                            .with(ShupapiumACBarrelBlock.FACING, Direction.DOWN)
+                            .modelForState()
+                            .modelFile(model)
+                            .rotationX(90)
+                            .addModel();
+                })
+                .item((block, properties) -> new ShupapiumGACBlockItem<>(block, properties, factory))
+                .model((c, p) -> p.getBuilder(c.getName()).parent(new ModelFile.UncheckedModelFile("builtin/entity")).guiLight(BlockModel.GuiLight.FRONT))
                 .build();
     }
 

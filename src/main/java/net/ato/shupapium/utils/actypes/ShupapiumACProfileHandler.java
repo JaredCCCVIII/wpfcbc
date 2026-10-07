@@ -1,36 +1,23 @@
 package net.ato.shupapium.utils.actypes;
 
-import net.ato.shupapium.MainShupapium;
 import net.minecraft.resources.ResourceLocation;
 
+import javax.annotation.Nullable;
 import java.util.HashMap;
 import java.util.Map;
 
 public class ShupapiumACProfileHandler {
-    private static final Map<ResourceLocation, ShupapiumACProfile> PROFILES = new HashMap<>();
+    private static final Map<ShupapiumACParts, ShupapiumACProfile> BY_PARTS = new HashMap<>();
+    private static final Map<ResourceLocation, ShupapiumACProfile> BY_ID = new HashMap<>();
 
-    public static void clear() {
-        PROFILES.clear();
-    }
+    private ShupapiumACProfileHandler() {}
 
     public static void register(ShupapiumACProfile profile) {
-        if (PROFILES.containsValue(profile)) {
-            MainShupapium.LOGGER.warn("{} already registered", profile.getProfileId());
-            return;
-        }
-        PROFILES.put(profile.getProfileId(), profile);
+        ShupapiumACProfile clash = BY_PARTS.putIfAbsent(profile.parts(), profile);
+        if (clash != null) throw new IllegalStateException("Profile: " + clash.getProfileId() + " and " + profile.getProfileId() + " use the same barrel + breech");
+        if (BY_ID.putIfAbsent(profile.getProfileId(), profile) != null) throw new IllegalStateException("Duplicated profile: " + profile.getProfileId());
     }
 
-    public static ShupapiumACProfile getProfile(ResourceLocation id) {
-        return PROFILES.get(id);
-    }
-
-    public static ShupapiumACProfile getProfile(ShupapiumACParts acParts) {
-        for (ShupapiumACProfile profile : PROFILES.values()) {
-            if (profile.parts().equals(acParts)) {
-                return profile;
-            }
-        }
-        return null;
-    }
+    public static @Nullable ShupapiumACProfile getProfile(ShupapiumACParts parts) {return BY_PARTS.get(parts);}
+    public static @Nullable ShupapiumACProfile getProfile(ResourceLocation id) {return BY_ID.get(id);}
 }

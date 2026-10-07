@@ -5,10 +5,11 @@ import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
 import com.wariumce.CrustyChunksMod;
 import net.ato.shupapium.blocks.*;
-import net.ato.shupapium.cannons.ShupapiumACBarrelBlock;
-import net.ato.shupapium.cannons.ShupapiumACBreechBlock;
-import net.ato.shupapium.cannons.ShupapiumACRecoilSpringBlock;
+import net.ato.shupapium.cannons.*;
+import net.ato.shupapium.client.renderers.MinigunBarrelItemRenderer;
+import net.ato.shupapium.client.renderers.RotaryCannonBarrelItemRenderer;
 import net.ato.shupapium.datagen.ShupapiumBuilderTransformers;
+import net.ato.shupapium.utils.acattachments.ShupapiumACModifiers;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.Direction;
 import net.minecraft.tags.BlockTags;
@@ -19,7 +20,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.MapColor;
 import rbasamoyai.createbigcannons.CBCTags;
-import rbasamoyai.createbigcannons.cannons.autocannon.AutocannonBarrelBlock;
 import rbasamoyai.createbigcannons.datagen.assets.CBCBuilderTransformers;
 import rbasamoyai.createbigcannons.munitions.FuzedProjectileBlockItem;
 import rbasamoyai.createbigcannons.munitions.big_cannon.ProjectileBlockItem;
@@ -33,7 +33,12 @@ public class ShupapiumBlocks {
     }
 
     // Cannon Blocks
-
+    public static final BlockEntry<ShupapiumGACBarrelBlock> MINIGUN_BARREL = MainShupapium.REGISTRATE
+            .block("minigun_barrel", p -> new ShupapiumGACBarrelBlock(p, ShupapiumCBCACMaterials.MACHINE_GUN, ShupapiumBlockEntities.MINIGUN_GECKO_CANNON))
+            .transform(cannonBlock())
+            .loot(CBCBuilderTransformers.steelScrapLoot(2))
+            .transform(ShupapiumBuilderTransformers.geckoAutocannonBarrel(CrustyChunksMod.MODID, "custom/mini_gun_barrel_particle", MinigunBarrelItemRenderer::new))
+            .register();
     public static final BlockEntry<ShupapiumACBarrelBlock> MACHINE_GUN_BARREL = MainShupapium.REGISTRATE
             .block("machine_gun_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.MACHINE_GUN))
             .transform(cannonBlock())
@@ -41,7 +46,7 @@ public class ShupapiumBlocks {
             .transform(ShupapiumBuilderTransformers.autocannonBarrel(CrustyChunksMod.MODID, "block/machine_gun_barrel"))
             .register();
     public static final BlockEntry<ShupapiumACRecoilSpringBlock> COVERED_MACHINE_GUN_BARREL = MainShupapium.REGISTRATE
-            .block("covered_machine_gun_barrel", p -> new ShupapiumACRecoilSpringBlock(p, ShupapiumCBCACMaterials.MACHINE_GUN, ShupapiumBlocks::machineGunBarrel))
+            .block("covered_machine_gun_barrel", p -> new ShupapiumACRecoilSpringBlock(p, ShupapiumCBCACMaterials.MACHINE_GUN, ShupapiumBlocks::machineGunBarrel, ShupapiumACModifiers.NONE.withRecoil(0.7F)))
             .transform(cannonBlock(false, SoundType.NETHERITE_BLOCK))
             .loot(CBCBuilderTransformers.steelScrapLoot(3))
             .transform(ShupapiumBuilderTransformers.autocannonRecoilSpring(CrustyChunksMod.MODID, "block/covered_machine_gun_barrel"))
@@ -76,6 +81,12 @@ public class ShupapiumBlocks {
             .loot(CBCBuilderTransformers.steelScrapLoot(2))
             .transform(ShupapiumBuilderTransformers.autocannonBarrel(CrustyChunksMod.MODID, "block/autocannon_barrel"))
             .register();
+    public static final BlockEntry<ShupapiumGACBarrelBlock> ROTARY_CANNON_BARREL = MainShupapium.REGISTRATE
+            .block("rotary_cannon_barrel", p -> new ShupapiumGACBarrelBlock(p, ShupapiumCBCACMaterials.CANNON_GUN, ShupapiumBlockEntities.ROTARY_GECKO_CANNON))
+            .transform(cannonBlock())
+            .loot(CBCBuilderTransformers.steelScrapLoot(2))
+            .transform(ShupapiumBuilderTransformers.geckoAutocannonBarrel(CrustyChunksMod.MODID, "custom/rac_barrel_particle", RotaryCannonBarrelItemRenderer::new))
+            .register();
     public static final BlockEntry<ShupapiumACBreechBlock> LIGHT_CANNON_BREECH = MainShupapium.REGISTRATE
             .block("light_cannon_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.CANNON_GUN))
             .transform(cannonBlock(false, SoundType.ANVIL))
@@ -107,7 +118,7 @@ public class ShupapiumBlocks {
             .transform(ShupapiumBuilderTransformers.autocannonBarrel(CrustyChunksMod.MODID, "block/thick_battle_cannon_barrel"))
             .register();
     public static final BlockEntry<ShupapiumACRecoilSpringBlock> COVERED_BATTLE_CANNON_BARREL = MainShupapium.REGISTRATE
-            .block("covered_battle_cannon_barrel", p -> new ShupapiumACRecoilSpringBlock(p, ShupapiumCBCACMaterials.BATTLE_GUN, ShupapiumBlocks::battleCannonBarrel))
+            .block("covered_battle_cannon_barrel", p -> new ShupapiumACRecoilSpringBlock(p, ShupapiumCBCACMaterials.BATTLE_GUN, ShupapiumBlocks::battleCannonBarrel, ShupapiumACModifiers.NONE.withRecoil(0.7F)))
             .transform(cannonBlock(false, SoundType.NETHERITE_BLOCK))
             .loot(CBCBuilderTransformers.steelScrapLoot(3))
             .transform(ShupapiumBuilderTransformers.autocannonRecoilSpring(CrustyChunksMod.MODID, "block/battle_cannon_mantlet"))
@@ -153,6 +164,42 @@ public class ShupapiumBlocks {
             .transform(cannonBlock(false, SoundType.ANVIL))
             .loot(CBCBuilderTransformers.steelScrapLoot(4))
             .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/large_rocket_pod_chamber"))
+            .register();
+    public static final BlockEntry<ShupapiumACBarrelBlock> SMOKE_LAUNCHER_BARREL = MainShupapium.REGISTRATE
+            .block("smoke_launcher_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.SMALL_GUN))
+            .transform(cannonBlock())
+            .loot(CBCBuilderTransformers.steelScrapLoot(2))
+            .transform(ShupapiumBuilderTransformers.autocannonMortarBarrel(CrustyChunksMod.MODID, "block/mortar"))
+            .register();
+    public static final BlockEntry<ShupapiumACBarrelBlock> MORTAR_LAUNCHER_BARREL = MainShupapium.REGISTRATE
+            .block("mortar_launcher_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.SMALL_GUN))
+            .transform(cannonBlock())
+            .loot(CBCBuilderTransformers.steelScrapLoot(2))
+            .transform(ShupapiumBuilderTransformers.autocannonMortarBarrel(CrustyChunksMod.MODID, "block/mortar"))
+            .register();
+    public static final BlockEntry<ShupapiumACBreechBlock> LAUNCHER_BREECH = MainShupapium.REGISTRATE
+            .block("launcher_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.SMALL_GUN))
+            .transform(cannonBlock(false, SoundType.ANVIL))
+            .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/rocket_pod_chamber"))
+            .register();
+    public static final BlockEntry<ShupapiumACBarrelBlock> FLAMETHROWER_BARREL = MainShupapium.REGISTRATE
+            .block("flamethrower_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.SMALL_GUN))
+            .transform(cannonBlock())
+            .loot(CBCBuilderTransformers.steelScrapLoot(2))
+            .transform(ShupapiumBuilderTransformers.autocannonBarrel(CrustyChunksMod.MODID, "block/flame_thrower_barrel"))
+            .register();
+    public static final BlockEntry<ShupapiumACRecoilSpringBlock> COVERED_FLAMETHROWER_BARREL = MainShupapium.REGISTRATE
+            .block("covered_flamethrower_barrel", p -> new ShupapiumACRecoilSpringBlock(p, ShupapiumCBCACMaterials.SMALL_GUN, ShupapiumBlocks::flamethrowerBarrel, ShupapiumACModifiers.NONE.withRecoil(0.7F)))
+            .transform(cannonBlock(false, SoundType.NETHERITE_BLOCK))
+            .loot(CBCBuilderTransformers.steelScrapLoot(3))
+            .transform(ShupapiumBuilderTransformers.autocannonRecoilSpring(CrustyChunksMod.MODID, "block/covered_flame_thrower_barrel"))
+            .register();
+    public static final BlockEntry<ShupapiumACBreechBlock> FLAMETHROWER_BREECH = MainShupapium.REGISTRATE
+            .block("flamethrower_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.SMALL_GUN))
+            .transform(cannonBlock(false, SoundType.ANVIL))
+            .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/flame_thrower"))
             .register();
 
     // Shells
@@ -357,6 +404,9 @@ public class ShupapiumBlocks {
     }
     private static BlockState battleCannonBarrel(Direction facing) {
         return BATTLE_CANNON_BARREL.getDefaultState().setValue(ShupapiumACBarrelBlock.FACING, facing);
+    }
+    private static BlockState flamethrowerBarrel(Direction facing) {
+        return FLAMETHROWER_BARREL.getDefaultState().setValue(ShupapiumACBarrelBlock.FACING, facing);
     }
 
     // Auxiliary Functions

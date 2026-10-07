@@ -1,6 +1,12 @@
 package net.ato.shupapium;
 
+import net.ato.shupapium.cannons.ShupapiumGACBarrelBlockEntity;
+import net.ato.shupapium.client.renderers.MinigunBarrelRenderer;
+import net.ato.shupapium.client.renderers.RotaryCannonBarrelRenderer;
 import net.ato.shupapium.client.renderers.ShupapiumDummyRagdollRenderer;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -23,7 +29,6 @@ public class MainShupapiumClient {
 
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
-        // Some client setup code
 
     }
 
@@ -32,5 +37,7 @@ public class MainShupapiumClient {
         event.registerEntityRenderer(ShupapiumEntities.DUMMY_RAGDOLL_ENTITY.get(), ShupapiumDummyRagdollRenderer::new);
         event.registerEntityRenderer(ShupapiumEntities.HEAVY_DUMMY_RAGDOLL_ENTITY.get(), ShupapiumDummyRagdollRenderer::new);
         event.registerEntityRenderer(ShupapiumEntities.JOKE_CLOUD_DETECTOR.get(), ThrownItemRenderer::new);
+        event.registerBlockEntityRenderer(ShupapiumBlockEntities.MINIGUN_GECKO_CANNON.get(), MinigunBarrelRenderer::new);
+        event.registerBlockEntityRenderer(ShupapiumBlockEntities.ROTARY_GECKO_CANNON.get(), RotaryCannonBarrelRenderer::new);
     }
 }

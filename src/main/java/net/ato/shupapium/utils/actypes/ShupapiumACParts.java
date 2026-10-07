@@ -1,12 +1,10 @@
 package net.ato.shupapium.utils.actypes;
 
-import rbasamoyai.createbigcannons.cannons.autocannon.AutocannonBarrelBlock;
-import rbasamoyai.createbigcannons.cannons.autocannon.breech.AutocannonBreechBlock;
-import rbasamoyai.createbigcannons.cannons.autocannon.recoil_spring.AutocannonRecoilSpringBlock;
+import net.ato.shupapium.cannons.ShupapiumACBarrelBlock;
+import net.ato.shupapium.cannons.ShupapiumACBreechBlock;
 
 public record ShupapiumACParts(
-        AutocannonBarrelBlock barrel,
-        AutocannonRecoilSpringBlock attachment,
-        AutocannonBreechBlock breech
+        ShupapiumACBarrelBlock barrel,
+        ShupapiumACBreechBlock breech
 ) {
 }

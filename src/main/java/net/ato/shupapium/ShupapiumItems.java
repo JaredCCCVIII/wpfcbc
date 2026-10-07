@@ -1,5 +1,11 @@
 package net.ato.shupapium;
 
+import com.tterrag.registrate.util.entry.ItemEntry;
+import net.ato.shupapium.cannons.ShupapiumACBarrelBlock;
+import net.ato.shupapium.cannons.ShupapiumGACBarrelBlock;
+import net.ato.shupapium.cannons.ShupapiumGACBlockItem;
+import net.ato.shupapium.client.renderers.MinigunBarrelItemRenderer;
+import net.ato.shupapium.client.renderers.RotaryCannonBarrelItemRenderer;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.Item;

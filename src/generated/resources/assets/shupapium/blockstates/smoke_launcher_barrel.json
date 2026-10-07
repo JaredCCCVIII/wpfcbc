@@ -1,0 +1,32 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "wariumce:block/mortar",
+      "x": 180,
+      "y": -90
+    },
+    "facing=east": {
+      "model": "wariumce:block/mortar",
+      "x": -90,
+      "y": 270
+    },
+    "facing=north": {
+      "model": "wariumce:block/mortar",
+      "x": -90,
+      "y": 180
+    },
+    "facing=south": {
+      "model": "wariumce:block/mortar",
+      "x": -90
+    },
+    "facing=up": {
+      "model": "wariumce:block/mortar",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "wariumce:block/mortar",
+      "x": -90,
+      "y": 90
+    }
+  }
+}
