@@ -13,6 +13,7 @@ import net.ato.shupapium.utils.acattachments.ShupapiumACModifiers;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.Direction;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
@@ -396,6 +397,24 @@ public class ShupapiumBlocks {
             .tag(CBCTags.CBCItemTags.BIG_CANNON_PROJECTILES)
             .properties(p -> p.rarity(Rarity.UNCOMMON))
             .build()
+            .register();
+
+    // Ammo Container
+    public static final BlockEntry<ShupapiumAmmoContainerBlock> SHUPAPIUM_AMMO_CONTAINER = MainShupapium.REGISTRATE
+            .block("warium_ammo_container", ShupapiumAmmoContainerBlock::new)
+            .properties(p -> p.mapColor(DyeColor.GRAY))
+            .properties(p -> p.strength(0.0F, 3.5F))
+            .properties(p -> p.sound(SoundType.ANVIL))
+            .properties(BlockBehaviour.Properties::noOcclusion)
+            .transform(ShupapiumBuilderTransformers.acAmmoContainer(false))
+            .register();
+    public static final BlockEntry<ShupapiumAmmoContainerBlock> CREATIVE_SHUPAPIUM_AMMO_CONTAINER = MainShupapium.REGISTRATE
+            .block("creative_warium_ammo_container", ShupapiumAmmoContainerBlock::new)
+            .properties(p -> p.mapColor(DyeColor.PURPLE))
+            .properties(p -> p.strength(0.0F, 5.0F))
+            .properties(p -> p.sound(SoundType.AMETHYST))
+            .properties(BlockBehaviour.Properties::noOcclusion)
+            .transform(ShupapiumBuilderTransformers.acAmmoContainer(true))
             .register();
 
     // AC Facing

@@ -6,15 +6,15 @@ import com.simibubi.create.content.contraptions.StructureTransform;
 import com.wariumce.procedures.SmallExplosionProcedure;
 import net.ato.shupapium.MainShupapium;
 import net.ato.shupapium.ShupapiumContraptionTypes;
+import net.ato.shupapium.items.ShupapiumAmmoContainerItem;
 import net.ato.shupapium.items.ShupapiumAmmoItem;
 import net.ato.shupapium.utils.acattachments.ShupapiumACAttachmentDef;
 import net.ato.shupapium.utils.acattachments.ShupapiumACAttachmentSlot;
 import net.ato.shupapium.utils.acattachments.ShupapiumACAttachments;
 import net.ato.shupapium.utils.acattachments.ShupapiumACModifiers;
-import net.ato.shupapium.utils.actypes.ShupapiumACLayout;
-import net.ato.shupapium.utils.actypes.ShupapiumACParts;
-import net.ato.shupapium.utils.actypes.ShupapiumACProfile;
-import net.ato.shupapium.utils.actypes.ShupapiumACProfileHandler;
+import net.ato.shupapium.utils.acballistics.ShupapiumAmmoBallistics;
+import net.ato.shupapium.utils.actypes.*;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.HolderLookup;
@@ -26,11 +26,13 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.level.Level;
@@ -55,7 +57,6 @@ import rbasamoyai.createbigcannons.cannons.ItemCannonBehavior;
 import rbasamoyai.createbigcannons.cannons.autocannon.AutocannonBlock;
 import rbasamoyai.createbigcannons.cannons.autocannon.IAutocannonBlockEntity;
 import rbasamoyai.createbigcannons.cannons.autocannon.MovesWithAutocannonRecoilSpring;
-import rbasamoyai.createbigcannons.cannons.autocannon.breech.AutocannonBreechBlock;
 import rbasamoyai.createbigcannons.cannons.autocannon.material.AutocannonMaterial;
 import rbasamoyai.createbigcannons.cannons.autocannon.material.AutocannonMaterialProperties;
 import rbasamoyai.createbigcannons.cannons.autocannon.recoil_spring.AutocannonRecoilSpringBlock;
@@ -64,10 +65,9 @@ import rbasamoyai.createbigcannons.config.CBCConfigs;
 import rbasamoyai.createbigcannons.effects.particles.plumes.AutocannonPlumeParticleData;
 import rbasamoyai.createbigcannons.index.CBCAutocannonMaterials;
 import rbasamoyai.createbigcannons.index.CBCEntityTypes;
-import rbasamoyai.createbigcannons.index.CBCSoundEvents;
 import rbasamoyai.createbigcannons.multiloader.NetworkPlatform;
-import rbasamoyai.createbigcannons.munitions.autocannon.AbstractAutocannonProjectile;
 import rbasamoyai.createbigcannons.munitions.autocannon.config.AutocannonProjectilePropertiesComponent;
+import rbasamoyai.createbigcannons.munitions.autocannon.config.InertAutocannonProjectileProperties;
 import rbasamoyai.createbigcannons.network.ClientboundAnimateCannonContraptionPacket;
 import rbasamoyai.createbigcannons.utils.CBCUtils;
 import rbasamoyai.ritchiesprojectilelib.RitchiesProjectileLib;
@@ -156,7 +156,7 @@ public class MountedShupapiumACContraption extends MountedAutocannonContraption 
 
         this.startPos = !positiveBreech && !negativeBreech ? pos : negativeBreech ? negativeEndPos : positiveEndPos;
         BlockState breechState = level.getBlockState(this.startPos);
-        if (!(breechState.getBlock() instanceof AutocannonBreechBlock)) throw invalidCannon();
+        if (!(breechState.getBlock() instanceof ShupapiumACBreechBlock)) throw invalidCannon();
         this.initialOrientation = breechState.getValue(BlockStateProperties.FACING);
         this.anchor = pos;
         this.startPos = this.startPos.subtract(pos);
@@ -250,6 +250,9 @@ public class MountedShupapiumACContraption extends MountedAutocannonContraption 
         ShupapiumACLayout layout = this.getLayout();
         if (this.profile == null || layout == null) return;
         if (this.startPos == null || this.cannonMaterial == null || !(this.presentBlockEntities.get(this.startPos) instanceof ShupapiumACBreechBlockEntity breech) || !breech.canFire()) return;
+
+        if (this.hasIncompatibleAmmo(breech)) return;
+
         ItemStack foundProjectile = breech.extractNextInput();
         if (!(foundProjectile.getItem() instanceof ShupapiumAmmoItem round)) return;
 
@@ -260,7 +263,7 @@ public class MountedShupapiumACContraption extends MountedAutocannonContraption 
             default -> Direction.DOWN;
         };
 
-        Vec3 ejectPos = entity.toGlobalVector(Vec3.atCenterOf(breech.getBlockPos().relative(this.isHandle ? Direction.DOWN : this.initialOrientation.getOpposite())), 0);
+        Vec3 ejectPos = entity.toGlobalVector(Vec3.atCenterOf(this.startPos.relative(this.isHandle ? handleEjectDirection : this.initialOrientation.getOpposite())), 0);
         Vec3 centerPos = entity.toGlobalVector(Vec3.atCenterOf(BlockPos.ZERO), 0);
         ItemStack ejectStack = round.getSpentItem(foundProjectile);
         if (!ejectStack.isEmpty()) {
@@ -271,110 +274,131 @@ public class MountedShupapiumACContraption extends MountedAutocannonContraption 
             level.addFreshEntity(ejectEntity);
         }
 
+        InertAutocannonProjectileProperties projectileProperties = round.getMainProperties(foundProjectile);
+        if (projectileProperties == null) {
+            MainShupapium.LOGGER.error("Projectile properties are missing for {}!", foundProjectile.getItem());
+            return;
+        }
         AutocannonMaterialProperties properties = this.cannonMaterial.properties();
         AutocannonProjectilePropertiesComponent roundProperties = round.getAutocannonProperties(foundProjectile);
         boolean canFail = !CBCConfigs.server().failure.disableAllFailure.get();
+        boolean canSquib = (roundProperties == null || roundProperties.canSquib()) && canFail;
 
         ShupapiumACModifiers mods = layout.totalModifiers();
 
-        float speed = properties.baseSpeed();
-        float spread = properties.baseSpread();
-        boolean canSquib = roundProperties == null || roundProperties.canSquib();
-        canSquib &= canFail;
-
-        BlockPos currentPos = this.startPos.relative(this.initialOrientation);
         int barrelTravelled = 0;
+        float barrelSpeedBonus = 0F;
+        float barrelSpreadReduction = 0F;
         boolean squib = false;
 
-        while (this.presentBlockEntities.get(currentPos) instanceof IAutocannonBlockEntity autocannon) {
+        for (BlockPos p : layout.barrelPositions()) {
+            if (!(this.presentBlockEntities.get(p) instanceof IAutocannonBlockEntity autocannon)) continue;
             ItemCannonBehavior behavior = autocannon.cannonBehavior();
-            if (behavior.canLoadItem(foundProjectile)) {
-                ++barrelTravelled;
-                if (barrelTravelled <= properties.maxSpeedIncreases()) speed += properties.speedIncreasePerBarrel();
-                spread -= properties.spreadReductionPerBarrel();
-                spread = Math.max(spread, 0);
-                if (canSquib && barrelTravelled > properties.maxBarrelLength()) {
-                    StructureTemplate.StructureBlockInfo oldInfo = this.blocks.get(currentPos);
-                    if (oldInfo == null) return;
-                    behavior.tryLoadingItem(foundProjectile);
-                    CompoundTag tag = this.presentBlockEntities.get(currentPos).saveWithFullMetadata(level.registryAccess());
-                    tag.remove("x");
-                    tag.remove("y");
-                    tag.remove("z");
-                    StructureTemplate.StructureBlockInfo squibInfo = new StructureTemplate.StructureBlockInfo(currentPos, oldInfo.state(), tag);
-                    this.blocks.put(currentPos, squibInfo);
-                    Vec3 squibPos = entity.toGlobalVector(Vec3.atCenterOf(currentPos), 0);
-                    level.playSound(null, squibPos.x, squibPos.y, squibPos.z, oldInfo.state().getSoundType().getBreakSound(), SoundSource.BLOCKS, 10F, 0F);
-                    squib = true;
-                    break;
-                }
-                currentPos = currentPos.relative(this.initialOrientation);
-            } else {
+
+            if (!behavior.canLoadItem(foundProjectile)) {
                 behavior.removeItem();
                 if (canFail) {
-                    Vec3 failurePoint = entity.toGlobalVector(Vec3.atCenterOf(currentPos), 0);
-                    SmallExplosionProcedure.execute(level, failurePoint.x,  failurePoint.y, failurePoint.z);
-                    for (int i = 0; i < 10; ++i) {
-                        BlockPos pos = currentPos.relative(this.initialOrientation, i);
-                        this.blocks.remove(pos);
-                    }
+                    Vec3 failurePoint = entity.toGlobalVector(Vec3.atCenterOf(p), 0);
+                    SmallExplosionProcedure.execute(level, failurePoint.x, failurePoint.y, failurePoint.z);
+                    for (int i = 0; i < 10; ++i) this.blocks.remove(p.relative(this.initialOrientation, i));
                     if (controller != null) controller.disassemble();
                     return;
                 }
+            }
+
+            ++barrelTravelled;
+            if (barrelTravelled <= properties.maxSpeedIncreases()) barrelSpeedBonus += properties.speedIncreasePerBarrel();
+            barrelSpreadReduction += properties.spreadReductionPerBarrel();
+
+            if (canSquib && barrelTravelled > properties.maxBarrelLength()) {
+                StructureTemplate.StructureBlockInfo oldInfo = this.blocks.get(p);
+                if (oldInfo == null) return;
+                behavior.tryLoadingItem(foundProjectile);
+                CompoundTag tag = this.presentBlockEntities.get(p).saveWithFullMetadata(level.registryAccess());
+                tag.remove("x");
+                tag.remove("y");
+                tag.remove("z");
+                this.blocks.put(p, new StructureTemplate.StructureBlockInfo(p, oldInfo.state(), tag));
+
+                Vec3 squibPos = entity.toGlobalVector(Vec3.atCenterOf(p), 0);
+                level.playSound(null, squibPos.x, squibPos.y, squibPos.z, oldInfo.state().getSoundType().getBreakSound(), SoundSource.BLOCKS, 10.0F, 0.0F);
+                squib = true;
+                break;
             }
         }
 
         breech.handleFiring();
         if (squib) return;
         for (BlockPos pos : this.recoilSpringPositions) {
-            if (this.presentBlockEntities.get(pos) instanceof AutocannonRecoilSpringBlockEntity spring) spring.handleFiring();
+            if (this.presentBlockEntities.get(pos) instanceof AutocannonRecoilSpringBlockEntity springBE) springBE.handleFiring();
         }
         NetworkPlatform.sendToClientTracking(ClientboundAnimateCannonContraptionPacket.entity(entity), entity);
 
-        Vec3 spawnPos = entity.toGlobalVector(Vec3.atCenterOf(currentPos.relative(this.initialOrientation)), 0);
+        ShupapiumAmmoBallistics ballistics = round.getBallistics(foundProjectile);
+        ShupapiumACFireParams fp = ShupapiumACFireParams.resolve(
+                this.profile, mods,
+                ballistics,
+                barrelSpeedBonus, barrelSpreadReduction
+        );
+
+        Vec3 spawnPos = entity.toGlobalVector(Vec3.atCenterOf(layout.endPos().relative(this.initialOrientation)), 0);
         Vec3 vec1 = spawnPos.subtract(centerPos).normalize();
-        spawnPos = spawnPos.subtract(vec1.scale(1.5));
+        spawnPos = spawnPos.subtract(vec1.scale(1.0));
+        Vec3 particlePos = spawnPos;
+
+        Entity owner = entity.getControllingPassenger();
+        float baseSpread = 0.3F * Mth.clamp(fp.speed(), 0F, 1F);
+        float yaw0 = (float) Math.atan2(vec1.z, vec1.x);
+        float pitch0 = (float) Math.asin(vec1.y);
 
         float recoilMagnitude = properties.baseRecoil();
+        int fired = 0;
 
-        AbstractAutocannonProjectile projectile = round.getAutocannonProjectile(foundProjectile, level);
-        if (projectile != null) {
-            projectile.setPos(spawnPos);
-            projectile.setChargePower(barrelTravelled);
-            projectile.setLifetime(properties.projectileLifetime());
-            projectile.shoot(vec1.x, vec1.y, vec1.z, speed, spread);
+        for (int i = 0; i < this.profile.getProjectilePerShot(); i++) {
+            AbstractArrow projectile = round.createProjectile(level, foundProjectile);
+            if (projectile == null) continue;
+            round.prepareProjectile(projectile, level, foundProjectile, owner);
 
-            projectile.addUntouchableEntity(entity, 1);
-            Entity vehicle = entity.getVehicle();
-            if (vehicle != null && CBCEntityTypes.CANNON_CARRIAGE.is(vehicle))
-                projectile.addUntouchableEntity(vehicle, 1);
+            float shotSpread = baseSpread + i * 0.015F;
+            float yaw = yaw0 + (float) (level.random.nextGaussian() * shotSpread);
+            float pitch = pitch0 + (float) (level.random.nextGaussian() * shotSpread);
 
-            level.addFreshEntity(projectile);
+            projectile.setPos(spawnPos.x, spawnPos.y + Mth.nextFloat(level.random, -0.005F, 0.005F), spawnPos.z);
 
+            Vec3 spreadDir = new Vec3(Math.cos(pitch) * Math.cos(yaw), Math.sin(pitch), Math.cos(pitch) * Math.sin(yaw));
+            projectile.shoot(spreadDir.x, spreadDir.y, spreadDir.z, fp.speed(), Mth.nextFloat(level.random, -0.01F, 0.01F));
             projectile.xRotO = projectile.getXRot();
             projectile.yRotO = projectile.getYRot();
+            projectile.setDeltaMovement(projectile.getDeltaMovement().add(0, projectileProperties.ballistics().gravity(), 0));
 
-            if (roundProperties != null) recoilMagnitude = (float) (recoilMagnitude + roundProperties.addedRecoil());
+            level.addFreshEntity(projectile);
+            fired++;
+
+            if (roundProperties != null) recoilMagnitude += (float) roundProperties.addedRecoil();
+            if (CBCConfigs.server().munitions.projectilesCanChunkload.get()) {
+                ChunkPos cpos1 = new ChunkPos(CBCCompatTransformers.transformBlockPos(level, BlockPos.containing(projectile.position())));
+                RitchiesProjectileLib.queueForceLoad(level, cpos1.x, cpos1.z);
+            }
         }
+
+        if (fired == 0) return;
 
         recoilMagnitude *= CBCConfigs.server().cannons.autocannonRecoilScale.getF();
+        recoilMagnitude *= fp.recoilMultiplier();
         if (controller != null) controller.onRecoil(vec1.scale(-recoilMagnitude), centerPos, entity);
 
-        Vec3 particlePos = CBCCompatTransformers.transformVec3(level, spawnPos, this.entity.position());
         Vec3 particleVel = vec1.scale(1.25);
-        for (ServerPlayer player : level.players()) {
-            if (entity.getControllingPassenger() == player) continue;
-            particleVel = CBCCompatTransformers.transformLocationNormal(level, this.entity.blockPosition(), particleVel);
-            level.sendParticles(player, new AutocannonPlumeParticleData(1f), true, particlePos.x, particlePos.y, particlePos.z, 0, particleVel.x, particleVel.y, particleVel.z, 1.0f);
+        if (mods.muzzleParticleScale() > 0F) {
+            for (ServerPlayer player : level.players()) {
+                if (entity.getControllingPassenger() == player) continue;
+                level.sendParticles(player, new AutocannonPlumeParticleData(mods.muzzleParticleScale()), true, particlePos.x, particlePos.y, particlePos.z, 0, particleVel.x, particleVel.y, particleVel.z, 1.0F);
+            }
         }
+        if (mods.muzzleParticleScale() >= 1F) round.customProjectileMuzzle(foundProjectile, level, particlePos, particleVel);
 
-        CBCUtils.playBlastLikeSoundOnServer(level, spawnPos.x, spawnPos.y, spawnPos.z, CBCSoundEvents.FIRE_AUTOCANNON.getMainEvent(),
-                SoundSource.BLOCKS, 12, 1, 5f);
-
-        if (projectile != null && CBCConfigs.server().munitions.projectilesCanChunkload.get()) {
-            ChunkPos cpos1 = new ChunkPos(CBCCompatTransformers.transformBlockPos(level, BlockPos.containing(projectile.position())));
-            RitchiesProjectileLib.queueForceLoad(level, cpos1.x, cpos1.z);
-        }
+        SoundEvent soundOverride = mods.fireSoundOverride() != null ? mods.fireSoundOverride().get() : null;
+        this.profile.cannonSoundEvent(level, spawnPos, mods.soundVolumeMultiplier(), soundOverride);
+        this.profile.cannonMuzzleEvent(level, particlePos, particleVel, mods.muzzleParticleScale());
     }
 
     @Override
@@ -430,14 +454,17 @@ public class MountedShupapiumACContraption extends MountedAutocannonContraption 
             controller = entity.getVehicle().getControllingPassenger();
         }
         if (!level.isClientSide && controller instanceof Player player) {
+            boolean wrongAmmo = this.presentBlockEntities.get(this.startPos) instanceof ShupapiumACBreechBlockEntity breech && this.hasIncompatibleAmmo(breech);
             String key = "";
             ControlPitchContraption controllerBlock = entity.getController();
             if (controllerBlock != null) {
                 ResourceLocation loc = controllerBlock.getTypeId();
                 if (loc != null) key = "." + loc.getNamespace() + "." + loc.getPath();
             }
-            player.displayClientMessage(Component.translatable("block." + MainShupapium.MOD_ID + ".cannon_carriage.hotbar.fireRate" + key,
-                    this.getReferencedFireRate()), true);
+            Component message = wrongAmmo
+                    ? Component.translatable("message." + MainShupapium.MOD_ID + ".incompatible_ammo").withStyle(ChatFormatting.RED)
+                    : Component.translatable("block." + MainShupapium.MOD_ID + ".cannon_carriage.hotbar.fireRate" + key, this.getReferencedFireRate());
+            player.displayClientMessage(message, true);
         }
 
         if (level instanceof ServerLevel slevel && this.canBeFiredOnController(entity.getController()))
@@ -644,20 +671,26 @@ public class MountedShupapiumACContraption extends MountedAutocannonContraption 
         return new ShupapiumACLayout(new ShupapiumACParts(barrel, breech), barrels, attachments);
     }
 
+    private boolean hasIncompatibleAmmo(ShupapiumACBreechBlockEntity breech) {
+        if (this.profile == null) return false;
+        ItemStack main = ShupapiumAmmoContainerItem.getMainAmmoStack(breech.getMagazine());
+        return !main.isEmpty() && !this.profile.getAmmoTypes().contains(main.getItem());
+    }
+
     public static AssemblyException invalidBarrelBlock() {
         return new AssemblyException(Component.translatable("exception.shupapium.cannon_mount.invalid_barrel"));
     }
 
     public static AssemblyException duplicatedAttachments() {
-        return new AssemblyException(Component.literal("Duplicated attachments"));
+        return new AssemblyException(Component.translatable("exception.shupapium.cannon_mount.duplicated_attachments"));
     }
 
     public static AssemblyException misplacedAttachment() {
-        return new AssemblyException(Component.literal("Bad attachment displecement"));
+        return new AssemblyException(Component.translatable("exception.shupapium.cannon_mount.misplaced_attachment"));
     }
 
     public static AssemblyException mixedBarrels() {
-        return new AssemblyException(Component.literal("Mixed barrels"));
+        return new AssemblyException(Component.translatable("exception.shupapium.cannon_mount.mixed_barrels"));
     }
 
     public static AssemblyException invalidAttachment() {

@@ -4,10 +4,12 @@ import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.item.ItemDescription;
 import com.simibubi.create.foundation.item.KineticStats;
 import com.simibubi.create.foundation.item.TooltipModifier;
+import net.ato.shupapium.events.ShupapiumReloadListener;
 import net.createmod.catnip.lang.FontHelper;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.neoforged.neoforge.event.AddReloadListenerEvent;
 import net.neoforged.neoforge.registries.RegisterEvent;
 import org.slf4j.Logger;
 
@@ -51,15 +53,17 @@ public class MainShupapium {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
         ShupapiumSounds.register(modEventBus);
-        ShupapiumBlockEntities.register();
         ShupapiumEntities.register();
         ShupapiumEntities.register(modEventBus);
         ShupapiumBlocks.register();
+        ShupapiumBlockEntities.register();
+        ShupapiumItems.register();
         ShupapiumItems.register(modEventBus);
+        ShupapiumMenuTypes.register();
         ShupapiumGroup.register(modEventBus);
         ShupapiumMobEffects.register(modEventBus);
-        ShupapiumACProfiles.register();
         modEventBus.addListener(this::onRegister);
+        NeoForge.EVENT_BUS.addListener((AddReloadListenerEvent e) -> e.addListener(new ShupapiumReloadListener()));
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -68,7 +72,7 @@ public class MainShupapium {
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
-
+        event.enqueueWork(ShupapiumACProfiles::register);
     }
 
     // Add the example block item to the building blocks tab
@@ -78,6 +82,7 @@ public class MainShupapium {
 
     private void onRegister(RegisterEvent evt) {
         ShupapiumContraptionTypes.init();
+        ShupapiumDataComponents.init();
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

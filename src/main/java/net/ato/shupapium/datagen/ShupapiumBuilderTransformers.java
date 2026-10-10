@@ -1,26 +1,34 @@
 package net.ato.shupapium.datagen;
 
-import com.simibubi.create.foundation.data.BlockStateGen;
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.builders.ItemBuilder;
 import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
 import com.wariumce.CrustyChunksMod;
 import net.ato.shupapium.MainShupapium;
+import net.ato.shupapium.ShupapiumDataComponents;
+import net.ato.shupapium.blocks.ShupapiumAmmoContainerBlock;
 import net.ato.shupapium.cannons.*;
+import net.ato.shupapium.items.ShupapiumAmmoContainerItem;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.block.model.BlockModel;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.storage.loot.LootPool;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction;
+import net.minecraft.world.level.storage.loot.functions.CopyNameFunction;
 import net.neoforged.neoforge.client.model.generators.*;
+import rbasamoyai.createbigcannons.CBCTags;
 import rbasamoyai.createbigcannons.CreateBigCannons;
 import rbasamoyai.createbigcannons.cannons.autocannon.AutocannonBlock;
 import rbasamoyai.createbigcannons.cannons.autocannon.AutocannonBlockItem;
-import rbasamoyai.createbigcannons.cannons.autocannon.breech.AutocannonBreechBlock;
-import software.bernie.geckolib.renderer.GeoItemRenderer;
 
 import java.util.function.Supplier;
 
@@ -328,6 +336,42 @@ public class ShupapiumBuilderTransformers {
                 })
                 .item(AutocannonBlockItem::new)
                 .model((c, p) -> p.withExistingParent(c.getName(), breechLocation))
+                .build();
+    }
+
+    public static <T extends Block, P> NonNullUnaryOperator<BlockBuilder<T, P>> acAmmoContainer(boolean isCreative) {
+        String root = isCreative ? "creative": "regular";
+        return b -> b.addLayer(() -> RenderType::cutoutMipped)
+                .blockstate((c, p) -> p.getVariantBuilder(c.get())
+                        .forAllStatesExcept(state -> {
+                            ShupapiumAmmoContainerBlock.State containerState = state.getValue(ShupapiumAmmoContainerBlock.CONTAINER_STATE);
+                            String suffix = switch (containerState) {
+                                case CLOSED -> "";
+                                case EMPTY -> "_empty";
+                                case FILLED -> "_filled";
+                            };
+                            ResourceLocation loc = p.modLoc("block/shupapium_ammo_containers/" + root + suffix);
+                            Direction.Axis axis = state.getValue(BlockStateProperties.HORIZONTAL_AXIS);
+                            return ConfiguredModel.builder()
+                                    .modelFile(p.models().getExistingFile(loc))
+                                    .rotationY(axis == Direction.Axis.X ? 90 : 0)
+                                    .build();
+                        }, BlockStateProperties.WATERLOGGED))
+                .loot((t, c) -> {
+                    CopyComponentsFunction.Builder func = CopyComponentsFunction.copyComponents(CopyComponentsFunction.Source.BLOCK_ENTITY)
+                            .include(ShupapiumDataComponents.AMMO)
+                            .include(ShupapiumDataComponents.PROPELLANTS);
+                    t.add(c, LootTable.lootTable()
+                            .withPool(t.applyExplosionCondition(c, LootPool.lootPool()
+                                            .add(LootItem.lootTableItem(c))
+                                            .apply(CopyNameFunction.copyName(CopyNameFunction.NameSource.BLOCK_ENTITY)))
+                                    .apply(func)));
+                })
+                .item(ShupapiumAmmoContainerItem::new)
+                .properties(p -> p.stacksTo(1))
+                .properties(p -> isCreative ? p.rarity(Rarity.EPIC) : p)
+                .tag(CBCTags.CBCItemTags.AUTOCANNON_AMMO_CONTAINERS)
+                .model((c, p) -> p.withExistingParent(c.getName(), p.modLoc("block/shupapium_ammo_containers/" + root)))
                 .build();
     }
 

@@ -1,9 +1,12 @@
 package net.ato.shupapium;
 
 import com.tterrag.registrate.util.entry.BlockEntityEntry;
+import net.ato.shupapium.blockentities.ShupapiumAmmoContainerBlockEntity;
 import net.ato.shupapium.blockentities.ShupapiumFuzedBlockEntity;
 import net.ato.shupapium.cannons.ShupapiumACBreechBlockEntity;
 import net.ato.shupapium.cannons.ShupapiumGACBarrelBlockEntity;
+import net.ato.shupapium.client.flywheels.ShupapiumACBreechVisual;
+import net.ato.shupapium.client.renderers.ShupapiumACBreechRenderer;
 import rbasamoyai.createbigcannons.cannons.autocannon.AutocannonBlockEntity;
 import rbasamoyai.createbigcannons.cannons.autocannon.breech.AutocannonBreechRenderer;
 import rbasamoyai.createbigcannons.cannons.autocannon.breech.AutocannonBreechVisual;
@@ -34,8 +37,8 @@ public class ShupapiumBlockEntities {
             .register();
     public static final BlockEntityEntry<ShupapiumACBreechBlockEntity> SHUPAPIUM_AUTOCANNON_BREECH = MainShupapium.REGISTRATE
             .blockEntity("shupapium_autocannon_breech", ShupapiumACBreechBlockEntity::new)
-            .visual(() -> AutocannonBreechVisual::new)
-            .renderer(() -> AutocannonBreechRenderer::new)
+            .visual(() -> ShupapiumACBreechVisual::new)
+            .renderer(() -> ShupapiumACBreechRenderer::new)
             .validBlocks(ShupapiumBlocks.MINIGUN_BREECH, ShupapiumBlocks.LIGHT_MACHINE_GUN_BREECH, ShupapiumBlocks.MACHINE_GUN_BREECH, ShupapiumBlocks.HEAVY_MACHINE_GUN_BREECH,
                     ShupapiumBlocks.LIGHT_CANNON_BREECH, ShupapiumBlocks.ROTARY_CANNON_BREECH, ShupapiumBlocks.HEAVY_CANNON_BREECH,
                     ShupapiumBlocks.BATTLE_CANNON_BREECH, ShupapiumBlocks.ARTILLERY_CANNON_BREECH,
@@ -49,6 +52,10 @@ public class ShupapiumBlockEntities {
             .validBlocks(ShupapiumBlocks.COVERED_MACHINE_GUN_BARREL,
                     ShupapiumBlocks.COVERED_BATTLE_CANNON_BARREL,
                     ShupapiumBlocks.COVERED_FLAMETHROWER_BARREL)
+            .register();
+    public static final BlockEntityEntry<ShupapiumAmmoContainerBlockEntity> SHUPAPIUM_AMMO_CONTAINER = MainShupapium.REGISTRATE
+            .blockEntity("shupapium_ammo_container", ShupapiumAmmoContainerBlockEntity::new)
+            .validBlocks(ShupapiumBlocks.SHUPAPIUM_AMMO_CONTAINER, ShupapiumBlocks.CREATIVE_SHUPAPIUM_AMMO_CONTAINER)
             .register();
     public static final BlockEntityEntry<ShupapiumFuzedBlockEntity> SHUPAPED_FUZED_BLOCK = MainShupapium.REGISTRATE
             .blockEntity("shupaped_fuzed_block", ShupapiumFuzedBlockEntity::new)

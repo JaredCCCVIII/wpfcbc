@@ -24,6 +24,9 @@ public class ShupapiumGroup {
                 .title(Component.translatable("itemGroup.shupapium"))
                 .icon(ShupapiumBlocks.FISSION_BOMB_SHELL_BLOCK::asStack)
                 .displayItems((itemDisplayParameters, output) -> {
+                    output.accept(ShupapiumItems.LARGE_BULLET_AMMO_ITEM);
+                    output.accept(ShupapiumBlocks.SHUPAPIUM_AMMO_CONTAINER);
+                    output.accept(ShupapiumBlocks.CREATIVE_SHUPAPIUM_AMMO_CONTAINER);
                     output.accept(ShupapiumBlocks.MINIGUN_BARREL);
                     output.accept(ShupapiumBlocks.MACHINE_GUN_BARREL);
                     output.accept(ShupapiumBlocks.COVERED_MACHINE_GUN_BARREL);

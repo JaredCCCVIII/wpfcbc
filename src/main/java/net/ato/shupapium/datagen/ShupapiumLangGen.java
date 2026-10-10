@@ -30,12 +30,24 @@ public class ShupapiumLangGen {
         MainShupapium.REGISTRATE.addRawLang("subtitle." + MainShupapium.MOD_ID + "." + HEAVY_DUMMY_RAGDOLL_NAME + ".death", "Test Dummy dying");
         MainShupapium.REGISTRATE.addRawLang("effect." + MainShupapium.MOD_ID + ".joke_effect", "Chistosada");
 
+        // Config
+        MainShupapium.REGISTRATE.addRawLang(MainShupapium.MOD_ID + ".configuration.maxFireRate", "Max Default Fire Rate");
+        MainShupapium.REGISTRATE.addRawLang(MainShupapium.MOD_ID + ".configuration.maxFireRate.tooltip", "Maximum cap AC Profile");
+        MainShupapium.REGISTRATE.addRawLang(MainShupapium.MOD_ID + ".configuration.acHeat", "Mod's AC Barrels Heat Up");
+        MainShupapium.REGISTRATE.addRawLang(MainShupapium.MOD_ID + ".configuration.acHeat.tooltip", "Do mod's barrels heat up?");
+
         // CBC related
+        MainShupapium.REGISTRATE.addRawLang(MainShupapium.MOD_ID + ".gui.autocannon_ammo_container.propellant_slot", "Propellents");
+        MainShupapium.REGISTRATE.addLang("block", ShupapiumBlocks.SHUPAPIUM_AMMO_CONTAINER.getId(), "tooltip.main_ammo", "x%1$s %2$s");
+        MainShupapium.REGISTRATE.addLang("block", ShupapiumBlocks.SHUPAPIUM_AMMO_CONTAINER.getId(), "tooltip.propellants", "Propellants: x%1$s %2$s");
         MainShupapium.REGISTRATE.addLang("exception", MainShupapium.resource("cannon_mount"), "invalid_barrel", "Invalid barrel detected.");
         MainShupapium.REGISTRATE.addLang("exception", MainShupapium.resource("cannon_mount"), "invalid_attachment", "Invalid attachment detected.");
         MainShupapium.REGISTRATE.addLang("exception", MainShupapium.resource("cannon_mount"), "invalid_breech", "Invalid breech detected.");
         MainShupapium.REGISTRATE.addLang("exception", MainShupapium.resource("cannon_mount"), "invalid_compatibility", "Invalid cannon compatibility detected.");
         MainShupapium.REGISTRATE.addLang("exception", MainShupapium.resource("cannon_mount"), "invalid_ammo_type", "Invalid ammo type detected.");
+        MainShupapium.REGISTRATE.addLang("exception", MainShupapium.resource("cannon_mount"), "duplicated_attachments", "Duplicated attachments detected.");
+        MainShupapium.REGISTRATE.addLang("exception", MainShupapium.resource("cannon_mount"), "misplaced_attachment", "Misplaced attachment detected.");
+        MainShupapium.REGISTRATE.addLang("exception", MainShupapium.resource("cannon_mount"), "mixed_barrels", "Mixed barrel detected.");
         MainShupapium.REGISTRATE.addLang("block", MainShupapium.resource("cannon_carriage"), "hotbar.fireRate", "Rate of fire: %1$s RPM");
 
         // Shells
