@@ -4,6 +4,7 @@ import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
 import com.wariumce.CrustyChunksMod;
+import com.wariumce.init.CrustyChunksModSounds;
 import net.ato.shupapium.blocks.*;
 import net.ato.shupapium.cannons.*;
 import net.ato.shupapium.client.renderers.MinigunBarrelItemRenderer;
@@ -46,8 +47,8 @@ public class ShupapiumBlocks {
             .loot(CBCBuilderTransformers.steelScrapLoot(2))
             .transform(ShupapiumBuilderTransformers.autocannonBarrel(CrustyChunksMod.MODID, "block/machine_gun_barrel"))
             .register();
-    public static final BlockEntry<ShupapiumACRecoilSpringBlock> COVERED_MACHINE_GUN_BARREL = MainShupapium.REGISTRATE
-            .block("covered_machine_gun_barrel", p -> new ShupapiumACRecoilSpringBlock(p, ShupapiumCBCACMaterials.MACHINE_GUN, ShupapiumBlocks::machineGunBarrel, ShupapiumACModifiers.NONE.withRecoil(0.7F)))
+    public static final BlockEntry<ShupapiumACBarrelBlock> COVERED_MACHINE_GUN_BARREL = MainShupapium.REGISTRATE
+            .block("covered_machine_gun_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.MACHINE_GUN, ShupapiumACModifiers.NONE.withSpread(0.3F).withParticles(0.1F).withSound(CrustyChunksModSounds.SILENCEDSHOT::get)))
             .transform(cannonBlock(false, SoundType.NETHERITE_BLOCK))
             .loot(CBCBuilderTransformers.steelScrapLoot(3))
             .transform(ShupapiumBuilderTransformers.autocannonRecoilSpring(CrustyChunksMod.MODID, "block/covered_machine_gun_barrel"))

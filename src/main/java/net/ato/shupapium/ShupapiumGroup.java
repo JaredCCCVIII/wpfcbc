@@ -1,6 +1,7 @@
 package net.ato.shupapium;
 
 import com.simibubi.create.Create;
+import com.wariumce.init.CrustyChunksModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
@@ -25,6 +26,7 @@ public class ShupapiumGroup {
                 .icon(ShupapiumBlocks.FISSION_BOMB_SHELL_BLOCK::asStack)
                 .displayItems((itemDisplayParameters, output) -> {
                     output.accept(ShupapiumItems.LARGE_BULLET_AMMO_ITEM);
+                    output.accept(CrustyChunksModItems.POWDER_CHARGE.get());
                     output.accept(ShupapiumBlocks.SHUPAPIUM_AMMO_CONTAINER);
                     output.accept(ShupapiumBlocks.CREATIVE_SHUPAPIUM_AMMO_CONTAINER);
                     output.accept(ShupapiumBlocks.MINIGUN_BARREL);

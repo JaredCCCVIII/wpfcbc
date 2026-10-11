@@ -19,7 +19,7 @@ import rbasamoyai.createbigcannons.munitions.big_cannon.FuzedBlockVisual;
 public class ShupapiumBlockEntities {
     public static final BlockEntityEntry<AutocannonBlockEntity> SHUPAPIUM_AUTOCANNON = MainShupapium.REGISTRATE
             .blockEntity("shupapium_autocannon", AutocannonBlockEntity::new)
-            .validBlocks(ShupapiumBlocks.MACHINE_GUN_BARREL,
+            .validBlocks(ShupapiumBlocks.MACHINE_GUN_BARREL, ShupapiumBlocks.COVERED_MACHINE_GUN_BARREL,
                     ShupapiumBlocks.CANNON_BARREL,
                     ShupapiumBlocks.BATTLE_CANNON_BARREL,
                     ShupapiumBlocks.THICK_BATTLE_CANNON_BARREL,
@@ -49,8 +49,7 @@ public class ShupapiumBlockEntities {
             .blockEntity("shupapium_autocannon_recoil_spring", AutocannonRecoilSpringBlockEntity::new)
             .visual(() -> AutocannonRecoilSpringVisual::new)
             .renderer(() -> AutocannonRecoilSpringRenderer::new)
-            .validBlocks(ShupapiumBlocks.COVERED_MACHINE_GUN_BARREL,
-                    ShupapiumBlocks.COVERED_BATTLE_CANNON_BARREL,
+            .validBlocks(ShupapiumBlocks.COVERED_BATTLE_CANNON_BARREL,
                     ShupapiumBlocks.COVERED_FLAMETHROWER_BARREL)
             .register();
     public static final BlockEntityEntry<ShupapiumAmmoContainerBlockEntity> SHUPAPIUM_AMMO_CONTAINER = MainShupapium.REGISTRATE

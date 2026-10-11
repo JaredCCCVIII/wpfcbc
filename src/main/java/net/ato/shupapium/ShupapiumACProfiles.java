@@ -10,12 +10,13 @@ public class ShupapiumACProfiles {
     public static final ShupapiumACProfile MACHINE_GUN_PROFILE = BasicShupapiumACProfile
             .builder(MainShupapium.resource("machine_gun_profile"))
             .parts(ShupapiumBlocks.MACHINE_GUN_BARREL, ShupapiumBlocks.MACHINE_GUN_BREECH)
+            .alternateBarrels(ShupapiumBlocks.COVERED_MACHINE_GUN_BARREL)
             .fireSound(CrustyChunksModSounds.LARGESHOT::get)
             .muzzleParticle(ParticleTypes.CAMPFIRE_COSY_SMOKE)
             .muzzleParticle(ParticleTypes.SMOKE)
             .fireRate(400)
             .projectilesPerShot(1)
-            .cannonSpeed(0.4F)
+            .cannonSpeed(5.0F)
             .cannonSpread(0.02F)
             .ammo(ShupapiumItems.LARGE_BULLET_AMMO_ITEM)
             .build();

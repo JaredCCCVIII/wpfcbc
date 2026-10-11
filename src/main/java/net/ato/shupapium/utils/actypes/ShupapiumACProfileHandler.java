@@ -13,8 +13,12 @@ public class ShupapiumACProfileHandler {
     private ShupapiumACProfileHandler() {}
 
     public static void register(ShupapiumACProfile profile) {
-        ShupapiumACProfile clash = BY_PARTS.putIfAbsent(profile.parts(), profile);
-        if (clash != null) throw new IllegalStateException("Profile: " + clash.getProfileId() + " and " + profile.getProfileId() + " use the same barrel + breech");
+        for (ShupapiumACParts parts : profile.allParts()) {
+            ShupapiumACProfile clash = BY_PARTS.putIfAbsent(parts, profile);
+            if (clash != null) {
+                throw new IllegalStateException("AC Profiles: " + clash.getProfileId() + " and " + profile.getProfileId() + " use the same barrel + breech");
+            }
+        }
         if (BY_ID.putIfAbsent(profile.getProfileId(), profile) != null) throw new IllegalStateException("Duplicated profile: " + profile.getProfileId());
     }
 

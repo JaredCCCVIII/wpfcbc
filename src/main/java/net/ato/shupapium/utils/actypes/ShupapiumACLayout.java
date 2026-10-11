@@ -1,5 +1,6 @@
 package net.ato.shupapium.utils.actypes;
 
+import net.ato.shupapium.cannons.ShupapiumACBarrelBlock;
 import net.ato.shupapium.utils.acattachments.ShupapiumACAttachmentBlock;
 import net.ato.shupapium.utils.acattachments.ShupapiumACAttachmentDef;
 import net.ato.shupapium.utils.acattachments.ShupapiumACAttachmentSlot;
@@ -18,7 +19,7 @@ public record ShupapiumACLayout(
     public record AttachmentEntry(BlockPos pos, Block block, ShupapiumACAttachmentDef def) {}
 
     public ShupapiumACModifiers totalModifiers() {
-        ShupapiumACModifiers total = ShupapiumACModifiers.NONE;
+        ShupapiumACModifiers total = parts.barrel() instanceof ShupapiumACBarrelBlock b ? b.getBarrelModifiers() : ShupapiumACModifiers.NONE;
         for (AttachmentEntry e : attachments.values()) total = total.combine(e.def().modifiers());
         return total;
     }

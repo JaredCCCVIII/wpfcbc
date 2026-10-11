@@ -257,19 +257,21 @@ public class MountedShupapiumACContraption extends MountedAutocannonContraption 
         if (!(foundProjectile.getItem() instanceof ShupapiumAmmoItem round)) return;
 
         ControlPitchContraption controller = entity.getController();
-        Direction handleEjectDirection = switch (this.initialOrientation) {
-            case DOWN -> Direction.SOUTH;
-            case UP -> Direction.NORTH;
-            default -> Direction.DOWN;
-        };
 
-        Vec3 ejectPos = entity.toGlobalVector(Vec3.atCenterOf(this.startPos.relative(this.isHandle ? handleEjectDirection : this.initialOrientation.getOpposite())), 0);
+        Direction containerSide = this.initialOrientation.getAxis().isHorizontal() ? this.initialOrientation.getClockWise(Direction.Axis.Y) : Direction.EAST;
+        Direction ejectSide = this.isHandle ? containerSide.getOpposite() : this.initialOrientation.getOpposite();
+        Vec3 breechCenter = entity.toGlobalVector(Vec3.atCenterOf(this.startPos), 0);
+        Vec3 ejectPos = entity.toGlobalVector(Vec3.atCenterOf(this.startPos.relative(ejectSide)), 0);
         Vec3 centerPos = entity.toGlobalVector(Vec3.atCenterOf(BlockPos.ZERO), 0);
         ItemStack ejectStack = round.getSpentItem(foundProjectile);
         if (!ejectStack.isEmpty()) {
             ItemEntity ejectEntity = new ItemEntity(level, ejectPos.x, ejectPos.y, ejectPos.z, ejectStack);
-            Vec3 eject = ejectPos.subtract(centerPos).normalize();
-            ejectEntity.setDeltaMovement(eject.scale(this.isHandle ? 0.1 : 0.5));
+            Vec3 outward = ejectPos.subtract(breechCenter).normalize();
+            if (this.isHandle) outward = outward.add(0, 0.35, 0);
+            Vec3 jitter = new Vec3(level.random.nextGaussian(), level.random.nextGaussian(), level.random.nextGaussian()).scale(this.isHandle ? 0.4 : 0.3);
+            double ejectSpeed = this.isHandle ? 0.3 : 0.4;
+            ejectSpeed *= 0.8 + level.random.nextDouble() * 0.4;
+            ejectEntity.setDeltaMovement(outward.add(jitter).normalize().scale(ejectSpeed));
             ejectEntity.setPickUpDelay(20);
             level.addFreshEntity(ejectEntity);
         }
@@ -347,7 +349,7 @@ public class MountedShupapiumACContraption extends MountedAutocannonContraption 
         Vec3 particlePos = spawnPos;
 
         Entity owner = entity.getControllingPassenger();
-        float baseSpread = 0.3F * Mth.clamp(fp.speed(), 0F, 1F);
+        float baseSpread = 0.3F * Mth.clamp(fp.spread(), 0F, 1F);
         float yaw0 = (float) Math.atan2(vec1.z, vec1.x);
         float pitch0 = (float) Math.asin(vec1.y);
 
@@ -455,15 +457,15 @@ public class MountedShupapiumACContraption extends MountedAutocannonContraption 
         }
         if (!level.isClientSide && controller instanceof Player player) {
             boolean wrongAmmo = this.presentBlockEntities.get(this.startPos) instanceof ShupapiumACBreechBlockEntity breech && this.hasIncompatibleAmmo(breech);
-            String key = "";
-            ControlPitchContraption controllerBlock = entity.getController();
-            if (controllerBlock != null) {
-                ResourceLocation loc = controllerBlock.getTypeId();
-                if (loc != null) key = "." + loc.getNamespace() + "." + loc.getPath();
-            }
+//            String key = "";
+//            ControlPitchContraption controllerBlock = entity.getController();
+//            if (controllerBlock != null) {
+//                ResourceLocation loc = controllerBlock.getTypeId();
+//                if (loc != null) key = "." + loc.getNamespace() + "." + loc.getPath();
+//            }
             Component message = wrongAmmo
                     ? Component.translatable("message." + MainShupapium.MOD_ID + ".incompatible_ammo").withStyle(ChatFormatting.RED)
-                    : Component.translatable("block." + MainShupapium.MOD_ID + ".cannon_carriage.hotbar.fireRate" + key, this.getReferencedFireRate());
+                    : Component.translatable("block." + MainShupapium.MOD_ID + ".cannon_carriage.hotbar.fireRate", this.getReferencedFireRate());
             player.displayClientMessage(message, true);
         }
 

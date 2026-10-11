@@ -1,7 +1,6 @@
 package net.ato.shupapium.cannons;
 
 import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.contraptions.Contraption;
 import com.simibubi.create.content.schematics.requirement.ItemRequirement;
 import net.ato.shupapium.ShupapiumConfig;
 import net.ato.shupapium.items.ShupapiumAmmoContainerItem;
@@ -9,6 +8,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
+import net.minecraft.nbt.NbtUtils;
 import net.minecraft.nbt.Tag;
 import net.minecraft.util.Mth;
 import net.minecraft.world.item.DyeColor;
@@ -22,11 +22,8 @@ import rbasamoyai.createbigcannons.cannons.autocannon.breech.AutocannonBreechBlo
 
 import javax.annotation.Nullable;
 import java.util.Deque;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.stream.Collectors;
-
-import static rbasamoyai.createbigcannons.cannons.big_cannons.BigCannonBlock.writeAndSyncSingleBlockData;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ShupapiumACBreechBlockEntity extends AutocannonBreechBlockEntity {
     private IItemHandler inventory;
@@ -36,10 +33,8 @@ public class ShupapiumACBreechBlockEntity extends AutocannonBreechBlockEntity {
     private int animateTicks = 5;
     @Nullable
     DyeColor seat = null;
-    private boolean updateInstance = true;
-    private final Deque<ItemStack> inputBuffer = new LinkedList<>();
-    private ItemStack outputBuffer = ItemStack.EMPTY;
-    private ItemStack magazine = ItemStack.EMPTY;
+    public static final float RECOIL_TRAVEL = 0.25F;
+    public final Map<BlockPos, BlockState> toAnimate = new HashMap<>();
     public ShupapiumACBreechBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state) {
         super(type, pos, state);
     }
@@ -50,52 +45,26 @@ public class ShupapiumACBreechBlockEntity extends AutocannonBreechBlockEntity {
     }
 
     @Override
-    public Deque<ItemStack> getInputBuffer() {
-        return this.inputBuffer;
-    }
-
-    @Override
-    public ItemStack getOutputBuffer() {
-        return this.outputBuffer;
-    }
-
-    @Override
-    public void setOutputBuffer(ItemStack stack) {
-        this.outputBuffer = stack;
-    }
-
-    @Override
     public void setMagazine(ItemStack stack) {
-        this.magazine = stack;
-        this.updateInstance = true;
-    }
-
-    @Override
-    public ItemStack getMagazine() {
-        return this.magazine;
+        super.setMagazine(stack);
     }
 
     @Override
     public void tick() {
         super.tick();
-        this.allTick(this.getLevel());
+        this.allTick();
     }
 
     @Override
     public void tickFromContraption(Level level, PitchOrientedContraptionEntity poce, BlockPos localPos) {
         super.tickFromContraption(level, poce, localPos);
-        this.allTick(level);
-        if (!level.isClientSide && this.updateInstance) {
-            this.updateInstance = false;
-            Contraption contraption = poce.getContraption();
-            writeAndSyncSingleBlockData(this, contraption.getBlocks().get(localPos), poce, contraption);
-        }
+        this.allTick();
         if (level.isClientSide && poce.getContraption().getBlockEntityClientSide(localPos) instanceof ShupapiumACBreechBlockEntity cbe) {
-            cbe.allTick(level);
+            cbe.allTick();
         }
     }
 
-    private void allTick(Level level) {
+    private void allTick() {
         if (this.fireRate < 0 || this.fireRate > maxFireRate) this.fireRate = 0;
         if (this.firingCooldown < 0) this.firingCooldown = 0;
         if (this.firingCooldown > 0) this.firingCooldown--;
@@ -154,7 +123,6 @@ public class ShupapiumACBreechBlockEntity extends AutocannonBreechBlockEntity {
     @Override
     public void setSeatColor(@Nullable DyeColor color) {
         this.seat = color;
-        this.updateInstance = true;
         super.setSeatColor(color);
     }
 
@@ -164,27 +132,17 @@ public class ShupapiumACBreechBlockEntity extends AutocannonBreechBlockEntity {
     @Override
     protected void read(CompoundTag tag, HolderLookup.Provider registry, boolean clientPacket) {
         super.read(tag, registry, clientPacket);
-
-        // Clear vanilla breech data
-        super.getInputBuffer().clear();
-        super.setOutputBuffer(ItemStack.EMPTY);
-        super.setMagazine(ItemStack.EMPTY);
-
         this.fireRate = tag.getInt("FiringRate");
         this.firingCooldown = tag.getFloat("Cooldown");
         this.animateTicks = tag.getInt("AnimateTicks");
-        this.outputBuffer = tag.contains("Output") ? ItemStack.parseOptional(registry, tag.getCompound("Output")) : ItemStack.EMPTY;
         this.seat = DyeColor.byName(tag.getString("Seat"), null);
 
-        this.inputBuffer.clear();
-        ListTag inputTag = tag.getList("Input", Tag.TAG_COMPOUND);
-        for (int i = 0; i < inputTag.size(); ++i) {
-            this.inputBuffer.add(ItemStack.parseOptional(registry, inputTag.getCompound(i)));
+        this.toAnimate.clear();
+        ListTag renderedList = tag.getList("RenderedBlocks", Tag.TAG_COMPOUND);
+        for (int i = 0; i < renderedList.size(); ++i) {
+            CompoundTag block = renderedList.getCompound(i);
+            this.toAnimate.put(NbtUtils.readBlockPos(block, "Pos").get(), NbtUtils.readBlockState(this.blockHolderGetter(), block.getCompound("Block")));
         }
-        this.magazine = tag.contains("Magazine") ? ItemStack.parseOptional(registry, tag.getCompound("Magazine")) : ItemStack.EMPTY;
-
-        if (!clientPacket) return;
-        this.updateInstance = tag.contains("UpdateInstance");
     }
 
     @Override
@@ -193,18 +151,16 @@ public class ShupapiumACBreechBlockEntity extends AutocannonBreechBlockEntity {
         tag.putInt("FiringRate", this.fireRate);
         tag.putFloat("Cooldown", this.firingCooldown);
         tag.putInt("AnimateTicks", this.animateTicks);
-        if (this.outputBuffer != null) tag.put("Output", this.outputBuffer.saveOptional(registry));
         if (this.seat != null) tag.putString("Seat", this.seat.getSerializedName());
 
-        if (!this.inputBuffer.isEmpty()) {
-            tag.put("Input", this.inputBuffer.stream()
-                    .map(s -> s.saveOptional(registry))
-                    .collect(Collectors.toCollection(ListTag::new)));
+        ListTag renderedList = new ListTag();
+        for (Map.Entry<BlockPos, BlockState> entry : this.toAnimate.entrySet()) {
+            CompoundTag block = new CompoundTag();
+            block.put("Pos", NbtUtils.writeBlockPos(entry.getKey()));
+            block.put("Block", NbtUtils.writeBlockState(entry.getValue()));
+            renderedList.add(block);
         }
-        if (this.magazine != null && !this.magazine.isEmpty()) tag.put("Magazine", this.magazine.save(registry));
-
-        if (!clientPacket) return;
-        if (this.updateInstance) tag.putBoolean("UpdateInstance", true);
+        tag.put("RenderedBlocks", renderedList);
     }
 
     @Override
@@ -222,41 +178,16 @@ public class ShupapiumACBreechBlockEntity extends AutocannonBreechBlockEntity {
     }
 
     @Override
-    public boolean isInputFull() {
-        return this.inputBuffer.size() >= this.getQueueLimit() || !this.magazine.isEmpty();
-    }
-
-    @Override
-    public boolean isOutputFull() {
-        return !this.outputBuffer.isEmpty();
-    }
-
-    @Override
-    public ItemStack insertOutput(ItemStack stack) {
-        if (stack.isEmpty()) return ItemStack.EMPTY;
-        if (this.isOutputFull()) return stack;
-        this.outputBuffer = stack;
-        return ItemStack.EMPTY;
-    }
-
-    @Override
     public ItemStack extractNextInput() {
-        if (!this.inputBuffer.isEmpty()) return this.inputBuffer.poll();
-        if (this.magazine.isEmpty()) return ItemStack.EMPTY;
-        int totalCount = ShupapiumAmmoContainerItem.getTotalAmmoCount(this.magazine);
-        if (totalCount == 0) return ItemStack.EMPTY;
-        if (totalCount == 1) this.updateInstance = true;
-        return ShupapiumAmmoContainerItem.pollItemFromContainer(this.magazine);
-    }
+        Deque<ItemStack> input = this.getInputBuffer();
+        if (!input.isEmpty()) return input.poll();
 
-    @Override
-    public List<ItemStack> getDrops() {
-        List<ItemStack> list = super.getDrops();
-        for (ItemStack s : this.inputBuffer) {
-            if (!s.isEmpty()) list.add(s.copy());
-        }
-        if (!this.outputBuffer.isEmpty()) list.add(this.outputBuffer.copy());
-        if (!this.magazine.isEmpty()) list.add(this.magazine.copy());
-        return list;
+        ItemStack magazine = this.getMagazine();
+        if (magazine.isEmpty()) return ItemStack.EMPTY;
+
+        int total = ShupapiumAmmoContainerItem.getTotalAmmoCount(magazine);
+        if (total == 0) return ItemStack.EMPTY;
+        if (total == 1) this.setMagazine(magazine);
+        return ShupapiumAmmoContainerItem.pollItemFromContainer(magazine);
     }
 }

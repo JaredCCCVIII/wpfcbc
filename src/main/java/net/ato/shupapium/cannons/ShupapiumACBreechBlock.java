@@ -22,6 +22,7 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemp
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.NotNull;
+import rbasamoyai.createbigcannons.cannon_control.contraption.AbstractMountedCannonContraption;
 import rbasamoyai.createbigcannons.cannon_control.contraption.PitchOrientedContraptionEntity;
 import rbasamoyai.createbigcannons.cannons.autocannon.breech.AbstractAutocannonBreechBlockEntity;
 import rbasamoyai.createbigcannons.cannons.autocannon.breech.AutocannonBreechBlock;
@@ -124,5 +125,10 @@ public class ShupapiumACBreechBlock extends AutocannonBreechBlock {
         }
         if (changed && !level.isClientSide) writeAndSyncSingleBlockData(be, info, entity, contraption);
         return changed;
+    }
+
+    @Override
+    public @NotNull AbstractMountedCannonContraption getCannonContraption() {
+        return new MountedShupapiumACContraption();
     }
 }

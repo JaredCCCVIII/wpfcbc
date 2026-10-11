@@ -21,6 +21,9 @@ public interface ShupapiumACProfile {
     /** Combination of blocks to create the cannon. */
     ShupapiumACParts parts();
 
+    /** For additional barrels (like covered ones). */
+    default List<ShupapiumACParts> allParts() {return List.of(parts());}
+
     /** Compatible attachments for this cannon (muzzle or suppressor). */
     default Set<Block> getCompatibleAttachments() {return Set.of();}
 

@@ -24,6 +24,7 @@ public class BasicShupapiumACProfile implements ShupapiumACProfile {
     private final ResourceLocation id;
     private final Supplier<? extends ShupapiumACBarrelBlock> barrel;
     private final Supplier<? extends ShupapiumACBreechBlock> breech;
+    private final List<Supplier<? extends ShupapiumACBarrelBlock>> alternateBarrels;
     private final Supplier<Set<Block>> compatibleAttachments;
     private final Supplier<SoundEvent> fireSound;
     private final @Nullable BiConsumer<Level, Vec3> customFireSound;
@@ -38,6 +39,7 @@ public class BasicShupapiumACProfile implements ShupapiumACProfile {
         this.id = b.id;
         this.barrel = b.barrel;
         this.breech = b.breech;
+        this.alternateBarrels = List.copyOf(b.alternateBarrels);
         this.compatibleAttachments = b.compatibleAttachments;
         this.fireSound = b.fireSound;
         this.customFireSound = b.customFireSound;
@@ -57,6 +59,16 @@ public class BasicShupapiumACProfile implements ShupapiumACProfile {
     @Override
     public ShupapiumACParts parts() {
         return new ShupapiumACParts(barrel.get(), breech.get());
+    }
+
+    @Override
+    public List<ShupapiumACParts> allParts() {
+        List<ShupapiumACParts> list = new ArrayList<>();
+        list.add(parts());
+        for (Supplier<? extends ShupapiumACBarrelBlock> alt : alternateBarrels) {
+            list.add(new ShupapiumACParts(alt.get(), breech.get()));
+        }
+        return list;
     }
 
     @Override
@@ -114,6 +126,7 @@ public class BasicShupapiumACProfile implements ShupapiumACProfile {
         private final ResourceLocation id;
         private Supplier<? extends ShupapiumACBarrelBlock> barrel;
         private Supplier<? extends ShupapiumACBreechBlock> breech;
+        private final List<Supplier<? extends ShupapiumACBarrelBlock>> alternateBarrels = new ArrayList<>();
         private Supplier<Set<Block>> compatibleAttachments = Set::of;
         private Supplier<SoundEvent> fireSound;
         private @Nullable BiConsumer<Level, Vec3> customFireSound;
@@ -132,6 +145,8 @@ public class BasicShupapiumACProfile implements ShupapiumACProfile {
             return this;
         }
 
+        @SafeVarargs
+        public final Builder alternateBarrels(Supplier<? extends ShupapiumACBarrelBlock>... barrels) {this.alternateBarrels.addAll(List.of(barrels)); return this;}
         public Builder attachments(Supplier<Set<Block>> whitelist) {this.compatibleAttachments = whitelist; return this;}
         public Builder fireSound(Supplier<SoundEvent> s) {this.fireSound = s; return this;}
         public Builder customFireSound(BiConsumer<Level, Vec3> r) {this.customFireSound = r; return this;}
