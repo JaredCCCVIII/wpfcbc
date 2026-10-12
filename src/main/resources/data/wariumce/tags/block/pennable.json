@@ -1,6 +1,34 @@
 {
   "values": [
     "shupapium:barrel_shell_block",
-    "shupapium:medium_bomb_shell_block"
+    "shupapium:medium_bomb_shell_block",
+    "shupapium:minigun_barrel",
+    "shupapium:minigun_breech",
+    "shupapium:machine_gun_barrel",
+    "shupapium:covered_machine_gun_barrel",
+    "shupapium:light_machine_gun_breech",
+    "shupapium:machine_gun_breech",
+    "shupapium:heavy_machine_gun_breech",
+    "shupapium:rotary_cannon_barrel",
+    "shupapium:cannon_barrel",
+    "shupapium:rotary_cannon_breech",
+    "shupapium:light_cannon_breech",
+    "shupapium:heavy_cannon_breech",
+    "shupapium:battle_cannon_barrel",
+    "shupapium:thick_battle_cannon_barrel",
+    "shupapium:covered_battle_cannon_barrel",
+    "shupapium:battle_cannon_breech",
+    "shupapium:artillery_cannon_barrel",
+    "shupapium:artillery_cannon_breech",
+    "shupapium:rocket_pod_barrel",
+    "shupapium:large_rocket_pod_barrel",
+    "shupapium:rocket_pod_breech",
+    "shupapium:large_rocket_pod_breech",
+    "shupapium:smoke_launcher_barrel",
+    "shupapium:mortar_launcher_barrel",
+    "shupapium:launcher_breech",
+    "shupapium:flamethrower_barrel",
+    "shupapium:covered_flamethrower_barrel",
+    "shupapium:flamethrower_breech"
   ]
 }

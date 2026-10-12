@@ -15,6 +15,7 @@ import net.ato.shupapium.blocks.ShupapiumAmmoContainerBlock;
 import net.ato.shupapium.cannons.ShupapiumACBreechBlock;
 import net.ato.shupapium.cannons.ShupapiumACBreechBlockEntity;
 import net.ato.shupapium.items.ShupapiumAmmoContainerItem;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
@@ -27,6 +28,8 @@ import org.joml.Vector3f;
 import rbasamoyai.createbigcannons.cannons.autocannon.AutocannonBlock;
 import rbasamoyai.createbigcannons.index.CBCBlockPartials;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.function.Consumer;
 
 public class ShupapiumACBreechVisual extends AbstractBlockEntityVisual<ShupapiumACBreechBlockEntity> implements SimpleDynamicVisual {
@@ -38,6 +41,8 @@ public class ShupapiumACBreechVisual extends AbstractBlockEntityVisual<Shupapium
     private final Direction facing;
     private boolean isFilled = false;
     private Item magazineItem = null;
+
+    private final Map<BlockPos, OrientedInstance> recoilBlocks = new HashMap<>();
     public ShupapiumACBreechVisual(VisualizationContext ctx, ShupapiumACBreechBlockEntity blockEntity, float partialTick) {
         super(ctx, blockEntity, partialTick);
         this.facing = this.blockState.getValue(BlockStateProperties.FACING);
@@ -73,6 +78,11 @@ public class ShupapiumACBreechVisual extends AbstractBlockEntityVisual<Shupapium
         this.magazineItem = this.getMagazineItem();
 
         this.updateTransforms(partialTick);
+
+        for (Map.Entry<BlockPos, BlockState> entry : this.blockEntity.toAnimate.entrySet()) {
+            if (entry.getValue() == null) continue;
+            this.recoilBlocks.put(entry.getKey(), instancerProvider().instancer(InstanceTypes.ORIENTED, Models.block(entry.getValue())).createInstance());
+        }
     }
 
     protected void refreshSeat() {
@@ -98,6 +108,7 @@ public class ShupapiumACBreechVisual extends AbstractBlockEntityVisual<Shupapium
     @Override
     public void beginFrame(DynamicVisual.Context ctx) {
         this.updateTransforms(ctx.partialTick());
+        this.updateRecoilBlocks(ctx.partialTick());
     }
 
     private void updateTransforms(float partialTick) {
@@ -131,6 +142,9 @@ public class ShupapiumACBreechVisual extends AbstractBlockEntityVisual<Shupapium
         this.relight(this.pos, this.ejector);
         this.relight(this.pos, this.seat);
         this.relight(this.pos, this.ammoContainer);
+        for (Map.Entry<BlockPos, OrientedInstance> entry : this.recoilBlocks.entrySet()) {
+            this.relight(this.pos.offset(entry.getKey()), entry.getValue());
+        }
     }
 
     @Override
@@ -138,6 +152,7 @@ public class ShupapiumACBreechVisual extends AbstractBlockEntityVisual<Shupapium
         this.ejector.delete();
         this.seat.delete();
         this.ammoContainer.delete();
+        for (OrientedInstance block : this.recoilBlocks.values()) block.delete();
     }
 
     @Override
@@ -172,5 +187,18 @@ public class ShupapiumACBreechVisual extends AbstractBlockEntityVisual<Shupapium
     private Item getMagazineItem() {
         ItemStack stack = this.blockEntity.getMagazine();
         return stack == null || stack.isEmpty() ? null : stack.getItem();
+    }
+
+    private void updateRecoilBlocks(float partialTicks) {
+        if (this.recoilBlocks.isEmpty()) return;
+        Direction facing = this.blockState.getValue(BlockStateProperties.FACING);
+        float travel = ShupapiumACBreechBlockEntity.RECOIL_TRAVEL * this.blockEntity.getAnimateOffset(partialTicks);
+        Vector3f offs = facing.step();
+        offs.mul(-travel);
+        offs.add(this.getVisualPosition().getX(), this.getVisualPosition().getY(), this.getVisualPosition().getZ());
+        for (Map.Entry<BlockPos, OrientedInstance> entry : this.recoilBlocks.entrySet()) {
+            BlockPos p = entry.getKey();
+            entry.getValue().position(offs).translatePosition(p.getX(), p.getY(), p.getZ()).setChanged();
+        }
     }
 }

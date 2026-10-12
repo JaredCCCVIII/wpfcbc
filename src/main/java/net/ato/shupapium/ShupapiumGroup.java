@@ -9,6 +9,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import rbasamoyai.createbigcannons.index.CBCItems;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -25,7 +26,11 @@ public class ShupapiumGroup {
                 .title(Component.translatable("itemGroup.shupapium"))
                 .icon(ShupapiumBlocks.FISSION_BOMB_SHELL_BLOCK::asStack)
                 .displayItems((itemDisplayParameters, output) -> {
+                    output.accept(ShupapiumItems.MEDIUM_BULLET_AMMO_ITEM);
                     output.accept(ShupapiumItems.LARGE_BULLET_AMMO_ITEM);
+                    output.accept(ShupapiumItems.EXTRA_LARGE_BULLET_AMMO_ITEM);
+                    output.accept(ShupapiumItems.HUGE_BULLET_AMMO_ITEM);
+                    output.accept(ShupapiumItems.HUGE_HE_BULLET_AMMO_ITEM);
                     output.accept(CrustyChunksModItems.POWDER_CHARGE.get());
                     output.accept(ShupapiumBlocks.SHUPAPIUM_AMMO_CONTAINER);
                     output.accept(ShupapiumBlocks.CREATIVE_SHUPAPIUM_AMMO_CONTAINER);
@@ -72,6 +77,13 @@ public class ShupapiumGroup {
                     output.accept(ShupapiumBlocks.CLUSTER_BOMB_SHELL_BLOCK);
                     output.accept(ShupapiumBlocks.FISSION_BOMB_SHELL_BLOCK);
                     output.accept(ShupapiumBlocks.FUSION_BOMB_SHELL_BLOCK);
+                    output.accept(CBCItems.IMPACT_FUZE);
+                    output.accept(CBCItems.TIMED_FUZE);
+                    output.accept(CBCItems.PROXIMITY_FUZE);
+                    output.accept(CBCItems.DELAYED_IMPACT_FUZE);
+                    output.accept(CBCItems.WIRED_FUZE);
+                    output.accept(CBCItems.INERTIA_FUZE);
+                    output.accept(CBCItems.DELAYED_INERTIA_FUZE);
                     output.accept(ShupapiumItems.DUMMY_RAGDOLL_SPAWN_EGG.value());
                     output.accept(ShupapiumItems.HEAVY_DUMMY_RAGDOLL_SPAWN_EGG.value());
                 })

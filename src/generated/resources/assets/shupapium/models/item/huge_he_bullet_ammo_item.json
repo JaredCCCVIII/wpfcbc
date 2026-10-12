@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "shupapium:item/huge_he_bullet_ammo_item"
+  }
+}

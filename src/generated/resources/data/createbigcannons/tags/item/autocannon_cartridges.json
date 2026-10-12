@@ -1,5 +1,9 @@
 {
   "values": [
-    "shupapium:large_bullet_ammo_item"
+    "shupapium:medium_bullet_ammo_item",
+    "shupapium:large_bullet_ammo_item",
+    "shupapium:extra_large_bullet_ammo_item",
+    "shupapium:huge_bullet_ammo_item",
+    "shupapium:huge_he_bullet_ammo_item"
   ]
 }

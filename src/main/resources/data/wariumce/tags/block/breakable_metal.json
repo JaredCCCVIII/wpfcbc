@@ -1,0 +1,12 @@
+{
+  "values": [
+    "shupapium:minigun_barrel",
+    "shupapium:minigun_breech",
+    "shupapium:machine_gun_barrel",
+    "shupapium:covered_machine_gun_barrel",
+    "shupapium:light_machine_gun_breech",
+    "shupapium:machine_gun_breech",
+    "shupapium:heavy_machine_gun_breech",
+    "shupapium:flamethrower_breech"
+  ]
+}

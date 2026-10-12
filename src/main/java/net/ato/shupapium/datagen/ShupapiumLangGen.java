@@ -50,6 +50,28 @@ public class ShupapiumLangGen {
         MainShupapium.REGISTRATE.addLang("exception", MainShupapium.resource("cannon_mount"), "mixed_barrels", "Mixed barrel detected.");
         MainShupapium.REGISTRATE.addLang("block", MainShupapium.resource("cannon_carriage"), "hotbar.fireRate", "Rate of fire: %1$s RPM");
 
+        // AC Ammo
+        tooltip(ShupapiumItems.MEDIUM_BULLET_AMMO_ITEM)
+                .header("Show info")
+                .summary("Tracers included!")
+                .conditionAndBehavior("Projectile Info:", "Medium bullet projectile, now in a turret-like version.");
+        tooltip(ShupapiumItems.LARGE_BULLET_AMMO_ITEM)
+                .header("Show info")
+                .summary("Two tracers included!")
+                .conditionAndBehavior("Projectile Info:", "Large bullet projectile, effective on non-vehicle entities.");
+        tooltip(ShupapiumItems.EXTRA_LARGE_BULLET_AMMO_ITEM)
+                .header("Show info")
+                .summary("Sharp tracer included!")
+                .conditionAndBehavior("Projectile Info:", "Extra large bullet projectile, more penetrant.");
+        tooltip(ShupapiumItems.HUGE_BULLET_AMMO_ITEM)
+                .header("Show info")
+                .summary("It's really a small shell projectile...")
+                .conditionAndBehavior("Projectile Info:", "The very first iteration of shells, effective on vehicles.");
+        tooltip(ShupapiumItems.HUGE_HE_BULLET_AMMO_ITEM)
+                .header("Show info")
+                .summary("A highly explosive small shell projectile...")
+                .conditionAndBehavior("Projectile Info:", "The very first iteration of shells, now with explosives included.");
+
         // Shells
         tooltip(ShupapiumBlocks.SMOKE_BOMB_SHELL_BLOCK)
                 .header("Show info")

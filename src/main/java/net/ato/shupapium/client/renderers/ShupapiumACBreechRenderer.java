@@ -10,17 +10,25 @@ import net.ato.shupapium.cannons.ShupapiumACBreechBlock;
 import net.ato.shupapium.cannons.ShupapiumACBreechBlockEntity;
 import net.ato.shupapium.items.ShupapiumAmmoContainerItem;
 import net.createmod.catnip.render.CachedBuffers;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.block.BlockRenderDispatcher;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
+import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import org.joml.Quaternionf;
 import org.joml.Vector3f;
+import org.spongepowered.asm.mixin.injection.struct.InjectorGroupInfo;
 import rbasamoyai.createbigcannons.cannons.autocannon.AutocannonBlock;
 import rbasamoyai.createbigcannons.index.CBCBlockPartials;
+
+import java.util.Map;
 
 public class ShupapiumACBreechRenderer extends SmartBlockEntityRenderer<ShupapiumACBreechBlockEntity> {
     public ShupapiumACBreechRenderer(BlockEntityRendererProvider.Context context) {
@@ -79,6 +87,23 @@ public class ShupapiumACBreechRenderer extends SmartBlockEntityRenderer<Shupapiu
         }
 
         ms.popPose();
+
+        if (!breech.toAnimate.isEmpty()) {
+            Direction breechFacing = breech.getBlockState().getValue(BlockStateProperties.FACING);
+            float travel = ShupapiumACBreechBlockEntity.RECOIL_TRAVEL * breech.getAnimateOffset(partialTicks);
+            Vector3f normal = breechFacing.step();
+            normal.mul(-travel);
+
+            BlockRenderDispatcher brd = Minecraft.getInstance().getBlockRenderer();
+            for (Map.Entry<BlockPos, BlockState> entry : breech.toAnimate.entrySet()) {
+                if (entry.getValue() == null) continue;
+                ms.pushPose();
+                BlockPos p = entry.getKey();
+                ms.translate(p.getX() + normal.x(), p.getY() + normal.y(), p.getZ() + normal.z());
+                brd.renderSingleBlock(entry.getValue(), ms, buffer, light, OverlayTexture.NO_OVERLAY);
+                ms.popPose();
+            }
+        }
     }
 
     private static PartialModel getPartialModelForState(ShupapiumACBreechBlockEntity breech) {

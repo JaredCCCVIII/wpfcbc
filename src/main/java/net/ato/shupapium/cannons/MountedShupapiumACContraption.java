@@ -181,23 +181,30 @@ public class MountedShupapiumACContraption extends MountedAutocannonContraption 
             this.getSeats().add(this.startPos.immutable());
         }
 
-        StructureTemplate.StructureBlockInfo possibleSpring = this.blocks.get(this.startPos.relative(this.initialOrientation));
-        if (possibleSpring != null && possibleSpring.state().getBlock() instanceof AutocannonRecoilSpringBlock springBlock && springBlock.getFacing(possibleSpring.state()) == this.initialOrientation) {
-            BlockPos mainRecoilSpringPos = this.startPos.relative(this.initialOrientation).immutable();
-            if (this.presentBlockEntities.get(mainRecoilSpringPos) instanceof AutocannonRecoilSpringBlockEntity springBE) {
-                for (int i = 1; i < cannonLength; ++i) {
-                    BlockPos pos1 = this.startPos.relative(this.initialOrientation, i);
-                    StructureTemplate.StructureBlockInfo blockInfo = this.blocks.get(pos1);
-                    if (blockInfo == null || !(blockInfo.state().getBlock() instanceof MovesWithAutocannonRecoilSpring springed)) continue;
-                    springBE.toAnimate.put(pos1.subtract(mainRecoilSpringPos), springed.getMovingState(blockInfo.state()));
-                    this.blocks.put(pos1, new StructureTemplate.StructureBlockInfo(pos1, springed.getStationaryState(blockInfo.state()), blockInfo.nbt()));
-                }
-                CompoundTag newTag = springBE.saveWithFullMetadata(level.registryAccess());
-                newTag.remove("x");
-                newTag.remove("y");
-                newTag.remove("z");
-                this.blocks.put(mainRecoilSpringPos, new StructureTemplate.StructureBlockInfo(mainRecoilSpringPos, possibleSpring.state(), newTag));
+        BlockPos breechLocal = this.startPos.immutable();
+        BlockPos springLocal = breechLocal.relative(this.initialOrientation);
+        StructureTemplate.StructureBlockInfo springInfo = this.blocks.get(springLocal);
+        boolean hasSpring = springInfo != null && springInfo.state().getBlock() instanceof AutocannonRecoilSpringBlock sb && sb.getFacing(springInfo.state()) == this.initialOrientation;
+        BlockPos hostPos = hasSpring ? springLocal : breechLocal;
+        BlockEntity host = this.presentBlockEntities.get(hostPos);
+        Map<BlockPos, BlockState> toAnimate = null;
+        if (hasSpring && host instanceof AutocannonRecoilSpringBlockEntity springBE) toAnimate = springBE.toAnimate;
+        else if (!hasSpring && host instanceof ShupapiumACBreechBlockEntity breechBE) toAnimate = breechBE.toAnimate;
+
+        if (toAnimate != null) {
+            for (int i = 1; i < cannonLength; ++i) {
+                BlockPos pos1 = breechLocal.relative(this.initialOrientation, i);
+                StructureTemplate.StructureBlockInfo info = this.blocks.get(pos1);
+                if (info == null || !(info.state().getBlock() instanceof MovesWithAutocannonRecoilSpring moving)) continue;
+                toAnimate.put(pos1.subtract(hostPos), moving.getMovingState(info.state()));
+                this.blocks.put(pos1, new StructureTemplate.StructureBlockInfo(pos1, moving.getStationaryState(info.state()), info.nbt()));
             }
+            CompoundTag newTag = host.saveWithFullMetadata(level.registryAccess());
+            newTag.remove("x");
+            newTag.remove("y");
+            newTag.remove("z");
+            StructureTemplate.StructureBlockInfo hostInfo = this.blocks.get(hostPos);
+            this.blocks.put(hostPos, new StructureTemplate.StructureBlockInfo(hostPos, hostInfo.state(), newTag));
         }
 
         this.cannonMaterial = material;

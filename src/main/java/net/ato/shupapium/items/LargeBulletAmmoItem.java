@@ -13,14 +13,14 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class LargeBulletAmmoItem extends AbstractShupapiumACAmmoItem{
+public class LargeBulletAmmoItem extends AbstractShupapiumACAmmoItem {
     public LargeBulletAmmoItem(Properties properties) {
         super(properties);
     }
 
     @Override
     protected ResourceLocation propertiesLocation() {
-        return ResourceLocation.fromNamespaceAndPath(MainShupapium.MOD_ID, "munition_properties/projectiles/large_bullet");
+        return MainShupapium.resource("munition_properties/projectiles/large_bullet");
     }
 
     @Override

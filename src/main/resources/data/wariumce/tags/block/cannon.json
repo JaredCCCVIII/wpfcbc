@@ -1,0 +1,17 @@
+{
+  "values": [
+    "shupapium:minigun_breech",
+    "shupapium:light_machine_gun_breech",
+    "shupapium:machine_gun_breech",
+    "shupapium:heavy_machine_gun_breech",
+    "shupapium:rotary_cannon_breech",
+    "shupapium:light_cannon_breech",
+    "shupapium:heavy_cannon_breech",
+    "shupapium:battle_cannon_breech",
+    "shupapium:artillery_cannon_breech",
+    "shupapium:rocket_pod_breech",
+    "shupapium:large_rocket_pod_breech",
+    "shupapium:launcher_breech",
+    "shupapium:flamethrower_breech"
+  ]
+}
