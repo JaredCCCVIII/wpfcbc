@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "shupapium:item/fire_spear_rocket_ammo_item"
+  }
+}

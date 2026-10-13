@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "shupapium:item/flare_charge_ammo_item"
+  }
+}

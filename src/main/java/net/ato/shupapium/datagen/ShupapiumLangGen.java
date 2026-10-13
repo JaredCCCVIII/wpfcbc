@@ -84,6 +84,78 @@ public class ShupapiumLangGen {
                 .header("Show info")
                 .summary("The first flak projectile you found...")
                 .conditionAndBehavior("Projectile Info:", "The second iteration of shells, divisible on air.");
+        tooltip(ShupapiumItems.LARGE_SHELL_AMMO_ITEM)
+                .header("Show info")
+                .summary("Kaboom!")
+                .conditionAndBehavior("Projectile Info:", "High explosive projectile, useful in complex situations.");
+        tooltip(ShupapiumItems.LARGE_SOLID_SHELL_AMMO_ITEM)
+                .header("Show info")
+                .summary("Very hard...")
+                .conditionAndBehavior("Projectile Info:", "Solid explosive projectile, compact explosions.");
+        tooltip(ShupapiumItems.LARGE_HEAT_SHELL_AMMO_ITEM)
+                .header("Show info")
+                .summary("BURN!")
+                .conditionAndBehavior("Projectile Info:", "Incendiary explosive projectile, useful to destroys wooden barricades.");
+        tooltip(ShupapiumItems.LARGE_AP_SHELL_AMMO_ITEM)
+                .header("Show info")
+                .summary("It's just a mark...")
+                .conditionAndBehavior("Projectile Info:", "Penetrating projectile, useful for infiltration.");
+        tooltip(ShupapiumItems.LARGE_FLAK_SHELL_AMMO_ITEM)
+                .header("Show info")
+                .summary("Amazing aerials.")
+                .conditionAndBehavior("Projectile Info:", "Explosive air projectile, useful for flying objectives.");
+        tooltip(ShupapiumItems.LARGE_SMOKE_SHELL_AMMO_ITEM)
+                .header("Show info")
+                .summary("No smoke in this area.")
+                .conditionAndBehavior("Projectile Info:", "Smoke battle cannon variant.");
+        tooltip(ShupapiumItems.ARTILLERY_SHELL_AMMO_ITEM)
+                .header("Show info")
+                .summary("Very explosive!")
+                .conditionAndBehavior("Projectile Info:", "High explosive artillery, more gunpowder, more powerful.");
+        tooltip(ShupapiumItems.ARTILLERY_SOLID_SHELL_AMMO_ITEM)
+                .header("Show info")
+                .summary("And more compact!")
+                .conditionAndBehavior("Projectile Info:", "Solid explosive artillery, more gunpowder, more powerful.");
+        tooltip(ShupapiumItems.ARTILLERY_GAS_SHELL_AMMO_ITEM)
+                .header("Show info")
+                .summary("Smells like ****.")
+                .conditionAndBehavior("Projectile Info:", "Toxic gas projectile, effective on groups.");
+        tooltip(ShupapiumItems.ARTILLERY_FIRE_SHELL_AMMO_ITEM)
+                .header("Show info")
+                .summary("So hot...")
+                .conditionAndBehavior("Projectile Info:", "High incendiary explosive artillery.");
+        tooltip(ShupapiumItems.ARMOR_PEELER_ROCKET_AMMO_ITEM)
+                .header("Show info")
+                .summary("This rocks!")
+                .conditionAndBehavior("Projectile Info:", "Common rocket projectile.");
+        tooltip(ShupapiumItems.FIRE_SPEAR_ROCKET_AMMO_ITEM)
+                .header("Show info")
+                .summary("Try to upgrade it!")
+                .conditionAndBehavior("Projectile Info:", "A low upgrade to the Armor Peeler Rocket.");
+        tooltip(ShupapiumItems.SEEKER_SPEAR_ROCKET_AMMO_ITEM)
+                .header("Show info")
+                .summary("Try to upgrade it again!")
+                .conditionAndBehavior("Projectile Info:", "A medium upgrade to the Armor Peeler Rocket.");
+        tooltip(ShupapiumItems.RADAR_SPEAR_MISSILE_AMMO_ITEM)
+                .header("Show info")
+                .summary("Flashbacks of the modern era.")
+                .conditionAndBehavior("Projectile Info:", "A medium upgrade to the Armor Peeler Rocket. Can follow the enemy in the programmed radius.");
+        tooltip(ShupapiumItems.STRIKE_SPEAR_MISSILE_AMMO_ITEM)
+                .header("Show info")
+                .summary("Strike them!")
+                .conditionAndBehavior("Projectile Info:", "A big upgrade to the Armor Peeler Rocket.");
+        tooltip(ShupapiumItems.FLARE_CHARGE_AMMO_ITEM)
+                .header("Show info")
+                .summary("Follow me good guys...")
+                .conditionAndBehavior("Projectile Info:", "Incandescent projectile, useful for attracting attention or set a seeker target.");
+        tooltip(ShupapiumItems.CHAFF_CHARGE_AMMO_ITEM)
+                .header("Show info")
+                .summary("Sweet sparking...")
+                .conditionAndBehavior("Projectile Info:", "Sparking projectile, useful for attracting attention.");
+        tooltip(ShupapiumItems.PETROL_CAN_AMMO_ITEM)
+                .header("Show info")
+                .summary("Mmmrph!")
+                .conditionAndBehavior("Projectile Info:", "Creates fire around the area and inflicts a lot of damage in a fraction of twenty ticks.");
 
         // Shells
         tooltip(ShupapiumBlocks.SMOKE_BOMB_SHELL_BLOCK)

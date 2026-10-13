@@ -167,13 +167,7 @@ public class ShupapiumBlocks {
             .loot(CBCBuilderTransformers.steelScrapLoot(4))
             .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/large_rocket_pod_chamber"))
             .register();
-    public static final BlockEntry<ShupapiumACBarrelBlock> SMOKE_LAUNCHER_BARREL = MainShupapium.REGISTRATE
-            .block("smoke_launcher_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.SMALL_GUN))
-            .transform(cannonBlock())
-            .loot(CBCBuilderTransformers.steelScrapLoot(2))
-            .transform(ShupapiumBuilderTransformers.autocannonMortarBarrel(CrustyChunksMod.MODID, "block/mortar"))
-            .register();
-    public static final BlockEntry<ShupapiumACBarrelBlock> MORTAR_LAUNCHER_BARREL = MainShupapium.REGISTRATE
+    public static final BlockEntry<ShupapiumACBarrelBlock> LAUNCHER_BARREL = MainShupapium.REGISTRATE
             .block("mortar_launcher_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.SMALL_GUN))
             .transform(cannonBlock())
             .loot(CBCBuilderTransformers.steelScrapLoot(2))
@@ -183,7 +177,7 @@ public class ShupapiumBlocks {
             .block("launcher_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.SMALL_GUN))
             .transform(cannonBlock(false, SoundType.ANVIL))
             .loot(CBCBuilderTransformers.steelScrapLoot(4))
-            .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/rocket_pod_chamber"))
+            .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/countermeasure_dispenser"))
             .register();
     public static final BlockEntry<ShupapiumACBarrelBlock> FLAMETHROWER_BARREL = MainShupapium.REGISTRATE
             .block("flamethrower_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.SMALL_GUN))

@@ -8,8 +8,6 @@ import net.ato.shupapium.cannons.ShupapiumGACBarrelBlockEntity;
 import net.ato.shupapium.client.flywheels.ShupapiumACBreechVisual;
 import net.ato.shupapium.client.renderers.ShupapiumACBreechRenderer;
 import rbasamoyai.createbigcannons.cannons.autocannon.AutocannonBlockEntity;
-import rbasamoyai.createbigcannons.cannons.autocannon.breech.AutocannonBreechRenderer;
-import rbasamoyai.createbigcannons.cannons.autocannon.breech.AutocannonBreechVisual;
 import rbasamoyai.createbigcannons.cannons.autocannon.recoil_spring.AutocannonRecoilSpringBlockEntity;
 import rbasamoyai.createbigcannons.cannons.autocannon.recoil_spring.AutocannonRecoilSpringRenderer;
 import rbasamoyai.createbigcannons.cannons.autocannon.recoil_spring.AutocannonRecoilSpringVisual;
@@ -25,7 +23,7 @@ public class ShupapiumBlockEntities {
                     ShupapiumBlocks.THICK_BATTLE_CANNON_BARREL,
                     ShupapiumBlocks.ARTILLERY_CANNON_BARREL,
                     ShupapiumBlocks.ROCKET_POD_BARREL, ShupapiumBlocks.LARGE_ROCKET_POD_BARREL,
-                    ShupapiumBlocks.SMOKE_LAUNCHER_BARREL, ShupapiumBlocks.MORTAR_LAUNCHER_BARREL, ShupapiumBlocks.FLAMETHROWER_BARREL)
+                    ShupapiumBlocks.LAUNCHER_BARREL, ShupapiumBlocks.FLAMETHROWER_BARREL)
             .register();
     public static final BlockEntityEntry<ShupapiumGACBarrelBlockEntity> MINIGUN_GECKO_CANNON = MainShupapium.REGISTRATE
             .blockEntity("minigun_gecko_cannon", ShupapiumGACBarrelBlockEntity::new)

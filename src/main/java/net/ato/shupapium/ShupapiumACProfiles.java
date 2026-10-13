@@ -103,13 +103,77 @@ public class ShupapiumACProfiles {
     public static final ShupapiumACProfile BATTLE_CANNON_PROFILE = BasicShupapiumACProfile
             .builder(MainShupapium.resource("battle_cannon_profile"))
             .parts(ShupapiumBlocks.BATTLE_CANNON_BARREL, ShupapiumBlocks.BATTLE_CANNON_BREECH)
+            .alternateBarrels(ShupapiumBlocks.THICK_BATTLE_CANNON_BARREL)
             .fireSound(CrustyChunksModSounds.BATTLECANNON::get)
+            .muzzleParticle(ParticleTypes.CAMPFIRE_COSY_SMOKE)
             .muzzleParticle(ParticleTypes.EXPLOSION)
             .fireRate(40)
             .projectilesPerShot(1)
-            .cannonSpeed(7.0F)
-            .cannonSpread(0.3F)
-            .ammo(ShupapiumItems.LARGE_BULLET_AMMO_ITEM)
+            .cannonSpeed(6.0F)
+            .cannonSpread(0.5F)
+            .ammo(ShupapiumItems.LARGE_SHELL_AMMO_ITEM, ShupapiumItems.LARGE_SOLID_SHELL_AMMO_ITEM, ShupapiumItems.LARGE_HEAT_SHELL_AMMO_ITEM, ShupapiumItems.LARGE_AP_SHELL_AMMO_ITEM, ShupapiumItems.LARGE_FLAK_SHELL_AMMO_ITEM, ShupapiumItems.LARGE_SMOKE_SHELL_AMMO_ITEM)
+            .build();
+    public static final ShupapiumACProfile ARTILLERY_CANNON_PROFILE = BasicShupapiumACProfile
+            .builder(MainShupapium.resource("artillery_cannon_profile"))
+            .parts(ShupapiumBlocks.ARTILLERY_CANNON_BARREL, ShupapiumBlocks.ARTILLERY_CANNON_BREECH)
+            .fireSound(CrustyChunksModSounds.CANNONCLOSE::get)
+            .muzzleParticle(ParticleTypes.CAMPFIRE_COSY_SMOKE)
+            .muzzleParticle(ParticleTypes.SMOKE)
+            .muzzleParticle(ParticleTypes.LAVA)
+            .muzzleParticle(ParticleTypes.EXPLOSION)
+            .fireRate(20)
+            .projectilesPerShot(1)
+            .cannonSpeed(6.0F)
+            .cannonSpread(0.55F)
+            .ammo(ShupapiumItems.ARTILLERY_SHELL_AMMO_ITEM, ShupapiumItems.ARTILLERY_SOLID_SHELL_AMMO_ITEM, ShupapiumItems.ARTILLERY_GAS_SHELL_AMMO_ITEM, ShupapiumItems.ARTILLERY_FIRE_SHELL_AMMO_ITEM)
+            .build();
+    public static final ShupapiumACProfile LAUNCHER_CANNON_PROFILE = BasicShupapiumACProfile
+            .builder(MainShupapium.resource("launcher_cannon_profile"))
+            .parts(ShupapiumBlocks.LAUNCHER_BARREL, ShupapiumBlocks.LAUNCHER_BREECH)
+            .fireSound(CrustyChunksModSounds.ROCKET_LAUNCH::get)
+            .muzzleParticle(ParticleTypes.SNOWFLAKE)
+            .fireRate(50)
+            .projectilesPerShot(1)
+            .cannonSpeed(2.0F)
+            .cannonSpread(0.25F)
+            .ammo(ShupapiumItems.MORTAR_SHELL_AMMO_ITEM, ShupapiumItems.SMOKE_MORTAR_SHELL_AMMO_ITEM, ShupapiumItems.FLARE_CHARGE_AMMO_ITEM, ShupapiumItems.CHAFF_CHARGE_AMMO_ITEM)
+            .build();
+    public static final ShupapiumACProfile ROCKET_POD_PROFILE = BasicShupapiumACProfile
+            .builder(MainShupapium.resource("rocket_pod_profile"))
+            .parts(ShupapiumBlocks.ROCKET_POD_BARREL, ShupapiumBlocks.ROCKET_POD_BREECH)
+            .fireSound(CrustyChunksModSounds.ROCKET_LAUNCH::get)
+            .muzzleParticle(ParticleTypes.SNOWFLAKE)
+            .muzzleParticle(ParticleTypes.EXPLOSION)
+            .fireRate(30)
+            .projectilesPerShot(1)
+            .cannonSpeed(5.0F)
+            .cannonSpread(0.25F)
+            .ammo(ShupapiumItems.ARMOR_PEELER_ROCKET_AMMO_ITEM)
+            .build();
+    public static final ShupapiumACProfile LARGE_ROCKET_POD_PROFILE = BasicShupapiumACProfile
+            .builder(MainShupapium.resource("large_rocket_pod_profile"))
+            .parts(ShupapiumBlocks.LARGE_ROCKET_POD_BARREL, ShupapiumBlocks.LARGE_ROCKET_POD_BREECH)
+            .fireSound(CrustyChunksModSounds.HEAVYLAUNCH::get)
+            .muzzleParticle(ParticleTypes.LAVA)
+            .muzzleParticle(ParticleTypes.EXPLOSION)
+            .fireRate(25)
+            .projectilesPerShot(1)
+            .cannonSpeed(6.0F)
+            .cannonSpread(0.25F)
+            .ammo(ShupapiumItems.FIRE_SPEAR_ROCKET_AMMO_ITEM, ShupapiumItems.SEEKER_SPEAR_ROCKET_AMMO_ITEM, ShupapiumItems.RADAR_SPEAR_MISSILE_AMMO_ITEM, ShupapiumItems.STRIKE_SPEAR_MISSILE_AMMO_ITEM)
+            .build();
+    public static final ShupapiumACProfile FLAMETHROWER_CANNON_PROFILE = BasicShupapiumACProfile
+            .builder(MainShupapium.resource("flamethrower_cannon_profile"))
+            .parts(ShupapiumBlocks.FLAMETHROWER_BARREL, ShupapiumBlocks.FLAMETHROWER_BREECH)
+            .fireSound(CrustyChunksModSounds.WIZZ::get)
+            .muzzleParticle(ParticleTypes.LAVA)
+            .muzzleParticle(ParticleTypes.CAMPFIRE_COSY_SMOKE)
+            .muzzleParticle(ParticleTypes.LARGE_SMOKE)
+            .fireRate(180)
+            .projectilesPerShot(5)
+            .cannonSpeed(1.5F)
+            .cannonSpread(0.85F)
+            .ammo(ShupapiumItems.PETROL_CAN_AMMO_ITEM)
             .build();
 
     public static void register() {
@@ -121,5 +185,10 @@ public class ShupapiumACProfiles {
         ShupapiumACProfileHandler.register(LIGHT_CANNON_PROFILE);
         ShupapiumACProfileHandler.register(HEAVY_CANNON_PROFILE);
         ShupapiumACProfileHandler.register(BATTLE_CANNON_PROFILE);
+        ShupapiumACProfileHandler.register(ARTILLERY_CANNON_PROFILE);
+        ShupapiumACProfileHandler.register(LAUNCHER_CANNON_PROFILE);
+        ShupapiumACProfileHandler.register(ROCKET_POD_PROFILE);
+        ShupapiumACProfileHandler.register(LARGE_ROCKET_POD_PROFILE);
+        ShupapiumACProfileHandler.register(FLAMETHROWER_CANNON_PROFILE);
     }
 }

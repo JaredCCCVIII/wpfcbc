@@ -2,7 +2,7 @@
   "multipart": [
     {
       "apply": {
-        "model": "wariumce:block/rocket_pod_chamber"
+        "model": "wariumce:block/countermeasure_dispenser"
       },
       "when": {
         "facing": "north"
@@ -10,7 +10,7 @@
     },
     {
       "apply": {
-        "model": "wariumce:block/rocket_pod_chamber",
+        "model": "wariumce:block/countermeasure_dispenser",
         "y": 90
       },
       "when": {
@@ -19,7 +19,7 @@
     },
     {
       "apply": {
-        "model": "wariumce:block/rocket_pod_chamber",
+        "model": "wariumce:block/countermeasure_dispenser",
         "y": 180
       },
       "when": {
@@ -28,7 +28,7 @@
     },
     {
       "apply": {
-        "model": "wariumce:block/rocket_pod_chamber",
+        "model": "wariumce:block/countermeasure_dispenser",
         "y": 270
       },
       "when": {
@@ -37,7 +37,7 @@
     },
     {
       "apply": {
-        "model": "wariumce:block/rocket_pod_chamber",
+        "model": "wariumce:block/countermeasure_dispenser",
         "x": 270
       },
       "when": {
@@ -46,7 +46,7 @@
     },
     {
       "apply": {
-        "model": "wariumce:block/rocket_pod_chamber",
+        "model": "wariumce:block/countermeasure_dispenser",
         "x": 90
       },
       "when": {
