@@ -2,6 +2,8 @@ package net.ato.shupapium.datagen;
 
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.builders.ItemBuilder;
+import com.tterrag.registrate.providers.DataGenContext;
+import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
 import com.wariumce.CrustyChunksMod;
 import net.ato.shupapium.MainShupapium;
@@ -30,9 +32,46 @@ import rbasamoyai.createbigcannons.CreateBigCannons;
 import rbasamoyai.createbigcannons.cannons.autocannon.AutocannonBlock;
 import rbasamoyai.createbigcannons.cannons.autocannon.AutocannonBlockItem;
 
+import java.util.function.Function;
 import java.util.function.Supplier;
 
 public class ShupapiumBuilderTransformers {
+    private static final ResourceLocation EMPTY_BARREL_MODEL = MainShupapium.resource("block/empty_barrel");
+    private record BarrelRotation(int x, int y) {}
+    private static BarrelRotation standardRotation(Direction dir) {
+        return switch (dir) {
+            case EAST -> new BarrelRotation(0, 90);
+            case SOUTH -> new BarrelRotation(0, 180);
+            case WEST -> new BarrelRotation(0, 270);
+            case UP -> new BarrelRotation(270, 0);
+            case DOWN -> new BarrelRotation(90, 0);
+            default -> new BarrelRotation(0, 0);
+        };
+    }
+    private static BarrelRotation mortarRotation(Direction dir) {
+        return switch (dir) {
+            case NORTH ->  new BarrelRotation(-90, 180);
+            case EAST -> new BarrelRotation(-90, 270);
+            case SOUTH -> new BarrelRotation(-90, 0);
+            case WEST -> new BarrelRotation(-90, 90);
+            case UP -> new BarrelRotation(0, 90);
+            case DOWN -> new BarrelRotation(180, -90);
+        };
+    }
+
+    private static <T extends Block> void barrelBlockstate(DataGenContext<Block, T> c, RegistrateBlockstateProvider p, ModelFile model, Function<Direction, BarrelRotation> rotation) {
+        ModelFile empty = new ModelFile.UncheckedModelFile(EMPTY_BARREL_MODEL);
+        p.getVariantBuilder(c.get()).forAllStates(state -> {
+            boolean assembled = state.hasProperty(ShupapiumACBarrelBlock.ASSEMBLED) && state.getValue(ShupapiumACBarrelBlock.ASSEMBLED);
+            BarrelRotation rot = rotation.apply(state.getValue(BlockStateProperties.FACING));
+            return ConfiguredModel.builder()
+                    .modelFile(assembled ? empty : model)
+                    .rotationX(Math.floorMod(rot.x, 360))
+                    .rotationY(Math.floorMod(rot.y, 360))
+                    .build();
+        });
+    }
+
     public static <T extends Item, P> NonNullUnaryOperator<ItemBuilder<T, P>> fuzedProjectileItem(String pathAndMaterial) {
         ResourceLocation headFuzeLoc = CreateBigCannons.resource("block/projectile_block_fuze_head");
         ResourceLocation baseFuzeLoc = CreateBigCannons.resource("block/projectile_block_fuze_base");
@@ -93,50 +132,7 @@ public class ShupapiumBuilderTransformers {
         return b -> b
                 .properties(BlockBehaviour.Properties::noOcclusion)
                 .addLayer(() -> RenderType::cutoutMipped)
-                .blockstate((c, p) -> {
-                    ModelFile model = p.models().getExistingFile(modelLocation);
-                    p.getVariantBuilder(c.get())
-                            .partialState()
-                            .with(ShupapiumACBarrelBlock.FACING, Direction.NORTH)
-                            .modelForState()
-                            .modelFile(model)
-                            .addModel()
-
-                            .partialState()
-                            .with(ShupapiumACBarrelBlock.FACING, Direction.EAST)
-                            .modelForState()
-                            .modelFile(model)
-                            .rotationY(90)
-                            .addModel()
-
-                            .partialState()
-                            .with(ShupapiumACBarrelBlock.FACING, Direction.SOUTH)
-                            .modelForState()
-                            .modelFile(model)
-                            .rotationY(180)
-                            .addModel()
-
-                            .partialState()
-                            .with(ShupapiumACBarrelBlock.FACING, Direction.WEST)
-                            .modelForState()
-                            .modelFile(model)
-                            .rotationY(270)
-                            .addModel()
-
-                            .partialState()
-                            .with(ShupapiumACBarrelBlock.FACING, Direction.UP)
-                            .modelForState()
-                            .modelFile(model)
-                            .rotationX(270)
-                            .addModel()
-
-                            .partialState()
-                            .with(ShupapiumACBarrelBlock.FACING, Direction.DOWN)
-                            .modelForState()
-                            .modelFile(model)
-                            .rotationX(90)
-                            .addModel();
-                })
+                .blockstate((c, p) -> barrelBlockstate(c, p, p.models().getExistingFile(modelLocation), ShupapiumBuilderTransformers::standardRotation))
                 .item(AutocannonBlockItem::new)
                 .model((c, p) -> p.withExistingParent(c.getName(), modelLocation))
                 .build();
@@ -147,55 +143,7 @@ public class ShupapiumBuilderTransformers {
         return b -> b
                 .properties(BlockBehaviour.Properties::noOcclusion)
                 .addLayer(() -> RenderType::cutoutMipped)
-                .blockstate((c, p) -> {
-                    ModelFile model = p.models().getExistingFile(modelLocation);
-                    p.getVariantBuilder(c.get())
-                            .partialState()
-                            .with(ShupapiumACBarrelBlock.FACING, Direction.NORTH)
-                            .modelForState()
-                            .modelFile(model)
-                            .rotationX(-90)
-                            .rotationY(180)
-                            .addModel()
-
-                            .partialState()
-                            .with(ShupapiumACBarrelBlock.FACING, Direction.EAST)
-                            .modelForState()
-                            .modelFile(model)
-                            .rotationX(-90)
-                            .rotationY(270)
-                            .addModel()
-
-                            .partialState()
-                            .with(ShupapiumACBarrelBlock.FACING, Direction.SOUTH)
-                            .modelForState()
-                            .modelFile(model)
-                            .rotationX(-90)
-                            .addModel()
-
-                            .partialState()
-                            .with(ShupapiumACBarrelBlock.FACING, Direction.WEST)
-                            .modelForState()
-                            .modelFile(model)
-                            .rotationX(-90)
-                            .rotationY(90)
-                            .addModel()
-
-                            .partialState()
-                            .with(ShupapiumACBarrelBlock.FACING, Direction.UP)
-                            .modelForState()
-                            .modelFile(model)
-                            .rotationY(90)
-                            .addModel()
-
-                            .partialState()
-                            .with(ShupapiumACBarrelBlock.FACING, Direction.DOWN)
-                            .modelForState()
-                            .modelFile(model)
-                            .rotationX(180)
-                            .rotationY(-90)
-                            .addModel();
-                })
+                .blockstate((c, p) -> barrelBlockstate(c, p, p.models().getExistingFile(modelLocation), ShupapiumBuilderTransformers::mortarRotation))
                 .item(AutocannonBlockItem::new)
                 .model((c, p) -> p.withExistingParent(c.getName(), modelLocation))
                 .build();
@@ -206,50 +154,7 @@ public class ShupapiumBuilderTransformers {
         return b -> b
                 .properties(BlockBehaviour.Properties::noOcclusion)
                 .addLayer(() -> RenderType::cutoutMipped)
-                .blockstate((c, p) -> {
-                    ModelFile model = p.models().getExistingFile(modelLocation);
-                    p.getVariantBuilder(c.get())
-                            .partialState()
-                            .with(ShupapiumACBarrelBlock.FACING, Direction.NORTH)
-                            .modelForState()
-                            .modelFile(model)
-                            .addModel()
-
-                            .partialState()
-                            .with(ShupapiumACBarrelBlock.FACING, Direction.EAST)
-                            .modelForState()
-                            .modelFile(model)
-                            .rotationY(90)
-                            .addModel()
-
-                            .partialState()
-                            .with(ShupapiumACBarrelBlock.FACING, Direction.SOUTH)
-                            .modelForState()
-                            .modelFile(model)
-                            .rotationY(180)
-                            .addModel()
-
-                            .partialState()
-                            .with(ShupapiumACBarrelBlock.FACING, Direction.WEST)
-                            .modelForState()
-                            .modelFile(model)
-                            .rotationY(270)
-                            .addModel()
-
-                            .partialState()
-                            .with(ShupapiumACBarrelBlock.FACING, Direction.UP)
-                            .modelForState()
-                            .modelFile(model)
-                            .rotationX(270)
-                            .addModel()
-
-                            .partialState()
-                            .with(ShupapiumACBarrelBlock.FACING, Direction.DOWN)
-                            .modelForState()
-                            .modelFile(model)
-                            .rotationX(90)
-                            .addModel();
-                })
+                .blockstate((c, p) -> barrelBlockstate(c, p, p.models().getExistingFile(modelLocation), ShupapiumBuilderTransformers::standardRotation))
                 .item((block, properties) -> new ShupapiumGACBlockItem<>(block, properties, factory))
                 .model((c, p) -> p.getBuilder(c.getName()).parent(new ModelFile.UncheckedModelFile("builtin/entity")).guiLight(BlockModel.GuiLight.FRONT))
                 .build();
@@ -311,7 +216,7 @@ public class ShupapiumBuilderTransformers {
 
     public static <T extends Block & AutocannonBlock, P> NonNullUnaryOperator<BlockBuilder<T, P>> autocannonBreech(String mod, String path) {
         ResourceLocation breechLocation = ResourceLocation.fromNamespaceAndPath(mod, path);
-        ResourceLocation handleLocation = ResourceLocation.fromNamespaceAndPath(CrustyChunksMod.MODID, "block/manual_aimer");
+        ResourceLocation handleLocation = MainShupapium.resource("block/breech_handle");
         return b -> b
                 .properties(BlockBehaviour.Properties::noOcclusion)
                 .addLayer(() -> RenderType::cutoutMipped)
@@ -389,7 +294,7 @@ public class ShupapiumBuilderTransformers {
         builder.part()
                 .modelFile(model)
                 .rotationX(x)
-                .rotationY((y + 180) % 360)
+                .rotationY(y)
                 .addModel()
                 .condition(ShupapiumACBreechBlock.FACING, direction)
                 .condition(ShupapiumACBreechBlock.HANDLE, true)

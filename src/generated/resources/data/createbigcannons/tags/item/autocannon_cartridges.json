@@ -4,6 +4,9 @@
     "shupapium:large_bullet_ammo_item",
     "shupapium:extra_large_bullet_ammo_item",
     "shupapium:huge_bullet_ammo_item",
-    "shupapium:huge_he_bullet_ammo_item"
+    "shupapium:huge_he_bullet_ammo_item",
+    "shupapium:small_shell_ammo_item",
+    "shupapium:small_ap_shell_ammo_item",
+    "shupapium:small_flak_shell_ammo_item"
   ]
 }

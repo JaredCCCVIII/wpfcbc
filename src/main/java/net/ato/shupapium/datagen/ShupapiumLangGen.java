@@ -18,6 +18,7 @@ public class ShupapiumLangGen {
     private static final String HEAVY_DUMMY_RAGDOLL_NAME = ShupapiumEntities.HEAVY_DUMMY_RAGDOLL_ENTITY.getKey().location().getPath();
     public static void prepare() {
         // Misc
+        MainShupapium.REGISTRATE.addRawLang("message." + MainShupapium.MOD_ID + ".incompatible_ammo", "%1$s is incompatible with this cannon!");
         MainShupapium.REGISTRATE.addRawLang("item." + MainShupapium.MOD_ID + "." + DUMMY_RAGDOLL_SPAWN_EGG_NAME, "Dummy Ragdoll Spawn Egg");
         MainShupapium.REGISTRATE.addRawLang("item." + MainShupapium.MOD_ID + "." + HEAVY_DUMMY_RAGDOLL_SPAWN_EGG_NAME, "Heavy Dummy Ragdoll Spawn Egg");
         MainShupapium.REGISTRATE.addRawLang("entity." + MainShupapium.MOD_ID + "." + DUMMY_RAGDOLL_NAME, "Dummy Ragdoll");
@@ -65,12 +66,24 @@ public class ShupapiumLangGen {
                 .conditionAndBehavior("Projectile Info:", "Extra large bullet projectile, more penetrant.");
         tooltip(ShupapiumItems.HUGE_BULLET_AMMO_ITEM)
                 .header("Show info")
-                .summary("It's really a small shell projectile...")
+                .summary("It's really a huge bullet...")
                 .conditionAndBehavior("Projectile Info:", "The very first iteration of shells, effective on vehicles.");
         tooltip(ShupapiumItems.HUGE_HE_BULLET_AMMO_ITEM)
                 .header("Show info")
-                .summary("A highly explosive small shell projectile...")
+                .summary("A highly explosive huge bullet...")
                 .conditionAndBehavior("Projectile Info:", "The very first iteration of shells, now with explosives included.");
+        tooltip(ShupapiumItems.SMALL_SHELL_AMMO_ITEM)
+                .header("Show info")
+                .summary("These things are starting to get heavy!")
+                .conditionAndBehavior("Projectile Info:", "The second iteration of shells, stronger impact.");
+        tooltip(ShupapiumItems.SMALL_AP_SHELL_AMMO_ITEM)
+                .header("Show info")
+                .summary("The first penetration projectile you found...")
+                .conditionAndBehavior("Projectile Info:", "The second iteration of shells, penetrant and fast.");
+        tooltip(ShupapiumItems.SMALL_FLAK_SHELL_AMMO_ITEM)
+                .header("Show info")
+                .summary("The first flak projectile you found...")
+                .conditionAndBehavior("Projectile Info:", "The second iteration of shells, divisible on air.");
 
         // Shells
         tooltip(ShupapiumBlocks.SMOKE_BOMB_SHELL_BLOCK)

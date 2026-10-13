@@ -463,16 +463,18 @@ public class MountedShupapiumACContraption extends MountedAutocannonContraption 
             controller = entity.getVehicle().getControllingPassenger();
         }
         if (!level.isClientSide && controller instanceof Player player) {
-            boolean wrongAmmo = this.presentBlockEntities.get(this.startPos) instanceof ShupapiumACBreechBlockEntity breech && this.hasIncompatibleAmmo(breech);
+            Component message;
+            if (this.presentBlockEntities.get(this.startPos) instanceof  ShupapiumACBreechBlockEntity breech && this.hasIncompatibleAmmo(breech)) {
+                message = Component.translatable("message." + MainShupapium.MOD_ID + ".incompatible_ammo", ShupapiumAmmoContainerItem.getMainAmmoStack(breech.getMagazine()).getDisplayName()).withStyle(ChatFormatting.ITALIC);
+            } else {
+                message = Component.translatable("block." + MainShupapium.MOD_ID + ".cannon_carriage.hotbar.fireRate", this.getReferencedFireRate());
+            }
 //            String key = "";
 //            ControlPitchContraption controllerBlock = entity.getController();
 //            if (controllerBlock != null) {
 //                ResourceLocation loc = controllerBlock.getTypeId();
 //                if (loc != null) key = "." + loc.getNamespace() + "." + loc.getPath();
 //            }
-            Component message = wrongAmmo
-                    ? Component.translatable("message." + MainShupapium.MOD_ID + ".incompatible_ammo").withStyle(ChatFormatting.RED)
-                    : Component.translatable("block." + MainShupapium.MOD_ID + ".cannon_carriage.hotbar.fireRate", this.getReferencedFireRate());
             player.displayClientMessage(message, true);
         }
 

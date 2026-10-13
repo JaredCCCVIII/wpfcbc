@@ -1,0 +1,6 @@
+{
+  "parent": "wariumce:block/manual_aimer",
+  "transform": {
+    "translation": [0, 0, 1]
+  }
+}

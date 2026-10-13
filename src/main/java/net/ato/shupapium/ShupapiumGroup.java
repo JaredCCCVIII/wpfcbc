@@ -31,6 +31,9 @@ public class ShupapiumGroup {
                     output.accept(ShupapiumItems.EXTRA_LARGE_BULLET_AMMO_ITEM);
                     output.accept(ShupapiumItems.HUGE_BULLET_AMMO_ITEM);
                     output.accept(ShupapiumItems.HUGE_HE_BULLET_AMMO_ITEM);
+                    output.accept(ShupapiumItems.SMALL_SHELL_AMMO_ITEM);
+                    output.accept(ShupapiumItems.SMALL_AP_SHELL_AMMO_ITEM);
+                    output.accept(ShupapiumItems.SMALL_FLAK_SHELL_AMMO_ITEM);
                     output.accept(CrustyChunksModItems.POWDER_CHARGE.get());
                     output.accept(ShupapiumBlocks.SHUPAPIUM_AMMO_CONTAINER);
                     output.accept(ShupapiumBlocks.CREATIVE_SHUPAPIUM_AMMO_CONTAINER);

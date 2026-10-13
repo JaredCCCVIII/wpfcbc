@@ -55,8 +55,7 @@
     },
     {
       "apply": {
-        "model": "wariumce:block/manual_aimer",
-        "y": 180
+        "model": "shupapium:block/breech_handle"
       },
       "when": {
         "facing": "north",
@@ -65,8 +64,8 @@
     },
     {
       "apply": {
-        "model": "wariumce:block/manual_aimer",
-        "y": 270
+        "model": "shupapium:block/breech_handle",
+        "y": 90
       },
       "when": {
         "facing": "east",
@@ -75,7 +74,8 @@
     },
     {
       "apply": {
-        "model": "wariumce:block/manual_aimer"
+        "model": "shupapium:block/breech_handle",
+        "y": 180
       },
       "when": {
         "facing": "south",
@@ -84,8 +84,8 @@
     },
     {
       "apply": {
-        "model": "wariumce:block/manual_aimer",
-        "y": 90
+        "model": "shupapium:block/breech_handle",
+        "y": 270
       },
       "when": {
         "facing": "west",
@@ -94,9 +94,8 @@
     },
     {
       "apply": {
-        "model": "wariumce:block/manual_aimer",
-        "x": 270,
-        "y": 180
+        "model": "shupapium:block/breech_handle",
+        "x": 270
       },
       "when": {
         "facing": "up",
@@ -105,9 +104,8 @@
     },
     {
       "apply": {
-        "model": "wariumce:block/manual_aimer",
-        "x": 90,
-        "y": 180
+        "model": "shupapium:block/breech_handle",
+        "x": 90
       },
       "when": {
         "facing": "down",
