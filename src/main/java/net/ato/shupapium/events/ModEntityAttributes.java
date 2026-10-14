@@ -2,15 +2,19 @@ package net.ato.shupapium.events;
 
 import net.ato.shupapium.MainShupapium;
 import net.ato.shupapium.ShupapiumEntities;
-import net.ato.shupapium.datagen.ShupapiumCraftingRecipeProvider;
-import net.ato.shupapium.datagen.ShupapiumLangGen;
+import net.ato.shupapium.datagen.*;
 import net.ato.shupapium.entities.ShupapiumDummyRagdoll;
 import net.ato.shupapium.entities.ShupapiumMetalRagdoll;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
+
+import java.util.concurrent.CompletableFuture;
 
 @EventBusSubscriber(modid = MainShupapium.MOD_ID)
 public class ModEntityAttributes {
@@ -19,6 +23,18 @@ public class ModEntityAttributes {
         if (!event.getMods().contains(MainShupapium.MOD_ID)) return;
         ShupapiumLangGen.prepare();
         ShupapiumCraftingRecipeProvider.register();
+    }
+
+    @SubscribeEvent(priority = EventPriority.LOWEST)
+    public static void onGatherDataEvent(GatherDataEvent event) {
+        if (!event.getMods().contains(MainShupapium.MOD_ID)) return;
+        DataGenerator generator = event.getGenerator();
+        boolean includeServer = event.includeServer();
+        PackOutput output = generator.getPackOutput();
+        CompletableFuture<HolderLookup.Provider> registries = event.getLookupProvider();
+        ShupapiumBlockRecipeProvider.registerAll(provider -> generator.addProvider(includeServer, provider.create(output)), registries);
+        generator.addProvider(includeServer, new ShupapiumMixingRecipeProvider(output, registries));
+        generator.addProvider(includeServer, new ShupapiumSequencedAssemblyRecipeProvider(output, registries));
     }
 
     @SubscribeEvent

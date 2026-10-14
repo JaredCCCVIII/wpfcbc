@@ -1,0 +1,8 @@
+{
+  "type": "createbigcannons:drill_boring",
+  "input": {
+    "type": "block",
+    "block": "wariumce:large_rocket_pod"
+  },
+  "result": "shupapium:large_rocket_pod_barrel"
+}

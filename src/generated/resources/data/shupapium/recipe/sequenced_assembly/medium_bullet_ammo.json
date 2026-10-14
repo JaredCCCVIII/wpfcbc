@@ -1,0 +1,48 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "wariumce:bullet"
+  },
+  "results": [
+    {
+      "id": "shupapium:medium_bullet_ammo_item"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "wariumce:bullet"
+        },
+        {
+          "tag": "c:plates/copper"
+        }
+      ],
+      "results": [
+        {
+          "id": "wariumce:bullet"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "wariumce:bullet"
+        },
+        {
+          "tag": "createbigcannons:gunpowder"
+        }
+      ],
+      "results": [
+        {
+          "id": "wariumce:bullet"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "wariumce:bullet"
+  }
+}

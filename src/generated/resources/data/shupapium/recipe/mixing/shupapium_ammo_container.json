@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createbigcannons:autocannon_ammo_container"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 500,
+      "tag": "c:molten_steel"
+    }
+  ],
+  "results": [
+    {
+      "id": "shupapium:warium_ammo_container"
+    }
+  ]
+}

@@ -136,17 +136,17 @@ public abstract class ShupapiumCraftingRecipeProvider extends RecipeProvider {
                 .patternLine("SAAIIIAAS")
                 .patternLine("SSSSRSSSS")
                 .build(recipeOutput);
-        MechanicalCraftingRecipeBuilder.shapedRecipe(ShupapiumBlocks.JOKE_BOMB_SHELL_BLOCK)
-                .key('S', Items.NETHER_STAR).key('B', ShupapiumBlocks.FUSION_BOMB_SHELL_BLOCK).key('A', Items.DRAGON_EGG).key('W', Items.COMPOSTER).key('R', Items.DRAGON_HEAD).key('I', CrustyChunksModItems.IMPLOSION_LENS.get()).key('F', CrustyChunksModItems.FISSION_CORE.get()).key('C', Items.BEACON)
-                .patternLine("SAAIIIAAS")
-                .patternLine("SSSSRSSSS")
-                .patternLine("SSSSRSSSS")
-                .patternLine("SBBIIIBBS")
-                .patternLine("SBBIWIBBS")
-                .patternLine("RABIFIBAR")
-                .patternLine("SAAICIAAS")
-                .patternLine("SAAIIIAAS")
-                .patternLine("SSSSRSSSS")
-                .build(recipeOutput);
+//        MechanicalCraftingRecipeBuilder.shapedRecipe(ShupapiumBlocks.JOKE_BOMB_SHELL_BLOCK)
+//                .key('S', Items.NETHER_STAR).key('B', ShupapiumBlocks.FUSION_BOMB_SHELL_BLOCK).key('A', Items.DRAGON_EGG).key('W', Items.COMPOSTER).key('R', Items.DRAGON_HEAD).key('I', CrustyChunksModItems.IMPLOSION_LENS.get()).key('F', CrustyChunksModItems.FISSION_CORE.get()).key('C', Items.BEACON)
+//                .patternLine("SAAIIIAAS")
+//                .patternLine("SSSSRSSSS")
+//                .patternLine("SSSSRSSSS")
+//                .patternLine("SBBIIIBBS")
+//                .patternLine("SBBIWIBBS")
+//                .patternLine("RABIFIBAR")
+//                .patternLine("SAAICIAAS")
+//                .patternLine("SAAIIIAAS")
+//                .patternLine("SSSSRSSSS")
+//                .build(recipeOutput);
     }
 }

@@ -1,0 +1,48 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "wariumce:flare_charge"
+  },
+  "results": [
+    {
+      "id": "shupapium:flare_charge_ammo_item"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "wariumce:flare_charge"
+        },
+        {
+          "tag": "c:plates/copper"
+        }
+      ],
+      "results": [
+        {
+          "id": "wariumce:flare_charge"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "wariumce:flare_charge"
+        },
+        {
+          "tag": "createbigcannons:gunpowder"
+        }
+      ],
+      "results": [
+        {
+          "id": "wariumce:flare_charge"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "wariumce:flare_charge"
+  }
+}

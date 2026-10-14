@@ -1,0 +1,8 @@
+{
+  "type": "createbigcannons:drill_boring",
+  "input": {
+    "type": "block",
+    "block": "wariumce:flame_thrower"
+  },
+  "result": "shupapium:flamethrower_breech"
+}

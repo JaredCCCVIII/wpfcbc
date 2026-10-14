@@ -1,0 +1,48 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "wariumce:fire_artillery_shell"
+  },
+  "results": [
+    {
+      "id": "shupapium:artillery_fire_shell_ammo_item"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "wariumce:fire_artillery_shell"
+        },
+        {
+          "tag": "c:plates/copper"
+        }
+      ],
+      "results": [
+        {
+          "id": "wariumce:fire_artillery_shell"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "wariumce:fire_artillery_shell"
+        },
+        {
+          "tag": "createbigcannons:gunpowder"
+        }
+      ],
+      "results": [
+        {
+          "id": "wariumce:fire_artillery_shell"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "wariumce:fire_artillery_shell"
+  }
+}

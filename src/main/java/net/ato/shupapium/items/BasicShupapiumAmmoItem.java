@@ -1,5 +1,6 @@
 package net.ato.shupapium.items;
 
+import net.ato.shupapium.utils.ProjectileManager;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.EntityType;
@@ -49,5 +50,10 @@ public class BasicShupapiumAmmoItem extends AbstractShupapiumACAmmoItem{
     @Override
     public void customProjectileMuzzle(ItemStack stack, ServerLevel level, Vec3 pos, Vec3 vel) {
         if (spec.muzzle() != null) spec.muzzle().apply(level, pos, vel);
+    }
+
+    @Override
+    public ProjectileManager.ExpireAction getExpireAction(ItemStack stack) {
+        return spec.expireAction();
     }
 }

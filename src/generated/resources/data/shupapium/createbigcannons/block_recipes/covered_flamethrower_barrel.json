@@ -1,0 +1,8 @@
+{
+  "type": "createbigcannons:drill_boring",
+  "input": {
+    "type": "block",
+    "block": "wariumce:covered_flame_thrower_barrel"
+  },
+  "result": "shupapium:covered_flamethrower_barrel"
+}

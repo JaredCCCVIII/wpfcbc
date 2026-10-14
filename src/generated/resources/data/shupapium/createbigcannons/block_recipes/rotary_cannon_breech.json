@@ -1,0 +1,8 @@
+{
+  "type": "createbigcannons:drill_boring",
+  "input": {
+    "type": "block",
+    "block": "wariumce:rotary_auto_cannon"
+  },
+  "result": "shupapium:rotary_cannon_breech"
+}

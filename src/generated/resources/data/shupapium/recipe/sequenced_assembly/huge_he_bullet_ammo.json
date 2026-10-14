@@ -1,0 +1,48 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "wariumce:huge_he_bullet"
+  },
+  "results": [
+    {
+      "id": "shupapium:huge_he_bullet_ammo_item"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "wariumce:huge_he_bullet"
+        },
+        {
+          "tag": "c:plates/copper"
+        }
+      ],
+      "results": [
+        {
+          "id": "wariumce:huge_he_bullet"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "wariumce:huge_he_bullet"
+        },
+        {
+          "tag": "createbigcannons:gunpowder"
+        }
+      ],
+      "results": [
+        {
+          "id": "wariumce:huge_he_bullet"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "wariumce:huge_he_bullet"
+  }
+}

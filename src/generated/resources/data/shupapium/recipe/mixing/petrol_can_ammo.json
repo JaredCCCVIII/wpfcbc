@@ -1,0 +1,24 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "wariumce:aluminum_plate"
+    },
+    {
+      "item": "wariumce:steel_tube"
+    },
+    {
+      "item": "wariumce:bored_component"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 100,
+      "tag": "forge:gasoline"
+    }
+  ],
+  "results": [
+    {
+      "id": "shupapium:petrol_can_ammo_item"
+    }
+  ]
+}

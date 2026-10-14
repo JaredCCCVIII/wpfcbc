@@ -1,6 +1,7 @@
 package net.ato.shupapium.items;
 
 import net.ato.shupapium.MainShupapium;
+import net.ato.shupapium.utils.ProjectileManager;
 import net.ato.shupapium.utils.acballistics.ShupapiumAmmoBallistics;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
@@ -19,7 +20,8 @@ public record ShupapiumAmmoSpec(
         boolean requiresPropellant,
         @Nullable Supplier<? extends Item> spentItem,
         @Nullable ShupapiumMuzzleEffect muzzle,
-        ShupapiumAmmoBallistics ballistics
+        ShupapiumAmmoBallistics ballistics,
+        ProjectileManager.ExpireAction expireAction
 ) {
     public static Builder builder() {return new Builder();}
 
@@ -31,6 +33,7 @@ public record ShupapiumAmmoSpec(
         private Supplier<? extends Item> spentItem;
         private ShupapiumMuzzleEffect muzzle;
         private ShupapiumAmmoBallistics ballistics = ShupapiumAmmoBallistics.DEFAULT;
+        private ProjectileManager.ExpireAction expireAction = ProjectileManager.ExpireAction.FALL;
 
         public Builder properties(String name) {
             this.properties = MainShupapium.resource("munition_properties/projectiles/" + name);
@@ -48,11 +51,12 @@ public record ShupapiumAmmoSpec(
         public Builder spentItem(Supplier<? extends Item> s) {this.spentItem = s; return this;}
         public Builder muzzle(ShupapiumMuzzleEffect e) {this.muzzle = e; return this;}
         public Builder ballistics(ShupapiumAmmoBallistics b) {this.ballistics = b; return this;}
+        public Builder onExpire(ProjectileManager.ExpireAction a) {this.expireAction = a; return this;}
 
         public ShupapiumAmmoSpec build() {
             Objects.requireNonNull(properties, "properties");
             if (variants.isEmpty()) throw new IllegalStateException("Ammo needs at least one variant");
-            return new ShupapiumAmmoSpec(properties, List.copyOf(variants), gravity, propellant, spentItem, muzzle, ballistics);
+            return new ShupapiumAmmoSpec(properties, List.copyOf(variants), gravity, propellant, spentItem, muzzle, ballistics, expireAction);
         }
     }
 }

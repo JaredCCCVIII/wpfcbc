@@ -5,6 +5,7 @@ import com.wariumce.init.CrustyChunksModEntities;
 import com.wariumce.init.CrustyChunksModItems;
 import com.wariumce.procedures.MuzzleFlashProcedure;
 import net.ato.shupapium.items.*;
+import net.ato.shupapium.utils.ProjectileManager;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.Item;
@@ -74,55 +75,65 @@ public class ShupapiumItems {
             .properties("large_shell")
             .variants(CrustyChunksModEntities.TANK_FIRE_PROJECTILE)
             .spentItem(CrustyChunksModItems.HOLLOWED_EXTRA_LARGE_PROJECTILE)
+            .onExpire(ProjectileManager.ExpireAction.DETONATE)
             .build());
     public static final ItemEntry<BasicShupapiumAmmoItem> LARGE_SOLID_SHELL_AMMO_ITEM = acAmmo("large_solid_shell_ammo_item", "Large Shell Ammo (SOLID)",() -> ShupapiumAmmoSpec.builder()
             .properties("large_shell")
             .variants(CrustyChunksModEntities.LARGE_SOLID_PROJECTILE)
             .spentItem(CrustyChunksModItems.LEAD_NUGGET)
+            .onExpire(ProjectileManager.ExpireAction.DETONATE)
             .build());
     public static final ItemEntry<BasicShupapiumAmmoItem> LARGE_HEAT_SHELL_AMMO_ITEM = acAmmo("large_heat_shell_ammo_item", "Large Shell Ammo (HEAT)",() -> ShupapiumAmmoSpec.builder()
             .properties("large_shell")
             .variants(CrustyChunksModEntities.LARGE_HEAT_FIRE)
             .spentItem(CrustyChunksModItems.HOLLOWED_EXTRA_LARGE_PROJECTILE)
+            .onExpire(ProjectileManager.ExpireAction.DETONATE)
             .build());
     public static final ItemEntry<BasicShupapiumAmmoItem> LARGE_AP_SHELL_AMMO_ITEM = acAmmo("large_ap_shell_ammo_item", "Large Shell Ammo (AP)",() -> ShupapiumAmmoSpec.builder()
             .properties("large_shell")
             .variants(CrustyChunksModEntities.LARGE_AP_FIRE)
             .spentItem(Items.IRON_NUGGET::asItem)
+            .onExpire(ProjectileManager.ExpireAction.DETONATE)
             .build());
     public static final ItemEntry<BasicShupapiumAmmoItem> LARGE_FLAK_SHELL_AMMO_ITEM = acAmmo("large_flak_shell_ammo_item", "Large Shell Ammo (FLAK)",() -> ShupapiumAmmoSpec.builder()
             .properties("large_shell")
             .variants(CrustyChunksModEntities.LARGE_FLAK_PROJECTILE)
             .spentItem(CrustyChunksModItems.HOLLOWED_EXTRA_LARGE_PROJECTILE)
+            .onExpire(ProjectileManager.ExpireAction.DETONATE)
             .build());
     public static final ItemEntry<BasicShupapiumAmmoItem> LARGE_SMOKE_SHELL_AMMO_ITEM = acAmmo("large_smoke_shell_ammo_item", "Large Shell Ammo (SMOKE)",() -> ShupapiumAmmoSpec.builder()
             .properties("large_shell")
             .variants(CrustyChunksModEntities.LARGE_SMOKE_FIRE)
             .spentItem(CrustyChunksModItems.HOLLOWED_EXTRA_LARGE_PROJECTILE)
+            .onExpire(ProjectileManager.ExpireAction.DETONATE)
             .build());
     public static final ItemEntry<BasicShupapiumAmmoItem> ARTILLERY_SHELL_AMMO_ITEM = acAmmo("artillery_shell_ammo_item", "Artillery Shell Ammo (HE)",() -> ShupapiumAmmoSpec.builder()
             .properties("artillery_shell")
             .variants(CrustyChunksModEntities.ARTILLERY_FIRE_PROJECTILE)
             .propellant(true)
             .spentItem(CrustyChunksModItems.HOLLOWED_HUGE_PROJECTILE)
+            .onExpire(ProjectileManager.ExpireAction.DETONATE)
             .build());
     public static final ItemEntry<BasicShupapiumAmmoItem> ARTILLERY_GAS_SHELL_AMMO_ITEM = acAmmo("artillery_gas_shell_ammo_item", "Artillery Shell Ammo (TOXIC GAS)",() -> ShupapiumAmmoSpec.builder()
             .properties("artillery_shell")
             .variants(CrustyChunksModEntities.GAS_ARTILLERY_PROJECTILE)
             .propellant(true)
             .spentItem(CrustyChunksModItems.HOLLOWED_HUGE_PROJECTILE)
+            .onExpire(ProjectileManager.ExpireAction.DETONATE)
             .build());
     public static final ItemEntry<BasicShupapiumAmmoItem> ARTILLERY_FIRE_SHELL_AMMO_ITEM = acAmmo("artillery_fire_shell_ammo_item", "Artillery Shell Ammo (FIRE)",() -> ShupapiumAmmoSpec.builder()
             .properties("artillery_shell")
             .variants(CrustyChunksModEntities.FIRE_ARTILLERY_PROJECTILE)
             .propellant(true)
             .spentItem(CrustyChunksModItems.HOLLOWED_HUGE_PROJECTILE)
+            .onExpire(ProjectileManager.ExpireAction.DETONATE)
             .build());
     public static final ItemEntry<BasicShupapiumAmmoItem> ARTILLERY_SOLID_SHELL_AMMO_ITEM = acAmmo("artillery_solid_shell_ammo_item", "Artillery Shell Ammo (SOLID)",() -> ShupapiumAmmoSpec.builder()
             .properties("artillery_shell")
             .variants(CrustyChunksModEntities.ARTILLERY_SOLID_PROJECTILE)
             .propellant(true)
             .spentItem(CrustyChunksModItems.LEAD_NUGGET)
+            .onExpire(ProjectileManager.ExpireAction.DETONATE)
             .build());
     public static final ItemEntry<BasicShupapiumAmmoItem> MORTAR_SHELL_AMMO_ITEM = acAmmo("mortar_shell_ammo_item", "Mortar Shell Ammo (HE)",() -> ShupapiumAmmoSpec.builder()
             .properties("mortar_shell")
@@ -164,13 +175,11 @@ public class ShupapiumItems {
     public static final ItemEntry<BasicShupapiumAmmoItem> FLARE_CHARGE_AMMO_ITEM = acAmmo("flare_charge_ammo_item", "Flare Ammo", () -> ShupapiumAmmoSpec.builder()
             .properties("flare_charge")
             .variants(CrustyChunksModEntities.FLARE_PROJECTILE)
-            .gravity(true)
             .spentItem(CBCItems.GUNPOWDER_PINCH)
             .build());
     public static final ItemEntry<BasicShupapiumAmmoItem> CHAFF_CHARGE_AMMO_ITEM = acAmmo("chaff_charge_ammo_item", "Chaff Ammo", () -> ShupapiumAmmoSpec.builder()
             .properties("flare_charge")
             .variants(CrustyChunksModEntities.CHAFF)
-            .gravity(true)
             .spentItem(CBCItems.GUNPOWDER_PINCH)
             .build());
     public static final ItemEntry<BasicShupapiumAmmoItem> PETROL_CAN_AMMO_ITEM = acAmmo("petrol_can_ammo_item", "Small Petrol Can", () -> ShupapiumAmmoSpec.builder()

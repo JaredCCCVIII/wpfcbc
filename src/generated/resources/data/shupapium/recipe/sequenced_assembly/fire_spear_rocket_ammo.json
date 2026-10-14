@@ -1,0 +1,48 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "wariumce:fire_spear_rocket"
+  },
+  "results": [
+    {
+      "id": "shupapium:fire_spear_rocket_ammo_item"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "wariumce:fire_spear_rocket"
+        },
+        {
+          "tag": "c:plates/copper"
+        }
+      ],
+      "results": [
+        {
+          "id": "wariumce:fire_spear_rocket"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "wariumce:fire_spear_rocket"
+        },
+        {
+          "tag": "createbigcannons:gunpowder"
+        }
+      ],
+      "results": [
+        {
+          "id": "wariumce:fire_spear_rocket"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "wariumce:fire_spear_rocket"
+  }
+}

@@ -53,6 +53,7 @@ public class ShupapiumGroup {
                     output.accept(ShupapiumItems.STRIKE_SPEAR_MISSILE_AMMO_ITEM);
                     output.accept(ShupapiumItems.FLARE_CHARGE_AMMO_ITEM);
                     output.accept(ShupapiumItems.CHAFF_CHARGE_AMMO_ITEM);
+                    output.accept(ShupapiumItems.PETROL_CAN_AMMO_ITEM);
                     output.accept(CrustyChunksModItems.POWDER_CHARGE.get());
                     output.accept(ShupapiumBlocks.SHUPAPIUM_AMMO_CONTAINER);
                     output.accept(ShupapiumBlocks.CREATIVE_SHUPAPIUM_AMMO_CONTAINER);

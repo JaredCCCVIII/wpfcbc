@@ -57,24 +57,28 @@ public class ShupapiumBlocks {
             .block("minigun_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.MACHINE_GUN))
             .transform(cannonBlock(false, SoundType.ANVIL))
             .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .tag(CBCTags.CBCBlockTags.DRILL_CAN_PASS_THROUGH)
             .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/minigun"))
             .register();
     public static final BlockEntry<ShupapiumACBreechBlock> LIGHT_MACHINE_GUN_BREECH = MainShupapium.REGISTRATE
             .block("light_machine_gun_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.MACHINE_GUN))
             .transform(cannonBlock(false, SoundType.ANVIL))
             .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .tag(CBCTags.CBCBlockTags.DRILL_CAN_PASS_THROUGH)
             .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/light_machine_gun"))
             .register();
     public static final BlockEntry<ShupapiumACBreechBlock> MACHINE_GUN_BREECH = MainShupapium.REGISTRATE
             .block("machine_gun_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.MACHINE_GUN))
             .transform(cannonBlock(false, SoundType.ANVIL))
             .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .tag(CBCTags.CBCBlockTags.DRILL_CAN_PASS_THROUGH)
             .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/machine_gun"))
             .register();
     public static final BlockEntry<ShupapiumACBreechBlock> HEAVY_MACHINE_GUN_BREECH = MainShupapium.REGISTRATE
             .block("heavy_machine_gun_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.MACHINE_GUN))
             .transform(cannonBlock(false, SoundType.ANVIL))
             .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .tag(CBCTags.CBCBlockTags.DRILL_CAN_PASS_THROUGH)
             .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/heavy_machine_gun"))
             .register();
     public static final BlockEntry<ShupapiumACBarrelBlock> CANNON_BARREL = MainShupapium.REGISTRATE
@@ -93,18 +97,21 @@ public class ShupapiumBlocks {
             .block("light_cannon_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.CANNON_GUN))
             .transform(cannonBlock(false, SoundType.ANVIL))
             .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .tag(CBCTags.CBCBlockTags.DRILL_CAN_PASS_THROUGH)
             .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/light_autocannon"))
             .register();
     public static final BlockEntry<ShupapiumACBreechBlock> ROTARY_CANNON_BREECH = MainShupapium.REGISTRATE
             .block("rotary_cannon_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.CANNON_GUN))
             .transform(cannonBlock(false, SoundType.ANVIL))
             .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .tag(CBCTags.CBCBlockTags.DRILL_CAN_PASS_THROUGH)
             .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/rotary_auto_cannon"))
             .register();
     public static final BlockEntry<ShupapiumACBreechBlock> HEAVY_CANNON_BREECH = MainShupapium.REGISTRATE
             .block("heavy_cannon_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.CANNON_GUN))
             .transform(cannonBlock(false, SoundType.ANVIL))
             .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .tag(CBCTags.CBCBlockTags.DRILL_CAN_PASS_THROUGH)
             .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/autocannon"))
             .register();
     public static final BlockEntry<ShupapiumACBarrelBlock> BATTLE_CANNON_BARREL = MainShupapium.REGISTRATE
@@ -129,6 +136,7 @@ public class ShupapiumBlocks {
             .block("battle_cannon_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.BATTLE_GUN))
             .transform(cannonBlock(false, SoundType.ANVIL))
             .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .tag(CBCTags.CBCBlockTags.DRILL_CAN_PASS_THROUGH)
             .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/battle_cannon_breech"))
             .register();
     public static final BlockEntry<ShupapiumACBarrelBlock> ARTILLERY_CANNON_BARREL = MainShupapium.REGISTRATE
@@ -141,6 +149,7 @@ public class ShupapiumBlocks {
             .block("artillery_cannon_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.ARTILLERY_GUN))
             .transform(cannonBlock(false, SoundType.ANVIL))
             .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .tag(CBCTags.CBCBlockTags.DRILL_CAN_PASS_THROUGH)
             .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/artillerybreech"))
             .register();
     public static final BlockEntry<ShupapiumACBarrelBlock> ROCKET_POD_BARREL = MainShupapium.REGISTRATE
@@ -159,12 +168,14 @@ public class ShupapiumBlocks {
             .block("rocket_pod_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.ROCKET_GUN))
             .transform(cannonBlock(false, SoundType.ANVIL))
             .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .tag(CBCTags.CBCBlockTags.DRILL_CAN_PASS_THROUGH)
             .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/rocket_pod_chamber"))
             .register();
     public static final BlockEntry<ShupapiumACBreechBlock> LARGE_ROCKET_POD_BREECH = MainShupapium.REGISTRATE
             .block("large_rocket_pod_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.LARGE_ROCKET_GUN))
             .transform(cannonBlock(false, SoundType.ANVIL))
             .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .tag(CBCTags.CBCBlockTags.DRILL_CAN_PASS_THROUGH)
             .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/large_rocket_pod_chamber"))
             .register();
     public static final BlockEntry<ShupapiumACBarrelBlock> LAUNCHER_BARREL = MainShupapium.REGISTRATE
@@ -177,6 +188,7 @@ public class ShupapiumBlocks {
             .block("launcher_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.SMALL_GUN))
             .transform(cannonBlock(false, SoundType.ANVIL))
             .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .tag(CBCTags.CBCBlockTags.DRILL_CAN_PASS_THROUGH)
             .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/countermeasure_dispenser"))
             .register();
     public static final BlockEntry<ShupapiumACBarrelBlock> FLAMETHROWER_BARREL = MainShupapium.REGISTRATE
@@ -195,6 +207,7 @@ public class ShupapiumBlocks {
             .block("flamethrower_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.SMALL_GUN))
             .transform(cannonBlock(false, SoundType.ANVIL))
             .loot(CBCBuilderTransformers.steelScrapLoot(4))
+            .tag(CBCTags.CBCBlockTags.DRILL_CAN_PASS_THROUGH)
             .transform(ShupapiumBuilderTransformers.autocannonBreech(CrustyChunksMod.MODID, "block/flame_thrower"))
             .register();
 

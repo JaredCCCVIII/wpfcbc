@@ -1,0 +1,8 @@
+{
+  "type": "createbigcannons:drill_boring",
+  "input": {
+    "type": "block",
+    "block": "wariumce:artillery_barrel"
+  },
+  "result": "shupapium:artillery_cannon_barrel"
+}

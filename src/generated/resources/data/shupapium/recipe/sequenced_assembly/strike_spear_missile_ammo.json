@@ -1,0 +1,48 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "wariumce:strike_spear_missile"
+  },
+  "results": [
+    {
+      "id": "shupapium:strike_spear_missile_ammo_item"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "wariumce:strike_spear_missile"
+        },
+        {
+          "tag": "c:plates/copper"
+        }
+      ],
+      "results": [
+        {
+          "id": "wariumce:strike_spear_missile"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "wariumce:strike_spear_missile"
+        },
+        {
+          "tag": "createbigcannons:gunpowder"
+        }
+      ],
+      "results": [
+        {
+          "id": "wariumce:strike_spear_missile"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "wariumce:strike_spear_missile"
+  }
+}

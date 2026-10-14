@@ -8,6 +8,7 @@ import net.ato.shupapium.MainShupapium;
 import net.ato.shupapium.ShupapiumContraptionTypes;
 import net.ato.shupapium.items.ShupapiumAmmoContainerItem;
 import net.ato.shupapium.items.ShupapiumAmmoItem;
+import net.ato.shupapium.utils.ProjectileManager;
 import net.ato.shupapium.utils.acattachments.ShupapiumACAttachmentDef;
 import net.ato.shupapium.utils.acattachments.ShupapiumACAttachmentSlot;
 import net.ato.shupapium.utils.acattachments.ShupapiumACAttachments;
@@ -379,6 +380,8 @@ public class MountedShupapiumACContraption extends MountedAutocannonContraption 
             projectile.xRotO = projectile.getXRot();
             projectile.yRotO = projectile.getYRot();
             projectile.setDeltaMovement(projectile.getDeltaMovement().add(0, projectileProperties.ballistics().gravity(), 0));
+
+            ProjectileManager.track(projectile, level, properties.projectileLifetime() * 20, round.getExpireAction(foundProjectile));
 
             level.addFreshEntity(projectile);
             fired++;

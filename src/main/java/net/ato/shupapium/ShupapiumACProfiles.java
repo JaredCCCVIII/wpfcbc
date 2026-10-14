@@ -169,7 +169,7 @@ public class ShupapiumACProfiles {
             .muzzleParticle(ParticleTypes.LAVA)
             .muzzleParticle(ParticleTypes.CAMPFIRE_COSY_SMOKE)
             .muzzleParticle(ParticleTypes.LARGE_SMOKE)
-            .fireRate(180)
+            .fireRate(350)
             .projectilesPerShot(5)
             .cannonSpeed(1.5F)
             .cannonSpread(0.85F)

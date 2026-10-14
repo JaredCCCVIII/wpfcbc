@@ -1,0 +1,48 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "wariumce:armor_peeler_rocket"
+  },
+  "results": [
+    {
+      "id": "shupapium:armor_peeler_rocket_ammo_item"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "wariumce:armor_peeler_rocket"
+        },
+        {
+          "tag": "c:plates/copper"
+        }
+      ],
+      "results": [
+        {
+          "id": "wariumce:armor_peeler_rocket"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "wariumce:armor_peeler_rocket"
+        },
+        {
+          "tag": "createbigcannons:gunpowder"
+        }
+      ],
+      "results": [
+        {
+          "id": "wariumce:armor_peeler_rocket"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "wariumce:armor_peeler_rocket"
+  }
+}

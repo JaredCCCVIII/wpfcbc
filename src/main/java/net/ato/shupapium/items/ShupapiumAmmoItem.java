@@ -1,5 +1,6 @@
 package net.ato.shupapium.items;
 
+import net.ato.shupapium.utils.ProjectileManager;
 import net.ato.shupapium.utils.acballistics.ShupapiumAmmoBallistics;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Entity;
@@ -38,4 +39,6 @@ public interface ShupapiumAmmoItem {
     AutocannonProjectilePropertiesComponent getAutocannonProperties(ItemStack stack);
 
     ItemStack getSpentItem(ItemStack stack);
+
+    default ProjectileManager.ExpireAction getExpireAction(ItemStack stack) {return ProjectileManager.ExpireAction.FALL;}
 }

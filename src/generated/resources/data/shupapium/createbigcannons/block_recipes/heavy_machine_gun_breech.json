@@ -1,0 +1,8 @@
+{
+  "type": "createbigcannons:drill_boring",
+  "input": {
+    "type": "block",
+    "block": "wariumce:heavy_machine_gun"
+  },
+  "result": "shupapium:heavy_machine_gun_breech"
+}
