@@ -19,8 +19,7 @@ public class ShupapiumBlockEntities {
             .blockEntity("shupapium_autocannon", AutocannonBlockEntity::new)
             .validBlocks(ShupapiumBlocks.MACHINE_GUN_BARREL, ShupapiumBlocks.COVERED_MACHINE_GUN_BARREL,
                     ShupapiumBlocks.CANNON_BARREL,
-                    ShupapiumBlocks.BATTLE_CANNON_BARREL,
-                    ShupapiumBlocks.THICK_BATTLE_CANNON_BARREL,
+                    ShupapiumBlocks.BATTLE_CANNON_BARREL, ShupapiumBlocks.THICK_BATTLE_CANNON_BARREL, ShupapiumBlocks.BATTLE_CANNON_MUZZLE_BRAKE_TYPE_1, ShupapiumBlocks.BATTLE_CANNON_MUZZLE_BRAKE_TYPE_2,
                     ShupapiumBlocks.ARTILLERY_CANNON_BARREL,
                     ShupapiumBlocks.ROCKET_POD_BARREL, ShupapiumBlocks.LARGE_ROCKET_POD_BARREL,
                     ShupapiumBlocks.LAUNCHER_BARREL, ShupapiumBlocks.FLAMETHROWER_BARREL)

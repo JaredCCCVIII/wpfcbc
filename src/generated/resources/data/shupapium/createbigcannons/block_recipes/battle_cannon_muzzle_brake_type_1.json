@@ -1,0 +1,8 @@
+{
+  "type": "createbigcannons:drill_boring",
+  "input": {
+    "type": "block",
+    "block": "wariumce:type_1_bc_muzzle_brake"
+  },
+  "result": "shupapium:battle_cannon_muzzle_brake_type_1"
+}

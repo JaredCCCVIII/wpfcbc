@@ -1,5 +1,6 @@
 package net.ato.shupapium.utils.actypes;
 
+import net.ato.shupapium.utils.acballistics.ShupapiumFireSound;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
@@ -28,7 +29,7 @@ public interface ShupapiumACProfile {
     default Set<Block> getCompatibleAttachments() {return Set.of();}
 
     /** Gunshot. */
-    SoundEvent getFireSound();
+    List<ShupapiumFireSound> getFireSounds();
 
     /** Particles to spawn when shot. */
     List<ParticleOptions> getMuzzleParticles();
@@ -48,9 +49,10 @@ public interface ShupapiumACProfile {
     /** Ammo that can be used in this cannon. */
     List<Item>  getAmmoTypes();
 
-    default void cannonSoundEvent(Level level, Vec3 pos, float volumeMultiplier, @Nullable SoundEvent override) {
-        SoundEvent sound = override != null ? override : getFireSound();
-        level.playSound(null, pos.x, pos.y, pos.z, sound, SoundSource.BLOCKS, Mth.nextFloat(level.random, 10.0F, 12.0F) * volumeMultiplier, Mth.nextFloat(level.random, 0.75F, 1.1F));
+    default void cannonSoundEvent(Level level, Vec3 pos, float volumeMultiplier, @Nullable List<ShupapiumFireSound> override) {
+        for (ShupapiumFireSound s : (override != null ? override : getFireSounds())) {
+            s.play(level, pos, volumeMultiplier);
+        }
     }
 
     default void cannonMuzzleEvent(ServerLevel level, Vec3 pos, Vec3 vel, float particleScale) {

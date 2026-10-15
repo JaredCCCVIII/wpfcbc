@@ -408,8 +408,7 @@ public class MountedShupapiumACContraption extends MountedAutocannonContraption 
         }
         if (mods.muzzleParticleScale() >= 1F) round.customProjectileMuzzle(foundProjectile, level, particlePos, particleVel);
 
-        SoundEvent soundOverride = mods.fireSoundOverride() != null ? mods.fireSoundOverride().get() : null;
-        this.profile.cannonSoundEvent(level, spawnPos, mods.soundVolumeMultiplier(), soundOverride);
+        this.profile.cannonSoundEvent(level, spawnPos, mods.soundVolumeMultiplier(), mods.fireSoundOverride());
         this.profile.cannonMuzzleEvent(level, particlePos, particleVel, mods.muzzleParticleScale());
     }
 

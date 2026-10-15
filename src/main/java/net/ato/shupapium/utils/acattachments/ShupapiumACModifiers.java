@@ -1,8 +1,10 @@
 package net.ato.shupapium.utils.acattachments;
 
+import net.ato.shupapium.utils.acballistics.ShupapiumFireSound;
 import net.minecraft.sounds.SoundEvent;
 
 import javax.annotation.Nullable;
+import java.util.List;
 import java.util.function.Supplier;
 
 public record ShupapiumACModifiers(
@@ -12,7 +14,7 @@ public record ShupapiumACModifiers(
         float soundVolumeMultiplier,
         float muzzleParticleScale,
         float fireRateMultiplier,
-        @Nullable Supplier<SoundEvent> fireSoundOverride
+        @Nullable List<ShupapiumFireSound> fireSoundOverride
         ) {
     public static final ShupapiumACModifiers NONE = new ShupapiumACModifiers(
             1,
@@ -42,7 +44,15 @@ public record ShupapiumACModifiers(
         return new ShupapiumACModifiers(speedMultiplier, spreadMultiplier, recoilMultiplier, soundVolumeMultiplier, muzzleParticleScale, v, fireSoundOverride);
     }
     public ShupapiumACModifiers withSound(Supplier<SoundEvent> s) {
-        return new ShupapiumACModifiers(speedMultiplier, spreadMultiplier, recoilMultiplier, soundVolumeMultiplier, muzzleParticleScale, fireRateMultiplier, s);
+        return withSounds(ShupapiumFireSound.of(s, 10.0F, 0.9F, 1.1F));
+    }
+
+    public ShupapiumACModifiers withSounds(ShupapiumFireSound... sounds) {
+        return new ShupapiumACModifiers(speedMultiplier, spreadMultiplier, recoilMultiplier, soundVolumeMultiplier, muzzleParticleScale, fireRateMultiplier, List.of(sounds));
+    }
+
+    public ShupapiumACModifiers withSounds(List<ShupapiumFireSound> sounds) {
+        return new ShupapiumACModifiers(speedMultiplier, spreadMultiplier, recoilMultiplier, soundVolumeMultiplier, muzzleParticleScale, fireRateMultiplier, List.copyOf(sounds));
     }
 
     public ShupapiumACModifiers combine(ShupapiumACModifiers o) {

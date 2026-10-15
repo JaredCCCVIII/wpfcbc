@@ -32,7 +32,7 @@ public class ShupapiumItems {
     // Autocannon Munition
     public static final ItemEntry<BasicShupapiumAmmoItem> MEDIUM_BULLET_AMMO_ITEM = acAmmo("medium_bullet_ammo_item", "Medium Bullet Ammo", () -> ShupapiumAmmoSpec.builder()
             .properties("medium_bullet")
-            .variants(CrustyChunksModEntities.MEDIUM_AI_BULLET)
+            .variants(CrustyChunksModEntities.BULLETFIRE_PROJECTILE)
             .spentItem(CrustyChunksModItems.MEDIUM_CASING)
             .build());
     public static final ItemEntry<BasicShupapiumAmmoItem> LARGE_BULLET_AMMO_ITEM = acAmmo("large_bullet_ammo_item", "Large Bullet Ammo", () -> ShupapiumAmmoSpec.builder()

@@ -11,6 +11,7 @@ import net.ato.shupapium.client.renderers.MinigunBarrelItemRenderer;
 import net.ato.shupapium.client.renderers.RotaryCannonBarrelItemRenderer;
 import net.ato.shupapium.datagen.ShupapiumBuilderTransformers;
 import net.ato.shupapium.utils.acattachments.ShupapiumACModifiers;
+import net.ato.shupapium.utils.acballistics.ShupapiumFireSoundsPresets;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.Direction;
 import net.minecraft.tags.BlockTags;
@@ -48,7 +49,7 @@ public class ShupapiumBlocks {
             .transform(ShupapiumBuilderTransformers.autocannonBarrel(CrustyChunksMod.MODID, "block/machine_gun_barrel"))
             .register();
     public static final BlockEntry<ShupapiumACBarrelBlock> COVERED_MACHINE_GUN_BARREL = MainShupapium.REGISTRATE
-            .block("covered_machine_gun_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.MACHINE_GUN, ShupapiumACModifiers.NONE.withSpread(0.3F).withParticles(0.1F).withSound(CrustyChunksModSounds.SILENCEDSHOT::get)))
+            .block("covered_machine_gun_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.MACHINE_GUN, ShupapiumACModifiers.NONE.withSpeed(0.9F).withSpread(0.2F).withParticles(0.5F).withSounds(ShupapiumFireSoundsPresets.SUPPRESSED)))
             .transform(cannonBlock(false, SoundType.NETHERITE_BLOCK))
             .loot(CBCBuilderTransformers.steelScrapLoot(3))
             .transform(ShupapiumBuilderTransformers.autocannonBarrel(CrustyChunksMod.MODID, "block/covered_machine_gun_barrel"))
@@ -121,13 +122,25 @@ public class ShupapiumBlocks {
             .transform(ShupapiumBuilderTransformers.autocannonBarrel(CrustyChunksMod.MODID, "block/battle_cannon_barrel"))
             .register();
     public static final BlockEntry<ShupapiumACBarrelBlock> THICK_BATTLE_CANNON_BARREL = MainShupapium.REGISTRATE
-            .block("thick_battle_cannon_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.BATTLE_GUN))
+            .block("thick_battle_cannon_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.BATTLE_GUN, ShupapiumACModifiers.NONE.withSpeed(1.03F).withSpread(0.85F).withRecoil(0.9F)))
             .transform(cannonBlock())
             .loot(CBCBuilderTransformers.steelScrapLoot(2))
             .transform(ShupapiumBuilderTransformers.autocannonBarrel(CrustyChunksMod.MODID, "block/thick_battle_cannon_barrel"))
             .register();
+    public static final BlockEntry<ShupapiumACMuzzleBlock> BATTLE_CANNON_MUZZLE_BRAKE_TYPE_1 = MainShupapium.REGISTRATE
+            .block("battle_cannon_muzzle_brake_type_1", p -> new ShupapiumACMuzzleBlock(p, ShupapiumCBCACMaterials.BATTLE_GUN, ShupapiumACModifiers.NONE.withRecoil(0.75F).withVolume(1.1F).withParticles(1.3F)))
+            .transform(cannonBlock())
+            .loot(CBCBuilderTransformers.steelScrapLoot(2))
+            .transform(ShupapiumBuilderTransformers.autocannonBarrel(CrustyChunksMod.MODID, "block/type_1_bc_muzzle_brake"))
+            .register();
+    public static final BlockEntry<ShupapiumACMuzzleBlock> BATTLE_CANNON_MUZZLE_BRAKE_TYPE_2 = MainShupapium.REGISTRATE
+            .block("battle_cannon_muzzle_brake_type_2", p -> new ShupapiumACMuzzleBlock(p, ShupapiumCBCACMaterials.BATTLE_GUN, ShupapiumACModifiers.NONE.withRecoil(0.6F).withVolume(1.2F).withParticles(1.6F)))
+            .transform(cannonBlock())
+            .loot(CBCBuilderTransformers.steelScrapLoot(2))
+            .transform(ShupapiumBuilderTransformers.autocannonBarrel(CrustyChunksMod.MODID, "block/type_2_bc_muzzle_brake"))
+            .register();
     public static final BlockEntry<ShupapiumACRecoilSpringBlock> COVERED_BATTLE_CANNON_BARREL = MainShupapium.REGISTRATE
-            .block("covered_battle_cannon_barrel", p -> new ShupapiumACRecoilSpringBlock(p, ShupapiumCBCACMaterials.BATTLE_GUN, ShupapiumBlocks::battleCannonBarrel, ShupapiumACModifiers.NONE.withRecoil(0.7F)))
+            .block("covered_battle_cannon_barrel", p -> new ShupapiumACRecoilSpringBlock(p, ShupapiumCBCACMaterials.BATTLE_GUN, ShupapiumBlocks::battleCannonBarrel, ShupapiumACModifiers.NONE.withRecoil(0.85F).withSounds(ShupapiumFireSoundsPresets.SUPPRESSED)))
             .transform(cannonBlock(false, SoundType.NETHERITE_BLOCK))
             .loot(CBCBuilderTransformers.steelScrapLoot(3))
             .transform(ShupapiumBuilderTransformers.autocannonRecoilSpring(CrustyChunksMod.MODID, "block/battle_cannon_mantlet"))
@@ -198,7 +211,7 @@ public class ShupapiumBlocks {
             .transform(ShupapiumBuilderTransformers.autocannonBarrel(CrustyChunksMod.MODID, "block/flame_thrower_barrel"))
             .register();
     public static final BlockEntry<ShupapiumACBarrelBlock> COVERED_FLAMETHROWER_BARREL = MainShupapium.REGISTRATE
-            .block("covered_flamethrower_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.SMALL_GUN, ShupapiumACModifiers.NONE.withRecoil(0.7F)))
+            .block("covered_flamethrower_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.SMALL_GUN, ShupapiumACModifiers.NONE.withRecoil(0.8F).withSpeed(0.8F).withSounds(ShupapiumFireSoundsPresets.SUPPRESSED)))
             .transform(cannonBlock(false, SoundType.NETHERITE_BLOCK))
             .loot(CBCBuilderTransformers.steelScrapLoot(3))
             .transform(ShupapiumBuilderTransformers.autocannonBarrel(CrustyChunksMod.MODID, "block/covered_flame_thrower_barrel"))

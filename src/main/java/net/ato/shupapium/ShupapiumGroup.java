@@ -72,6 +72,8 @@ public class ShupapiumGroup {
                     output.accept(ShupapiumBlocks.BATTLE_CANNON_BARREL);
                     output.accept(ShupapiumBlocks.COVERED_BATTLE_CANNON_BARREL);
                     output.accept(ShupapiumBlocks.THICK_BATTLE_CANNON_BARREL);
+                    output.accept(ShupapiumBlocks.BATTLE_CANNON_MUZZLE_BRAKE_TYPE_1);
+                    output.accept(ShupapiumBlocks.BATTLE_CANNON_MUZZLE_BRAKE_TYPE_2);
                     output.accept(ShupapiumBlocks.BATTLE_CANNON_BREECH);
                     output.accept(ShupapiumBlocks.ARTILLERY_CANNON_BARREL);
                     output.accept(ShupapiumBlocks.ARTILLERY_CANNON_BREECH);

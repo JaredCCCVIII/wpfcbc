@@ -1,0 +1,188 @@
+{
+  "variants": {
+    "assembled=false,end=flanged,facing=down,waterlogged=false": {
+      "model": "wariumce:block/type_2_bc_muzzle_brake",
+      "x": 90
+    },
+    "assembled=false,end=flanged,facing=down,waterlogged=true": {
+      "model": "wariumce:block/type_2_bc_muzzle_brake",
+      "x": 90
+    },
+    "assembled=false,end=flanged,facing=east,waterlogged=false": {
+      "model": "wariumce:block/type_2_bc_muzzle_brake",
+      "y": 90
+    },
+    "assembled=false,end=flanged,facing=east,waterlogged=true": {
+      "model": "wariumce:block/type_2_bc_muzzle_brake",
+      "y": 90
+    },
+    "assembled=false,end=flanged,facing=north,waterlogged=false": {
+      "model": "wariumce:block/type_2_bc_muzzle_brake"
+    },
+    "assembled=false,end=flanged,facing=north,waterlogged=true": {
+      "model": "wariumce:block/type_2_bc_muzzle_brake"
+    },
+    "assembled=false,end=flanged,facing=south,waterlogged=false": {
+      "model": "wariumce:block/type_2_bc_muzzle_brake",
+      "y": 180
+    },
+    "assembled=false,end=flanged,facing=south,waterlogged=true": {
+      "model": "wariumce:block/type_2_bc_muzzle_brake",
+      "y": 180
+    },
+    "assembled=false,end=flanged,facing=up,waterlogged=false": {
+      "model": "wariumce:block/type_2_bc_muzzle_brake",
+      "x": 270
+    },
+    "assembled=false,end=flanged,facing=up,waterlogged=true": {
+      "model": "wariumce:block/type_2_bc_muzzle_brake",
+      "x": 270
+    },
+    "assembled=false,end=flanged,facing=west,waterlogged=false": {
+      "model": "wariumce:block/type_2_bc_muzzle_brake",
+      "y": 270
+    },
+    "assembled=false,end=flanged,facing=west,waterlogged=true": {
+      "model": "wariumce:block/type_2_bc_muzzle_brake",
+      "y": 270
+    },
+    "assembled=false,end=nothing,facing=down,waterlogged=false": {
+      "model": "wariumce:block/type_2_bc_muzzle_brake",
+      "x": 90
+    },
+    "assembled=false,end=nothing,facing=down,waterlogged=true": {
+      "model": "wariumce:block/type_2_bc_muzzle_brake",
+      "x": 90
+    },
+    "assembled=false,end=nothing,facing=east,waterlogged=false": {
+      "model": "wariumce:block/type_2_bc_muzzle_brake",
+      "y": 90
+    },
+    "assembled=false,end=nothing,facing=east,waterlogged=true": {
+      "model": "wariumce:block/type_2_bc_muzzle_brake",
+      "y": 90
+    },
+    "assembled=false,end=nothing,facing=north,waterlogged=false": {
+      "model": "wariumce:block/type_2_bc_muzzle_brake"
+    },
+    "assembled=false,end=nothing,facing=north,waterlogged=true": {
+      "model": "wariumce:block/type_2_bc_muzzle_brake"
+    },
+    "assembled=false,end=nothing,facing=south,waterlogged=false": {
+      "model": "wariumce:block/type_2_bc_muzzle_brake",
+      "y": 180
+    },
+    "assembled=false,end=nothing,facing=south,waterlogged=true": {
+      "model": "wariumce:block/type_2_bc_muzzle_brake",
+      "y": 180
+    },
+    "assembled=false,end=nothing,facing=up,waterlogged=false": {
+      "model": "wariumce:block/type_2_bc_muzzle_brake",
+      "x": 270
+    },
+    "assembled=false,end=nothing,facing=up,waterlogged=true": {
+      "model": "wariumce:block/type_2_bc_muzzle_brake",
+      "x": 270
+    },
+    "assembled=false,end=nothing,facing=west,waterlogged=false": {
+      "model": "wariumce:block/type_2_bc_muzzle_brake",
+      "y": 270
+    },
+    "assembled=false,end=nothing,facing=west,waterlogged=true": {
+      "model": "wariumce:block/type_2_bc_muzzle_brake",
+      "y": 270
+    },
+    "assembled=true,end=flanged,facing=down,waterlogged=false": {
+      "model": "shupapium:block/empty_barrel",
+      "x": 90
+    },
+    "assembled=true,end=flanged,facing=down,waterlogged=true": {
+      "model": "shupapium:block/empty_barrel",
+      "x": 90
+    },
+    "assembled=true,end=flanged,facing=east,waterlogged=false": {
+      "model": "shupapium:block/empty_barrel",
+      "y": 90
+    },
+    "assembled=true,end=flanged,facing=east,waterlogged=true": {
+      "model": "shupapium:block/empty_barrel",
+      "y": 90
+    },
+    "assembled=true,end=flanged,facing=north,waterlogged=false": {
+      "model": "shupapium:block/empty_barrel"
+    },
+    "assembled=true,end=flanged,facing=north,waterlogged=true": {
+      "model": "shupapium:block/empty_barrel"
+    },
+    "assembled=true,end=flanged,facing=south,waterlogged=false": {
+      "model": "shupapium:block/empty_barrel",
+      "y": 180
+    },
+    "assembled=true,end=flanged,facing=south,waterlogged=true": {
+      "model": "shupapium:block/empty_barrel",
+      "y": 180
+    },
+    "assembled=true,end=flanged,facing=up,waterlogged=false": {
+      "model": "shupapium:block/empty_barrel",
+      "x": 270
+    },
+    "assembled=true,end=flanged,facing=up,waterlogged=true": {
+      "model": "shupapium:block/empty_barrel",
+      "x": 270
+    },
+    "assembled=true,end=flanged,facing=west,waterlogged=false": {
+      "model": "shupapium:block/empty_barrel",
+      "y": 270
+    },
+    "assembled=true,end=flanged,facing=west,waterlogged=true": {
+      "model": "shupapium:block/empty_barrel",
+      "y": 270
+    },
+    "assembled=true,end=nothing,facing=down,waterlogged=false": {
+      "model": "shupapium:block/empty_barrel",
+      "x": 90
+    },
+    "assembled=true,end=nothing,facing=down,waterlogged=true": {
+      "model": "shupapium:block/empty_barrel",
+      "x": 90
+    },
+    "assembled=true,end=nothing,facing=east,waterlogged=false": {
+      "model": "shupapium:block/empty_barrel",
+      "y": 90
+    },
+    "assembled=true,end=nothing,facing=east,waterlogged=true": {
+      "model": "shupapium:block/empty_barrel",
+      "y": 90
+    },
+    "assembled=true,end=nothing,facing=north,waterlogged=false": {
+      "model": "shupapium:block/empty_barrel"
+    },
+    "assembled=true,end=nothing,facing=north,waterlogged=true": {
+      "model": "shupapium:block/empty_barrel"
+    },
+    "assembled=true,end=nothing,facing=south,waterlogged=false": {
+      "model": "shupapium:block/empty_barrel",
+      "y": 180
+    },
+    "assembled=true,end=nothing,facing=south,waterlogged=true": {
+      "model": "shupapium:block/empty_barrel",
+      "y": 180
+    },
+    "assembled=true,end=nothing,facing=up,waterlogged=false": {
+      "model": "shupapium:block/empty_barrel",
+      "x": 270
+    },
+    "assembled=true,end=nothing,facing=up,waterlogged=true": {
+      "model": "shupapium:block/empty_barrel",
+      "x": 270
+    },
+    "assembled=true,end=nothing,facing=west,waterlogged=false": {
+      "model": "shupapium:block/empty_barrel",
+      "y": 270
+    },
+    "assembled=true,end=nothing,facing=west,waterlogged=true": {
+      "model": "shupapium:block/empty_barrel",
+      "y": 270
+    }
+  }
+}

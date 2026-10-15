@@ -8,6 +8,8 @@
   "block.shupapium.barrel_shell_block.tooltip.summary": "Throwable barrel...",
   "block.shupapium.battle_cannon_barrel": "Battle Cannon Barrel",
   "block.shupapium.battle_cannon_breech": "Battle Cannon Breech",
+  "block.shupapium.battle_cannon_muzzle_brake_type_1": "Battle Cannon Muzzle Brake Type 1",
+  "block.shupapium.battle_cannon_muzzle_brake_type_2": "Battle Cannon Muzzle Brake Type 2",
   "block.shupapium.block_buster_shell_block": "Block Buster Shell",
   "block.shupapium.block_buster_shell_block.tooltip": "Show info",
   "block.shupapium.block_buster_shell_block.tooltip.behaviour1": "The last level of ordinance destroys a grand area and drops debris.",

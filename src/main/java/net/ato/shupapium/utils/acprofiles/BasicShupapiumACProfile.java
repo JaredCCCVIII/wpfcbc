@@ -2,6 +2,7 @@ package net.ato.shupapium.utils.acprofiles;
 
 import net.ato.shupapium.cannons.ShupapiumACBarrelBlock;
 import net.ato.shupapium.cannons.ShupapiumACBreechBlock;
+import net.ato.shupapium.utils.acballistics.ShupapiumFireSound;
 import net.ato.shupapium.utils.actypes.ShupapiumACParts;
 import net.ato.shupapium.utils.actypes.ShupapiumACProfile;
 import net.minecraft.core.particles.ParticleOptions;
@@ -26,8 +27,7 @@ public class BasicShupapiumACProfile implements ShupapiumACProfile {
     private final Supplier<? extends ShupapiumACBreechBlock> breech;
     private final List<Supplier<? extends ShupapiumACBarrelBlock>> alternateBarrels;
     private final Supplier<Set<Block>> compatibleAttachments;
-    private final Supplier<SoundEvent> fireSound;
-    private final @Nullable BiConsumer<Level, Vec3> customFireSound;
+    private final List<ShupapiumFireSound> fireSounds;
     private final List<ParticleOptions> muzzleParticles;
     private final int fireRate;
     private final int projectilesPerShot;
@@ -41,8 +41,7 @@ public class BasicShupapiumACProfile implements ShupapiumACProfile {
         this.breech = b.breech;
         this.alternateBarrels = List.copyOf(b.alternateBarrels);
         this.compatibleAttachments = b.compatibleAttachments;
-        this.fireSound = b.fireSound;
-        this.customFireSound = b.customFireSound;
+        this.fireSounds = List.copyOf(b.fireSounds);
         this.muzzleParticles = List.copyOf(b.muzzleParticles);
         this.fireRate = b.fireRate;
         this.projectilesPerShot = b.projectilesPerShot;
@@ -77,8 +76,8 @@ public class BasicShupapiumACProfile implements ShupapiumACProfile {
     }
 
     @Override
-    public SoundEvent getFireSound() {
-        return fireSound.get();
+    public List<ShupapiumFireSound> getFireSounds() {
+        return fireSounds;
     }
 
     @Override
@@ -111,15 +110,6 @@ public class BasicShupapiumACProfile implements ShupapiumACProfile {
         return ammoTypes.stream().<Item>map(Supplier::get).toList();
     }
 
-    @Override
-    public void cannonSoundEvent(Level level, Vec3 pos, float volumeMultiplier, @Nullable SoundEvent override) {
-        if (override == null && customFireSound != null) {
-            customFireSound.accept(level, pos);
-            return;
-        }
-        ShupapiumACProfile.super.cannonSoundEvent(level, pos, volumeMultiplier, override);
-    }
-
     public static Builder builder(ResourceLocation id) {return new Builder(id);}
 
     public static final class Builder {
@@ -128,8 +118,7 @@ public class BasicShupapiumACProfile implements ShupapiumACProfile {
         private Supplier<? extends ShupapiumACBreechBlock> breech;
         private final List<Supplier<? extends ShupapiumACBarrelBlock>> alternateBarrels = new ArrayList<>();
         private Supplier<Set<Block>> compatibleAttachments = Set::of;
-        private Supplier<SoundEvent> fireSound;
-        private @Nullable BiConsumer<Level, Vec3> customFireSound;
+        private final List<ShupapiumFireSound> fireSounds = new ArrayList<>();
         private final List<ParticleOptions> muzzleParticles = new ArrayList<>();
         private int fireRate = 600;
         private int projectilesPerShot = 1;
@@ -148,8 +137,9 @@ public class BasicShupapiumACProfile implements ShupapiumACProfile {
         @SafeVarargs
         public final Builder alternateBarrels(Supplier<? extends ShupapiumACBarrelBlock>... barrels) {this.alternateBarrels.addAll(List.of(barrels)); return this;}
         public Builder attachments(Supplier<Set<Block>> whitelist) {this.compatibleAttachments = whitelist; return this;}
-        public Builder fireSound(Supplier<SoundEvent> s) {this.fireSound = s; return this;}
-        public Builder customFireSound(BiConsumer<Level, Vec3> r) {this.customFireSound = r; return this;}
+        public Builder sound(ShupapiumFireSound sound) {this.fireSounds.add(sound); return this;}
+        public Builder sound(Supplier<SoundEvent> s, float volume, float minPitch, float maxPitch) {return sound(ShupapiumFireSound.of(s, volume, minPitch, maxPitch));}
+        public Builder sounds(List<ShupapiumFireSound> sounds) {this.fireSounds.addAll(sounds); return this;}
         public Builder muzzleParticle(ParticleOptions p) {this.muzzleParticles.add(p); return this;}
         public Builder fireRate(int rpm) {this.fireRate = rpm; return this;}
         public Builder projectilesPerShot(int n) {this.projectilesPerShot = n; return this;}
@@ -161,7 +151,7 @@ public class BasicShupapiumACProfile implements ShupapiumACProfile {
         public BasicShupapiumACProfile build() {
             Objects.requireNonNull(barrel, "barrel");
             Objects.requireNonNull(breech, "breech");
-            Objects.requireNonNull(fireSound, "fireSound");
+            if (fireSounds.isEmpty()) throw new IllegalStateException("Profile " + id.getPath() + " needs at least one fire sound!");
             return new BasicShupapiumACProfile(this);
         }
     }

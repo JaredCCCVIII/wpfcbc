@@ -37,7 +37,8 @@ public class ShupapiumDrillBoringRecipeProvider extends ShupapiumBlockRecipeProv
         recipe(CrustyChunksModBlocks.BATTLE_CANNON_BARREL.get(), ShupapiumBlocks.BATTLE_CANNON_BARREL.get(), biConsumer);
         recipe(CrustyChunksModBlocks.THICK_BATTLE_CANNON_BARREL.get(), ShupapiumBlocks.THICK_BATTLE_CANNON_BARREL.get(), biConsumer);
         recipe(CrustyChunksModBlocks.BATTLE_CANNON_MANTLET.get(), ShupapiumBlocks.COVERED_BATTLE_CANNON_BARREL.get(), biConsumer);
-
+        recipe(CrustyChunksModBlocks.TYPE_1_BC_MUZZLE_BRAKE.get(), ShupapiumBlocks.BATTLE_CANNON_MUZZLE_BRAKE_TYPE_1.get(), biConsumer);
+        recipe(CrustyChunksModBlocks.TYPE_2_BC_MUZZLE_BRAKE.get(), ShupapiumBlocks.BATTLE_CANNON_MUZZLE_BRAKE_TYPE_2.get(), biConsumer);
         recipe(CrustyChunksModBlocks.BATTLE_CANNON_BREECH.get(), ShupapiumBlocks.BATTLE_CANNON_BREECH.get(), biConsumer);
         recipe(CrustyChunksModBlocks.ARTILLERY_BARREL.get(), ShupapiumBlocks.ARTILLERY_CANNON_BARREL.get(), biConsumer);
         recipe(CrustyChunksModBlocks.ARTILLERYBREECH.get(), ShupapiumBlocks.ARTILLERY_CANNON_BREECH.get(), biConsumer);
