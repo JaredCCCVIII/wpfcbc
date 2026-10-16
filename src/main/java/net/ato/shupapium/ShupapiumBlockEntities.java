@@ -22,7 +22,7 @@ public class ShupapiumBlockEntities {
                     ShupapiumBlocks.BATTLE_CANNON_BARREL, ShupapiumBlocks.THICK_BATTLE_CANNON_BARREL, ShupapiumBlocks.BATTLE_CANNON_MUZZLE_BRAKE_TYPE_1, ShupapiumBlocks.BATTLE_CANNON_MUZZLE_BRAKE_TYPE_2,
                     ShupapiumBlocks.ARTILLERY_CANNON_BARREL,
                     ShupapiumBlocks.ROCKET_POD_BARREL, ShupapiumBlocks.LARGE_ROCKET_POD_BARREL,
-                    ShupapiumBlocks.LAUNCHER_BARREL, ShupapiumBlocks.FLAMETHROWER_BARREL)
+                    ShupapiumBlocks.LAUNCHER_BARREL, ShupapiumBlocks.FLAMETHROWER_BARREL, ShupapiumBlocks.COVERED_FLAMETHROWER_BARREL)
             .register();
     public static final BlockEntityEntry<ShupapiumGACBarrelBlockEntity> MINIGUN_GECKO_CANNON = MainShupapium.REGISTRATE
             .blockEntity("minigun_gecko_cannon", ShupapiumGACBarrelBlockEntity::new)
@@ -46,8 +46,7 @@ public class ShupapiumBlockEntities {
             .blockEntity("shupapium_autocannon_recoil_spring", AutocannonRecoilSpringBlockEntity::new)
             .visual(() -> AutocannonRecoilSpringVisual::new)
             .renderer(() -> AutocannonRecoilSpringRenderer::new)
-            .validBlocks(ShupapiumBlocks.COVERED_BATTLE_CANNON_BARREL,
-                    ShupapiumBlocks.COVERED_FLAMETHROWER_BARREL)
+            .validBlocks(ShupapiumBlocks.COVERED_BATTLE_CANNON_BARREL)
             .register();
     public static final BlockEntityEntry<ShupapiumAmmoContainerBlockEntity> SHUPAPIUM_AMMO_CONTAINER = MainShupapium.REGISTRATE
             .blockEntity("shupapium_ammo_container", ShupapiumAmmoContainerBlockEntity::new)

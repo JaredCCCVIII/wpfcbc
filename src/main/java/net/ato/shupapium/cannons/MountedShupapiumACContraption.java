@@ -266,7 +266,7 @@ public class MountedShupapiumACContraption extends MountedAutocannonContraption 
 
         ControlPitchContraption controller = entity.getController();
 
-        Direction containerSide = this.initialOrientation.getAxis().isHorizontal() ? this.initialOrientation.getClockWise(Direction.Axis.Y) : Direction.EAST;
+        Direction containerSide = this.initialOrientation.getAxis().isHorizontal() ? this.initialOrientation.getCounterClockWise(Direction.Axis.Y) : Direction.EAST;
         Direction ejectSide = this.isHandle ? containerSide.getOpposite() : this.initialOrientation.getOpposite();
         Vec3 breechCenter = entity.toGlobalVector(Vec3.atCenterOf(this.startPos), 0);
         Vec3 ejectPos = entity.toGlobalVector(Vec3.atCenterOf(this.startPos.relative(ejectSide)), 0);
@@ -491,7 +491,7 @@ public class MountedShupapiumACContraption extends MountedAutocannonContraption 
 
     @Override
     public BlockPos getSeatPos(Entity entity) {
-        return entity == this.entity.getControllingPassenger() ? this.startPos.relative(this.initialOrientation.getOpposite()) : super.getSeatPos(entity);
+        return entity == this.entity.getControllingPassenger() ? this.startPos.relative(Direction.UP) : super.getSeatPos(entity);
     }
 
     @Override

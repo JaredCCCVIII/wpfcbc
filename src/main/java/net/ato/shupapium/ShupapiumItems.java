@@ -34,6 +34,7 @@ public class ShupapiumItems {
             .properties("medium_bullet")
             .variants(CrustyChunksModEntities.BULLETFIRE_PROJECTILE)
             .spentItem(CrustyChunksModItems.MEDIUM_CASING)
+            .muzzle((level, pos, vel) -> MuzzleFlashProcedure.execute(level, pos.x,  pos.y, pos.z))
             .build());
     public static final ItemEntry<BasicShupapiumAmmoItem> LARGE_BULLET_AMMO_ITEM = acAmmo("large_bullet_ammo_item", "Large Bullet Ammo", () -> ShupapiumAmmoSpec.builder()
             .properties("large_bullet")
@@ -45,6 +46,7 @@ public class ShupapiumItems {
             .properties("extra_large_bullet")
             .variants(CrustyChunksModEntities.EXTRA_LARGE_BULLET_FIRE)
             .spentItem(CrustyChunksModItems.EXTRA_LARGE_CASING)
+            .muzzle((level, pos, vel) -> MuzzleFlashProcedure.execute(level, pos.x,  pos.y, pos.z))
             .build());
     public static final ItemEntry<BasicShupapiumAmmoItem> HUGE_BULLET_AMMO_ITEM = acAmmo("huge_bullet_ammo_item", "Small Shell Ammo", () -> ShupapiumAmmoSpec.builder()
             .properties("huge_bullet")
