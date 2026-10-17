@@ -7,6 +7,7 @@ import net.ato.shupapium.mobeffects.JokeEffect;
 import net.ato.shupapium.utils.ProjectileManager;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.EntityJoinLevelEvent;
@@ -14,7 +15,7 @@ import net.neoforged.neoforge.event.entity.living.MobEffectEvent;
 import net.neoforged.neoforge.event.server.ServerStoppedEvent;
 import net.neoforged.neoforge.event.tick.LevelTickEvent;
 
-@EventBusSubscriber(modid = MainShupapium.MOD_ID)
+@EventBusSubscriber(modid = MainShupapium.MOD_ID, value = Dist.DEDICATED_SERVER)
 public class ServerModEvents {
     @SubscribeEvent
     public static void onMobEffectRemoved(MobEffectEvent.Remove event) {

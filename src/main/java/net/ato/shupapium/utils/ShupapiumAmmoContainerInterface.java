@@ -1,7 +1,7 @@
 package net.ato.shupapium.utils;
 
-import com.wariumce.item.PropellentItem;
 import net.ato.shupapium.blockentities.ShupapiumAmmoContainerBlockEntity;
+import net.ato.shupapium.items.GenericPropellantItem;
 import net.ato.shupapium.items.ShupapiumAmmoItem;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.items.IItemHandler;
@@ -28,7 +28,7 @@ public record ShupapiumAmmoContainerInterface(ShupapiumAmmoContainerBlockEntity 
     @Override
     public ItemStack insertItem(int slot, @Nonnull ItemStack stack, boolean simulate) {
         if (slot != AMMO_SLOT && slot != PROPELLANT_SLOT) return stack;
-        if (!(stack.getItem() instanceof ShupapiumAmmoItem) || !(stack.getItem() instanceof PropellentItem)) return stack;
+        if (!(stack.getItem() instanceof ShupapiumAmmoItem) || !(stack.getItem() instanceof GenericPropellantItem)) return stack;
 
         boolean ammoSlot = slot == AMMO_SLOT;
         ItemStack currentStack = ammoSlot ? this.be.getMainAmmoStack() : this.be.getPropellantStack();

@@ -1,0 +1,28 @@
+{
+  "values": [
+    "shupapium:small_shell_ammo_item",
+    "shupapium:small_flak_shell_ammo_item",
+    "shupapium:large_shell_ammo_item",
+    "shupapium:large_heat_shell_ammo_item",
+    "shupapium:large_ap_shell_ammo_item",
+    "shupapium:large_flak_shell_ammo_item",
+    "shupapium:large_solid_shell_ammo_item",
+    "shupapium:large_smoke_shell_ammo_item",
+    "shupapium:artillery_shell_ammo_item",
+    "shupapium:artillery_gas_shell_ammo_item",
+    "shupapium:artillery_fire_shell_ammo_item",
+    "shupapium:mortar_shell_ammo_item",
+    "shupapium:armor_peeler_rocket_ammo_item",
+    "shupapium:fire_spear_rocket_ammo_item",
+    "shupapium:seeker_spear_rocket_ammo_item",
+    "shupapium:radar_spear_missile_ammo_item",
+    "shupapium:strike_spear_missile_ammo_item",
+    "shupapium:heavy_bomb_shell_block",
+    "shupapium:fire_bomb_shell_block",
+    "shupapium:super_heavy_bomb_shell_block",
+    "shupapium:block_buster_shell_block",
+    "shupapium:cluster_bomb_shell_block",
+    "shupapium:barrel_shell_block",
+    "shupapium:propellant_item"
+  ]
+}

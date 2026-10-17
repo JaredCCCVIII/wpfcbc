@@ -1,6 +1,7 @@
 package net.ato.shupapium.blockentities;
 
 import com.simibubi.create.api.schematic.nbt.PartialSafeNBT;
+import net.ato.shupapium.MainShupapium;
 import net.ato.shupapium.ShupapiumBlocks;
 import net.ato.shupapium.ShupapiumDataComponents;
 import net.ato.shupapium.blocks.ShupapiumAmmoContainerBlock;
@@ -119,9 +120,9 @@ public class ShupapiumAmmoContainerBlockEntity extends BlockEntity implements IS
     }
 
     @Override
-    protected void collectImplicitComponents(DataComponentMap.Builder components) {
-        components.set(ShupapiumDataComponents.AMMO, ItemContainerContents.fromItems(List.of(this.ammoStack)));
-        components.set(ShupapiumDataComponents.PROPELLANTS, ItemContainerContents.fromItems(List.of(this.propellantStack)));
+    protected void collectImplicitComponents(DataComponentMap.@NotNull Builder components) {
+        if (!this.ammoStack.isEmpty()) components.set(ShupapiumDataComponents.AMMO, ItemContainerContents.fromItems(List.of(this.ammoStack)));
+        if (!this.propellantStack.isEmpty()) components.set(ShupapiumDataComponents.PROPELLANTS, ItemContainerContents.fromItems(List.of(this.propellantStack)));
         components.set(DataComponents.CUSTOM_NAME, this.name);
     }
 

@@ -101,8 +101,7 @@ public class ShupapiumAmmoContainerItem extends BlockItem implements MenuProvide
                 propellantAmmo.setCount(1);
             } else {
                 propellantAmmo.split(1);
-                ItemContainerContents propellantData = propellantAmmo.isEmpty() ? ItemContainerContents.EMPTY : ItemContainerContents.fromItems(Lists.newArrayList(propellantAmmo));
-                container.set(ShupapiumDataComponents.PROPELLANTS, propellantData);
+                setPropellant(container, propellantAmmo);
             }
         }
 
@@ -111,8 +110,7 @@ public class ShupapiumAmmoContainerItem extends BlockItem implements MenuProvide
             ret.setCount(1);
         } else {
             ret = mainAmmo.split(1);
-            ItemContainerContents ammoData = mainAmmo.isEmpty() ? ItemContainerContents.EMPTY : ItemContainerContents.fromItems(Lists.newArrayList(mainAmmo));
-            container.set(ShupapiumDataComponents.AMMO, ammoData);
+            setAmmo(container, mainAmmo);
         }
         return ret;
     }
@@ -136,5 +134,15 @@ public class ShupapiumAmmoContainerItem extends BlockItem implements MenuProvide
 
     public boolean isCreative() {
         return ShupapiumBlocks.CREATIVE_SHUPAPIUM_AMMO_CONTAINER.is(this);
+    }
+
+    public static void setAmmo(ItemStack container, ItemStack content) {
+        if (content.isEmpty()) container.remove(ShupapiumDataComponents.AMMO);
+        else container.set(ShupapiumDataComponents.AMMO, ItemContainerContents.fromItems(Lists.newArrayList(content)));
+    }
+
+    public static void setPropellant(ItemStack container, ItemStack content) {
+        if (content.isEmpty()) container.remove(ShupapiumDataComponents.PROPELLANTS);
+        else container.set(ShupapiumDataComponents.PROPELLANTS, ItemContainerContents.fromItems(Lists.newArrayList(content)));
     }
 }

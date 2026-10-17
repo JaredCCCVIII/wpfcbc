@@ -105,8 +105,8 @@ public class ShupapiumSequencedAssemblyRecipeProvider extends SequencedAssemblyR
             .addStep(DeployerApplicationRecipe::new, rb -> rb.require(CommonMetal.COPPER.plates))
             .addStep(DeployerApplicationRecipe::new, rb -> rb.require(CBCTags.CBCItemTags.GUNPOWDER))
             .addOutput(ShupapiumItems.LARGE_SMOKE_SHELL_AMMO_ITEM, 1)),
-    ARTILLERY_SHELL_AMMO = create("artillery_shell_ammo", b -> b.require(CrustyChunksModItems.AP_SHELL.get())
-            .transitionTo(CrustyChunksModItems.AP_SHELL.get())
+    ARTILLERY_SHELL_AMMO = create("artillery_shell_ammo", b -> b.require(CrustyChunksModItems.ARTILLERY_SHELL.get())
+            .transitionTo(CrustyChunksModItems.ARTILLERY_SHELL.get())
             .loops(1)
             .addStep(DeployerApplicationRecipe::new, rb -> rb.require(CommonMetal.COPPER.plates))
             .addStep(DeployerApplicationRecipe::new, rb -> rb.require(CBCTags.CBCItemTags.GUNPOWDER))

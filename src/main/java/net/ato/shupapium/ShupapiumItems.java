@@ -10,6 +10,7 @@ import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.Rarity;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -190,6 +191,12 @@ public class ShupapiumItems {
             .gravity(true)
             .spentItem(Items.IRON_NUGGET::asItem)
             .build());
+    public static final ItemEntry<GenericPropellantItem> PROPELLANT_ITEM = MainShupapium.REGISTRATE
+            .item("propellant_item", GenericPropellantItem::new)
+            .properties(p -> p.rarity(Rarity.UNCOMMON))
+            .lang("Propellant Artillery Charge")
+            .tag(CBCTags.CBCItemTags.HIGH_EXPLOSIVE_MATERIALS)
+            .register();
 
     private static ItemEntry<BasicShupapiumAmmoItem> acAmmo(String id, String displayName, Supplier<ShupapiumAmmoSpec> spec) {
         return MainShupapium.REGISTRATE

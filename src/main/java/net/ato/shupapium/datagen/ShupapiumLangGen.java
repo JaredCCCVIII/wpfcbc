@@ -38,7 +38,7 @@ public class ShupapiumLangGen {
         MainShupapium.REGISTRATE.addRawLang(MainShupapium.MOD_ID + ".configuration.acHeat.tooltip", "Do mod's barrels heat up?");
 
         // CBC related
-        MainShupapium.REGISTRATE.addRawLang(MainShupapium.MOD_ID + ".gui.autocannon_ammo_container.propellant_slot", "Propellents");
+        MainShupapium.REGISTRATE.addRawLang(MainShupapium.MOD_ID + ".gui.autocannon_ammo_container.propellant_slot", "Propellants");
         MainShupapium.REGISTRATE.addLang("block", ShupapiumBlocks.SHUPAPIUM_AMMO_CONTAINER.getId(), "tooltip.main_ammo", "x%1$s %2$s");
         MainShupapium.REGISTRATE.addLang("block", ShupapiumBlocks.SHUPAPIUM_AMMO_CONTAINER.getId(), "tooltip.propellants", "Propellants: x%1$s %2$s");
         MainShupapium.REGISTRATE.addLang("exception", MainShupapium.resource("cannon_mount"), "invalid_barrel", "Invalid barrel detected.");
@@ -51,7 +51,40 @@ public class ShupapiumLangGen {
         MainShupapium.REGISTRATE.addLang("exception", MainShupapium.resource("cannon_mount"), "mixed_barrels", "Mixed barrel detected.");
         MainShupapium.REGISTRATE.addLang("block", MainShupapium.resource("cannon_carriage"), "hotbar.fireRate", "Rate of fire: %1$s RPM");
 
+        // AC Guide
+        MainShupapium.REGISTRATE.addRawLang("tooltip.shupapium.slot.recoil", "Attachment: Next to the breech");
+        MainShupapium.REGISTRATE.addRawLang("tooltip.shupapium.slot.muzzle", "Attachment: End of the barrel");
+        MainShupapium.REGISTRATE.addRawLang("tooltip.shupapium.ammo_usable_in", "Compatible with:");
+        MainShupapium.REGISTRATE.addRawLang("tooltip.shupapium.part_of", "Compatible with:");
+        MainShupapium.REGISTRATE.addRawLang("tooltip.shupapium.works_with_breech", "Compatible breechs:");
+        MainShupapium.REGISTRATE.addRawLang("tooltip.shupapium.works_with_barrel", "Compatible barrels:");
+        MainShupapium.REGISTRATE.addRawLang("tooltip.shupapium.attach_to", "Can be mounted on:");
+        MainShupapium.REGISTRATE.addRawLang("tooltip.shupapium.modifier.sound_override", "This part alters the firing sound!");
+        MainShupapium.REGISTRATE.addRawLang("tooltip.shupapium.modifier.speed", "Speed bonus");
+        MainShupapium.REGISTRATE.addRawLang("tooltip.shupapium.modifier.spread", "Spread bonus");
+        MainShupapium.REGISTRATE.addRawLang("tooltip.shupapium.modifier.recoil", "Recoil bonus");
+        MainShupapium.REGISTRATE.addRawLang("tooltip.shupapium.modifier.sound", "Sound bonus");
+        MainShupapium.REGISTRATE.addRawLang("tooltip.shupapium.modifier.muzzle", "Muzzle bonus");
+
+        MainShupapium.REGISTRATE.addLang("profile", MainShupapium.resource("mini_gun_profile"), "Minigun");
+        MainShupapium.REGISTRATE.addLang("profile", MainShupapium.resource("light_machine_gun_profile"), "Light Machine Gun");
+        MainShupapium.REGISTRATE.addLang("profile", MainShupapium.resource("machine_gun_profile"), "Machine Gun");
+        MainShupapium.REGISTRATE.addLang("profile", MainShupapium.resource("heavy_machine_gun_profile"), "Heavy Machine Gun");
+        MainShupapium.REGISTRATE.addLang("profile", MainShupapium.resource("rotary_cannon_profile"), "Rotary Autocannon");
+        MainShupapium.REGISTRATE.addLang("profile", MainShupapium.resource("light_cannon_profile"), "Light Autocannon");
+        MainShupapium.REGISTRATE.addLang("profile", MainShupapium.resource("heavy_cannon_profile"), "Heavy Autocannon");
+        MainShupapium.REGISTRATE.addLang("profile", MainShupapium.resource("battle_cannon_profile"), "Battle Cannon");
+        MainShupapium.REGISTRATE.addLang("profile", MainShupapium.resource("artillery_cannon_profile"), "Artillery Battle Cannon");
+        MainShupapium.REGISTRATE.addLang("profile", MainShupapium.resource("launcher_cannon_profile"), "Launcher Cannon");
+        MainShupapium.REGISTRATE.addLang("profile", MainShupapium.resource("rocket_pod_profile"), "Rocket Pod");
+        MainShupapium.REGISTRATE.addLang("profile", MainShupapium.resource("large_rocket_pod_profile"), "Large Rocket Pod");
+        MainShupapium.REGISTRATE.addLang("profile", MainShupapium.resource("flamethrower_cannon_profile"), "Flamethrower");
+
         // AC Ammo
+        tooltip(ShupapiumItems.PROPELLANT_ITEM)
+                .header("Show ifo")
+                .summary("Only usable with propelled projectiles.")
+                .conditionAndBehavior("On Firing:", "Releases a moderate amount of energy to launch an artillery projectile.");
         tooltip(ShupapiumItems.MEDIUM_BULLET_AMMO_ITEM)
                 .header("Show info")
                 .summary("Tracers included!")

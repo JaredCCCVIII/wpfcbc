@@ -27,7 +27,7 @@ public class ShupapiumAmmoContainerItemContainer implements IShupapiumAmmoContai
         ItemStack ammo = this.getItem(slot);
         if (ammo.isEmpty()) return ItemStack.EMPTY;
         ItemStack split = ammo.split(amount);
-        this.stack.set(slot == AMMO_SLOT ? ShupapiumDataComponents.AMMO : ShupapiumDataComponents.PROPELLANTS, ItemContainerContents.fromItems(Lists.newArrayList(ammo)));
+        write(slot, ammo);
         this.setChanged();
         return split;
     }
@@ -36,14 +36,14 @@ public class ShupapiumAmmoContainerItemContainer implements IShupapiumAmmoContai
     public @NotNull ItemStack removeItemNoUpdate(int slot) {
         if (slot != 0 && slot != 1) return ItemStack.EMPTY;
         ItemStack ret = this.getItem(slot);
-        this.stack.set(slot == AMMO_SLOT ? ShupapiumDataComponents.AMMO : ShupapiumDataComponents.PROPELLANTS, ItemContainerContents.EMPTY);
+        write(slot, ItemStack.EMPTY);
         return ret;
     }
 
     @Override
     public void setItem(int slot, @NotNull ItemStack stack) {
         if (slot != 0 && slot != 1) return;
-        this.stack.set(slot == AMMO_SLOT ? ShupapiumDataComponents.AMMO : ShupapiumDataComponents.PROPELLANTS, ItemContainerContents.fromItems(Lists.newArrayList(stack)));
+        write(slot, stack);
         this.setChanged();
     }
 
@@ -56,8 +56,8 @@ public class ShupapiumAmmoContainerItemContainer implements IShupapiumAmmoContai
 
     @Override
     public void clearContent() {
-        this.stack.set(ShupapiumDataComponents.AMMO, ItemContainerContents.EMPTY);
-        this.stack.set(ShupapiumDataComponents.PROPELLANTS, ItemContainerContents.EMPTY);
+        write(AMMO_SLOT, ItemStack.EMPTY);
+        write(PROPELLANT_SLOT, ItemStack.EMPTY);
     }
 
     @Override
@@ -68,5 +68,10 @@ public class ShupapiumAmmoContainerItemContainer implements IShupapiumAmmoContai
     @Override
     public void stopOpen(Player player) {
         player.level().playSound(player, player.blockPosition(), SoundEvents.IRON_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 0.5F, player.level().getRandom().nextFloat() * 0.1F + 0.9F);
+    }
+
+    private void write(int slot, ItemStack content) {
+        if (slot == AMMO_SLOT) ShupapiumAmmoContainerItem.setAmmo(this.stack, content);
+        else ShupapiumAmmoContainerItem.setPropellant(this.stack, content);
     }
 }

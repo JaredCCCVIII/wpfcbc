@@ -28,8 +28,12 @@ public class ShupapiumMixingRecipeProvider extends MixingRecipeGen {
             .require(CrustyChunksModItems.BORED_COMPONENT.get())
             .require(fluidTag("forge", "gasoline"), 100)
             .output(ShupapiumItems.PETROL_CAN_AMMO_ITEM)),
+    POWDER_CHARGE = create(MainShupapium.resource("powder_charge"), b -> b
+            .require(CrustyChunksModItems.POWDER_CHARGE.get())
+            .require(fluidTag("c", "molten_cast_iron"), 10)
+            .output(ShupapiumItems.PROPELLANT_ITEM)),
     SHUPAPIUM_AMMO_CONTAINER = create(MainShupapium.resource("shupapium_ammo_container"), b -> b.require(CBCBlocks.AUTOCANNON_AMMO_CONTAINER)
-            .require(fluidTag("c","molten_steel"), 500)
+            .require(fluidTag("c","molten_steel"), 50)
             .output(ShupapiumBlocks.SHUPAPIUM_AMMO_CONTAINER));
 
     private static TagKey<Fluid> fluidTag(String origin, String path) {

@@ -3,6 +3,7 @@ package net.ato.shupapium.utils.actypes;
 import net.minecraft.resources.ResourceLocation;
 
 import javax.annotation.Nullable;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -24,4 +25,5 @@ public class ShupapiumACProfileHandler {
 
     public static @Nullable ShupapiumACProfile getProfile(ShupapiumACParts parts) {return BY_PARTS.get(parts);}
     public static @Nullable ShupapiumACProfile getProfile(ResourceLocation id) {return BY_ID.get(id);}
+    public static Collection<ShupapiumACProfile> getAllProfiles() {return BY_ID.values();}
 }

@@ -1,6 +1,5 @@
 package net.ato.shupapium;
 
-import com.mojang.serialization.Codec;
 import net.ato.shupapium.utils.ProjectileManager;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.attachment.AttachmentType;

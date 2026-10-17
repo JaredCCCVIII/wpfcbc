@@ -1,7 +1,6 @@
 package net.ato.shupapium;
 
 import com.simibubi.create.Create;
-import com.wariumce.init.CrustyChunksModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
@@ -54,7 +53,7 @@ public class ShupapiumGroup {
                     output.accept(ShupapiumItems.FLARE_CHARGE_AMMO_ITEM);
                     output.accept(ShupapiumItems.CHAFF_CHARGE_AMMO_ITEM);
                     output.accept(ShupapiumItems.PETROL_CAN_AMMO_ITEM);
-                    output.accept(CrustyChunksModItems.POWDER_CHARGE.get());
+                    output.accept(ShupapiumItems.PROPELLANT_ITEM);
                     output.accept(ShupapiumBlocks.SHUPAPIUM_AMMO_CONTAINER);
                     output.accept(ShupapiumBlocks.CREATIVE_SHUPAPIUM_AMMO_CONTAINER);
                     output.accept(ShupapiumBlocks.MINIGUN_BARREL);

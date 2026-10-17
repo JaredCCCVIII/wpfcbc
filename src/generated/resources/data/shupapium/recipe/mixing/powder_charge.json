@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "wariumce:powder_charge"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 10,
+      "tag": "c:molten_cast_iron"
+    }
+  ],
+  "results": [
+    {
+      "id": "shupapium:propellant_item"
+    }
+  ]
+}

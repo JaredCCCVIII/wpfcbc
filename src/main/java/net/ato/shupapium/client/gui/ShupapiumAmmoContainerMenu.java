@@ -1,9 +1,9 @@
 package net.ato.shupapium.client.gui;
 
 import com.mojang.datafixers.util.Pair;
-import com.wariumce.item.PowderChargeItem;
 import net.ato.shupapium.ShupapiumMenuTypes;
 import net.ato.shupapium.blockentities.ShupapiumAmmoContainerBlockEntity;
+import net.ato.shupapium.items.GenericPropellantItem;
 import net.ato.shupapium.items.ShupapiumAmmoItem;
 import net.ato.shupapium.utils.IShupapiumAmmoContainerContainer;
 import net.minecraft.core.BlockPos;
@@ -98,7 +98,7 @@ public class ShupapiumAmmoContainerMenu extends AbstractContainerMenu {
                 if (itemStack2.getItem() instanceof ShupapiumAmmoItem) {
                     Slot insertSlot = this.slots.get(IShupapiumAmmoContainerContainer.AMMO_SLOT);
                     insertSlot.safeInsert(itemStack2);
-                } else if (itemStack2.getItem() instanceof PowderChargeItem) {
+                } else if (itemStack2.getItem() instanceof GenericPropellantItem) {
                     Slot insertSlot = this.slots.get(IShupapiumAmmoContainerContainer.PROPELLANT_SLOT);
                     insertSlot.safeInsert(itemStack2);
                 } else {

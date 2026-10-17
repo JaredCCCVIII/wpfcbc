@@ -1,7 +1,7 @@
 {
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "wariumce:ap_shell"
+    "item": "wariumce:artillery_shell"
   },
   "results": [
     {
@@ -13,7 +13,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "wariumce:ap_shell"
+          "item": "wariumce:artillery_shell"
         },
         {
           "tag": "c:plates/copper"
@@ -21,7 +21,7 @@
       ],
       "results": [
         {
-          "id": "wariumce:ap_shell"
+          "id": "wariumce:artillery_shell"
         }
       ]
     },
@@ -29,7 +29,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "wariumce:ap_shell"
+          "item": "wariumce:artillery_shell"
         },
         {
           "tag": "createbigcannons:gunpowder"
@@ -37,12 +37,12 @@
       ],
       "results": [
         {
-          "id": "wariumce:ap_shell"
+          "id": "wariumce:artillery_shell"
         }
       ]
     }
   ],
   "transitional_item": {
-    "id": "wariumce:ap_shell"
+    "id": "wariumce:artillery_shell"
   }
 }

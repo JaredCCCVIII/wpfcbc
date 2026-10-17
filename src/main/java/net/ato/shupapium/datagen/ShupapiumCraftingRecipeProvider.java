@@ -6,18 +6,18 @@ import com.tterrag.registrate.providers.ProviderType;
 import com.wariumce.init.CrustyChunksModItems;
 import net.ato.shupapium.MainShupapium;
 import net.ato.shupapium.ShupapiumBlocks;
+import net.ato.shupapium.custom_interactions.ShupapiumAmmoContainerFillingDeployerRecipe;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeOutput;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.ShapelessRecipeBuilder;
-import net.minecraft.tags.ItemTags;
+import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.CraftingBookCategory;
+import net.minecraft.world.item.crafting.Recipe;
 import net.neoforged.neoforge.common.Tags;
 import rbasamoyai.createbigcannons.CBCTags;
 
 import java.util.concurrent.CompletableFuture;
+import java.util.function.Function;
 
 public abstract class ShupapiumCraftingRecipeProvider extends RecipeProvider {
     public ShupapiumCraftingRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
@@ -148,5 +148,10 @@ public abstract class ShupapiumCraftingRecipeProvider extends RecipeProvider {
 //                .patternLine("SAAIIIAAS")
 //                .patternLine("SSSSRSSSS")
 //                .build(recipeOutput);
+        specialRecipe(ShupapiumAmmoContainerFillingDeployerRecipe::new, recipeOutput, "warium_ammo_container_filling_deployer");
+    }
+
+    private static void specialRecipe(Function<CraftingBookCategory, Recipe<?>> prov, RecipeOutput cons, String id) {
+        SpecialRecipeBuilder.special(prov).save(cons, MainShupapium.resource(id).toString());
     }
 }

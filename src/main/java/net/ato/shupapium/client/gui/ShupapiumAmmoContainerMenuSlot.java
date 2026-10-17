@@ -1,6 +1,6 @@
 package net.ato.shupapium.client.gui;
 
-import com.wariumce.item.PowderChargeItem;
+import net.ato.shupapium.items.GenericPropellantItem;
 import net.ato.shupapium.items.ShupapiumAmmoItem;
 import net.ato.shupapium.utils.IShupapiumAmmoContainerContainer;
 import net.minecraft.world.inventory.Slot;
@@ -22,9 +22,9 @@ public class ShupapiumAmmoContainerMenuSlot extends Slot {
 
     @Override
     public boolean mayPlace(@NotNull ItemStack stack) {
-        if (stack.getItem() instanceof ShupapiumAmmoItem || stack.getItem() instanceof PowderChargeItem) {
+        if (stack.getItem() instanceof ShupapiumAmmoItem || stack.getItem() instanceof GenericPropellantItem) {
             if (this.getContainerSlot() == AMMO_SLOT && !(stack.getItem() instanceof ShupapiumAmmoItem)) return false;
-            if (this.getContainerSlot() == PROPELLANT_SLOT && !(stack.getItem() instanceof PowderChargeItem)) return false;
+            if (this.getContainerSlot() == PROPELLANT_SLOT && !(stack.getItem() instanceof GenericPropellantItem)) return false;
             return this.ammoContainer.getTotalCount() < 128;
         } else {
             return false;

@@ -7,9 +7,13 @@ import com.simibubi.create.foundation.item.TooltipModifier;
 import net.ato.shupapium.events.ShupapiumReloadListener;
 import net.createmod.catnip.lang.FontHelper;
 import net.minecraft.core.Registry;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.crafting.RecipeSerializer;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.neoforged.neoforge.event.AddReloadListenerEvent;
+import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.RegisterEvent;
 import org.slf4j.Logger;
 
@@ -33,6 +37,8 @@ public class MainShupapium {
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
     public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(MOD_ID);
+    public static final DeferredRegister<RecipeSerializer<?>> RECIPE_SERIALIZER_REGISTER = DeferredRegister.create(Registries.RECIPE_SERIALIZER, MOD_ID);
+    public static final DeferredRegister<RecipeType<?>> RECIPE_TYPE_REGISTER = DeferredRegister.create(Registries.RECIPE_TYPE, MOD_ID);
     static {
         REGISTRATE.setTooltipModifierFactory(item -> new ItemDescription.Modifier(item, FontHelper.Palette.STANDARD_CREATE)
                 .andThen(TooltipModifier.mapNull(KineticStats.create(item))));
@@ -52,6 +58,8 @@ public class MainShupapium {
         // Note that this is necessary if and only if we want *this* class to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
+        RECIPE_SERIALIZER_REGISTER.register(modEventBus);
+        RECIPE_TYPE_REGISTER.register(modEventBus);
         ShupapiumAttachments.register(modEventBus);
         ShupapiumSounds.register(modEventBus);
         ShupapiumEntities.register();
@@ -60,6 +68,7 @@ public class MainShupapium {
         ShupapiumBlockEntities.register();
         ShupapiumItems.register();
         ShupapiumItems.register(modEventBus);
+        ShupapiumRecipeTypes.register();
         ShupapiumMenuTypes.register();
         ShupapiumGroup.register(modEventBus);
         ShupapiumMobEffects.register(modEventBus);
@@ -84,6 +93,7 @@ public class MainShupapium {
     private void onRegister(RegisterEvent evt) {
         ShupapiumContraptionTypes.init();
         ShupapiumDataComponents.init();
+        ShupapiumArmInteractionPointTypes.init();
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
