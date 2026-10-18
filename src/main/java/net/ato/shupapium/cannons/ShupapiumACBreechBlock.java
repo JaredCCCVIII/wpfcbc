@@ -99,7 +99,7 @@ public class ShupapiumACBreechBlock extends AutocannonBreechBlock {
         Vec3 globalPos = entity.toGlobalVector(Vec3.atCenterOf(localPos), 0);
 
         boolean insertingContainer = stack.getItem() instanceof ShupapiumAmmoContainerItem;
-        boolean canRemove = insertingContainer || stack.isEmpty() && (ShupapiumAmmoContainerItem.getTotalAmmoCount(container) == 0 || player.isShiftKeyDown());
+        boolean canRemove = insertingContainer || stack.isEmpty() && (!ShupapiumAmmoContainerItem.canFire(container) || player.isShiftKeyDown());
 
         boolean changed = false;
         boolean tryAdd = false;

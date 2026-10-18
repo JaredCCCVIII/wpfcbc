@@ -28,13 +28,14 @@ public class ShupapiumCannonMountPoint extends CannonMountPoint {
 
     public static ItemStack shupapedAutocannonInsert(ItemStack stack, boolean simulate, MountedShupapiumACContraption autocannon,
                                              PitchOrientedContraptionEntity poce) {
+        if (!ShupapiumAmmoContainerItem.canFire(stack)) return stack;
         if (!(stack.getItem() instanceof ShupapiumAmmoContainerItem)) return stack;
         BlockEntity be = autocannon.presentBlockEntities.get(autocannon.getStartPos());
         if (!(be instanceof ShupapiumACBreechBlockEntity breech)) return stack;
 
         ItemStack oldContainer = breech.getMagazine();
         if (oldContainer.getItem() instanceof ShupapiumAmmoContainerItem
-                && ShupapiumAmmoContainerItem.getTotalAmmoCount(oldContainer) > 0) return stack;
+                && ShupapiumAmmoContainerItem.canFire(oldContainer)) return stack;
 
         if (simulate) return ItemStack.EMPTY;
         breech.setMagazine(stack);

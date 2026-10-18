@@ -184,10 +184,11 @@ public class ShupapiumACBreechBlockEntity extends AutocannonBreechBlockEntity {
 
         ItemStack magazine = this.getMagazine();
         if (magazine.isEmpty()) return ItemStack.EMPTY;
+        if (ShupapiumAmmoContainerItem.getTotalAmmoCount(magazine) == 0) return ItemStack.EMPTY;
 
-        int total = ShupapiumAmmoContainerItem.getTotalAmmoCount(magazine);
-        if (total == 0) return ItemStack.EMPTY;
-        if (total == 1) this.setMagazine(magazine);
-        return ShupapiumAmmoContainerItem.pollItemFromContainer(magazine);
+        boolean wasFilled = ShupapiumAmmoContainerItem.isFilled(magazine);
+        ItemStack polled = ShupapiumAmmoContainerItem.pollItemFromContainer(magazine);
+        if (wasFilled != ShupapiumAmmoContainerItem.isFilled(magazine)) this.setMagazine(magazine);
+        return polled;
     }
 }

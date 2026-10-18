@@ -145,4 +145,13 @@ public class ShupapiumAmmoContainerItem extends BlockItem implements MenuProvide
         if (content.isEmpty()) container.remove(ShupapiumDataComponents.PROPELLANTS);
         else container.set(ShupapiumDataComponents.PROPELLANTS, ItemContainerContents.fromItems(Lists.newArrayList(content)));
     }
+
+    public static boolean isFilled(ItemStack container) {
+        return !getMainAmmoStack(container).isEmpty();
+    }
+
+    public static boolean canFire(ItemStack container) {
+        if (!isFilled(container)) return false;
+        return !shouldPullPropellant(container) || !getPropellantAmmoStack(container).isEmpty();
+    }
 }
