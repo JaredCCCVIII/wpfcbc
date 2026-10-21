@@ -149,7 +149,7 @@ public class ShupapiumBuilderTransformers {
                 .build();
     }
 
-    public static <T extends Block & AutocannonBlock, P> NonNullUnaryOperator<BlockBuilder<T, P>> geckoAutocannonBarrel(String mod, String path, Supplier<BlockEntityWithoutLevelRenderer> factory) {
+    public static <T extends Block & AutocannonBlock, P> NonNullUnaryOperator<BlockBuilder<T, P>> geckoAutocannonBarrel(String mod, String path, Supplier<Supplier<BlockEntityWithoutLevelRenderer>> factory) {
         ResourceLocation modelLocation = ResourceLocation.fromNamespaceAndPath(mod, path);
         return b -> b
                 .properties(BlockBehaviour.Properties::noOcclusion)

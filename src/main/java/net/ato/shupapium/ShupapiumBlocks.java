@@ -40,7 +40,7 @@ public class ShupapiumBlocks {
             .block("minigun_barrel", p -> new ShupapiumGACBarrelBlock(p, ShupapiumCBCACMaterials.MACHINE_GUN, ShupapiumBlockEntities.MINIGUN_GECKO_CANNON))
             .transform(cannonBlock())
             .loot(CBCBuilderTransformers.steelScrapLoot(2))
-            .transform(ShupapiumBuilderTransformers.geckoAutocannonBarrel(CrustyChunksMod.MODID, "custom/mini_gun_barrel_particle", MinigunBarrelItemRenderer::new))
+            .transform(ShupapiumBuilderTransformers.geckoAutocannonBarrel(CrustyChunksMod.MODID, "custom/mini_gun_barrel_particle", () -> MinigunBarrelItemRenderer::new))
             .register();
     public static final BlockEntry<ShupapiumACBarrelBlock> MACHINE_GUN_BARREL = MainShupapium.REGISTRATE
             .block("machine_gun_barrel", p -> new ShupapiumACBarrelBlock(p, ShupapiumCBCACMaterials.MACHINE_GUN))
@@ -92,7 +92,7 @@ public class ShupapiumBlocks {
             .block("rotary_cannon_barrel", p -> new ShupapiumGACBarrelBlock(p, ShupapiumCBCACMaterials.CANNON_GUN, ShupapiumBlockEntities.ROTARY_GECKO_CANNON))
             .transform(cannonBlock())
             .loot(CBCBuilderTransformers.steelScrapLoot(2))
-            .transform(ShupapiumBuilderTransformers.geckoAutocannonBarrel(CrustyChunksMod.MODID, "custom/rac_barrel_particle", RotaryCannonBarrelItemRenderer::new))
+            .transform(ShupapiumBuilderTransformers.geckoAutocannonBarrel(CrustyChunksMod.MODID, "custom/rac_barrel_particle", () -> RotaryCannonBarrelItemRenderer::new))
             .register();
     public static final BlockEntry<ShupapiumACBreechBlock> LIGHT_CANNON_BREECH = MainShupapium.REGISTRATE
             .block("light_cannon_breech", p -> new ShupapiumACBreechBlock(p, ShupapiumCBCACMaterials.CANNON_GUN))

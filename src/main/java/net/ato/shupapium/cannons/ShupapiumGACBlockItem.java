@@ -28,9 +28,9 @@ import java.util.function.Supplier;
 
 public class ShupapiumGACBlockItem<T extends Block & AutocannonBlock> extends BlockItem implements GeoItem {
     private final T autocannonBlock;
-    private final Supplier<BlockEntityWithoutLevelRenderer> rendererFactory;
+    private final Supplier<Supplier<BlockEntityWithoutLevelRenderer>> rendererFactory;
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
-    public ShupapiumGACBlockItem(T block, Item.Properties properties, Supplier<BlockEntityWithoutLevelRenderer> rendererFactory) {
+    public ShupapiumGACBlockItem(T block, Item.Properties properties, Supplier<Supplier<BlockEntityWithoutLevelRenderer>> rendererFactory) {
         super(block, properties);
         this.autocannonBlock = block;
         this.rendererFactory = rendererFactory;
@@ -62,7 +62,7 @@ public class ShupapiumGACBlockItem<T extends Block & AutocannonBlock> extends Bl
             @Override
             public @Nullable BlockEntityWithoutLevelRenderer getGeoItemRenderer() {
                 if (renderer == null) {
-                    renderer = rendererFactory.get();
+                    renderer = rendererFactory.get().get();
                 }
 
                 return renderer;
